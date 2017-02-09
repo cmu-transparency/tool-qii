@@ -1,0 +1,1940 @@
+R00001.00    [PUBID]                                        Survey Year: 1997
+  PRIMARY VARIABLE
+
+ 
+             PUBID, YOUTH CASE IDENTIFICATION CODE
+ 
+COMMENT: YOUTH CASE IDENTIFICATION CODE
+ 
+       0           0
+     998           1 TO 999
+     999        1000 TO 1999
+     997        2000 TO 2999
+     996        3000 TO 3999
+     998        4000 TO 4999
+     996        5000 TO 5999
+     994        6000 TO 6999
+     994        7000 TO 7999
+     989        8000 TO 8999
+      23        9000 TO 9999
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              1        Max:           9022        Mean:              4504.3
+ 
+Hard Minimum: [0]  Hard Maximum: [99999999]
+ 
+Lead In: R72976.00[Default]
+Default Next Question: R05363.00
+--------------------------------------------------------------------------------
+R03579.00    [YSAQ-359]                                     Survey Year: 1997
+  PRIMARY VARIABLE
+
+ 
+             R EVER SMOKED?
+ 
+Have you ever smoked a cigarette?
+ 
+UNIVERSE: All
+ 
+    3517       1 Yes   (Go To R03580.00)
+    5436       0 No
+  -------
+    8953
+ 
+Refusal(-1)           24
+Don't Know(-2)         5
+Invalid Skip(-3)       2
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Lead In: R03574.00[Default] R03578.00[Default]
+Default Next Question: R03583.00
+--------------------------------------------------------------------------------
+R05363.00    [KEY!SEX]                                      Survey Year: 1997
+  PRIMARY VARIABLE
+
+ 
+             KEY!SEX, RS GENDER (SYMBOL)
+ 
+COMMENT: Gender of Youth
+ 
+    4599       1 Male
+    4385       2 Female
+       0       0 No Information
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Lead In: R00001.00[Default]
+Default Next Question: R05364.00
+--------------------------------------------------------------------------------
+R05364.01    [KEY!BDATE_M]                                  Survey Year: 1997
+  PRIMARY VARIABLE
+
+ 
+             KEY!BDATE, RS BIRTHDATE MONTH/YEAR (SYMBOL)
+ 
+COMMENT: Birthdate of Youth
+ 
+     816           1: January
+     693           2: February
+     760           3: March
+     659           4: April
+     689           5: May
+     720           6: June
+     762           7: July
+     782           8: August
+     839           9: September
+     765          10: October
+     763          11: November
+     736          12: December
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              1        Max:             12        Mean:                6.56
+ 
+Earliest (NonMissing): JANUARY/1980
+Latest   (NonMissing): DECEMBER/1984
+ 
+Hard Minimum: [01/01/1880]  Hard Maximum: [the current date]
+ 
+Lead In: R05363.00[Default]
+Default Next Question: R05366.00
+--------------------------------------------------------------------------------
+R05364.02    [KEY!BDATE_Y]                                  Survey Year: 1997
+  PRIMARY VARIABLE
+
+ 
+             KEY!BDATE, RS BIRTHDATE MONTH/YEAR (SYMBOL)
+ 
+COMMENT: Birthdate of Youth
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:           1980        Max:           1984        Mean:             1982.01
+ 
+Earliest (NonMissing): JANUARY/1980
+Latest   (NonMissing): DECEMBER/1984
+ 
+Hard Minimum: [01/01/1880]  Hard Maximum: [the current date]
+ 
+Lead In: R05363.00[Default]
+Default Next Question: R05366.00
+--------------------------------------------------------------------------------
+R12003.00    [CV_CENSUS_REGION]                             Survey Year: 1997
+  PRIMARY VARIABLE
+
+ 
+             CENSUS REGION OF RESIDENCE
+ 
+Census region of the residence as of the survey date.
+Note: This variables was updated in round 3 to reflect improvements in the 
+method of assigning geographic information to respondents.
+ 
+    1585       1 Northeast (CT, ME, MA, NH, NJ, NY, PA, RI, VT)
+    2050       2 North Central (IL, IN, IA, KS, MI, MN, MO, NE, OH, ND, SD, WI)
+    3359       3 South (AL, AR, DE, DC, FL, GA, KY, LA, MD, MS, NC, OK, SC, TN ,
+                      TX, VA, WV)
+    1990       4 West (AK, AZ, CA, CO, HI, ID, MT, NV, NM, OR, UT, WA, WY)
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Lead In: R12002.00[Default]
+Default Next Question: R12004.00
+--------------------------------------------------------------------------------
+R12053.00    [CV_YTH_REL_HH_CURRENT]                        Survey Year: 1997
+  PRIMARY VARIABLE
+
+ 
+             RS RELATIONSHIP TO HOUSEHOLD PARENT FIGURE
+ 
+Relationship of the parent figure(s)/guardian(s) in household to the youth as of
+the survey date.
+Note:  This variable was renamed in round 2; the round 1 name was 
+CV_HH_REL_BIRTH.
+ 
+    4395       1 Both biological parents
+     991       2 Two parents, biological mother
+     214       3 Two parents, biological father
+    2531       4 Biological mother only
+     295       5 Biological father only
+     103       6 Adoptive parent(s)
+      44       7 Foster parent(s)
+     197       8 No parents, grandparents
+     114       9 No parents, other relatives
+      69      10 Anything else
+  -------
+    8953
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      31
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Lead In: R12052.00[Default]
+Default Next Question: R12054.00
+--------------------------------------------------------------------------------
+R12358.00    [CV_SAMPLE_TYPE]                               Survey Year: 1997
+  PRIMARY VARIABLE
+
+ 
+             SAMPLE TYPE.  CROSS-SECTIONAL OR OVERSAMPLE
+ 
+Sample type: Is the respondent a member of the cross-sectional sample or the 
+oversample?
+ 
+    6748       1 Cross-sectional
+    2236       0 Oversample
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Lead In: R12357.00[Default]
+Default Next Question: R12359.00
+--------------------------------------------------------------------------------
+R14826.00    [KEY!RACE_ETHNICITY]                           Survey Year: 1997
+  PRIMARY VARIABLE
+
+ 
+             KEY!RACE_ETHNICITY, COMBINED RACE AND ETHNICITY (SYMBOL)
+ 
+COMMENT: Combined race - ethnicity variable
+ 
+    2335       1 Black
+    1901       2 Hispanic
+      83       3 Mixed Race (Non-Hispanic)
+    4665       4 Non-Black / Non-Hispanic
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Lead In: R05387.00[Default]
+Default Next Question: R05389.00
+--------------------------------------------------------------------------------
+R21891.00    [YSAQ-359]                                     Survey Year: 1998
+  PRIMARY VARIABLE
+
+ 
+             R EVER SMOKED?
+ 
+Now we would like to ask you a few questions about smoking habits. Have you ever
+smoked a cigarette?
+ 
+UNIVERSE: R did not answer question if had ever smoked as of DLI
+ 
+      16       1 Yes   (Go To R21893.00)
+      10       0 No
+  -------
+      26
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>      26   VALID SKIP(-4)    8360     NON-INTERVIEW(-5)     598
+ 
+Lead In: R21889.00[1:1]
+Default Next Question: R21897.00
+--------------------------------------------------------------------------------
+R22005.00    [YSAQ-443]                                     Survey Year: 1998
+  PRIMARY VARIABLE
+
+ 
+             TOTAL # TIMES R ARRESTED SINCE DLI
+ 
+In total, how many times have you been arrested since the last interview on 
+[date of last interview]?
+ 
+UNIVERSE: R answered yes/no to ever been arrested; has been arrested since DLI
+ 
+       0           0
+     353           1
+     118           2
+      40           3
+      20           4
+      12           5
+       7           6
+       6           7
+       2           8
+      18           9
+       0          10
+       0          11
+       0          12
+       0          13
+       0          14
+       0          15 TO 99: 15+
+  -------
+     576
+ 
+Refusal(-1)            3
+Don't Know(-2)         1
+TOTAL =========>     580   VALID SKIP(-4)    7806     NON-INTERVIEW(-5)     598
+ 
+Min:              1        Max:              9        Mean:                1.93
+ 
+Hard Minimum: [1]  Hard Maximum: [9]
+ 
+Lead In: R22003.00[1:1]
+Default Next Question: R22006.00
+--------------------------------------------------------------------------------
+R25588.00    [CV_CENSUS_REGION]                             Survey Year: 1998
+  PRIMARY VARIABLE
+
+ 
+             CENSUS REGION OF RESIDENCE
+ 
+Census region of the residence as of the survey date.
+ 
+COMMENT: A valid skip (-4) indicates a residence outside of the United States.
+Note: This variables was updated in round 3 to reflect improvements in the 
+method of assigning geographic information to respondents.
+ 
+    1451       1 Northeast (CT, ME, MA, NH, NJ, NY, PA, RI, VT)
+    1903       2 North Central (IL, IN, IA, KS, MI, MN, MO, NE, OH, ND, SD, WI)
+    3160       3 South (AL, AR, DE, DC, FL, GA, KY, LA, MD, MS, NC, OK, SC, TN ,
+                      TX, VA, WV)
+    1846       4 West (AK, AZ, CA, CO, HI, ID, MT, NV, NM, OR, UT, WA, WY)
+  -------
+    8360
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)       4
+TOTAL =========>    8364   VALID SKIP(-4)      22     NON-INTERVIEW(-5)     598
+ 
+Lead In: R25587.00[Default]
+Default Next Question: R25589.00
+--------------------------------------------------------------------------------
+R25636.00    [CV_YTH_REL_HH_CURRENT]                        Survey Year: 1998
+  PRIMARY VARIABLE
+
+ 
+             RS RELATIONSHIP TO HOUSEHOLD PARENT FIGURE
+ 
+Relationship of the parent figure(s)/guardian(s) in household to the youth as of
+the survey date.
+ 
+    3984       1 Both biological parents
+     915       2 Two parents, biological mother
+     200       3 Two parents, biological father
+    2221       4 Biological mother only
+     305       5 Biological father only
+      59       6 Adoptive parent(s)
+      30       7 Foster parent(s)
+     190       8 No parents, grandparents
+     107       9 No parents, other relatives
+     336      10 Anything else
+  -------
+    8347
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      39
+TOTAL =========>    8386   VALID SKIP(-4)       0     NON-INTERVIEW(-5)     598
+ 
+Lead In: R25635.00[Default]
+Default Next Question: R25637.00
+--------------------------------------------------------------------------------
+R35082.00    [YSAQ-359]                                     Survey Year: 1999
+  PRIMARY VARIABLE
+
+ 
+             R EVER SMOKED?
+ 
+Have you ever smoked a cigarette?
+ 
+UNIVERSE: R did not answer question if had ever smoked as of DLI
+ 
+       6       1 Yes   (Go To R35084.00)
+       0       0 No
+  -------
+       6
+ 
+Refusal(-1)            1
+Don't Know(-2)         0
+TOTAL =========>       7   VALID SKIP(-4)    8201     NON-INTERVIEW(-5)     776
+ 
+Lead In: R35080.00[1:1]
+Default Next Question: R35088.00
+--------------------------------------------------------------------------------
+R35111.00    [YSAQ-372CC]                                   Survey Year: 1999
+  PRIMARY VARIABLE
+
+ 
+             HAS R USED COCAINE/HARD DRUGS SINCE DLI?
+ 
+Excluding marijuana and alcohol, since the date of last interview, have you used
+any drugs like cocaine or crack or heroin, or any other substance not prescribed
+by a doctor, in order to get high or to achieve an altered state?
+ 
+     498       1 Yes   (Go To R35112.00)
+    7370       0 No
+  -------
+    7868
+ 
+Refusal(-1)           60
+Don't Know(-2)         2
+TOTAL =========>    7930   VALID SKIP(-4)     278     NON-INTERVIEW(-5)     776
+ 
+Lead In: R35109.00[Default]  R35107.00[1:1]
+Default Next Question: R35114.00
+--------------------------------------------------------------------------------
+R35201.00    [YSAQ-443]                                     Survey Year: 1999
+  PRIMARY VARIABLE
+
+ 
+             TOTAL # TIMES R ARRESTED SINCE DLI
+ 
+In total, how many times have you been arrested since the last interview on 
+[date of last interview]?
+ 
+UNIVERSE: R answered yes/no to ever been arrested; has been arrested since DLI
+ 
+       0           0
+     354           1
+      82           2
+      40           3
+      13           4
+       6           5
+       4           6
+       1           7
+       1           8
+       3           9
+       0          10
+       0          11
+       0          12
+       0          13
+       0          14
+       0          15 TO 99: 15+
+  -------
+     504
+ 
+Refusal(-1)            2
+Don't Know(-2)         0
+TOTAL =========>     506   VALID SKIP(-4)    7702     NON-INTERVIEW(-5)     776
+ 
+Min:              1        Max:              9        Mean:                1.56
+ 
+Hard Minimum: [1]  Hard Maximum: [9]
+ 
+Lead In: R35199.00[1:1]
+Default Next Question: R35202.00
+--------------------------------------------------------------------------------
+R38803.00    [CV_CENSUS_REGION]                             Survey Year: 1999
+  PRIMARY VARIABLE
+
+ 
+             CENSUS REGION OF RESIDENCE
+ 
+Census region of the residence as of the survey date.
+ 
+COMMENT: A valid skip (-4) indicates a residence outside of the United States.
+ 
+    1403       1 Northeast (CT, ME, MA, NH, NJ, NY, PA, RI, VT)
+    1835       2 North Central (IL, IN, IA, KS, MI, MN, MO, NE, OH, ND, SD, WI)
+    3116       3 South (AL, AR, DE, DC, FL, GA, KY, LA, MD, MS, NC, OK, SC, TN ,
+                      TX, VA, WV)
+    1834       4 West (AK, AZ, CA, CO, HI, ID, MT, NV, NM, OR, UT, WA, WY)
+  -------
+    8188
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)       2
+TOTAL =========>    8190   VALID SKIP(-4)      18     NON-INTERVIEW(-5)     776
+ 
+Lead In: R38801.00[Default]
+Default Next Question: R38804.00
+--------------------------------------------------------------------------------
+R38852.00    [CV_YTH_REL_HH_CURRENT]                        Survey Year: 1999
+  PRIMARY VARIABLE
+
+ 
+             RS RELATIONSHIP TO HOUSEHOLD PARENT FIGURE
+ 
+Relationship of the parent figure(s)/guardian(s) in household to the youth as of
+the survey date.
+ 
+    3736       1 Both biological parents
+     867       2 Two parents, biological mother
+     199       3 Two parents, biological father
+    2010       4 Biological mother only
+     289       5 Biological father only
+      61       6 Adoptive parent(s)
+      26       7 Foster parent(s)
+     161       8 No parents, grandparents
+      85       9 No parents, other relatives
+     686      10 Anything else
+  -------
+    8120
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      88
+TOTAL =========>    8208   VALID SKIP(-4)       0     NON-INTERVIEW(-5)     776
+ 
+Lead In: R38851.00[Default]
+Default Next Question: R38853.00
+--------------------------------------------------------------------------------
+R49092.00    [YSAQ-372CC]                                   Survey Year: 2000
+  PRIMARY VARIABLE
+
+ 
+             HAS R USED COCAINE/HARD DRUGS SINCE DLI?
+ 
+Excluding marijuana and alcohol, since the date of last interview, have you used
+any drugs like cocaine or crack or heroin, or any other substance not prescribed
+by a doctor, in order to get high or to achieve an altered state?
+ 
+UNIVERSE: R did answer yes/no to trying hard drugs in prev round
+ 
+     547       1 Yes   (Go To R49093.00)
+    7367       0 No
+  -------
+    7914
+ 
+Refusal(-1)           57
+Don't Know(-2)         4
+TOTAL =========>    7975   VALID SKIP(-4)     105     NON-INTERVIEW(-5)     904
+ 
+Lead In: R49090.00[Default]  R49088.00[1:1]
+Default Next Question: R49095.00
+--------------------------------------------------------------------------------
+R49180.00    [YSAQ-443]                                     Survey Year: 2000
+  PRIMARY VARIABLE
+
+ 
+             TOTAL # TIMES R ARRESTED SINCE DLI
+ 
+In total, how many times have you been arrested since the last interview on 
+[date of last interview]?
+ 
+UNIVERSE: R answered yes/no to ever been arrested; has been arrested since DLI
+ 
+       0           0
+     382           1
+      83           2
+      40           3
+      11           4
+      10           5
+       3           6
+       4           7
+       9           8
+      11           9
+       0          10
+       0          11
+       0          12
+       0          13
+       0          14
+       0          15 TO 999: 15+
+  -------
+     553
+ 
+Refusal(-1)            1
+Don't Know(-2)         1
+TOTAL =========>     555   VALID SKIP(-4)    7525     NON-INTERVIEW(-5)     904
+ 
+Min:              1        Max:              9        Mean:                1.77
+ 
+Hard Minimum: [1]  Hard Maximum: [9]
+ 
+Lead In: R49178.00[1:1]
+Default Next Question: R49181.00
+--------------------------------------------------------------------------------
+R54594.00    [CV_CENSUS_REGION]                             Survey Year: 2000
+  PRIMARY VARIABLE
+
+ 
+             CENSUS REGION OF RESIDENCE
+ 
+Census region of the residence as of the survey date.
+ 
+COMMENT: A valid skip (-4) indicates a residence outside of the United States.
+ 
+    1391       1 Northeast (CT, ME, MA, NH, NJ, NY, PA, RI, VT)
+    1772       2 North Central (IL, IN, IA, KS, MI, MN, MO, NE, OH, ND, SD, WI)
+    3074       3 South (AL, AR, DE, DC, FL, GA, KY, LA, MD, MS, NC, OK, SC, TN ,
+                      TX, VA, WV)
+    1808       4 West (AK, AZ, CA, CO, HI, ID, MT, NV, NM, OR, UT, WA, WY)
+  -------
+    8045
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      21
+TOTAL =========>    8066   VALID SKIP(-4)      14     NON-INTERVIEW(-5)     904
+ 
+Lead In: R54592.00[Default]
+Default Next Question: R54595.00
+--------------------------------------------------------------------------------
+R54644.00    [CV_YTH_REL_HH_CURRENT]                        Survey Year: 2000
+  PRIMARY VARIABLE
+
+ 
+             RS RELATIONSHIP TO HOUSEHOLD PARENT FIGURE
+ 
+Relationship of the parent figure(s)/guardian(s) in household to the youth as of
+the survey date.
+ 
+    3358       1 Both biological parents
+     772       2 Two parents, biological mother
+     170       3 Two parents, biological father
+    1930       4 Biological mother only
+     286       5 Biological father only
+      46       6 Adoptive parent(s)
+      17       7 Foster parent(s)
+     118       8 No parents, grandparents
+      71       9 No parents, other relatives
+    1311      10 Anything else
+  -------
+    8079
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)       1
+TOTAL =========>    8080   VALID SKIP(-4)       0     NON-INTERVIEW(-5)     904
+ 
+Lead In: R54643.00[Default]
+Default Next Question: R54645.00
+--------------------------------------------------------------------------------
+R65364.00    [YSAQ-372CC]                                   Survey Year: 2001
+  PRIMARY VARIABLE
+
+ 
+             HAS R USED COCAINE/HARD DRUGS SINCE DLI?
+ 
+Excluding marijuana and alcohol, since the date of last interview, have you used
+any drugs like cocaine or crack or heroin, or any other substance not prescribed
+by a doctor, in order to get high or to achieve an altered state?
+ 
+UNIVERSE: R did answer yes/no to trying hard drugs in prev round
+ 
+     546       1 YES   (Go To R65365.00)
+    7254       0 NO
+  -------
+    7800
+ 
+Refusal(-1)           33
+Don't Know(-2)         5
+TOTAL =========>    7838   VALID SKIP(-4)      44     NON-INTERVIEW(-5)    1102
+ 
+Lead In: R65362.00[Default]  R65360.00[1:1]
+Default Next Question: R65367.00
+--------------------------------------------------------------------------------
+R65450.00    [YSAQ-443]                                     Survey Year: 2001
+  PRIMARY VARIABLE
+
+ 
+             TOTAL # TIMES R ARRESTED SINCE DLI
+ 
+In total, how many times have you been arrested since the last interview on 
+[date of last interview]?
+ 
+UNIVERSE: R answered yes/no to ever been arrested; has been arrested since DLI
+ 
+       0           0
+     352           1
+      94           2
+      27           3
+      11           4
+      10           5
+       1           6
+       0           7
+       2           8
+       3           9
+       0          10
+       0          11
+       0          12
+       0          13
+       0          14
+       0          15 TO 999: 15+
+  -------
+     500
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>     500   VALID SKIP(-4)    7382     NON-INTERVIEW(-5)    1102
+ 
+Min:              1        Max:              9        Mean:                1.53
+ 
+Hard Minimum: [1]  Hard Maximum: [9]
+ 
+Lead In: R65447.00[1:1]
+Default Next Question: R65451.00
+--------------------------------------------------------------------------------
+R72224.00    [CV_CENSUS_REGION]                             Survey Year: 2001
+  PRIMARY VARIABLE
+
+ 
+             CENSUS REGION OF RESIDENCE
+ 
+Census region of the residence as of the survey date.
+ 
+COMMENT: A valid skip (-4) indicates a residence outside of the United States.
+ 
+    1336       1 Northeast (CT, ME, MA, NH, NJ, NY, PA, RI, VT)
+    1734       2 North Central (IL, IN, IA, KS, MI, MN, MO, NE, OH, ND, SD, WI)
+    3004       3 South (AL, AR, DE, DC, FL, GA, KY, LA, MD, MS, NC, OK, SC, TN ,
+                      TX, VA, WV)
+    1770       4 West (AK, AZ, CA, CO, HI, ID, MT, NV, NM, OR, UT, WA, WY)
+  -------
+    7844
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      21
+TOTAL =========>    7865   VALID SKIP(-4)      17     NON-INTERVIEW(-5)    1102
+ 
+Lead In: R72221.00[Default]
+Default Next Question: R72225.00
+--------------------------------------------------------------------------------
+R72281.00    [CV_YTH_REL_HH_CURRENT]                        Survey Year: 2001
+  PRIMARY VARIABLE
+
+ 
+             RS RELATIONSHIP TO HOUSEHOLD PARENT FIGURE
+ 
+Relationship of the parent figure(s)/guardian(s) in household to the youth as of
+the survey date.
+ 
+    3067       1 Both biological parents
+     679       2 Two parents, biological mother
+     151       3 Two parents, biological father
+    1723       4 Biological mother only
+     266       5 Biological father only
+      40       6 Adoptive parent(s)
+      15       7 Foster parent(s)
+      81       8 No parents, grandparents
+      49       9 No parents, other relatives
+    1810      10 Anything else
+  -------
+    7881
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)       1
+TOTAL =========>    7882   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1102
+ 
+Lead In: R72280.00[Default]
+Default Next Question: R72282.00
+--------------------------------------------------------------------------------
+S09240.00    [YSAQ-372CC]                                   Survey Year: 2002
+  PRIMARY VARIABLE
+
+ 
+             HAS R USED COCAINE/HARD DRUGS SINCE DLI?
+ 
+Excluding marijuana and alcohol, since the date of last interview, have you used
+any drugs like cocaine or crack or heroin, or any other substance not prescribed
+by a doctor, in order to get high or to achieve an altered state?
+ 
+UNIVERSE: R did answer yes/no to trying hard drugs in prev round
+ 
+     471       1 YES   (Go To S09241.00)
+    7345       0 NO
+  -------
+    7816
+ 
+Refusal(-1)           41
+Don't Know(-2)         1
+TOTAL =========>    7858   VALID SKIP(-4)      38     NON-INTERVIEW(-5)    1088
+ 
+Lead In: S09238.00[Default]  S09236.00[1:1]
+Default Next Question: S09243.00
+--------------------------------------------------------------------------------
+S09329.00    [YSAQ-443]                                     Survey Year: 2002
+  PRIMARY VARIABLE
+
+ 
+             TOTAL # TIMES R ARRESTED SINCE DLI
+ 
+In total, how many times have you been arrested since the last interview on 
+[date of last interview]?
+ 
+UNIVERSE: R answered yes/no to ever been arrested; has been arrested since DLI
+ 
+       0           0
+     383           1
+      74           2
+      26           3
+      11           4
+       8           5
+       4           6
+       0           7
+       3           8
+       5           9
+       0          10
+       0          11
+       0          12
+       0          13
+       0          14
+       0          15 TO 999: 15+
+  -------
+     514
+ 
+Refusal(-1)            0
+Don't Know(-2)         1
+TOTAL =========>     515   VALID SKIP(-4)    7381     NON-INTERVIEW(-5)    1088
+ 
+Min:              1        Max:              9        Mean:                1.53
+ 
+Hard Minimum: [1]  Hard Maximum: [9]
+ 
+Lead In: S09326.00[1:1]
+Default Next Question: S09330.00
+--------------------------------------------------------------------------------
+S15355.00    [CV_CENSUS_REGION]                             Survey Year: 2002
+  PRIMARY VARIABLE
+
+ 
+             CENSUS REGION OF RESIDENCE
+ 
+Census region of the residence as of the survey date.
+ 
+COMMENT: A valid skip (-4) indicates a residence outside of the United States.
+ 
+    1333       1 Northeast (CT, ME, MA, NH, NJ, NY, PA, RI, VT)
+    1741       2 North Central (IL, IN, IA, KS, MI, MN, MO, NE, OH, ND, SD, WI)
+    3032       3 South (AL, AR, DE, DC, FL, GA, KY, LA, MD, MS, NC, OK, SC, TN ,
+                      TX, VA, WV)
+    1736       4 West (AK, AZ, CA, CO, HI, ID, MT, NV, NM, OR, UT, WA, WY)
+  -------
+    7842
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      27
+TOTAL =========>    7869   VALID SKIP(-4)      27     NON-INTERVIEW(-5)    1088
+ 
+Lead In: S15354.00[Default]
+Default Next Question: S15356.00
+--------------------------------------------------------------------------------
+S15420.00    [CV_YTH_REL_HH_CURRENT]                        Survey Year: 2002
+  PRIMARY VARIABLE
+
+ 
+             RS RELATIONSHIP TO HOUSEHOLD PARENT FIGURE
+ 
+Relationship of the parent figure(s)/guardian(s) in household to the youth as of
+the survey date.
+ 
+    2677       1 Both biological parents
+     593       2 Two parents, biological mother
+     120       3 Two parents, biological father
+    1553       4 Biological mother only
+     246       5 Biological father only
+      32       6 Adoptive parent(s)
+       9       7 Foster parent(s)
+      50       8 No parents, grandparents
+      15       9 No parents, other relatives
+    2601      10 Anything else
+  -------
+    7896
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    7896   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1088
+ 
+Lead In: S15419.00[Default]
+Default Next Question: S15421.00
+--------------------------------------------------------------------------------
+S20054.00    [CV_CENSUS_REGION]                             Survey Year: 2003
+  PRIMARY VARIABLE
+
+ 
+             CENSUS REGION OF RESIDENCE
+ 
+Census region of the residence as of the survey date.
+ 
+COMMENT: A valid skip (-4) indicates a residence outside of the United States.
+ 
+    1282       1 Northeast (CT, ME, MA, NH, NJ, NY, PA, RI, VT)
+    1727       2 North Central (IL, IN, IA, KS, MI, MN, MO, NE, OH, ND, SD, WI)
+    3004       3 South (AL, AR, DE, DC, FL, GA, KY, LA, MD, MS, NC, OK, SC, TN ,
+                      TX, VA, WV)
+    1701       4 West (AK, AZ, CA, CO, HI, ID, MT, NV, NM, OR, UT, WA, WY)
+  -------
+    7714
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      17
+TOTAL =========>    7731   VALID SKIP(-4)      23     NON-INTERVIEW(-5)    1230
+ 
+Lead In: S20053.00[Default]
+Default Next Question: S20055.00
+--------------------------------------------------------------------------------
+S20118.00    [CV_YTH_REL_HH_CURRENT]                        Survey Year: 2003
+  PRIMARY VARIABLE
+
+ 
+             RS RELATIONSHIP TO HOUSEHOLD PARENT FIGURE
+ 
+Relationship of the parent figure(s)/guardian(s) in household to the youth as of
+the survey date.
+ 
+    2066       1 Both biological parents
+     450       2 Two parents, biological mother
+      95       3 Two parents, biological father
+    1250       4 Biological mother only
+     207       5 Biological father only
+      23       6 Adoptive parent(s)
+       3       7 Foster parent(s)
+      34       8 No parents, grandparents
+      14       9 No parents, other relatives
+    3612      10 Anything else
+  -------
+    7754
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    7754   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1230
+ 
+Lead In: S20117.00[Default]
+Default Next Question: S20119.00
+--------------------------------------------------------------------------------
+S29903.00    [YSAQ-372CC]                                   Survey Year: 2003
+  PRIMARY VARIABLE
+
+ 
+             HAS R USED COCAINE/HARD DRUGS SINCE DLI?
+ 
+Excluding marijuana and alcohol, since the date of last interview, have you used
+any drugs like cocaine or crack or heroin, or any other substance not prescribed
+by a doctor, in order to get high or to achieve an altered state?
+ 
+UNIVERSE: R did answer yes/no to trying hard drugs in prev round
+ 
+     468       1 YES   (Go To S29904.00)
+    7246       0 NO
+  -------
+    7714
+ 
+Refusal(-1)           39
+Don't Know(-2)         1
+TOTAL =========>    7754   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1230
+ 
+Lead In: S29902.00[Default]  S29901.00[1:1]
+Default Next Question: S29906.00
+--------------------------------------------------------------------------------
+S29959.00    [YSAQ-443]                                     Survey Year: 2003
+  PRIMARY VARIABLE
+
+ 
+             TOTAL # TIMES R ARRESTED SINCE DLI
+ 
+In total, how many times have you been arrested since the last interview on 
+[date of last interview]?
+ 
+UNIVERSE: R answered yes/no to ever been arrested; has been arrested since DLI
+ 
+       0           0
+     292           1
+      64           2
+      28           3
+      10           4
+       5           5
+       1           6
+       1           7
+       1           8
+       1           9
+       2          10
+       1          11
+       1          12
+       0          13
+       0          14
+       6          15 TO 999: 15+
+  -------
+     413
+ 
+Refusal(-1)            1   (Go To S30011.00)
+Don't Know(-2)         0   (Go To S30011.00)
+TOTAL =========>     414   VALID SKIP(-4)    7340     NON-INTERVIEW(-5)    1230
+ 
+Min:              1        Max:             60        Mean:                2.11
+ 
+Hard Minimum: [1]  Hard Maximum: [60]
+ 
+Lead In: S29956.00[1:1]
+Default Next Question: S29960.00
+--------------------------------------------------------------------------------
+S38057.00    [CV_CENSUS_REGION]                             Survey Year: 2004
+  PRIMARY VARIABLE
+
+ 
+             CENSUS REGION OF RESIDENCE
+ 
+Census region of the residence as of the survey date.
+ 
+COMMENT: A valid skip (-4) indicates a residence outside of the United States.
+ 
+    1219       1 Northeast (CT, ME, MA, NH, NJ, NY, PA, RI, VT)
+    1641       2 North Central (IL, IN, IA, KS, MI, MN, MO, NE, OH, ND, SD, WI)
+    2927       3 South (AL, AR, DE, DC, FL, GA, KY, LA, MD, MS, NC, OK, SC, TN ,
+                      TX, VA, WV)
+    1676       4 West (AK, AZ, CA, CO, HI, ID, MT, NV, NM, OR, UT, WA, WY)
+  -------
+    7463
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)       1
+TOTAL =========>    7464   VALID SKIP(-4)      38     NON-INTERVIEW(-5)    1482
+ 
+Lead In: S38054.00[Default]
+Default Next Question: S38058.00
+--------------------------------------------------------------------------------
+S46826.00    [YSAQ-359]                                     Survey Year: 2004
+  PRIMARY VARIABLE
+
+ 
+             R EVER SMOKED?
+ 
+Have you ever smoked a cigarette?
+ 
+UNIVERSE: R DK/RF if had ever smoked as of DLI
+ 
+       3       1 YES   (Go To S46828.00)
+       1       0 NO
+  -------
+       4
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>       4   VALID SKIP(-4)    7498     NON-INTERVIEW(-5)    1482
+ 
+Lead In: S46824.00[1:1]
+Default Next Question: S46832.00
+--------------------------------------------------------------------------------
+S46855.00    [YSAQ-372CC]                                   Survey Year: 2004
+  PRIMARY VARIABLE
+
+ 
+             HAS R USED COCAINE/HARD DRUGS SINCE DLI?
+ 
+Excluding marijuana and alcohol, since the date of last interview, have you used
+any drugs like cocaine or crack or heroin, or any other substance not prescribed
+by a doctor, in order to get high or to achieve an altered state?
+ 
+UNIVERSE: All except prisoners in an insecure environment; did answer yes/no to 
+trying hard drugs in prev round
+ 
+     416       1 YES   (Go To S46856.00)
+    6964       0 NO
+  -------
+    7380
+ 
+Refusal(-1)           56
+Don't Know(-2)        15
+TOTAL =========>    7451   VALID SKIP(-4)      51     NON-INTERVIEW(-5)    1482
+ 
+Lead In: S46853.00[Default]  S46851.00[1:1]
+Default Next Question: S46858.00
+--------------------------------------------------------------------------------
+S46910.00    [YSAQ-443]                                     Survey Year: 2004
+  PRIMARY VARIABLE
+
+ 
+             TOTAL # TIMES R ARRESTED SINCE DLI
+ 
+In total, how many times have you been arrested since the last interview on 
+[date of last interview]?
+ 
+UNIVERSE: R answered yes/no to ever been arrested; has been arrested since DLI
+ 
+       0           0
+     263           1
+      62           2
+      17           3
+       5           4
+       5           5
+       2           6
+       1           7
+       0           8
+       2           9
+       0          10
+       0          11
+       0          12
+       0          13
+       0          14
+       3          15 TO 999: 15+
+  -------
+     360
+ 
+Refusal(-1)            0   (Go To S46932.00)
+Don't Know(-2)         4   (Go To S46932.00)
+TOTAL =========>     364   VALID SKIP(-4)    7138     NON-INTERVIEW(-5)    1482
+ 
+Min:              1        Max:             60        Mean:                1.74
+ 
+Hard Minimum: [1]  Hard Maximum: [60]
+ 
+Lead In: S46907.00[1:1]
+Default Next Question: S46911.00
+--------------------------------------------------------------------------------
+S54056.00    [CV_CENSUS_REGION]                             Survey Year: 2005
+  PRIMARY VARIABLE
+
+ 
+             CENSUS REGION OF RESIDENCE
+ 
+Census region of the residence as of the survey date.
+ 
+COMMENT: A valid skip (-4) indicates a residence outside of the United States.
+ 
+    1182       1 Northeast (CT, ME, MA, NH, NJ, NY, PA, RI, VT)
+    1600       2 North Central (IL, IN, IA, KS, MI, MN, MO, NE, OH, ND, SD, WI)
+    2883       3 South (AL, AR, DE, DC, FL, GA, KY, LA, MD, MS, NC, OK, SC, TN ,
+                      TX, VA, WV)
+    1638       4 West (AK, AZ, CA, CO, HI, ID, MT, NV, NM, OR, UT, WA, WY)
+  -------
+    7303
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    7303   VALID SKIP(-4)      35     NON-INTERVIEW(-5)    1646
+ 
+Lead In: S54055.00[Default]
+Default Next Question: S54057.00
+--------------------------------------------------------------------------------
+S63181.00    [YSAQ-359]                                     Survey Year: 2005
+  PRIMARY VARIABLE
+
+ 
+             R EVER SMOKED?
+ 
+Have you ever smoked a cigarette?
+ 
+UNIVERSE: R DK/RF if had ever smoked as of DLI
+ 
+       1       1 YES
+       0       0 NO
+  -------
+       1
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>       1   VALID SKIP(-4)    7337     NON-INTERVIEW(-5)    1646
+ 
+Lead In: S63179.00[1:1]
+Default Next Question: S63183.00
+--------------------------------------------------------------------------------
+S63210.00    [YSAQ-372CC]                                   Survey Year: 2005
+  PRIMARY VARIABLE
+
+ 
+             HAS R USED COCAINE/HARD DRUGS SINCE DLI?
+ 
+Excluding marijuana and alcohol, since the date of last interview, have you used
+any drugs like cocaine or crack or heroin, or any other substance not prescribed
+by a doctor, in order to get high or to achieve an altered state?
+ 
+UNIVERSE: All except prisoners in an insecure environment; did answer yes/no to 
+trying hard drugs in prev round
+ 
+     393       1 YES   (Go To S63211.00)
+    6761       0 NO
+  -------
+    7154
+ 
+Refusal(-1)           76
+Don't Know(-2)        22
+TOTAL =========>    7252   VALID SKIP(-4)      86     NON-INTERVIEW(-5)    1646
+ 
+Lead In: S63209.00[Default]  S63207.00[1:1]
+Default Next Question: S63213.00
+--------------------------------------------------------------------------------
+S63268.00    [YSAQ-443]                                     Survey Year: 2005
+  PRIMARY VARIABLE
+
+ 
+             TOTAL # TIMES R ARRESTED SINCE DLI
+ 
+In total, how many times have you been arrested since the last interview on 
+[date of last interview]?
+ 
+UNIVERSE: R answered yes/no to ever been arrested; has been arrested since DLI
+ 
+       0           0
+     256           1
+      47           2
+      22           3
+       8           4
+       5           5
+       2           6
+       1           7
+       2           8
+       0           9
+       2          10
+       0          11
+       1          12
+       0          13
+       0          14
+       4          15 TO 999: 15+
+  -------
+     350
+ 
+Refusal(-1)            3   (Go To S63290.00)
+Don't Know(-2)         1   (Go To S63290.00)
+TOTAL =========>     354   VALID SKIP(-4)    6984     NON-INTERVIEW(-5)    1646
+ 
+Min:              1        Max:             60        Mean:                1.86
+ 
+Hard Minimum: [1]  Hard Maximum: [60]
+ 
+Lead In: S63265.00[1:1]
+Default Next Question: S63269.00
+--------------------------------------------------------------------------------
+S75061.00    [CV_CENSUS_REGION]                             Survey Year: 2006
+  PRIMARY VARIABLE
+
+ 
+             CENSUS REGION OF RESIDENCE
+ 
+Census region of the residence as of the survey date.
+ 
+COMMENT: A valid skip (-4) indicates a residence outside of the United States.
+ 
+    1187       1 Northeast (CT, ME, MA, NH, NJ, NY, PA, RI, VT)
+    1628       2 North Central (IL, IN, IA, KS, MI, MN, MO, NE, OH, ND, SD, WI)
+    3002       3 South (AL, AR, DE, DC, FL, GA, KY, LA, MD, MS, NC, OK, SC, TN ,
+                      TX, VA, WV)
+    1698       4 West (AK, AZ, CA, CO, HI, ID, MT, NV, NM, OR, UT, WA, WY)
+  -------
+    7515
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)       5
+TOTAL =========>    7520   VALID SKIP(-4)      39     NON-INTERVIEW(-5)    1425
+ 
+Lead In: S75060.00[Default]
+Default Next Question: S75062.00
+--------------------------------------------------------------------------------
+S83346.00    [YSAQ-372CC]                                   Survey Year: 2006
+  PRIMARY VARIABLE
+
+ 
+             HAS R USED COCAINE/HARD DRUGS SINCE DLI?
+ 
+Excluding marijuana and alcohol, since the date of last interview, have you used
+any drugs like cocaine, crack, heroin, or crystal meth, or any other substance 
+not prescribed by a doctor, in order to get high or to achieve an altered state?
+ 
+UNIVERSE: All except prisoners in an insecure environment
+ 
+     353       1 YES   (Go To S83347.00)
+    7039       0 NO
+  -------
+    7392
+ 
+Refusal(-1)           54
+Don't Know(-2)        14
+TOTAL =========>    7460   VALID SKIP(-4)      99     NON-INTERVIEW(-5)    1425
+ 
+Lead In: S83343.00[Default] S83345.00[Default]  S83344.00[0:0]
+Default Next Question: S83349.00
+--------------------------------------------------------------------------------
+S83391.00    [YSAQ-443]                                     Survey Year: 2006
+  PRIMARY VARIABLE
+
+ 
+             TOTAL # TIMES R ARRESTED SINCE DLI
+ 
+In total, how many times have you been arrested since the last interview on 
+[date of last interview]?
+ 
+UNIVERSE: R answered yes/no to ever been arrested; has been arrested since DLI
+ 
+       0           0
+     285           1
+      65           2
+      22           3
+      14           4
+       3           5
+       2           6
+       1           7
+       1           8
+       0           9
+       3          10
+       0          11
+       1          12
+       0          13
+       0          14
+       0          15 TO 999: 15+
+  -------
+     397
+ 
+Refusal(-1)            3   (Go To S83413.00)
+Don't Know(-2)         6   (Go To S83413.00)
+TOTAL =========>     406   VALID SKIP(-4)    7153     NON-INTERVIEW(-5)    1425
+ 
+Min:              1        Max:             12        Mean:                1.56
+ 
+Hard Minimum: [1]  Hard Maximum: [60]
+ 
+Lead In: S83388.00[1:1]
+Default Next Question: S83392.00
+--------------------------------------------------------------------------------
+T00094.00    [CV_CENSUS_REGION]                             Survey Year: 2007
+  PRIMARY VARIABLE
+
+ 
+             CENSUS REGION OF RESIDENCE
+ 
+Census region of the residence as of the survey date.
+ 
+COMMENT: A valid skip (-4) indicates a residence outside of the United States.
+ 
+    1131       1 Northeast (CT, ME, MA, NH, NJ, NY, PA, RI, VT)
+    1581       2 North Central (IL, IN, IA, KS, MI, MN, MO, NE, OH, ND, SD, WI)
+    2974       3 South (AL, AR, DE, DC, FL, GA, KY, LA, MD, MS, NC, OK, SC, TN ,
+                      TX, VA, WV)
+    1676       4 West (AK, AZ, CA, CO, HI, ID, MT, NV, NM, OR, UT, WA, WY)
+  -------
+    7362
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)       9
+TOTAL =========>    7371   VALID SKIP(-4)      47     NON-INTERVIEW(-5)    1566
+ 
+Lead In: T00093.00[Default]
+Default Next Question: T00095.00
+--------------------------------------------------------------------------------
+T07414.00    [YSAQ-372CC]                                   Survey Year: 2007
+  PRIMARY VARIABLE
+
+ 
+             HAS R USED COCAINE/HARD DRUGS SINCE DLI?
+ 
+Excluding marijuana and alcohol, since the date of last interview, have you used
+any drugs like cocaine, crack, heroin, or crystal meth, or any other substance 
+not prescribed by a doctor, in order to get high or to achieve an altered state?
+ 
+UNIVERSE: All except prisoners in an insecure environment
+ 
+     312       1 YES   (Go To T07415.00)
+    6950       0 NO
+  -------
+    7262
+ 
+Refusal(-1)           50
+Don't Know(-2)        11
+TOTAL =========>    7323   VALID SKIP(-4)      95     NON-INTERVIEW(-5)    1566
+ 
+Lead In: T07411.00[Default] T07413.00[Default]  T07412.00[0:0]
+Default Next Question: T07417.00
+--------------------------------------------------------------------------------
+T07459.00    [YSAQ-443]                                     Survey Year: 2007
+  PRIMARY VARIABLE
+
+ 
+             TOTAL # TIMES R ARRESTED SINCE DLI
+ 
+In total, how many times have you been arrested since the last interview on 
+[date of last interview]?
+ 
+UNIVERSE: R answered yes/no to ever been arrested; has been arrested since DLI
+ 
+       0           0
+     235           1
+      37           2
+      15           3
+      11           4
+       2           5
+       0           6
+       1           7
+       1           8
+       0           9
+       2          10
+       0          11
+       0          12
+       0          13
+       0          14
+       1          15 TO 999: 15+
+  -------
+     305
+ 
+Refusal(-1)            4   (Go To T07481.00)
+Don't Know(-2)         0   (Go To T07481.00)
+TOTAL =========>     309   VALID SKIP(-4)    7109     NON-INTERVIEW(-5)    1566
+ 
+Min:              1        Max:             15        Mean:                 1.5
+ 
+Hard Minimum: [1]  Hard Maximum: [60]
+ 
+Lead In: T07456.00[1:1]
+Default Next Question: T07460.00
+--------------------------------------------------------------------------------
+T20121.00    [CV_CENSUS_REGION]                             Survey Year: 2008
+  PRIMARY VARIABLE
+
+ 
+             CENSUS REGION OF RESIDENCE
+ 
+Census region of the residence as of the survey date.
+ 
+COMMENT: A valid skip (-4) indicates a residence outside of the United States.
+ 
+    1162       1 Northeast (CT, ME, MA, NH, NJ, NY, PA, RI, VT)
+    1564       2 North Central (IL, IN, IA, KS, MI, MN, MO, NE, OH, ND, SD, WI)
+    3019       3 South (AL, AR, DE, DC, FL, GA, KY, LA, MD, MS, NC, OK, SC, TN ,
+                      TX, VA, WV)
+    1688       4 West (AK, AZ, CA, CO, HI, ID, MT, NV, NM, OR, UT, WA, WY)
+  -------
+    7433
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)       6
+TOTAL =========>    7439   VALID SKIP(-4)      51     NON-INTERVIEW(-5)    1494
+ 
+Lead In: T20120.00[Default]
+Default Next Question: T20122.00
+--------------------------------------------------------------------------------
+T27849.00    [YSAQ-372CC]                                   Survey Year: 2008
+  PRIMARY VARIABLE
+
+ 
+             HAS R USED COCAINE/HARD DRUGS SINCE DLI?
+ 
+Excluding marijuana and alcohol, since the date of last interview, have you used
+any drugs like cocaine, crack, heroin, or crystal meth, or any other substance 
+not prescribed by a doctor, in order to get high or to achieve an altered state?
+ 
+UNIVERSE: All except prisoners in an insecure environment
+ 
+     283       1 YES   (Go To T27850.00)
+    7049       0 NO
+  -------
+    7332
+ 
+Refusal(-1)           72
+Don't Know(-2)        17
+TOTAL =========>    7421   VALID SKIP(-4)      69     NON-INTERVIEW(-5)    1494
+ 
+Lead In: T27846.00[Default] T27848.00[Default]  T27847.00[0:0]
+Default Next Question: T27852.00
+--------------------------------------------------------------------------------
+T27897.00    [YSAQ-443]                                     Survey Year: 2008
+  PRIMARY VARIABLE
+
+ 
+             TOTAL # TIMES R ARRESTED SINCE DLI
+ 
+In total, how many times have you been arrested since the last interview on 
+[date of last interview]?
+ 
+UNIVERSE: R answered yes/no to ever been arrested; has been arrested since DLI
+ 
+       0           0
+     222           1
+      48           2
+      14           3
+       4           4
+       3           5
+       0           6
+       1           7
+       0           8
+       0           9
+       0          10
+       0          11
+       0          12
+       1          13
+       0          14
+       1          15 TO 999: 15+
+  -------
+     294
+ 
+Refusal(-1)            1   (Go To T27939.00)
+Don't Know(-2)         9   (Go To T27939.00)
+TOTAL =========>     304   VALID SKIP(-4)    7186     NON-INTERVIEW(-5)    1494
+ 
+Min:              1        Max:             15        Mean:                1.45
+ 
+Hard Minimum: [1]  Hard Maximum: [60]
+ 
+Lead In: T27894.00[1:1]
+Default Next Question: T27898.00
+--------------------------------------------------------------------------------
+T36021.00    [CV_CENSUS_REGION]                             Survey Year: 2009
+  PRIMARY VARIABLE
+
+ 
+             CENSUS REGION OF RESIDENCE
+ 
+Census region of the residence as of the survey date.
+ 
+COMMENT: A valid skip (-4) indicates a residence outside of the United States.
+ 
+    1160       1 Northeast (CT, ME, MA, NH, NJ, NY, PA, RI, VT)
+    1576       2 North Central (IL, IN, IA, KS, MI, MN, MO, NE, OH, ND, SD, WI)
+    3061       3 South (AL, AR, DE, DC, FL, GA, KY, LA, MD, MS, NC, OK, SC, TN ,
+                      TX, VA, WV)
+    1713       4 West (AK, AZ, CA, CO, HI, ID, MT, NV, NM, OR, UT, WA, WY)
+  -------
+    7510
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    7510   VALID SKIP(-4)      49     NON-INTERVIEW(-5)    1425
+ 
+Lead In: T36020.00[Default]
+Default Next Question: T36022.00
+--------------------------------------------------------------------------------
+T44966.00    [YSAQ-372CC]                                   Survey Year: 2009
+  PRIMARY VARIABLE
+
+ 
+             HAS R USED COCAINE/HARD DRUGS SINCE DLI?
+ 
+Excluding marijuana and alcohol, since the date of last interview, have you used
+any drugs like cocaine, crack, heroin, or crystal meth, or any other substance 
+not prescribed by a doctor, in order to get high or to achieve an altered state?
+ 
+UNIVERSE: All except prisoners in an insecure environment
+ 
+     218       1 YES   (Go To T44967.00)
+    7240       0 NO
+  -------
+    7458
+ 
+Refusal(-1)           39
+Don't Know(-2)        12
+TOTAL =========>    7509   VALID SKIP(-4)      50     NON-INTERVIEW(-5)    1425
+ 
+Lead In: T44963.00[Default] T44965.00[Default]  T44964.00[0:0]
+Default Next Question: T44969.00
+--------------------------------------------------------------------------------
+T45013.00    [YSAQ-443]                                     Survey Year: 2009
+  PRIMARY VARIABLE
+
+ 
+             TOTAL # TIMES R ARRESTED SINCE DLI
+ 
+In total, how many times have you been arrested since the last interview on 
+[date of last interview]?
+ 
+UNIVERSE: R answered yes/no to ever been arrested; has been arrested since DLI
+ 
+       0           0
+     189           1
+      48           2
+      16           3
+       7           4
+       4           5
+       1           6
+       3           7
+       0           8
+       0           9
+       0          10
+       0          11
+       1          12
+       0          13
+       0          14
+       0          15 TO 999: 15+
+  -------
+     269
+ 
+Refusal(-1)            3   (Go To T45046.00)
+Don't Know(-2)         0   (Go To T45046.00)
+TOTAL =========>     272   VALID SKIP(-4)    7287     NON-INTERVIEW(-5)    1425
+ 
+Min:              1        Max:             12        Mean:                1.56
+ 
+Hard Minimum: [1]  Hard Maximum: [60]
+ 
+Lead In: T45010.00[1:1]
+Default Next Question: T45014.00
+--------------------------------------------------------------------------------
+T52023.00    [CV_CENSUS_REGION]                             Survey Year: 2010
+  PRIMARY VARIABLE
+
+ 
+             CENSUS REGION OF RESIDENCE
+ 
+Census region of the residence as of the survey date.
+ 
+COMMENT: A valid skip (-4) indicates a residence outside of the United States.
+ 
+    1157       1 Northeast (CT, ME, MA, NH, NJ, NY, PA, RI, VT)
+    1546       2 North Central (IL, IN, IA, KS, MI, MN, MO, NE, OH, ND, SD, WI)
+    3035       3 South (AL, AR, DE, DC, FL, GA, KY, LA, MD, MS, NC, OK, SC, TN ,
+                      TX, VA, WV)
+    1684       4 West (AK, AZ, CA, CO, HI, ID, MT, NV, NM, OR, UT, WA, WY)
+  -------
+    7422
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)       3
+TOTAL =========>    7425   VALID SKIP(-4)      54     NON-INTERVIEW(-5)    1505
+ 
+Lead In: T52022.00[Default]
+Default Next Question: T52024.00
+--------------------------------------------------------------------------------
+T61455.00    [YSAQ-372CC]                                   Survey Year: 2010
+  PRIMARY VARIABLE
+
+ 
+             HAS R USED COCAINE/HARD DRUGS SINCE DLI?
+ 
+Excluding marijuana and alcohol, since the date of last interview, have you used
+any drugs like cocaine, crack, heroin, or crystal meth, or any other substance 
+not prescribed by a doctor, in order to get high or to achieve an altered state?
+ 
+UNIVERSE: All except prisoners in an insecure environment
+ 
+     229       1 YES   (Go To T61456.00)
+    7088       0 NO
+  -------
+    7317
+ 
+Refusal(-1)           59
+Don't Know(-2)        17
+TOTAL =========>    7393   VALID SKIP(-4)      86     NON-INTERVIEW(-5)    1505
+ 
+Lead In: T61452.00[Default] T61454.00[Default]  T61453.00[0:0]
+Default Next Question: T61458.00
+--------------------------------------------------------------------------------
+T61502.00    [YSAQ-443]                                     Survey Year: 2010
+  PRIMARY VARIABLE
+
+ 
+             TOTAL # TIMES R ARRESTED SINCE DLI
+ 
+In total, how many times have you been arrested since the last interview on 
+[date of last interview]?
+ 
+UNIVERSE: R answered yes/no to ever been arrested; has been arrested since DLI
+ 
+       0           0
+     221           1
+      41           2
+      16           3
+       3           4
+       0           5
+       3           6
+       1           7
+       1           8
+       0           9
+       2          10
+       0          11
+       0          12
+       0          13
+       0          14
+       2          15 TO 999: 15+
+  -------
+     290
+ 
+Refusal(-1)            2   (Go To T61535.00)
+Don't Know(-2)         3   (Go To T61535.00)
+TOTAL =========>     295   VALID SKIP(-4)    7184     NON-INTERVIEW(-5)    1505
+ 
+Min:              1        Max:             19        Mean:                1.55
+ 
+Hard Minimum: [1]  Hard Maximum: [60]
+ 
+Lead In: T61499.00[1:1]
+Default Next Question: T61503.00
+--------------------------------------------------------------------------------
+T66521.00    [CV_CENSUS_REGION]                             Survey Year: 2011
+  PRIMARY VARIABLE
+
+ 
+             CENSUS REGION OF RESIDENCE
+ 
+Census region of the residence as of the survey date.
+ 
+COMMENT: A valid skip (-4) indicates a residence outside of the United States.
+ 
+    1140       1 Northeast (CT, ME, MA, NH, NJ, NY, PA, RI, VT)
+    1515       2 North Central (IL, IN, IA, KS, MI, MN, MO, NE, OH, ND, SD, WI)
+    3020       3 South (AL, AR, DE, DC, FL, GA, KY, LA, MD, MS, NC, OK, SC, TN ,
+                      TX, VA, WV)
+    1682       4 West (AK, AZ, CA, CO, HI, ID, MT, NV, NM, OR, UT, WA, WY)
+  -------
+    7357
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    7357   VALID SKIP(-4)      66     NON-INTERVIEW(-5)    1561
+ 
+Lead In: T66520.00[Default]
+Default Next Question: T66522.00
+--------------------------------------------------------------------------------
+T76400.00    [YSAQ-372CC]                                   Survey Year: 2011
+  PRIMARY VARIABLE
+
+ 
+             HAS R USED COCAINE/HARD DRUGS SINCE DLI?
+ 
+Excluding marijuana and alcohol, since the date of last interview, have you used
+any drugs like cocaine, crack, heroin, or crystal meth, or any other substance 
+not prescribed by a doctor, in order to get high or to achieve an altered state?
+ 
+UNIVERSE: All except prisoners in an insecure environment
+ 
+     215       1 YES   (Go To T76401.00)
+    7023       0 NO
+  -------
+    7238
+ 
+Refusal(-1)           74
+Don't Know(-2)        26
+TOTAL =========>    7338   VALID SKIP(-4)      85     NON-INTERVIEW(-5)    1561
+ 
+Lead In: T76397.00[Default] T76399.00[Default]  T76398.00[0:0]
+Default Next Question: T76403.00
+--------------------------------------------------------------------------------
+T76447.00    [YSAQ-443]                                     Survey Year: 2011
+  PRIMARY VARIABLE
+
+ 
+             TOTAL # TIMES R ARRESTED SINCE DLI
+ 
+In total, how many times have you been arrested since the last interview on 
+[date of last interview]?
+ 
+UNIVERSE: R answered yes/no to ever been arrested; has been arrested since DLI
+ 
+       0           0
+     150           1
+      37           2
+       9           3
+       5           4
+       1           5
+       2           6
+       0           7
+       0           8
+       0           9
+       2          10
+       0          11
+       1          12
+       0          13
+       0          14
+       1          15 TO 999: 15+
+  -------
+     208
+ 
+Refusal(-1)            3   (Go To T76479.00)
+Don't Know(-2)         1   (Go To T76479.00)
+TOTAL =========>     212   VALID SKIP(-4)    7211     NON-INTERVIEW(-5)    1561
+ 
+Min:              1        Max:             20        Mean:                1.63
+ 
+Hard Minimum: [1]  Hard Maximum: [60]
+ 
+Lead In: T76444.00[1:1]
+Default Next Question: T76448.00
+--------------------------------------------------------------------------------
+T81237.00    [CV_CENSUS_REGION]                             Survey Year: 2013
+  PRIMARY VARIABLE
+
+ 
+             CENSUS REGION OF RESIDENCE
+ 
+Census region of the residence as of the survey date.
+ 
+COMMENT: A valid skip (-4) indicates a residence outside of the United States.
+ 
+    1079       1 Northeast (CT, ME, MA, NH, NJ, NY, PA, RI, VT)
+    1487       2 North Central (IL, IN, IA, KS, MI, MN, MO, NE, OH, ND, SD, WI)
+    2913       3 South (AL, AR, DE, DC, FL, GA, KY, LA, MD, MS, NC, OK, SC, TN ,
+                      TX, VA, WV)
+    1594       4 West (AK, AZ, CA, CO, HI, ID, MT, NV, NM, OR, UT, WA, WY)
+  -------
+    7073
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)       3
+TOTAL =========>    7076   VALID SKIP(-4)      65     NON-INTERVIEW(-5)    1843
+ 
+Lead In: T81236.00[Default]
+Default Next Question: T81238.00
+--------------------------------------------------------------------------------
+T90446.00    [YSAQ-443]                                     Survey Year: 2013
+  PRIMARY VARIABLE
+
+ 
+             TOTAL # TIMES R ARRESTED SINCE DLI
+ 
+In total, how many times have you been arrested since the last interview on 
+[date of last interview]?
+ 
+UNIVERSE: R answered yes/no to ever been arrested; has been arrested since DLI
+ 
+       0           0
+     191           1
+      61           2
+      16           3
+       9           4
+       4           5
+       1           6
+       0           7
+       0           8
+       0           9
+       1          10
+       0          11
+       1          12
+       0          13
+       1          14
+       1          15 TO 999: 15+
+  -------
+     286
+ 
+Refusal(-1)            7   (Go To T90478.00)
+Don't Know(-2)         5   (Go To T90478.00)
+TOTAL =========>     298   VALID SKIP(-4)    6843     NON-INTERVIEW(-5)    1843
+ 
+Min:              1        Max:             33        Mean:                1.72
+ 
+Hard Minimum: [1]  Hard Maximum: [60]
+ 
+Lead In: T90443.00[1:1]
+Default Next Question: T90447.00
+--------------------------------------------------------------------------------
+Z90505.00    [CVC_TTL_JOB_TEEN]                             Survey Year: XRND
+  PRIMARY VARIABLE
+
+ 
+             # EMPLOYEE-TYPE JOBS FROM AGE 14 THROUGH AGE 19
+ 
+Total number of employee-type jobs held from age 14 through age 19. This 
+variable is created for all respondents regardless of interview status in the 
+current round; CVC_RND provides the actual round of the respondent's most recent
+interview.
+Note: This variable measures the jobs held from the week of the R's 14th 
+birthday to the week before the R's 20th birthday.
+ 
+     445           0
+     983           1
+    1463           2
+    1608           3
+    1453           4
+    1091           5
+     782           6
+     499           7
+     289           8
+     165           9
+     175          10 TO 999: 10+
+  -------
+    8953
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      31
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:             20        Mean:                3.79
+ 
+Hard Minimum: [0]  Hard Maximum: [10]
+ 
+Lead In: Z91228.00[Default]
+Default Next Question: Z90506.00
+--------------------------------------------------------------------------------
+Z90506.00    [CVC_TTL_JOB_ADULT_ET]                         Survey Year: XRND
+  PRIMARY VARIABLE
+
+ 
+             # EMPLOYEE-TYPE JOBS R HAS HELD FROM AGE 20
+ 
+Total number of employee-type jobs held from age 20. This variable is created 
+for all respondents regardless of interview status in the current round; CVC_RND
+provides the actual round of the respondent's most recent interview.
+Note: This variable measures the number of jobs held from the week of the R's 
+20th birthday to the current interview date.
+ 
+     539           0
+     634           1
+     866           2
+    1110           3
+    1065           4
+     970           5
+     879           6
+     678           7
+     539           8
+     412           9
+     956          10 TO 999: 10+
+  -------
+    8648
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)     336
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:             35        Mean:                5.15
+ 
+Hard Minimum: [0]  Hard Maximum: [10]
+ 
+Lead In: Z90505.00[Default]
+Default Next Question: Z90507.00
+--------------------------------------------------------------------------------
+Z90507.00    [CVC_TTL_JOB_ADULT_ALL]                        Survey Year: XRND
+  PRIMARY VARIABLE
+
+ 
+             # JOBS R HAS HELD FROM AGE 20
+ 
+Total number of jobs held from age 20. This variable is created for all 
+respondents regardless of interview status in the current round; CVC_RND 
+provides the actual round of the respondent's most recent interview.
+Note: This variable measures the number of jobs held from the week of the R's 
+20th birthday to the current interview date.
+ 
+     495           0
+     541           1
+     752           2
+    1019           3
+    1024           4
+     951           5
+     873           6
+     728           7
+     556           8
+     467           9
+    1160          10 TO 999: 10+
+  -------
+    8566
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)     418
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:             36        Mean:                5.52
+ 
+Hard Minimum: [0]  Hard Maximum: [10]
+ 
+Lead In: Z90506.00[Default]
+Default Next Question: Z90508.00
+
+
+
+
+
+
+

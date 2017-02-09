@@ -1,0 +1,70 @@
+
+
+Reference
+Number     Year  Variable Description                                      Question Name          
+----------------------------------------------------------------------------------------------------
+R00001.00  1997  PUBID, YOUTH CASE IDENTIFICATION CODE                     PUBID                  
+R03579.00  1997  R EVER SMOKED?                                            YSAQ-359               
+R05363.00  1997  KEY!SEX, RS GENDER (SYMBOL)                               KEY!SEX                
+R05364.01  1997  KEY!BDATE, RS BIRTHDATE MONTH/YEAR (SYMBOL)               KEY!BDATE_M            
+R05364.02  1997  KEY!BDATE, RS BIRTHDATE MONTH/YEAR (SYMBOL)               KEY!BDATE_Y            
+R12003.00  1997  CENSUS REGION OF RESIDENCE                                CV_CENSUS_REGION       
+R12053.00  1997  RS RELATIONSHIP TO HOUSEHOLD PARENT FIGURE                CV_YTH_REL_HH_CURRENT  
+R12358.00  1997  SAMPLE TYPE.  CROSS-SECTIONAL OR OVERSAMPLE               CV_SAMPLE_TYPE         
+R14826.00  1997  KEY!RACE_ETHNICITY, COMBINED RACE AND ETHNICITY (SYMBOL)  KEY!RACE_ETHNICITY     
+R21891.00  1998  R EVER SMOKED?                                            YSAQ-359               
+R22005.00  1998  TOTAL # TIMES R ARRESTED SINCE DLI                        YSAQ-443               
+R25588.00  1998  CENSUS REGION OF RESIDENCE                                CV_CENSUS_REGION       
+R25636.00  1998  RS RELATIONSHIP TO HOUSEHOLD PARENT FIGURE                CV_YTH_REL_HH_CURRENT  
+R35082.00  1999  R EVER SMOKED?                                            YSAQ-359               
+R35111.00  1999  HAS R USED COCAINE/HARD DRUGS SINCE DLI?                  YSAQ-372CC             
+R35201.00  1999  TOTAL # TIMES R ARRESTED SINCE DLI                        YSAQ-443               
+R38803.00  1999  CENSUS REGION OF RESIDENCE                                CV_CENSUS_REGION       
+R38852.00  1999  RS RELATIONSHIP TO HOUSEHOLD PARENT FIGURE                CV_YTH_REL_HH_CURRENT  
+R49092.00  2000  HAS R USED COCAINE/HARD DRUGS SINCE DLI?                  YSAQ-372CC             
+R49180.00  2000  TOTAL # TIMES R ARRESTED SINCE DLI                        YSAQ-443               
+R54594.00  2000  CENSUS REGION OF RESIDENCE                                CV_CENSUS_REGION       
+R54644.00  2000  RS RELATIONSHIP TO HOUSEHOLD PARENT FIGURE                CV_YTH_REL_HH_CURRENT  
+R65364.00  2001  HAS R USED COCAINE/HARD DRUGS SINCE DLI?                  YSAQ-372CC             
+R65450.00  2001  TOTAL # TIMES R ARRESTED SINCE DLI                        YSAQ-443               
+R72224.00  2001  CENSUS REGION OF RESIDENCE                                CV_CENSUS_REGION       
+R72281.00  2001  RS RELATIONSHIP TO HOUSEHOLD PARENT FIGURE                CV_YTH_REL_HH_CURRENT  
+S09240.00  2002  HAS R USED COCAINE/HARD DRUGS SINCE DLI?                  YSAQ-372CC             
+S09329.00  2002  TOTAL # TIMES R ARRESTED SINCE DLI                        YSAQ-443               
+S15355.00  2002  CENSUS REGION OF RESIDENCE                                CV_CENSUS_REGION       
+S15420.00  2002  RS RELATIONSHIP TO HOUSEHOLD PARENT FIGURE                CV_YTH_REL_HH_CURRENT  
+S20054.00  2003  CENSUS REGION OF RESIDENCE                                CV_CENSUS_REGION       
+S20118.00  2003  RS RELATIONSHIP TO HOUSEHOLD PARENT FIGURE                CV_YTH_REL_HH_CURRENT  
+S29903.00  2003  HAS R USED COCAINE/HARD DRUGS SINCE DLI?                  YSAQ-372CC             
+S29959.00  2003  TOTAL # TIMES R ARRESTED SINCE DLI                        YSAQ-443               
+S38057.00  2004  CENSUS REGION OF RESIDENCE                                CV_CENSUS_REGION       
+S46826.00  2004  R EVER SMOKED?                                            YSAQ-359               
+S46855.00  2004  HAS R USED COCAINE/HARD DRUGS SINCE DLI?                  YSAQ-372CC             
+S46910.00  2004  TOTAL # TIMES R ARRESTED SINCE DLI                        YSAQ-443               
+S54056.00  2005  CENSUS REGION OF RESIDENCE                                CV_CENSUS_REGION       
+S63181.00  2005  R EVER SMOKED?                                            YSAQ-359               
+S63210.00  2005  HAS R USED COCAINE/HARD DRUGS SINCE DLI?                  YSAQ-372CC             
+S63268.00  2005  TOTAL # TIMES R ARRESTED SINCE DLI                        YSAQ-443               
+S75061.00  2006  CENSUS REGION OF RESIDENCE                                CV_CENSUS_REGION       
+S83346.00  2006  HAS R USED COCAINE/HARD DRUGS SINCE DLI?                  YSAQ-372CC             
+S83391.00  2006  TOTAL # TIMES R ARRESTED SINCE DLI                        YSAQ-443               
+T00094.00  2007  CENSUS REGION OF RESIDENCE                                CV_CENSUS_REGION       
+T07414.00  2007  HAS R USED COCAINE/HARD DRUGS SINCE DLI?                  YSAQ-372CC             
+T07459.00  2007  TOTAL # TIMES R ARRESTED SINCE DLI                        YSAQ-443               
+T20121.00  2008  CENSUS REGION OF RESIDENCE                                CV_CENSUS_REGION       
+T27849.00  2008  HAS R USED COCAINE/HARD DRUGS SINCE DLI?                  YSAQ-372CC             
+T27897.00  2008  TOTAL # TIMES R ARRESTED SINCE DLI                        YSAQ-443               
+T36021.00  2009  CENSUS REGION OF RESIDENCE                                CV_CENSUS_REGION       
+T44966.00  2009  HAS R USED COCAINE/HARD DRUGS SINCE DLI?                  YSAQ-372CC             
+T45013.00  2009  TOTAL # TIMES R ARRESTED SINCE DLI                        YSAQ-443               
+T52023.00  2010  CENSUS REGION OF RESIDENCE                                CV_CENSUS_REGION       
+T61455.00  2010  HAS R USED COCAINE/HARD DRUGS SINCE DLI?                  YSAQ-372CC             
+T61502.00  2010  TOTAL # TIMES R ARRESTED SINCE DLI                        YSAQ-443               
+T66521.00  2011  CENSUS REGION OF RESIDENCE                                CV_CENSUS_REGION       
+T76400.00  2011  HAS R USED COCAINE/HARD DRUGS SINCE DLI?                  YSAQ-372CC             
+T76447.00  2011  TOTAL # TIMES R ARRESTED SINCE DLI                        YSAQ-443               
+T81237.00  2013  CENSUS REGION OF RESIDENCE                                CV_CENSUS_REGION       
+T90446.00  2013  TOTAL # TIMES R ARRESTED SINCE DLI                        YSAQ-443               
+Z90505.00  XRND  # EMPLOYEE-TYPE JOBS FROM AGE 14 THROUGH AGE 19           CVC_TTL_JOB_TEEN       
+Z90506.00  XRND  # EMPLOYEE-TYPE JOBS R HAS HELD FROM AGE 20               CVC_TTL_JOB_ADULT_ET   
+Z90507.00  XRND  # JOBS R HAS HELD FROM AGE 20                             CVC_TTL_JOB_ADULT_ALL  

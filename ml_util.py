@@ -166,10 +166,6 @@ class Dataset(object):
                 engine='python',
                 na_values="?")
 
-        #Cleanup
-        if (sensitive == ''):
-            self.sensitive = (lambda X: None)
-
 
     def delete_index ( self, index ):
         self.num_data.drop(self.sup_ind[index], axis = 1)
@@ -302,17 +298,16 @@ def measure_analytics(dataset, cls, X, y, sens=None):
     error_rate = numpy.mean((y_pred != y)*1.)
     print('test error rate: %.3f' % error_rate)
 
-    if (sens != None):
-        discrim0 =  qii.discrim(numpy.array(X), cls, numpy.array(sens))
-        print('Initial Discrimination: %.3f' % discrim0)
+    discrim0 =  qii.discrim(numpy.array(X), cls, numpy.array(sens))
+    print('Initial Discrimination: %.3f' % discrim0)
 
-        from scipy.stats.stats import pearsonr
-        corr0 = pearsonr(sens, y)[0]
-        print('Correlation: %.3f' % corr0)
+    from scipy.stats.stats import pearsonr
+    corr0 = pearsonr(sens, y)[0]
+    print('Correlation: %.3f' % corr0)
 
-        ji =  metrics.jaccard_similarity_score(y, sens)
-        print('JI: %.3f' % ji)
+    ji =  metrics.jaccard_similarity_score(y, sens)
+    print('JI: %.3f' % ji)
 
-        mi = metrics.normalized_mutual_info_score(y, sens)
-        print('MI: %.3f' % mi)
+    mi = metrics.normalized_mutual_info_score(y, sens)
+    print('MI: %.3f' % mi)
 

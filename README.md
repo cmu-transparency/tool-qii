@@ -1,8 +1,8 @@
 # qii
 QII Code from Datta-Sen-Zick Oakland'16 
 
-To try on the adult dataset:
-Run python qii.py adult
+To try on the adult dataset run:
+python qii.py adult --show-plot
 
 To see additional options:
 Run python qii.py -h

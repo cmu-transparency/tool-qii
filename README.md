@@ -1,5 +1,5 @@
 # qii
-QII Code from Datta-Sen-Zick Oakland'16  
+QII Code originally from Datta-Sen-Zick Oakland'16  
 
 To try on the adult dataset run:  
 python qii.py adult --show-plot

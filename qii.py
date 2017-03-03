@@ -20,7 +20,7 @@ args = get_arguments()
 qii.record_counterfactuals = args.record_counterfactuals
 
 #Read dataset
-dataset = Dataset(args.dataset, args.sensitive)
+dataset = Dataset(args.dataset, sensitive=args.sensitive, target=args.target)
 #if (args.erase_sensitive):
 #  print 'Erasing sensitive'
 #  dataset.delete_index(args.sensitive)

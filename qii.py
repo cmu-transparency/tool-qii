@@ -84,9 +84,13 @@ if measure == 'banzhaf':
         plot_series(banzhaf_series, args, 'Feature', 'QII on Outcomes (Banzhaf)')
 
 if measure == 'shapley':
-    print individual
-    x_individual = scaler.transform(dataset.num_data.ix[individual])
-    print dataset.num_data.ix[individual]
+    #print individual
+
+    row_individual = dataset.num_data.ix[individual].reshape(1,-1)
+    
+    x_individual = scaler.transform(row_individual)
+    
+    #print dataset.num_data.ix[individual]
 
     shapley, counterfactuals = qii.shapley_influence(dataset, cls, x_individual, X_test)
     shapley_series = pd.Series(shapley, index = shapley.keys())

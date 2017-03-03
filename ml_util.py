@@ -3,6 +3,7 @@ import numpy as np
 import statsmodels as sm
 import sklearn as skl
 import sklearn.preprocessing as preprocessing
+from sklearn.preprocessing import LabelEncoder
 import sklearn.cross_validation as cross_validation
 import sklearn.metrics as metrics
 import sklearn.tree as tree
@@ -36,6 +37,12 @@ def get_column_index(data, cname):
         raise ValueError("Unknown column %s" % cname)
     
     return idx
+
+def encode_nominal(col):
+    if col.dtype == object:
+        return LabelEncoder().fit_transform(col)
+    else:
+        return col
 
 import argparse
 class Dataset(object):
@@ -125,7 +132,7 @@ class Dataset(object):
             self.num_data = self.num_data.drop(self.sup_ind['Gender'], axis = 1)
             self.sup_ind['Gender'] = ['Gender']
 
-            if sensitive is not None:
+            if sensitive is None:
                 self.get_sensitive = (lambda X: X['Gender'])
             elif (sensitive == ''):
                 self.get_sensitive = (lambda X: None)
@@ -178,40 +185,58 @@ class Dataset(object):
                 engine='python',
                 na_values="?")
 
-        elif (exists(dataset)):
+        elif exists(dataset):
             print "loading new dataset %s" % dataset
             
             self.original_data = pd.read_csv(dataset)
 
-            if target is not None:
-                self.target_ix = target
-            else:
-                self.target_ix = self.original_data.columns[-1]
+            if target is None:
+                target = self.original_data.columns[-1]
+
+            self.target_ix = target
+
             if self.target_ix not in self.original_data:
                 raise ValueError("unknown target feature %s" % self.target_ix)
 
-            if sensitive is not None:
-                self.sensitive_ix = sensitive
-            else:
-                self.sensitive_ix = self.original_data.columns[0]
+            if sensitive is None:
+                sensitive = self.original_data.columns[0]
+                
+            self.sensitive_ix = sensitive
+
             if self.sensitive_ix not in self.original_data:
                 raise ValueError("unkown sensitive feature %s" % self.sensitive_ix)
 
             if self.sensitive_ix == self.target_ix:
-                raise ValueError("sensitive feature cannot be equal to target feature presently")
+                print "WARNING: target and sensitive attributes are the same (%s), I'm unsure whether this tool handles this case correctly" % target
             
             nominal_cols = set(self.original_data.select_dtypes(include=['object']).columns)
-            self.num_data = pd.get_dummies(self.original_data,columns=nominal_cols,prefix_sep='_')
+            
+            self.num_data = pd.get_dummies(
+                self.original_data,
+                prefix_sep='_',
+                columns=nominal_cols-set([target,sensitive]))
+
+            self.num_data = self.num_data.apply(encode_nominal)
             
             self.sup_ind = make_super_indices(self.original_data)
-            if self.target_ix in self.sup_ind: del self.sup_ind[self.target_ix]
 
             if self.target_ix in nominal_cols:
-                self.target_ix = "%s_%s" % (self.target_ix,self.original_data[self.target_ix][0])
-            if self.sensitive_ix in nominal_cols:
-                self.sensitive_ix = "%s_%s" % (self.sensitive_ix,self.original_data[self.sensitive_ix][0])
+                targets = len(set(self.original_data[target]))
+                if targets > 2:
+                    print "WARNING: target feature %s has more than 2 values (it has %d), I'm unsure whether this tool handles this correctly" % (target, targets)
+                del self.sup_ind[self.target_ix]
+                #    self.target_ix = "%s_%s" % (self.target_ix,self.original_data[self.target_ix][0])
 
-            self.target = self.num_data[self.target_ix]
+            if self.sensitive_ix in nominal_cols:
+                targets = len(set(self.original_data[sensitive]))
+                if targets > 2:
+                    print "WARNING: sensitive feature %s has more than 2 values (it has %d), I'm unsure whether this tool handles that case correctly" % (sensitive, targets)
+                self.sup_ind[self.sensitive_ix] = [self.sensitive_ix]
+                #    self.sensitive_ix = "%s_%s" % (self.sensitive_ix,self.original_data[self.sensitive_ix][0])
+
+            self.target   = self.num_data[self.target_ix]
+            self.num_data = self.num_data.drop([self.target_ix], axis = 1)
+            
             self.get_sensitive = lambda X: X[self.sensitive_ix]
 
             print "target feature    = %s" % self.target_ix
@@ -261,7 +286,6 @@ def split_and_train_classifier(classifier, dataset, scaler=None):
     ## Split data into training and test data
     X_train, X_test, y_train, y_test = cross_validation.train_test_split(dataset.num_data, dataset.target, train_size=0.40)
 
-
     sens_train = dataset.get_sensitive(X_train)
     sens_test  = dataset.get_sensitive(X_test)
 
@@ -272,9 +296,10 @@ def split_and_train_classifier(classifier, dataset, scaler=None):
 
     #Normalize all training and test data
     X_train = pd.DataFrame(scaler.transform(X_train), columns=(dataset.num_data.columns))
-    X_test = pd.DataFrame(scaler.transform(X_test), columns=(dataset.num_data.columns))
+    X_test  = pd.DataFrame(scaler.transform(X_test),  columns=(dataset.num_data.columns))
 
     cls = train_classifier(classifier, X_train, y_train)
+    
     return (cls, scaler, X_train, X_test, y_train, y_test, sens_train, sens_test)
 
 
@@ -301,7 +326,7 @@ def train_classifier(classifier, X_train, y_train):
 
 def plot_series(series, args, xlabel, ylabel):
     plt.figure(figsize=(5,4))
-    series.sort(ascending = False)
+    series.sort_values(inplace=True, ascending=False)
     #average_local_inf_series.plot(kind="bar", facecolor='#ff9999', edgecolor='white')
     series.plot(kind="bar")
     plt.xticks(rotation = 45, ha = 'right', size='small')

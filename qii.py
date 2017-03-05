@@ -63,7 +63,7 @@ if measure == 'general-inf':
         local_influence = numpy.zeros(y_pred.shape[0])
         ls = [f_columns.get_loc(f) for f in sup_ind[sf]]
         for i in xrange(0, iters):
-            X_inter = random_intervene(numpy.array(X_test), ls)
+            X_inter = qii.random_intervene(numpy.array(X_test), ls)
             y_pred_inter = cls.predict(X_inter)
             local_influence = local_influence + y_pred_inter
 

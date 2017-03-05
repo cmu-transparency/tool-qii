@@ -192,17 +192,13 @@ class Dataset(object):
 
             if target is None:
                 target = self.original_data.columns[-1]
-
             self.target_ix = target
-
             if self.target_ix not in self.original_data:
                 raise ValueError("unknown target feature %s" % self.target_ix)
 
             if sensitive is None:
                 sensitive = self.original_data.columns[0]
-                
             self.sensitive_ix = sensitive
-
             if self.sensitive_ix not in self.original_data:
                 raise ValueError("unkown sensitive feature %s" % self.sensitive_ix)
 
@@ -223,14 +219,14 @@ class Dataset(object):
             if self.target_ix in nominal_cols:
                 targets = len(set(self.original_data[target]))
                 if targets > 2:
-                    print "WARNING: target feature %s has more than 2 values (it has %d), I'm unsure whether this tool handles this correctly" % (target, targets)
-                del self.sup_ind[self.target_ix]
+                    print "WARNING: target feature %s has more than 2 values (it has %d), I'm unsure whether this tool handles that correctly" % (target, targets)
+            del self.sup_ind[self.target_ix]
                 #    self.target_ix = "%s_%s" % (self.target_ix,self.original_data[self.target_ix][0])
 
             if self.sensitive_ix in nominal_cols:
                 targets = len(set(self.original_data[sensitive]))
                 if targets > 2:
-                    print "WARNING: sensitive feature %s has more than 2 values (it has %d), I'm unsure whether this tool handles that case correctly" % (sensitive, targets)
+                    print "WARNING: sensitive feature %s has more than 2 values (it has %d), I'm unsure whether this tool handles that correctly" % (sensitive, targets)
                 self.sup_ind[self.sensitive_ix] = [self.sensitive_ix]
                 #    self.sensitive_ix = "%s_%s" % (self.sensitive_ix,self.original_data[self.sensitive_ix][0])
 
@@ -241,7 +237,7 @@ class Dataset(object):
 
             print "target feature    = %s" % self.target_ix
             print "sensitive feature = %s" % self.sensitive_ix
-                        
+
         else:
             raise ValueError("Unknown dataset %s" % dataset)
 
@@ -268,7 +264,11 @@ def make_super_indices( dataset ):
 def get_arguments():
     parser = argparse.ArgumentParser()
     parser.add_argument('dataset', help='Name of dataset used')
-    parser.add_argument('-m', '--measure', default='average-local-inf', help='Quantity of interest')
+    parser.add_argument('-m', '--measure',
+                        default='average-local-inf',
+                        help='Quantity of interest',
+                        choices=['average-local-inf','discrim-inf',
+                                 'general-inf','banzhaf','shapley'])
     parser.add_argument('-s', '--sensitive', default=None,     help='Sensitive field')
     parser.add_argument('-t', '--target',    default=None,     help='Target field', type=str)
     

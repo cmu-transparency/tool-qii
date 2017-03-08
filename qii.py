@@ -20,7 +20,7 @@ args = get_arguments()
 qii.record_counterfactuals = args.record_counterfactuals
 
 #Read dataset
-dataset = Dataset(args.dataset, args.sensitive)
+dataset = Dataset(args.dataset, sensitive=args.sensitive, target=args.target)
 #if (args.erase_sensitive):
 #  print 'Erasing sensitive'
 #  dataset.delete_index(args.sensitive)
@@ -58,7 +58,6 @@ if measure == 'average-unary-individual':
 if measure == 'unary-individual':
     print individual
     x_individual = scaler.transform(dataset.num_data.ix[individual])
-
     (average_local_inf, counterfactuals) = qii.unary_individual_influence(dataset, cls, x_individual, X_test)
     average_local_inf_series = pd.Series(average_local_inf, index = average_local_inf.keys())
     if (args.show_plot):
@@ -75,9 +74,13 @@ if measure == 'banzhaf':
         plot_series(banzhaf_series, args, 'Feature', 'QII on Outcomes (Banzhaf)')
 
 if measure == 'shapley':
-    print individual
-    x_individual = scaler.transform(dataset.num_data.ix[individual])
-    print dataset.num_data.ix[individual]
+    #print individual
+
+    row_individual = dataset.num_data.ix[individual].reshape(1,-1)
+    
+    x_individual = scaler.transform(row_individual)
+    
+    #print dataset.num_data.ix[individual]
 
     shapley, counterfactuals = qii.shapley_influence(dataset, cls, x_individual, X_test)
     shapley_series = pd.Series(shapley, index = shapley.keys())

@@ -3,6 +3,7 @@ import numpy as np
 import statsmodels as sm
 import sklearn as skl
 import sklearn.preprocessing as preprocessing
+from sklearn.preprocessing import LabelEncoder
 import sklearn.cross_validation as cross_validation
 import sklearn.metrics as metrics
 import sklearn.tree as tree
@@ -19,6 +20,8 @@ from matplotlib.backends.backend_pdf import PdfPages
 import argparse
 import time
 
+from os.path import exists
+
 
 from qii_lib import *
 
@@ -27,7 +30,19 @@ from qii_lib import *
 labelfont = {}
 #hfont = {'fontname':'Helvetica'}
 
+def get_column_index(data, cname):
+    try:
+        idx = data.columns.get_loc(cname)
+    except Exception as e:
+        raise ValueError("Unknown column %s" % cname)
+    
+    return idx
 
+def encode_nominal(col):
+    if col.dtype == object:
+        return LabelEncoder().fit_transform(col)
+    else:
+        return col
 
 import argparse
 class Dataset(object):
@@ -52,8 +67,12 @@ class Dataset(object):
         target_ix: Name of target index
         sensitive_ix: Name of sensitive index
         target: Values of classification target
+    Methods:
+        get_sensitive: extract the sensitive value from a row
+            or the sensitive column from a dataset
+        
     """
-    def __init__( self, dataset, sensitive =''):
+    def __init__( self, dataset, sensitive=None, target=None):
         self.name = dataset
 
         # Warfarin dosage dataset
@@ -77,8 +96,8 @@ class Dataset(object):
             self.sup_ind['dose'] = ['dose']
             self.target_ix = 'dose'
             self.sensitive_ix = 'race=black'
-            if (sensitive == 'Gender'):
-                self.sensitive = (lambda X: X['race=black'])
+            if sensitive is None:
+                self.get_sensitive = (lambda X: X['race=black'])
 
             self.target = self.num_data['dose']
             self.num_data = self.num_data.drop(['index'], axis = 1)
@@ -87,7 +106,7 @@ class Dataset(object):
 
 
         #Adult dataset
-        if (dataset == 'adult'):
+        elif (dataset == 'adult'):
             self.original_data = pd.read_csv(
                 "data/adult/adult.data",
                 names=[
@@ -113,16 +132,16 @@ class Dataset(object):
             self.num_data = self.num_data.drop(self.sup_ind['Gender'], axis = 1)
             self.sup_ind['Gender'] = ['Gender']
 
-            if (sensitive == 'Gender'):
-                self.sensitive = (lambda X: X['Gender'])
+            if sensitive is None:
+                self.get_sensitive = (lambda X: X['Gender'])
             elif (sensitive == ''):
-                self.sensitive = (lambda X: None)
+                self.get_sensitive = (lambda X: None)
             else:
                 raise ValueError('Cannot handle sensitive '+sensitive+' in dataset '+dataset)
 
 
         #National Longitudinal Survey of Youth 97
-        if (dataset == 'nlsy97'):
+        elif (dataset == 'nlsy97'):
             self.original_data = pd.read_csv(
                 "data/nlsy97/20151026/processed_output.csv",
                 names = ["PUBID.1997", "Gender", "Birth Year", "Census Region",
@@ -147,16 +166,16 @@ class Dataset(object):
             self.num_data = self.num_data.drop(self.sup_ind['Gender'], axis = 1)
             self.sup_ind['Gender'] = ['Gender']
 
-            if (sensitive == 'Gender'):
-                self.sensitive = (lambda X: X['Gender'])
+            if sensitive is None:
+                self.get_sensitive = (lambda X: X['Gender'])
             elif (sensitive == 'Race'):
-                self.sensitive = (lambda X: X['Race_"Black"'])
+                self.get_sensitive = (lambda X: X['Race_"Black"'])
             else:
                 raise ValueError('Cannot handle sensitive '+sensitive+' in dataset '+dataset)
 
 
         #German Datset (Incomplete)
-        if (dataset == 'german'):
+        elif (dataset == 'german'):
         #http://programming-r-pro-bro.blogspot.com/2011/09/modelling-with-r-part-1.html
             original_data = pd.read_csv(
                 "data/german/processed_output.csv",
@@ -166,6 +185,61 @@ class Dataset(object):
                 engine='python',
                 na_values="?")
 
+        elif exists(dataset):
+            print "loading new dataset %s" % dataset
+            
+            self.original_data = pd.read_csv(dataset)
+
+            if target is None:
+                target = self.original_data.columns[-1]
+            self.target_ix = target
+            if self.target_ix not in self.original_data:
+                raise ValueError("unknown target feature %s" % self.target_ix)
+
+            if sensitive is None:
+                sensitive = self.original_data.columns[0]
+            self.sensitive_ix = sensitive
+            if self.sensitive_ix not in self.original_data:
+                raise ValueError("unkown sensitive feature %s" % self.sensitive_ix)
+
+            if self.sensitive_ix == self.target_ix:
+                print "WARNING: target and sensitive attributes are the same (%s), I'm unsure whether this tool handles this case correctly" % target
+            
+            nominal_cols = set(self.original_data.select_dtypes(include=['object']).columns)
+            
+            self.num_data = pd.get_dummies(
+                self.original_data,
+                prefix_sep='_',
+                columns=nominal_cols-set([target,sensitive]))
+
+            self.num_data = self.num_data.apply(encode_nominal)
+            
+            self.sup_ind = make_super_indices(self.original_data)
+
+            if self.target_ix in nominal_cols:
+                targets = len(set(self.original_data[target]))
+                if targets > 2:
+                    print "WARNING: target feature %s has more than 2 values (it has %d), I'm unsure whether this tool handles that correctly" % (target, targets)
+            del self.sup_ind[self.target_ix]
+                #    self.target_ix = "%s_%s" % (self.target_ix,self.original_data[self.target_ix][0])
+
+            if self.sensitive_ix in nominal_cols:
+                targets = len(set(self.original_data[sensitive]))
+                if targets > 2:
+                    print "WARNING: sensitive feature %s has more than 2 values (it has %d), I'm unsure whether this tool handles that correctly" % (sensitive, targets)
+                self.sup_ind[self.sensitive_ix] = [self.sensitive_ix]
+                #    self.sensitive_ix = "%s_%s" % (self.sensitive_ix,self.original_data[self.sensitive_ix][0])
+
+            self.target   = self.num_data[self.target_ix]
+            self.num_data = self.num_data.drop([self.target_ix], axis = 1)
+            
+            self.get_sensitive = lambda X: X[self.sensitive_ix]
+
+            print "target feature    = %s" % self.target_ix
+            print "sensitive feature = %s" % self.sensitive_ix
+
+        else:
+            raise ValueError("Unknown dataset %s" % dataset)
 
     def delete_index ( self, index ):
         self.num_data.drop(self.sup_ind[index], axis = 1)
@@ -190,8 +264,14 @@ def make_super_indices( dataset ):
 def get_arguments():
     parser = argparse.ArgumentParser()
     parser.add_argument('dataset', help='Name of dataset used')
-    parser.add_argument('-m', '--measure', default='average-local-inf', help='Quantity of interest')
-    parser.add_argument('-s', '--sensitive', default='Gender', help='Sensitive field')
+    parser.add_argument('-m', '--measure',
+                        default='average-local-inf',
+                        help='Quantity of interest',
+                        choices=['average-local-inf','discrim-inf',
+                                 'general-inf','banzhaf','shapley'])
+    parser.add_argument('-s', '--sensitive', default=None,     help='Sensitive field')
+    parser.add_argument('-t', '--target',    default=None,     help='Target field', type=str)
+    
     parser.add_argument('-e', '--erase-sensitive', action='store_false', help='Erase sensitive field from dataset')
     parser.add_argument('-p', '--show-plot', action='store_true', help='Output plot as pdf')
     parser.add_argument('-o', '--output-pdf', action='store_true', help='Output plot as pdf')
@@ -206,9 +286,8 @@ def split_and_train_classifier(classifier, dataset, scaler=None):
     ## Split data into training and test data
     X_train, X_test, y_train, y_test = cross_validation.train_test_split(dataset.num_data, dataset.target, train_size=0.40)
 
-
-    sens_train = dataset.sensitive(X_train)
-    sens_test  = dataset.sensitive(X_test)
+    sens_train = dataset.get_sensitive(X_train)
+    sens_test  = dataset.get_sensitive(X_test)
 
     if (scaler == None):
         #Initialize scaler to normalize training data
@@ -217,9 +296,10 @@ def split_and_train_classifier(classifier, dataset, scaler=None):
 
     #Normalize all training and test data
     X_train = pd.DataFrame(scaler.transform(X_train), columns=(dataset.num_data.columns))
-    X_test = pd.DataFrame(scaler.transform(X_test), columns=(dataset.num_data.columns))
+    X_test  = pd.DataFrame(scaler.transform(X_test),  columns=(dataset.num_data.columns))
 
     cls = train_classifier(classifier, X_train, y_train)
+    
     return (cls, scaler, X_train, X_test, y_train, y_test, sens_train, sens_test)
 
 
@@ -246,7 +326,7 @@ def train_classifier(classifier, X_train, y_train):
 
 def plot_series(series, args, xlabel, ylabel):
     plt.figure(figsize=(5,4))
-    series.sort(ascending = False)
+    series.sort_values(inplace=True, ascending=False)
     #average_local_inf_series.plot(kind="bar", facecolor='#ff9999', edgecolor='white')
     series.plot(kind="bar")
     plt.xticks(rotation = 45, ha = 'right', size='small')

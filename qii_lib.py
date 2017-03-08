@@ -106,7 +106,7 @@ class qii:
 
     @staticmethod
     def unary_individual_influence(dataset, cls, x_ind, X):
-        y_pred = cls.predict(x_ind)
+        y_pred = cls.predict(x_ind.reshape(1,-1))
         average_local_inf = {}
         counterfactuals = {}
         iters = 1

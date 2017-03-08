@@ -12,6 +12,10 @@ from qii_lib import *
 
 from sklearn.datasets import load_svmlight_file
 
+### TODO:
+### USe the random seed from command line for other things than model training.
+###  - train/test splits
+###  - iterations in the various qii computations
 
 #def main():
 
@@ -34,7 +38,7 @@ sup_ind = dataset.sup_ind
 
 ######### Begin Training Classifier ##########
 
-cls, scaler, X_train, X_test, y_train, y_test, sens_train, sens_test = split_and_train_classifier(args.classifier, dataset)
+cls, scaler, X_train, X_test, y_train, y_test, sens_train, sens_test = split_and_train_classifier(args, dataset)
 print('End Training Classifier')
 ######### End Training Classifier ##########
 
@@ -57,7 +61,7 @@ if measure == 'average-unary-individual':
 
 if measure == 'unary-individual':
     print individual
-    x_individual = scaler.transform(dataset.num_data.ix[individual])
+    x_individual = scaler.transform(dataset.num_data.ix[individual].reshape(1,-1))
     (average_local_inf, counterfactuals) = qii.unary_individual_influence(dataset, cls, x_individual, X_test)
     average_local_inf_series = pd.Series(average_local_inf, index = average_local_inf.keys())
     if (args.show_plot):

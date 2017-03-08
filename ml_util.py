@@ -278,12 +278,18 @@ def get_arguments():
     parser.add_argument('-o', '--output-pdf', action='store_true', help='Output plot as pdf')
     parser.add_argument('-c', '--classifier', default='logistic', help='Classifier to use',
             choices=['logistic', 'svm', 'decision-tree', 'decision-forest'])
+
+    parser.add_argument('--max_depth', default=2, help='Max depth for decision trees and forests')
+    parser.add_argument('--n_estimators', default=20, help='Number of trees for decision forests')
+    parser.add_argument('--seed', default=0, help='Random seed')
+    
     parser.add_argument('-i', '--individual', default=0, type=int, help='Index for Individualized Transparency Report')
     parser.add_argument('-r', '--record-counterfactuals', action='store_true', help='Store counterfactual pairs for causal analysis')
     parser.add_argument('-a', '--active-iterations', type=int, default=10, help='Active Learning Iterations')
     return parser.parse_args()
 
-def split_and_train_classifier(classifier, dataset, scaler=None):
+def split_and_train_classifier(args, dataset, scaler=None):
+    classifier = args.classifier
     ## Split data into training and test data
     X_train, X_test, y_train, y_test = cross_validation.train_test_split(dataset.num_data, dataset.target, train_size=0.40)
 
@@ -299,25 +305,29 @@ def split_and_train_classifier(classifier, dataset, scaler=None):
     X_train = pd.DataFrame(scaler.transform(X_train), columns=(dataset.num_data.columns))
     X_test  = pd.DataFrame(scaler.transform(X_test),  columns=(dataset.num_data.columns))
 
-    cls = train_classifier(classifier, X_train, y_train)
+    cls = train_classifier(args, X_train, y_train)
     
     return (cls, scaler, X_train, X_test, y_train, y_test, sens_train, sens_test)
 
 
-def train_classifier(classifier, X_train, y_train):
+def train_classifier(args, X_train, y_train):
+    classifier = args.classifier
     #Initialize sklearn classifier model
     if (classifier == 'logistic'):
         import sklearn.linear_model as linear_model
-        cls = linear_model.LogisticRegression()
+        cls = linear_model.LogisticRegression(random_state=args.seed)
     elif (classifier == 'svm'):
         from sklearn import svm
-        cls = svm.SVC(kernel='linear', cache_size=7000)
+        cls = svm.SVC(kernel='linear', cache_size=7000, random_state=args.seed)
     elif (classifier == 'decision-tree'):
         import sklearn.linear_model as linear_model
-        cls = tree.DecisionTreeClassifier()
+        cls = tree.DecisionTreeClassifier(max_depth=args.max_depth, random_state=args.seed)
     elif (classifier == 'decision-forest'):
         from sklearn.ensemble import GradientBoostingClassifier
-        cls = GradientBoostingClassifier(n_estimators=20, learning_rate=1.0, max_depth=2, random_state=0)
+        cls = GradientBoostingClassifier(n_estimators=args.n_estimators,
+                                         learning_rate=1.0,
+                                         max_depth=args.max_depth,
+                                         random_state=args.seed)
 
     #Train sklearn model
     cls.fit(X_train, y_train)

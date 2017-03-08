@@ -34,6 +34,17 @@ class qii:
             X_int[:, c] = X_int[order, c]
         return X_int
 
+    #Randomly intervene on a a set of columns of x from X
+    @staticmethod
+    def random_intervene_point( X, cols, x0 ):
+        n = X.shape[0]
+        order = numpy.random.permutation(range(n))
+        X_int = numpy.tile(x0, (n, 1))
+        for c in cols:
+            X_int[:, c] = X[order, c]
+        return X_int
+
+
     @staticmethod
     def discrim (X, cls, sens):
         not_sens = 1 - sens
@@ -70,7 +81,6 @@ class qii:
 
     @staticmethod
     def average_local_influence(dataset, cls, X):
-        y_pred = cls.predict(X)
         average_local_inf = {}
         counterfactuals = {}
         iters = 10
@@ -93,6 +103,32 @@ class qii:
             average_local_inf[sf] = 1 - (local_influence/iters).mean()
             #print('Influence %s: %.3f' % (sf, average_local_inf[sf]))
         return (average_local_inf, counterfactuals)
+
+    @staticmethod
+    def unary_individual_influence(dataset, cls, x_ind, X):
+        y_pred = cls.predict(x_ind)
+        average_local_inf = {}
+        counterfactuals = {}
+        iters = 1
+        f_columns = dataset.num_data.columns
+        sup_ind = dataset.sup_ind
+        for sf in sup_ind:
+            local_influence = numpy.zeros(y_pred.shape[0])
+            if qii.record_counterfactuals:
+                counterfactuals[sf] = (numpy.tile(X, (iters,1)), numpy.tile(X, (iters,1)))
+            ls = [f_columns.get_loc(f) for f in sup_ind[sf]]
+            for i in xrange(0, iters):
+                X_inter = qii.random_intervene_point(numpy.array(X), ls, x_ind)
+                y_pred_inter = cls.predict(X_inter)
+                local_influence = local_influence + (y_pred == y_pred_inter)*1.
+                if qii.record_counterfactuals:
+                    n = X_inter.shape[0]
+                    counterfactuals[sf][1][i*n:(i+1)*n]=X_inter
+
+            average_local_inf[sf] = 1 - (local_influence/iters).mean()
+            #print('Influence %s: %.3f' % (sf, average_local_inf[sf]))
+        return (average_local_inf, counterfactuals)
+
 
 
     @staticmethod

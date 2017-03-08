@@ -13,8 +13,9 @@ iwpc   : Warfarin dosage
 nlsy97 : Arrest prediction from the NLSY 97
 
 Currently supported measures:
-discrim-inf       : Influence on discrimination
-average-local-inf : Average unary QII
+discrim           : Unary QII on discrimination
+average-unary-individual : Average unary QII
+unary-individual  : Unary QII on individual outcome (use -i k) for kth individual
 general-inf       : Influence on average classification
 shapley           : Shapley QII (use -i k) for kth individual
 banzhaf           : Banzhaf QII (use -i k) for kth individual

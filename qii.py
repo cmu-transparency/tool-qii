@@ -42,36 +42,27 @@ measure_analytics(dataset, cls, X_test, y_test, sens_test)
 
 t0 = time.time()
 
-if measure == 'discrim-inf':
+if measure == 'discrim':
     baseline = qii.discrim(numpy.array(X_test), cls, numpy.array(sens_test))
     discrim_inf = qii.discrim_influence(dataset, cls, X_test, sens_test)
     discrim_inf_series = pd.Series(discrim_inf, index = discrim_inf.keys())
     if (args.show_plot):
         plot_series_with_baseline(discrim_inf_series, args, 'Feature', 'QII on Group Disparity', baseline)
 
-if measure == 'average-local-inf':
+if measure == 'average-unary-individual':
     (average_local_inf, counterfactuals) = qii.average_local_influence(dataset, cls, X_test)
     average_local_inf_series = pd.Series(average_local_inf, index = average_local_inf.keys())
     if (args.show_plot):
         plot_series(average_local_inf_series, args, 'Feature', 'QII on Outcomes')
 
-if measure == 'general-inf':
-    average_local_inf = {}
-    iters = 30
-    y_pred = cls.predict(X_test)
-    for sf in dataset.sup_ind:
-        local_influence = numpy.zeros(y_pred.shape[0])
-        ls = [f_columns.get_loc(f) for f in sup_ind[sf]]
-        for i in xrange(0, iters):
-            X_inter = random_intervene(numpy.array(X_test), ls)
-            y_pred_inter = cls.predict(X_inter)
-            local_influence = local_influence + y_pred_inter
+if measure == 'unary-individual':
+    print individual
+    x_individual = scaler.transform(dataset.num_data.ix[individual])
 
-        average_local_inf[sf] = (y_pred - local_influence/iters).mean()
-        print('General Influence %s: %.3f' % (sf, average_local_inf[sf]))
-
+    (average_local_inf, counterfactuals) = qii.unary_individual_influence(dataset, cls, x_individual, X_test)
     average_local_inf_series = pd.Series(average_local_inf, index = average_local_inf.keys())
-    plot_series(average_local_inf_series, args, 'Feature', 'QII on Average Outcomes')
+    if (args.show_plot):
+        plot_series(average_local_inf_series, args, 'Feature', 'QII on Outcomes')
 
 if measure == 'banzhaf':
     print individual

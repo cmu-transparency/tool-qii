@@ -265,10 +265,11 @@ def get_arguments():
     parser = argparse.ArgumentParser()
     parser.add_argument('dataset', help='Name of dataset used')
     parser.add_argument('-m', '--measure',
-                        default='average-local-inf',
+                        default='average-unary-individual',
                         help='Quantity of interest',
-                        choices=['average-local-inf','discrim-inf',
-                                 'general-inf','banzhaf','shapley'])
+                        choices=['average-unary-individual','unary-individual',
+                                 'discrim', 'general-inf',
+                                 'banzhaf','shapley'])
     parser.add_argument('-s', '--sensitive', default=None,     help='Sensitive field')
     parser.add_argument('-t', '--target',    default=None,     help='Target field', type=str)
     

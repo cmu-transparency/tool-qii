@@ -3,6 +3,7 @@ import numpy
 
 class qii:
     record_counterfactuals = True
+
     #Constant intervention
     @staticmethod
     def intervene( X, features, x0 ):

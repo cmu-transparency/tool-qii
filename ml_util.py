@@ -22,7 +22,6 @@ import time
 
 from os.path import exists
 
-
 from qii_lib import *
 
 
@@ -281,17 +280,25 @@ def get_arguments():
 
     parser.add_argument('--max_depth', default=2, help='Max depth for decision trees and forests')
     parser.add_argument('--n_estimators', default=20, help='Number of trees for decision forests')
-    parser.add_argument('--seed', default=0, help='Random seed')
+    parser.add_argument('--seed', default=None, help='Random seed, auto seeded if not specified', type=int)
     
     parser.add_argument('-i', '--individual', default=0, type=int, help='Index for Individualized Transparency Report')
     parser.add_argument('-r', '--record-counterfactuals', action='store_true', help='Store counterfactual pairs for causal analysis')
     parser.add_argument('-a', '--active-iterations', type=int, default=10, help='Active Learning Iterations')
-    return parser.parse_args()
+
+    args = parser.parse_args()
+    if args.seed is not None:
+        numpy.random.seed([args.seed])
+     
+    return args
 
 def split_and_train_classifier(args, dataset, scaler=None):
     classifier = args.classifier
     ## Split data into training and test data
-    X_train, X_test, y_train, y_test = cross_validation.train_test_split(dataset.num_data, dataset.target, train_size=0.40)
+    X_train, X_test, y_train, y_test = cross_validation.train_test_split(
+        dataset.num_data, dataset.target,
+        train_size=0.40,
+        )
 
     sens_train = dataset.get_sensitive(X_train)
     sens_test  = dataset.get_sensitive(X_test)
@@ -315,19 +322,21 @@ def train_classifier(args, X_train, y_train):
     #Initialize sklearn classifier model
     if (classifier == 'logistic'):
         import sklearn.linear_model as linear_model
-        cls = linear_model.LogisticRegression(random_state=args.seed)
+        cls = linear_model.LogisticRegression()
     elif (classifier == 'svm'):
         from sklearn import svm
-        cls = svm.SVC(kernel='linear', cache_size=7000, random_state=args.seed)
+        cls = svm.SVC(kernel='linear', cache_size=7000,
+                      )
     elif (classifier == 'decision-tree'):
         import sklearn.linear_model as linear_model
-        cls = tree.DecisionTreeClassifier(max_depth=args.max_depth, random_state=args.seed)
+        cls = tree.DecisionTreeClassifier(max_depth=args.max_depth,
+                                          )
     elif (classifier == 'decision-forest'):
         from sklearn.ensemble import GradientBoostingClassifier
         cls = GradientBoostingClassifier(n_estimators=args.n_estimators,
                                          learning_rate=1.0,
                                          max_depth=args.max_depth,
-                                         random_state=args.seed)
+                                         )
 
     #Train sklearn model
     cls.fit(X_train, y_train)

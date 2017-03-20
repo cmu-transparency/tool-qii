@@ -13,21 +13,20 @@ from qii_lib import *
 from sklearn.datasets import load_svmlight_file
 
 ### TODO:
-### USe the random seed from command line for other things than model training.
+
+### Use the random seed from command line for other things than model training.
+
 ###  - train/test splits
 ###  - iterations in the various qii computations
 
-#def main():
-
+### This might be taken care of by calling numpy.random.seed(), need
+### to verify it applies to all used randomized methods.
 
 args = get_arguments()
 qii.record_counterfactuals = args.record_counterfactuals
 
 #Read dataset
 dataset = Dataset(args.dataset, sensitive=args.sensitive, target=args.target)
-#if (args.erase_sensitive):
-#  print 'Erasing sensitive'
-#  dataset.delete_index(args.sensitive)
 
 measure = args.measure
 individual = args.individual
@@ -78,13 +77,9 @@ if measure == 'banzhaf':
         plot_series(banzhaf_series, args, 'Feature', 'QII on Outcomes (Banzhaf)')
 
 if measure == 'shapley':
-    #print individual
-
     row_individual = dataset.num_data.ix[individual].reshape(1,-1)
     
     x_individual = scaler.transform(row_individual)
-    
-    #print dataset.num_data.ix[individual]
 
     shapley, counterfactuals = qii.shapley_influence(dataset, cls, x_individual, X_test)
     shapley_series = pd.Series(shapley, index = shapley.keys())
@@ -93,14 +88,3 @@ if measure == 'shapley':
 
 t1 = time.time()
 print (t1 - t0)
-
-
-
-
-
-
-
-#if __name__ == '__main__':
-#    main()
-
-

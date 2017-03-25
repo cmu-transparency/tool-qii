@@ -267,8 +267,7 @@ def get_arguments():
                         default='average-unary-individual',
                         help='Quantity of interest',
                         choices=['average-unary-individual','unary-individual',
-                                 'discrim', 'general-inf',
-                                 'banzhaf','shapley'])
+                                 'discrim', 'banzhaf', 'shapley'])
     parser.add_argument('-s', '--sensitive', default=None,     help='Sensitive field')
     parser.add_argument('-t', '--target',    default=None,     help='Target field', type=str)
     
@@ -292,29 +291,46 @@ def get_arguments():
      
     return args
 
+class Setup(argparse.Namespace):
+    def __init__(self, cls, x_test, y_test, sens_test, **kw):
+        self.cls = cls
+        self.x_test = x_test
+        self.y_test = y_test
+        self.sens_test = sens_test
+        #for k in kw:
+        #    self.__setattr__(k, kw[k])
+        argparse.Namespace.__init__(self, **kw)
+
 def split_and_train_classifier(args, dataset, scaler=None):
     classifier = args.classifier
     ## Split data into training and test data
-    X_train, X_test, y_train, y_test = cross_validation.train_test_split(
+    x_train, x_test, y_train, y_test = cross_validation.train_test_split(
         dataset.num_data, dataset.target,
         train_size=0.40,
         )
 
-    sens_train = dataset.get_sensitive(X_train)
-    sens_test  = dataset.get_sensitive(X_test)
+    sens_train = dataset.get_sensitive(x_train)
+    sens_test  = dataset.get_sensitive(x_test)
 
     if (scaler == None):
         #Initialize scaler to normalize training data
         scaler = preprocessing.StandardScaler()
-        scaler.fit(X_train)
+        scaler.fit(x_train)
 
     #Normalize all training and test data
-    X_train = pd.DataFrame(scaler.transform(X_train), columns=(dataset.num_data.columns))
-    X_test  = pd.DataFrame(scaler.transform(X_test),  columns=(dataset.num_data.columns))
+    x_train = pd.DataFrame(scaler.transform(x_train), columns=(dataset.num_data.columns))
+    x_test  = pd.DataFrame(scaler.transform(x_test),  columns=(dataset.num_data.columns))
 
-    cls = train_classifier(args, X_train, y_train)
-    
-    return (cls, scaler, X_train, X_test, y_train, y_test, sens_train, sens_test)
+    cls = train_classifier(args, x_train, y_train)
+
+    return Setup(cls = cls,
+                 scaler = scaler,
+                 x_train = x_train,
+                 x_test = x_test,
+                 y_train = y_train,
+                 y_test = y_test,
+                 sens_train = sens_train,
+                 sens_test = sens_test)
 
 
 def train_classifier(args, X_train, y_train):

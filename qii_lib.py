@@ -191,7 +191,7 @@ class qii:
 
 
 
-
+    @staticmethod
     def banzhaf_influence(dataset, cls, x_individual, X_test):
         p_samples = 600
         s_samples = 600

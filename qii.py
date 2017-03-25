@@ -1,90 +1,112 @@
-import pandas as pd
-import numpy as np
-import sklearn as skl
+""" QII mesurement script
+
+author: mostly Shayak
+
+"""
+
+import time
+
+import pandas  as pd
 import numpy
 
 import numpy.linalg
-import sys
-import time
 
-from ml_util import *
-from qii_lib import *
+from ml_util import split_and_train_classifier, get_arguments, \
+     Dataset, measure_analytics, \
+     plot_series_with_baseline, plot_series
+from qii_lib import qii
 
-from sklearn.datasets import load_svmlight_file
+def __main__():
+    args = get_arguments()
+    qii.record_counterfactuals = args.record_counterfactuals
 
-### TODO:
+    #Read dataset
+    dataset = Dataset(args.dataset, sensitive=args.sensitive, target=args.target)
+    #Get column names
+    #f_columns = dataset.num_data.columns
+    #sup_ind = dataset.sup_ind
 
-### Use the random seed from command line for other things than model training.
+    ######### Begin Training Classifier ##########
 
-###  - train/test splits
-###  - iterations in the various qii computations
+    dat = split_and_train_classifier(args, dataset)
 
-### This might be taken care of by calling numpy.random.seed(), need
-### to verify it applies to all used randomized methods.
+    print 'End Training Classifier'
+    ######### End Training Classifier ##########
 
-args = get_arguments()
-qii.record_counterfactuals = args.record_counterfactuals
+    measure_analytics(dataset, dat.cls, dat.x_test, dat.y_test, dat.sens_test)
 
-#Read dataset
-dataset = Dataset(args.dataset, sensitive=args.sensitive, target=args.target)
+    t_start = time.time()
 
-measure = args.measure
-individual = args.individual
+    measures = {'discrim': eval_discrim,
+                'average-unary-individual': eval_average_unary_individual,
+                'unary-individual': eval_unary_individual,
+                'banzhaf': eval_banzhaf,
+                'shapley': eval_shapley}
 
-#Get column names
-f_columns = dataset.num_data.columns
-sup_ind = dataset.sup_ind
+    if args.measure in measures:
+        measures[args.measure](dataset, args, dat)
+    else:
+        raise ValueError("Unknown measure %s" % args.measure)
 
-######### Begin Training Classifier ##########
+    t_end = time.time()
 
-cls, scaler, X_train, X_test, y_train, y_test, sens_train, sens_test = split_and_train_classifier(args, dataset)
-print('End Training Classifier')
-######### End Training Classifier ##########
+    print t_end - t_start
 
-measure_analytics(dataset, cls, X_test, y_test, sens_test)
+def eval_discrim(dataset, args, dat):
+    """ Discrimination metric """
 
-t0 = time.time()
+    baseline = qii.discrim(numpy.array(dat.x_test), dat.cls, numpy.array(dat.sens_test))
+    discrim_inf = qii.discrim_influence(dataset, dat.cls, dat.x_test, dat.sens_test)
+    discrim_inf_series = pd.Series(discrim_inf, index=discrim_inf.keys())
+    if args.show_plot:
+        plot_series_with_baseline(
+            discrim_inf_series, args,
+            'Feature', 'QII on Group Disparity',
+            baseline)
 
-if measure == 'discrim':
-    baseline = qii.discrim(numpy.array(X_test), cls, numpy.array(sens_test))
-    discrim_inf = qii.discrim_influence(dataset, cls, X_test, sens_test)
-    discrim_inf_series = pd.Series(discrim_inf, index = discrim_inf.keys())
-    if (args.show_plot):
-        plot_series_with_baseline(discrim_inf_series, args, 'Feature', 'QII on Group Disparity', baseline)
+def eval_average_unary_individual(dataset, args, dat):
+    """ Unary QII averaged over all individuals. """
 
-if measure == 'average-unary-individual':
-    (average_local_inf, counterfactuals) = qii.average_local_influence(dataset, cls, X_test)
-    average_local_inf_series = pd.Series(average_local_inf, index = average_local_inf.keys())
-    if (args.show_plot):
-        plot_series(average_local_inf_series, args, 'Feature', 'QII on Outcomes')
+    average_local_inf, _ = qii.average_local_influence(
+        dataset, dat.cls, dat.x_test)
+    average_local_inf_series = pd.Series(average_local_inf,
+                                         index=average_local_inf.keys())
+    if args.show_plot:
+        plot_series(average_local_inf_series, args,
+                    'Feature', 'QII on Outcomes')
 
-if measure == 'unary-individual':
-    print individual
-    x_individual = scaler.transform(dataset.num_data.ix[individual].reshape(1,-1))
-    (average_local_inf, counterfactuals) = qii.unary_individual_influence(dataset, cls, x_individual, X_test)
-    average_local_inf_series = pd.Series(average_local_inf, index = average_local_inf.keys())
-    if (args.show_plot):
-        plot_series(average_local_inf_series, args, 'Feature', 'QII on Outcomes')
+def eval_unary_individual(dataset, args, dat):
+    """ Unary QII. """
 
-if measure == 'banzhaf':
-    print individual
-    x_individual = scaler.transform(dataset.num_data.ix[individual])
-    print dataset.num_data.ix[individual]
+    x_individual = dat.scaler.transform(dataset.num_data.ix[args.individual].reshape(1, -1))
+    average_local_inf, _ = qii.unary_individual_influence(
+        dataset, dat.cls, x_individual, dat.x_test)
+    average_local_inf_series = pd.Series(
+        average_local_inf, index=average_local_inf.keys())
+    if args.show_plot:
+        plot_series(average_local_inf_series, args,
+                    'Feature', 'QII on Outcomes')
 
-    banzhaf = qii.banzhaf_influence(dataset, cls, x_individual, X_test)
-    banzhaf_series = pd.Series(banzhaf, index = banzhaf.keys())
-    if (args.show_plot):
+def eval_banzhaf(dataset, args, dat):
+    """ Banzhaf metric. """
+
+    x_individual = dat.scaler.transform(dataset.num_data.ix[args.individual])
+
+    banzhaf = qii.banzhaf_influence(dataset, dat.cls, x_individual, dat.x_test)
+    banzhaf_series = pd.Series(banzhaf, index=banzhaf.keys())
+    if args.show_plot:
         plot_series(banzhaf_series, args, 'Feature', 'QII on Outcomes (Banzhaf)')
 
-if measure == 'shapley':
-    row_individual = dataset.num_data.ix[individual].reshape(1,-1)
-    
-    x_individual = scaler.transform(row_individual)
+def eval_shapley(dataset, args, dat):
+    """ Shapley metric. """
 
-    shapley, counterfactuals = qii.shapley_influence(dataset, cls, x_individual, X_test)
-    shapley_series = pd.Series(shapley, index = shapley.keys())
-    if (args.show_plot):
+    row_individual = dataset.num_data.ix[args.individual].reshape(1, -1)
+
+    x_individual = dat.scaler.transform(row_individual)
+
+    shapley, _ = qii.shapley_influence(dataset, dat.cls, x_individual, dat.x_test)
+    shapley_series = pd.Series(shapley, index=shapley.keys())
+    if args.show_plot:
         plot_series(shapley_series, args, 'Feature', 'QII on Outcomes (Shapley)')
 
-t1 = time.time()
-print (t1 - t0)
+__main__()

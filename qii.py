@@ -14,11 +14,12 @@ import numpy.linalg
 from ml_util import split_and_train_classifier, get_arguments, \
      Dataset, measure_analytics, \
      plot_series_with_baseline, plot_series
-from qii_lib import qii
+
+import qii_lib
 
 def __main__():
     args = get_arguments()
-    qii.record_counterfactuals = args.record_counterfactuals
+    qii_lib.record_counterfactuals = args.record_counterfactuals
 
     #Read dataset
     dataset = Dataset(args.dataset, sensitive=args.sensitive, target=args.target)
@@ -55,8 +56,8 @@ def __main__():
 def eval_discrim(dataset, args, dat):
     """ Discrimination metric """
 
-    baseline = qii.discrim(numpy.array(dat.x_test), dat.cls, numpy.array(dat.sens_test))
-    discrim_inf = qii.discrim_influence(dataset, dat.cls, dat.x_test, dat.sens_test)
+    baseline = qii_lib.discrim(numpy.array(dat.x_test), dat.cls, numpy.array(dat.sens_test))
+    discrim_inf = qii_lib.discrim_influence(dataset, dat.cls, dat.x_test, dat.sens_test)
     discrim_inf_series = pd.Series(discrim_inf, index=discrim_inf.keys())
     if args.show_plot:
         plot_series_with_baseline(
@@ -67,7 +68,7 @@ def eval_discrim(dataset, args, dat):
 def eval_average_unary_individual(dataset, args, dat):
     """ Unary QII averaged over all individuals. """
 
-    average_local_inf, _ = qii.average_local_influence(
+    average_local_inf, _ = qii_lib.average_local_influence(
         dataset, dat.cls, dat.x_test)
     average_local_inf_series = pd.Series(average_local_inf,
                                          index=average_local_inf.keys())
@@ -79,7 +80,7 @@ def eval_unary_individual(dataset, args, dat):
     """ Unary QII. """
 
     x_individual = dat.scaler.transform(dataset.num_data.ix[args.individual].reshape(1, -1))
-    average_local_inf, _ = qii.unary_individual_influence(
+    average_local_inf, _ = qii_lib.unary_individual_influence(
         dataset, dat.cls, x_individual, dat.x_test)
     average_local_inf_series = pd.Series(
         average_local_inf, index=average_local_inf.keys())
@@ -92,7 +93,7 @@ def eval_banzhaf(dataset, args, dat):
 
     x_individual = dat.scaler.transform(dataset.num_data.ix[args.individual])
 
-    banzhaf = qii.banzhaf_influence(dataset, dat.cls, x_individual, dat.x_test)
+    banzhaf = qii_lib.banzhaf_influence(dataset, dat.cls, x_individual, dat.x_test)
     banzhaf_series = pd.Series(banzhaf, index=banzhaf.keys())
     if args.show_plot:
         plot_series(banzhaf_series, args, 'Feature', 'QII on Outcomes (Banzhaf)')
@@ -104,7 +105,7 @@ def eval_shapley(dataset, args, dat):
 
     x_individual = dat.scaler.transform(row_individual)
 
-    shapley, _ = qii.shapley_influence(dataset, dat.cls, x_individual, dat.x_test)
+    shapley, _ = qii_lib.shapley_influence(dataset, dat.cls, x_individual, dat.x_test)
     shapley_series = pd.Series(shapley, index=shapley.keys())
     if args.show_plot:
         plot_series(shapley_series, args, 'Feature', 'QII on Outcomes (Shapley)')

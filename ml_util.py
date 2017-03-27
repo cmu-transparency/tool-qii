@@ -414,7 +414,7 @@ def measure_analytics(dataset, cls, X, y, sens=None):
     error_rate = numpy.mean((y_pred != y)*1.)
     print('test error rate: %.3f' % error_rate)
 
-    discrim0 =  qii.discrim(numpy.array(X), cls, numpy.array(sens))
+    discrim0 = discrim(numpy.array(X), cls, numpy.array(sens))
     print('Initial Discrimination: %.3f' % discrim0)
 
     from scipy.stats.stats import pearsonr

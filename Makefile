@@ -1,8 +1,8 @@
 OS   := $(shell uname)
 ifeq ($(OS), Darwin)
-  TIME := time -l
+  TIME := /usr/bin/time -l
 else
-  TIME := time -v
+  TIME := /usr/bin/time -v
 endif
 
 pylint: *.py

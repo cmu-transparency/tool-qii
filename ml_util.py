@@ -277,9 +277,9 @@ def get_arguments():
     parser.add_argument('-c', '--classifier', default='logistic', help='Classifier to use',
             choices=['logistic', 'svm', 'decision-tree', 'decision-forest'])
 
-    parser.add_argument('--max_depth', default=2, help='Max depth for decision trees and forests')
-    parser.add_argument('--n_estimators', default=20, help='Number of trees for decision forests')
-    parser.add_argument('--seed', default=None, help='Random seed, auto seeded if not specified', type=int)
+    parser.add_argument('--max_depth', type=int, default=2, help='Max depth for decision trees and forests')
+    parser.add_argument('--n_estimators', type=int, default=20, help='Number of trees for decision forests')
+    parser.add_argument('--seed', type=int, default=None, help='Random seed, auto seeded if not specified', type=int)
     
     parser.add_argument('-i', '--individual', default=0, type=int, help='Index for Individualized Transparency Report')
     parser.add_argument('-r', '--record-counterfactuals', action='store_true', help='Store counterfactual pairs for causal analysis')

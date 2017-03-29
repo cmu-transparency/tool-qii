@@ -3,7 +3,7 @@
 import pandas as pd
 import numpy
 
-RECORD_COUNTERFACTUALS = True
+RECORD_COUNTERFACTUALS = False
 
 def intervene(X, features, x0):
     """ Constant intervention """

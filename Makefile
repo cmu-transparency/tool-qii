@@ -12,11 +12,11 @@ test-shapley:
 	$(TIME) python qii.py -m shapley final.csv
 
 test:
-	python qii.py -m average-unary-individual final.csv
-	python qii.py -m unary-individual final.csv
-	python qii.py -m discrim final.csv
-	python qii.py -m banzhaf final.csv
-	python qii.py -m shapley final.csv
+	$(TIME) python qii.py -m average-unary-individual final.csv
+	$(TIME) python qii.py -m unary-individual final.csv
+	$(TIME) python qii.py -m discrim final.csv
+	$(TIME) python qii.py -m banzhaf final.csv
+	$(TIME) python qii.py -m shapley final.csv
 
 clean:
 	rm -Rf *.pyc

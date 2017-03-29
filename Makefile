@@ -9,7 +9,7 @@ pylint: *.py
 	pylint -f parseable -j 4 *.py
 
 test-shapley:
-	$(TIME) python qii.py -m shapley final.csv
+	$(TIME) python qii.py -m shapley final.csv --show
 
 test:
 	$(TIME) python qii.py -m average-unary-individual final.csv

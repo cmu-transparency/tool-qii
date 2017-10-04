@@ -374,7 +374,8 @@ def plot_series(series, args, xlabel, ylabel):
         print ('Writing to figure-' + measure + '-' + args.dataset + '-' + args.classifier + '.pdf')
         pp.savefig(bbox_inches='tight')
         pp.close()
-    plt.show()
+    if (args.show_plot == True):
+        plt.show()
 
 
 def plot_series_with_baseline(series, args, xlabel, ylabel, baseline):

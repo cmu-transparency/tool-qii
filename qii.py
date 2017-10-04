@@ -72,8 +72,9 @@ def eval_average_unary_individual(dataset, args, dat):
         dataset, dat.cls, dat.x_test)
     average_local_inf_series = pd.Series(average_local_inf,
                                          index=average_local_inf.keys())
+    top_40 = average_local_inf_series.sort_values(ascending=False).head(40)
     if args.show_plot or args.output_pdf:
-        plot_series(average_local_inf_series, args,
+        plot_series(top_40, args,
                     'Feature', 'QII on Outcomes')
 
 def eval_unary_individual(dataset, args, dat):

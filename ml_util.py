@@ -370,11 +370,12 @@ def plot_series(series, args, xlabel, ylabel):
     plt.ylabel(ylabel, labelfont)
     plt.tight_layout()
     if (args.output_pdf == True):
-        pp = PdfPages('figure-' + measure + '-' + args.dataset + '-' + args.classifier +'.pdf')
-        print ('Writing to figure-' + measure + '-' + args.dataset + '-' + args.classifier + '.pdf')
+        pp = PdfPages('figure-' + args.measure + '-' + args.dataset + '-' + args.classifier +'.pdf')
+        print ('Writing to figure-' + args.measure + '-' + args.dataset + '-' + args.classifier + '.pdf')
         pp.savefig(bbox_inches='tight')
         pp.close()
-    plt.show()
+    if (args.show_plot == True):
+        plt.show()
 
 
 def plot_series_with_baseline(series, args, xlabel, ylabel, baseline):
@@ -401,8 +402,8 @@ def plot_series_with_baseline(series, args, xlabel, ylabel, baseline):
     plt.ylabel(ylabel, labelfont)
     plt.tight_layout()
     if (args.output_pdf == True):
-        pp = PdfPages('figure-' + measure + '-' + dataset.name + '-' + dataset.sensitive_ix + '-' + args.classifier + '.pdf')
-        print ('Writing to figure-' + measure + '-' + dataset.name + '-' + dataset.sensitive_ix + '-' + args.classifier + '.pdf')
+        pp = PdfPages('figure-' + args.measure + '-' + args.dataset.name + '-' + args.dataset.sensitive_ix + '-' + args.classifier + '.pdf')
+        print ('Writing to figure-' + args.measure + '-' + args.dataset.name + '-' + args.dataset.sensitive_ix + '-' + args.classifier + '.pdf')
         pp.savefig()
         pp.close()
     plt.show()

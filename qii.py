@@ -72,7 +72,7 @@ def eval_average_unary_individual(dataset, args, dat):
         dataset, dat.cls, dat.x_test)
     average_local_inf_series = pd.Series(average_local_inf,
                                          index=average_local_inf.keys())
-    if args.show_plot:
+    if args.show_plot or args.output_pdf:
         plot_series(average_local_inf_series, args,
                     'Feature', 'QII on Outcomes')
 
@@ -84,7 +84,7 @@ def eval_unary_individual(dataset, args, dat):
         dataset, dat.cls, x_individual, dat.x_test)
     average_local_inf_series = pd.Series(
         average_local_inf, index=average_local_inf.keys())
-    if args.show_plot:
+    if args.show_plot or args.output_pdf:
         plot_series(average_local_inf_series, args,
                     'Feature', 'QII on Outcomes')
 
@@ -95,7 +95,7 @@ def eval_banzhaf(dataset, args, dat):
 
     banzhaf = qii_lib.banzhaf_influence(dataset, dat.cls, x_individual, dat.x_test)
     banzhaf_series = pd.Series(banzhaf, index=banzhaf.keys())
-    if args.show_plot:
+    if args.show_plot or args.output_pdf:
         plot_series(banzhaf_series, args, 'Feature', 'QII on Outcomes (Banzhaf)')
 
 def eval_shapley(dataset, args, dat):
@@ -107,7 +107,7 @@ def eval_shapley(dataset, args, dat):
 
     shapley, _ = qii_lib.shapley_influence(dataset, dat.cls, x_individual, dat.x_test)
     shapley_series = pd.Series(shapley, index=shapley.keys())
-    if args.show_plot:
+    if args.show_plot or args.output_pdf:
         plot_series(shapley_series, args, 'Feature', 'QII on Outcomes (Shapley)')
 
 __main__()

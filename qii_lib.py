@@ -36,6 +36,17 @@ def random_intervene(X, cols):
         X_int[:, c] = X_int[order, c]
     return X_int
 
+def random_intervene_class(X, target_class_X, cols):
+    """ Randomly intervene on a a set of columns of target_class_X. """
+    n = X.shape[0]
+    p = target_class_X.shape[0]
+    order = numpy.random.choice(n,p)
+    target_int = numpy.array(target_class_X)
+    for c in cols:
+        target_int[:, c] = X[order, c]
+    return target_int
+
+
 def random_intervene_point(X, cols, x0):
     """ Randomly intervene on a a set of columns of x from X. """
     n = X.shape[0]
@@ -98,6 +109,31 @@ def average_local_influence(dataset, cls, X):
         average_local_inf[sf] = 1 - (local_influence/iters).mean()
         #print('Influence %s: %.3f' % (sf, average_local_inf[sf]))
     return (average_local_inf, counterfactuals)
+
+def average_local_class_influence(dataset, cls, X, target_class_X):
+    average_local_inf_class = {}
+    counterfactuals = {}
+    iters = 10
+    f_columns = dataset.num_data.columns
+    sup_ind = dataset.sup_ind
+    y_pred = cls.predict(target_class_X)
+    for sf in sup_ind:
+        local_influence = numpy.zeros(y_pred.shape[0])
+        if RECORD_COUNTERFACTUALS:
+            counterfactuals[sf] = (numpy.tile(target_class_X, (iters, 1)), numpy.tile(target_class_X, (iters, 1)))
+        ls = [f_columns.get_loc(f) for f in sup_ind[sf]]
+        for i in xrange(0, iters):
+            X_inter = random_intervene_class(numpy.array(X), numpy.array(target_class_X), ls)
+            y_pred_inter = cls.predict(X_inter)
+            local_influence = local_influence + (y_pred == y_pred_inter)*1.
+            if RECORD_COUNTERFACTUALS:
+                n = X_inter.shape[0]
+                counterfactuals[sf][1][i*n:(i+1)*n] = X_inter
+
+        average_local_inf_class[sf] = 1 - (local_influence/iters).mean()
+        #print('Influence %s: %.3f' % (sf, average_local_inf_class[sf]))
+    return (average_local_inf_class, counterfactuals)
+
 
 def unary_individual_influence(dataset, cls, x_ind, X):
     y_pred = cls.predict(x_ind.reshape(1, -1))

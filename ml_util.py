@@ -13,7 +13,7 @@ import matplotlib.ticker as mtick
 import numpy
 import numpy.random
 import arff
-
+import pdb
 import numpy.linalg
 import sys
 from matplotlib.backends.backend_pdf import PdfPages
@@ -267,7 +267,7 @@ def get_arguments():
                         default='average-unary-individual',
                         help='Quantity of interest',
                         choices=['average-unary-individual','unary-individual',
-                                 'discrim', 'banzhaf', 'shapley'])
+                                 'discrim', 'banzhaf', 'shapley', 'average-unary-class'])
     parser.add_argument('-s', '--sensitive', default=None,     help='Sensitive field')
     parser.add_argument('-t', '--target',    default=None,     help='Target field', type=str)
     
@@ -284,6 +284,7 @@ def get_arguments():
     parser.add_argument('-i', '--individual', default=0, type=int, help='Index for Individualized Transparency Report')
     parser.add_argument('-r', '--record-counterfactuals', action='store_true', help='Store counterfactual pairs for causal analysis')
     parser.add_argument('-a', '--active-iterations', type=int, default=10, help='Active Learning Iterations')
+    parser.add_argument('-q', '--class_influence', default=None, type=int, help='Index of the the target class for causal analysis')
 
     args = parser.parse_args()
     if args.seed is not None:
@@ -292,10 +293,11 @@ def get_arguments():
     return args
 
 class Setup(argparse.Namespace):
-    def __init__(self, cls, x_test, y_test, sens_test, **kw):
+    def __init__(self, cls, x_test, y_test, x_target_class, sens_test, **kw):
         self.cls = cls
         self.x_test = x_test
         self.y_test = y_test
+        self.x_target_class = x_target_class
         self.sens_test = sens_test
         #for k in kw:
         #    self.__setattr__(k, kw[k])
@@ -308,6 +310,12 @@ def split_and_train_classifier(args, dataset, scaler=None):
         dataset.num_data, dataset.target,
         train_size=0.40,
         )
+    
+    x_target_class = None
+    if args.class_influence is not None:
+        target_class_type = type(y_test.iloc[0])
+        target_class = target_class_type(args.class_influence)
+        x_target_class = x_test[y_test == target_class]
 
     sens_train = dataset.get_sensitive(x_train)
     sens_test  = dataset.get_sensitive(x_test)
@@ -320,6 +328,8 @@ def split_and_train_classifier(args, dataset, scaler=None):
     #Normalize all training and test data
     x_train = pd.DataFrame(scaler.transform(x_train), columns=(dataset.num_data.columns))
     x_test  = pd.DataFrame(scaler.transform(x_test),  columns=(dataset.num_data.columns))
+    if x_target_class is not None:
+        x_target_class = pd.DataFrame(scaler.transform(x_target_class),  columns=(dataset.num_data.columns))
 
     cls = train_classifier(args, x_train, y_train)
 
@@ -329,6 +339,7 @@ def split_and_train_classifier(args, dataset, scaler=None):
                  x_test = x_test,
                  y_train = y_train,
                  y_test = y_test,
+                 x_target_class = x_target_class,
                  sens_train = sens_train,
                  sens_test = sens_test)
 

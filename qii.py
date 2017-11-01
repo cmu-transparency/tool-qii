@@ -42,7 +42,8 @@ def __main__():
                 'average-unary-individual': eval_average_unary_individual,
                 'unary-individual': eval_unary_individual,
                 'banzhaf': eval_banzhaf,
-                'shapley': eval_shapley}
+                'shapley': eval_shapley,
+                'average-unary-class' : eval_class_average_unary }
 
     if args.measure in measures:
         measures[args.measure](dataset, args, dat)
@@ -110,5 +111,17 @@ def eval_shapley(dataset, args, dat):
     shapley_series = pd.Series(shapley, index=shapley.keys())
     if args.show_plot or args.output_pdf:
         plot_series(shapley_series, args, 'Feature', 'QII on Outcomes (Shapley)')
+
+def eval_class_average_unary(dataset, args, dat):
+    """ Unary QII averaged over all individuals for a particular class """
+
+    average_local_inf, _ = qii_lib.average_local_class_influence(
+        dataset, dat.cls, dat.x_test, dat.x_target_class)
+    average_local_inf_series = pd.Series(average_local_inf,
+                                         index=average_local_inf.keys())
+    top_40 = average_local_inf_series.sort_values(ascending=False).head(40)
+    if args.show_plot or args.output_pdf:
+        plot_series(top_40, args,
+                    'Feature', 'QII on Outcomes')
 
 __main__()

@@ -13,7 +13,6 @@ import matplotlib.ticker as mtick
 import numpy
 import numpy.random
 import arff
-import pdb
 import numpy.linalg
 import sys
 from matplotlib.backends.backend_pdf import PdfPages

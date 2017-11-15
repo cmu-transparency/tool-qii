@@ -165,7 +165,7 @@ class Dataset(object):
             self.num_data = self.num_data.drop(self.sup_ind['Gender'], axis = 1)
             self.sup_ind['Gender'] = ['Gender']
 
-            if sensitive is None:
+            if sensitive is None or senstive == 'Gender':
                 self.get_sensitive = (lambda X: X['Gender'])
             elif (sensitive == 'Race'):
                 self.get_sensitive = (lambda X: X['Race_"Black"'])

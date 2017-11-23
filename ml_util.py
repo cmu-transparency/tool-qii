@@ -318,7 +318,7 @@ def split_and_train_classifier(args, dataset, scaler=None, normalize=False):
 	## Split data into training and test data
 	x_train, x_test, y_train, y_test = cross_validation.train_test_split(
 		dataset.num_data, dataset.target,
-		train_size=0.40,
+		train_size=0.40, random_state=100
 	)
 
 	x_target_class = None

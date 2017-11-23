@@ -144,12 +144,14 @@ def get_feature_variation_plots(features_list, dataset, args, dat):
 
 	feature_variations = pd.DataFrame()
 	for cls in dat.y_test.unique():
-		x_target_class = dat.x_test[dat.y_test == cls]
+		x_test = dat.x_test.reset_index(drop=True)
+		y_test = dat.y_test.reset_index(drop=True)
+		x_target_class = x_test[y_test == cls]
 		feature_variations = feature_variations.append(qii_lib.get_feature_variations(features_list,
 		                                                                              dataset, dat.cls, dat.x_test,
 		                                                                              x_target_class, cls))
 
-	figures_count = 1
+	figures_count = 10
 	for index, group in feature_variations.groupby(['feature']):
 		plt.figure(figures_count)
 		for class_index, class_group in group.groupby(['class']):

@@ -140,7 +140,7 @@ def average_local_influence(dataset, cls, X):
 				counterfactuals[sf][1][i * n:(i + 1) * n] = X_inter
 
 		average_local_inf[sf] = 1 - (local_influence / iters).mean()
-	# print('Influence %s: %.3f' % (sf, average_local_inf[sf]))
+		print('Influence %s: %.3f' % (sf, average_local_inf[sf]))
 	return (average_local_inf, counterfactuals)
 
 
@@ -165,7 +165,7 @@ def average_local_class_influence(dataset, cls, X, target_class_X):
 				counterfactuals[sf][1][i * n:(i + 1) * n] = X_inter
 
 		average_local_inf_class[sf] = 1 - (local_influence / iters).mean()
-	# print('Influence %s: %.3f' % (sf, average_local_inf_class[sf]))
+		print('Influence %s: %.3f' % (sf, average_local_inf_class[sf]))
 	return (average_local_inf_class, counterfactuals)
 
 
@@ -194,7 +194,7 @@ def get_feature_variations(features_list, dataset, cls, X, target_class_X, class
 			influences.append((local_influence / iters).mean())
 		feature_dataframe['influences'] = influences
 		average_local_inf_class = average_local_inf_class.append(feature_dataframe)
-	# print('Influence %s: %.3f' % (sf, average_local_inf_class[sf]))
+		print('Influence %s: %.3f' % (sf, average_local_inf_class[sf]))
 	return average_local_inf_class
 
 

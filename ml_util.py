@@ -390,8 +390,9 @@ def plot_series(series, args, xlabel, ylabel):
 	plt.ylabel(ylabel, labelfont)
 	plt.tight_layout()
 	if (args.output_pdf == True):
-		pp = PdfPages('figure-' + args.measure + '-' + args.dataset + '-' + args.classifier + '.pdf')
-		print ('Writing to figure-' + args.measure + '-' + args.dataset + '-' + args.classifier + '.pdf')
+		class_value = str(args.class_influence) if args.class_influence is not None else ''
+		pp = PdfPages('figure-' + args.measure + '-' + args.dataset + '-' + args.classifier + class_value +'.pdf')
+		print ('Writing to figure-' + args.measure + '-' + args.dataset + '-' + args.classifier + class_value + '.pdf')
 		pp.savefig(bbox_inches='tight')
 		pp.close()
 	if (args.show_plot == True):

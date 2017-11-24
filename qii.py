@@ -36,7 +36,7 @@ def __main__():
 	print 'End Training Classifier'
 	######### End Training Classifier ##########
 
-	measure_analytics(dataset, dat.cls, dat.x_test, dat.y_test, dat.sens_test)
+	# measure_analytics(dataset, dat.cls, dat.x_test, dat.y_test, dat.sens_test)
 
 	t_start = time.time()
 

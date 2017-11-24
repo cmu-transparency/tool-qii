@@ -381,7 +381,9 @@ def train_classifier(args, X_train, y_train):
 
 
 def plot_series(series, args, xlabel, ylabel):
-	plt.figure(figsize=(5, 4))
+	# plt.figure(figsize=(5, 4))
+	plt.ioff()
+	plt.figure(figsize=(10, 10))
 	series.sort_values(inplace=True, ascending=False)
 	# average_local_inf_series.plot(kind="bar", facecolor='#ff9999', edgecolor='white')
 	series.plot(kind="bar")

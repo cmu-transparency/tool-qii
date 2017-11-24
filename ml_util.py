@@ -373,6 +373,7 @@ def train_classifier(args, X_train, y_train):
 		cls = GradientBoostingClassifier(n_estimators=args.n_estimators,
 		                                 learning_rate=1.0,
 		                                 max_depth=args.max_depth,
+		                                 random_state=100
 		                                 )
 
 	# Train sklearn model

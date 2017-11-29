@@ -134,7 +134,6 @@ def eval_class_average_unary(dataset, args, dat):
 
 
 def get_feature_variation_plots(features_list, dataset, args, dat):
-
 	def plot_histogram(dataframe):
 		data = dataframe.copy()
 		data = data.drop(['feature', 'class'], axis=1)

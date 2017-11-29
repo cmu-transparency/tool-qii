@@ -224,7 +224,7 @@ class Dataset(object):
 				targets = len(set(self.original_data[target]))
 				if targets > 2:
 					print "WARNING: target feature %s has more than 2 values (it has %d), I'm unsure whether this tool handles that correctly" % (
-					target, targets)
+						target, targets)
 			del self.sup_ind[self.target_ix]
 			#    self.target_ix = "%s_%s" % (self.target_ix,self.original_data[self.target_ix][0])
 
@@ -232,9 +232,9 @@ class Dataset(object):
 				targets = len(set(self.original_data[sensitive]))
 				if targets > 2:
 					print "WARNING: sensitive feature %s has more than 2 values (it has %d), I'm unsure whether this tool handles that correctly" % (
-					sensitive, targets)
+						sensitive, targets)
 				self.sup_ind[self.sensitive_ix] = [self.sensitive_ix]
-				#    self.sensitive_ix = "%s_%s" % (self.sensitive_ix,self.original_data[self.sensitive_ix][0])
+			#    self.sensitive_ix = "%s_%s" % (self.sensitive_ix,self.original_data[self.sensitive_ix][0])
 
 			self.target = self.num_data[self.target_ix]
 			self.num_data = self.num_data.drop([self.target_ix], axis=1)
@@ -428,7 +428,7 @@ def plot_series_with_baseline(series, args, xlabel, ylabel, baseline):
 		pp = PdfPages(
 			'figure-' + args.measure + '-' + args.dataset.name + '-' + args.dataset.sensitive_ix + '-' + args.classifier + '.pdf')
 		print (
-		'Writing to figure-' + args.measure + '-' + args.dataset.name + '-' + args.dataset.sensitive_ix + '-' + args.classifier + '.pdf')
+			'Writing to figure-' + args.measure + '-' + args.dataset.name + '-' + args.dataset.sensitive_ix + '-' + args.classifier + '.pdf')
 		pp.savefig()
 		pp.close()
 	plt.show()

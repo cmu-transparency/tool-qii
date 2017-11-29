@@ -2,7 +2,6 @@
 
 import pandas as pd
 import numpy
-import pdb
 from scipy.stats import binned_statistic
 
 RECORD_COUNTERFACTUALS = False

@@ -5,8 +5,7 @@ author: mostly Shayak
 """
 
 import time
-import pdb
-import pandas  as pd
+import pandas as pd
 import numpy
 import matplotlib.pyplot as plt
 import numpy.linalg
@@ -36,7 +35,7 @@ def __main__():
 	print 'End Training Classifier'
 	######### End Training Classifier ##########
 
-	# measure_analytics(dataset, dat.cls, dat.x_test, dat.y_test, dat.sens_test)
+	measure_analytics(dataset, dat.cls, dat.x_test, dat.y_test, dat.sens_test)
 
 	t_start = time.time()
 
@@ -151,9 +150,8 @@ def get_feature_variation_plots(features_list, dataset, args, dat):
 		                                                                              dataset, dat.cls, dat.x_test,
 		                                                                              x_target_class, cls))
 
-	figures_count = 10
 	for index, group in feature_variations.groupby(['feature']):
-		plt.figure(figures_count)
+		plt.figure()
 		for class_index, class_group in group.groupby(['class']):
 			plt.plot(class_group['bin_edges'], class_group['influences'], label=class_index)
 		plt.legend(loc='best')
@@ -165,7 +163,6 @@ def get_feature_variation_plots(features_list, dataset, args, dat):
 			pp.close()
 		if args.show_plot:
 			plt.show()
-		figures_count += 1
 
 
 __main__()

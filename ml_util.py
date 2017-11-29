@@ -313,7 +313,7 @@ class Setup(argparse.Namespace):
 		argparse.Namespace.__init__(self, **kw)
 
 
-def split_and_train_classifier(args, dataset, scaler=None, normalize=False):
+def split_and_train_classifier(args, dataset, scaler=None, normalize=True):
 	classifier = args.classifier
 	## Split data into training and test data
 	x_train, x_test, y_train, y_test = cross_validation.train_test_split(

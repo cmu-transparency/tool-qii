@@ -315,6 +315,7 @@ class Setup(argparse.Namespace):
 
 def split_and_train_classifier(args, dataset, scaler=None, normalize=True):
 	classifier = args.classifier
+
 	## Split data into training and test data
 	x_train, x_test, y_train, y_test = cross_validation.train_test_split(
 		dataset.num_data, dataset.target,

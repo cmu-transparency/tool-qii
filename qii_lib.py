@@ -133,7 +133,7 @@ def average_local_influence(dataset, cls, X):
 		for i in xrange(0, iters):
 			X_inter = random_intervene(numpy.array(X), ls)
 			y_pred_inter = cls.predict(X_inter)
-			local_influence = local_influence + (y_pred == y_pred_inter) * 1.
+			local_influence += (y_pred == y_pred_inter) * 1.
 			if RECORD_COUNTERFACTUALS:
 				n = X_inter.shape[0]
 				counterfactuals[sf][1][i * n:(i + 1) * n] = X_inter
@@ -158,7 +158,7 @@ def average_local_class_influence(dataset, cls, X, target_class_X):
 		for i in xrange(0, iters):
 			X_inter = random_intervene_class(numpy.array(X), numpy.array(target_class_X), ls)
 			y_pred_inter = cls.predict(X_inter)
-			local_influence = local_influence + (y_pred == y_pred_inter) * 1.
+			local_influence += (y_pred == y_pred_inter) * 1.
 			if RECORD_COUNTERFACTUALS:
 				n = X_inter.shape[0]
 				counterfactuals[sf][1][i * n:(i + 1) * n] = X_inter

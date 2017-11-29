@@ -302,12 +302,12 @@ class Setup(argparse.Namespace):
         #    self.__setattr__(k, kw[k])
         argparse.Namespace.__init__(self, **kw)
 
-def split_and_train_classifier(args, dataset, scaler=None):
+def split_and_train_classifier(args, dataset, scaler=None, normalize=True):
     classifier = args.classifier
     ## Split data into training and test data
     x_train, x_test, y_train, y_test = cross_validation.train_test_split(
         dataset.num_data, dataset.target,
-        train_size=0.40,
+        train_size=0.40, random_state=100
         )
     
     x_target_class = None
@@ -317,18 +317,18 @@ def split_and_train_classifier(args, dataset, scaler=None):
         x_target_class = x_test[y_test == target_class]
 
     sens_train = dataset.get_sensitive(x_train)
-    sens_test  = dataset.get_sensitive(x_test)
+    sens_test = dataset.get_sensitive(x_test)
+    if normalize:
+        if (scaler == None):
+            # Initialize scaler to normalize training data
+            scaler = preprocessing.StandardScaler()
+            scaler.fit(x_train)
 
-    if (scaler == None):
-        #Initialize scaler to normalize training data
-        scaler = preprocessing.StandardScaler()
-        scaler.fit(x_train)
-
-    #Normalize all training and test data
-    x_train = pd.DataFrame(scaler.transform(x_train), columns=(dataset.num_data.columns))
-    x_test  = pd.DataFrame(scaler.transform(x_test),  columns=(dataset.num_data.columns))
-    if x_target_class is not None:
-        x_target_class = pd.DataFrame(scaler.transform(x_target_class),  columns=(dataset.num_data.columns))
+        # Normalize all training and test data
+        x_train = pd.DataFrame(scaler.transform(x_train), columns=(dataset.num_data.columns))
+        x_test = pd.DataFrame(scaler.transform(x_test), columns=(dataset.num_data.columns))
+        if x_target_class is not None:
+            x_target_class = pd.DataFrame(scaler.transform(x_target_class), columns=(dataset.num_data.columns))
 
     cls = train_classifier(args, x_train, y_train)
 
@@ -345,7 +345,7 @@ def split_and_train_classifier(args, dataset, scaler=None):
 
 def train_classifier(args, X_train, y_train):
     classifier = args.classifier
-    #Initialize sklearn classifier model
+    # Initialize sklearn classifier model
     if (classifier == 'logistic'):
         import sklearn.linear_model as linear_model
         cls = linear_model.LogisticRegression()
@@ -362,6 +362,7 @@ def train_classifier(args, X_train, y_train):
         cls = GradientBoostingClassifier(n_estimators=args.n_estimators,
                                          learning_rate=1.0,
                                          max_depth=args.max_depth,
+                                         random_state=100
                                          )
 
     #Train sklearn model
@@ -371,17 +372,20 @@ def train_classifier(args, X_train, y_train):
 
 
 def plot_series(series, args, xlabel, ylabel):
-    plt.figure(figsize=(5,4))
+    # plt.figure(figsize=(5, 4))
+    plt.ioff()
+    plt.figure(figsize=(10, 10))
     series.sort_values(inplace=True, ascending=False)
-    #average_local_inf_series.plot(kind="bar", facecolor='#ff9999', edgecolor='white')
+    # average_local_inf_series.plot(kind="bar", facecolor='#ff9999', edgecolor='white')
     series.plot(kind="bar")
-    plt.xticks(rotation = 45, ha = 'right', size='small')
+    plt.xticks(rotation=45, ha='right', size='small')
     plt.xlabel(xlabel, labelfont)
     plt.ylabel(ylabel, labelfont)
     plt.tight_layout()
     if (args.output_pdf == True):
-        pp = PdfPages('figure-' + args.measure + '-' + args.dataset + '-' + args.classifier +'.pdf')
-        print ('Writing to figure-' + args.measure + '-' + args.dataset + '-' + args.classifier + '.pdf')
+        class_value = str(args.class_influence) if args.class_influence is not None else ''
+        pp = PdfPages('figure-' + args.measure + '-' + args.dataset + '-' + args.classifier + class_value +'.pdf')
+        print ('Writing to figure-' + args.measure + '-' + args.dataset + '-' + args.classifier + class_value + '.pdf')
         pp.savefig(bbox_inches='tight')
         pp.close()
     if (args.show_plot == True):

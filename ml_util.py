@@ -379,7 +379,7 @@ def plot_series(series, args, xlabel, ylabel):
 
 
 def plot_series_with_baseline(series, args, xlabel, ylabel, baseline):
-    series.sort(ascending = True)
+    series.sort_values(ascending = True)
     plt.figure(figsize=(5,4))
     #plt.bar(range(series.size), series.as_matrix() - baseline)
     #(series - baseline).plot(kind="bar", facecolor='#ff9999', edgecolor='white')

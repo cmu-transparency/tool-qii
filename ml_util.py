@@ -165,7 +165,7 @@ class Dataset(object):
             self.num_data = self.num_data.drop(self.sup_ind['Gender'], axis = 1)
             self.sup_ind['Gender'] = ['Gender']
 
-            if sensitive is None:
+            if sensitive is None or sensitive == 'Gender':
                 self.get_sensitive = (lambda X: X['Gender'])
             elif (sensitive == 'Race'):
                 self.get_sensitive = (lambda X: X['Race_"Black"'])
@@ -370,15 +370,16 @@ def plot_series(series, args, xlabel, ylabel):
     plt.ylabel(ylabel, labelfont)
     plt.tight_layout()
     if (args.output_pdf == True):
-        pp = PdfPages('figure-' + measure + '-' + args.dataset + '-' + args.classifier +'.pdf')
-        print ('Writing to figure-' + measure + '-' + args.dataset + '-' + args.classifier + '.pdf')
+        pp = PdfPages('figure-' + args.measure + '-' + args.dataset + '-' + args.classifier +'.pdf')
+        print ('Writing to figure-' + args.measure + '-' + args.dataset + '-' + args.classifier + '.pdf')
         pp.savefig(bbox_inches='tight')
         pp.close()
-    plt.show()
+    if (args.show_plot == True):
+        plt.show()
 
 
 def plot_series_with_baseline(series, args, xlabel, ylabel, baseline):
-    series.sort(ascending = True)
+    series.sort_values(ascending = True)
     plt.figure(figsize=(5,4))
     #plt.bar(range(series.size), series.as_matrix() - baseline)
     #(series - baseline).plot(kind="bar", facecolor='#ff9999', edgecolor='white')
@@ -401,8 +402,8 @@ def plot_series_with_baseline(series, args, xlabel, ylabel, baseline):
     plt.ylabel(ylabel, labelfont)
     plt.tight_layout()
     if (args.output_pdf == True):
-        pp = PdfPages('figure-' + measure + '-' + dataset.name + '-' + dataset.sensitive_ix + '-' + args.classifier + '.pdf')
-        print ('Writing to figure-' + measure + '-' + dataset.name + '-' + dataset.sensitive_ix + '-' + args.classifier + '.pdf')
+        pp = PdfPages('figure-' + args.measure + '-' + args.dataset.name + '-' + args.dataset.sensitive_ix + '-' + args.classifier + '.pdf')
+        print ('Writing to figure-' + args.measure + '-' + args.dataset.name + '-' + args.dataset.sensitive_ix + '-' + args.classifier + '.pdf')
         pp.savefig()
         pp.close()
     plt.show()

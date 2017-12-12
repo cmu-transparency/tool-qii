@@ -172,17 +172,17 @@ def get_feature_variation_plots(features_list, dataset, args, dat):
 		                                                                              x_target_class, cls))
 
 		# features = numpy.array(features_list.keys())
-		for feature in features:
-			plt.figure()
-			x_target_class[feature].hist()
-			plt.title(str(feature) + '-' + 'class_' + str(cls))
-			if args.output_pdf:
-				pp = PdfPages('Histogram-' + str(feature) + '-' + 'class_' + str(cls) + args.classifier + '.pdf')
-				print ('Writing to Histogram-' + str(feature) + '-' + 'class_' + str(cls) + args.classifier + '.pdf')
-				pp.savefig(bbox_inches='tight')
-				pp.close()
-			if args.show_plot:
-				plt.show()
+		# for feature in features:
+		# 	plt.figure()
+		# 	x_target_class[feature].hist()
+		# 	plt.title(str(feature) + '-' + 'class_' + str(cls))
+		# 	if args.output_pdf:
+		# 		pp = PdfPages('Histogram-' + str(feature) + '-' + 'class_' + str(cls) + '_' + args.classifier + '.pdf')
+		# 		print ('Writing to Histogram-' + str(feature) + '-' + 'class_' + str(cls) + '_' + args.classifier + '.pdf')
+		# 		pp.savefig(bbox_inches='tight')
+		# 		pp.close()
+		# 	if args.show_plot:
+		# 		plt.show()
 
 	for index, group in feature_variations.groupby(['feature']):
 		plt.figure()

@@ -3,7 +3,7 @@
 author: mostly Shayak
 
 """
-
+import pdb
 import time
 import pandas as pd
 import numpy
@@ -134,7 +134,6 @@ def eval_class_average_unary(dataset, args, dat):
 
 
 def get_feature_variation_plots(features_list, dataset, args, dat):
-
 	def plot_histogram(dataframe):
 		data = dataframe.copy()
 		data = data.drop(['feature', 'class'], axis=1)
@@ -142,14 +141,48 @@ def get_feature_variation_plots(features_list, dataset, args, dat):
 		data.hist()
 		del data
 
+	x_test = dat.x_test.reset_index(drop=True)
+	y_test = dat.y_test.reset_index(drop=True)
+	temp = x_test.copy()
+	temp['class'] = y_test
+	features = numpy.array(features_list.keys())
+	for feature in features:
+		plt.figure()
+		# bins = numpy.unique(temp[feature])
+		for class_index, class_group in temp.groupby(['class']):
+			# plt.hist(class_group[feature], bins=bins, label=str(class_index))
+			plt.hist(class_group[feature], label=str(class_index))
+		plt.legend(loc='best')
+		plt.title('Combined Histogram ' + str(feature))
+		if args.output_pdf:
+			pp = PdfPages('Combined Histogram-' + str(feature) + '-'+ args.classifier + '.pdf')
+			print ('Writing to Combined Histogram-' + str(feature) + '-'+ args.classifier + '.pdf')
+			pp.savefig(bbox_inches='tight')
+			pp.close()
+		if args.show_plot:
+			plt.show()
+
+
+
 	feature_variations = pd.DataFrame()
 	for cls in dat.y_test.unique():
-		x_test = dat.x_test.reset_index(drop=True)
-		y_test = dat.y_test.reset_index(drop=True)
 		x_target_class = x_test[y_test == cls]
 		feature_variations = feature_variations.append(qii_lib.get_feature_variations(features_list,
 		                                                                              dataset, dat.cls, dat.x_test,
 		                                                                              x_target_class, cls))
+
+		# features = numpy.array(features_list.keys())
+		for feature in features:
+			plt.figure()
+			x_target_class[feature].hist()
+			plt.title(str(feature) + '-' + 'class_' + str(cls))
+			if args.output_pdf:
+				pp = PdfPages('Histogram-' + str(feature) + '-' + 'class_' + str(cls) + args.classifier + '.pdf')
+				print ('Writing to Histogram-' + str(feature) + '-' + 'class_' + str(cls) + args.classifier + '.pdf')
+				pp.savefig(bbox_inches='tight')
+				pp.close()
+			if args.show_plot:
+				plt.show()
 
 	for index, group in feature_variations.groupby(['feature']):
 		plt.figure()

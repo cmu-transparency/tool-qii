@@ -56,7 +56,7 @@ def get_histogram_bins(X, cols, num_bins=40):
 	col = cols[0]
 	column_values = X[:, col]
 	_, bin_edges, binned_indices = binned_statistic(column_values, numpy.ones(len(column_values)), statistic='sum',
-	                                        bins=num_bins)
+	                                                bins=num_bins)
 	return binned_indices, bin_edges
 
 
@@ -178,15 +178,15 @@ def get_feature_variations(features_list, dataset, cls, X, target_class_X, class
 	indices = features_list.reset_index()['index']
 	for sf in indices:
 		ls = [f_columns.get_loc(f) for f in sup_ind[sf]]
-		binned_indices, bin_edges = get_histogram_bins(numpy.array(X),ls,num_bins=bins)
-		feature_dataframe = pd.DataFrame({'bin_edges' : bin_edges[0:-1]})
+		binned_indices, bin_edges = get_histogram_bins(numpy.array(X), ls, num_bins=bins)
+		feature_dataframe = pd.DataFrame({'bin_edges': bin_edges[0:-1]})
 		feature_dataframe['class'] = class_name
 		feature_dataframe['feature'] = sf
 		influences = []
 		for bin in xrange(0, bins):
 			local_influence = numpy.zeros(y_pred.shape[0])
 			for iter in xrange(0, iters):
-				X_inter = yield_increasing_bins(numpy.array(X), numpy.array(target_class_X),binned_indices, ls, bin)
+				X_inter = yield_increasing_bins(numpy.array(X), numpy.array(target_class_X), binned_indices, ls, bin)
 				if X_inter is not None:
 					y_pred_inter = cls.predict(X_inter)
 					local_influence = local_influence + (y_pred == y_pred_inter) * 1.
@@ -218,7 +218,7 @@ def unary_individual_influence(dataset, cls, x_ind, X):
 				counterfactuals[sf][1][i * n:(i + 1) * n] = X_inter
 
 		average_local_inf[sf] = 1 - (local_influence / iters).mean()
-		# print('Influence %s: %.3f' % (sf, average_local_inf[sf]))
+	# print('Influence %s: %.3f' % (sf, average_local_inf[sf]))
 	return (average_local_inf, counterfactuals)
 
 

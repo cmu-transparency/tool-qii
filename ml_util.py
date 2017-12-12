@@ -170,7 +170,7 @@ class Dataset(object):
 			self.num_data = self.num_data.drop(self.sup_ind['Gender'], axis=1)
 			self.sup_ind['Gender'] = ['Gender']
 
-			if sensitive is None:
+			if sensitive is None or sensitive == 'Gender':
 				self.get_sensitive = (lambda X: X['Gender'])
 			elif (sensitive == 'Race'):
 				self.get_sensitive = (lambda X: X['Race_"Black"'])
@@ -224,7 +224,7 @@ class Dataset(object):
 				targets = len(set(self.original_data[target]))
 				if targets > 2:
 					print "WARNING: target feature %s has more than 2 values (it has %d), I'm unsure whether this tool handles that correctly" % (
-					target, targets)
+						target, targets)
 			del self.sup_ind[self.target_ix]
 			#    self.target_ix = "%s_%s" % (self.target_ix,self.original_data[self.target_ix][0])
 
@@ -232,9 +232,9 @@ class Dataset(object):
 				targets = len(set(self.original_data[sensitive]))
 				if targets > 2:
 					print "WARNING: sensitive feature %s has more than 2 values (it has %d), I'm unsure whether this tool handles that correctly" % (
-					sensitive, targets)
+						sensitive, targets)
 				self.sup_ind[self.sensitive_ix] = [self.sensitive_ix]
-				#    self.sensitive_ix = "%s_%s" % (self.sensitive_ix,self.original_data[self.sensitive_ix][0])
+			#    self.sensitive_ix = "%s_%s" % (self.sensitive_ix,self.original_data[self.sensitive_ix][0])
 
 			self.target = self.num_data[self.target_ix]
 			self.num_data = self.num_data.drop([self.target_ix], axis=1)
@@ -315,7 +315,6 @@ class Setup(argparse.Namespace):
 
 def split_and_train_classifier(args, dataset, scaler=None, normalize=True):
 	classifier = args.classifier
-
 	## Split data into training and test data
 	x_train, x_test, y_train, y_test = cross_validation.train_test_split(
 		dataset.num_data, dataset.target,
@@ -383,7 +382,6 @@ def train_classifier(args, X_train, y_train):
 
 
 def plot_series(series, args, xlabel, ylabel):
-	# plt.figure(figsize=(5, 4))
 	plt.ioff()
 	plt.figure(figsize=(10, 10))
 	series.sort_values(inplace=True, ascending=False)
@@ -395,7 +393,7 @@ def plot_series(series, args, xlabel, ylabel):
 	plt.tight_layout()
 	if (args.output_pdf == True):
 		class_value = str(args.class_influence) if args.class_influence is not None else ''
-		pp = PdfPages('figure-' + args.measure + '-' + args.dataset + '-' + args.classifier + class_value +'.pdf')
+		pp = PdfPages('figure-' + args.measure + '-' + args.dataset + '-' + args.classifier + class_value + '.pdf')
 		print ('Writing to figure-' + args.measure + '-' + args.dataset + '-' + args.classifier + class_value + '.pdf')
 		pp.savefig(bbox_inches='tight')
 		pp.close()
@@ -430,7 +428,7 @@ def plot_series_with_baseline(series, args, xlabel, ylabel, baseline):
 		pp = PdfPages(
 			'figure-' + args.measure + '-' + args.dataset.name + '-' + args.dataset.sensitive_ix + '-' + args.classifier + '.pdf')
 		print (
-		'Writing to figure-' + args.measure + '-' + args.dataset.name + '-' + args.dataset.sensitive_ix + '-' + args.classifier + '.pdf')
+			'Writing to figure-' + args.measure + '-' + args.dataset.name + '-' + args.dataset.sensitive_ix + '-' + args.classifier + '.pdf')
 		pp.savefig()
 		pp.close()
 	plt.show()

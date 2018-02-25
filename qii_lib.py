@@ -2,6 +2,7 @@
 
 import pandas as pd
 import numpy
+from builtins import range
 
 RECORD_COUNTERFACTUALS = False
 
@@ -72,7 +73,7 @@ def discrim_influence(dataset, cls, X_test, sens_test):
         X_inter = random_intervene(numpy.array(X_test), ls)
         discrim_inter = discrim(X_inter, cls, numpy.array(sens_test))
         discrim_inf[sf] = discrim_inter
-        print 'Discrimination %s: %.3f' % (sf, discrim_inf[sf])
+        print ('Discrimination %s: %.3f' % (sf, discrim_inf[sf]))
     return discrim_inf
 
 def average_local_influence(dataset, cls, X):
@@ -87,7 +88,7 @@ def average_local_influence(dataset, cls, X):
         if RECORD_COUNTERFACTUALS:
             counterfactuals[sf] = (numpy.tile(X, (iters, 1)), numpy.tile(X, (iters, 1)))
         ls = [f_columns.get_loc(f) for f in sup_ind[sf]]
-        for i in xrange(0, iters):
+        for i in range(0, iters):
             X_inter = random_intervene(numpy.array(X), ls)
             y_pred_inter = cls.predict(X_inter)
             local_influence = local_influence + (y_pred == y_pred_inter)*1.
@@ -111,7 +112,7 @@ def unary_individual_influence(dataset, cls, x_ind, X):
         if RECORD_COUNTERFACTUALS:
             counterfactuals[sf] = (numpy.tile(X, (iters, 1)), numpy.tile(X, (iters, 1)))
         ls = [f_columns.get_loc(f) for f in sup_ind[sf]]
-        for i in xrange(0, iters):
+        for i in range(0, iters):
             X_inter = random_intervene_point(numpy.array(X), ls, x_ind)
             y_pred_inter = cls.predict(X_inter)
             local_influence = local_influence + (y_pred == y_pred_inter)*1.
@@ -136,7 +137,7 @@ def shapley_influence(dataset, cls, x_individual, X_test):
 
     #min_i = numpy.argmin(sum_local_influence)
     y0 = cls.predict(x_individual)
-    print y0
+    print (y0)
     b = numpy.random.randint(0, X_test.shape[0], p_samples)
     X_sample = numpy.array(X_test.ix[b])
     f_columns = dataset.num_data.columns
@@ -155,9 +156,9 @@ def shapley_influence(dataset, cls, x_individual, X_test):
     else:
         counterfactuals = {}
 
-    for sample in xrange(0, s_samples):
+    for sample in range(0, s_samples):
         perm = numpy.random.permutation(len(super_indices))
-        for i in xrange(0, len(super_indices)):
+        for i in range(0, len(super_indices)):
             # Choose a random subset and get string indices by flattening
             #  excluding si
             si = super_indices[perm[i]]
@@ -201,7 +202,7 @@ def banzhaf_influence(dataset, cls, x_individual, X_test):
 
     banzhaf = dict.fromkeys(super_indices, 0)
 
-    for sample in xrange(0, s_samples):
+    for sample in range(0, s_samples):
         r = numpy.random.ranf(len(super_indices))
         S = [super_indices[i] for i in xrange(0, len(super_indices)) if r[i] > 0.5]
         for si in super_indices:
@@ -233,5 +234,5 @@ def analyze_outliers(counterfactuals, out_cls, cls):
         old_outlier_frac = numpy.mean(lnot(outs_X))
         new_outlier_fracs[sf] = numpy.mean(land(lnot(outs_X), outs_X_cf))/old_outlier_frac
         qii = numpy.mean(cls.predict(X) != cls.predict(X_cf))
-        print 'QII %s %.3f' % (sf, qii)
+        print ('QII %s %.3f' % (sf, qii))
     return (outlier_fracs, new_outlier_fracs)

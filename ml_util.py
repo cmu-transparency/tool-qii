@@ -185,7 +185,7 @@ class Dataset(object):
                 na_values="?")
 
         elif exists(dataset):
-            print "loading new dataset %s" % dataset
+            print ("loading new dataset %s" % dataset)
             
             self.original_data = pd.read_csv(dataset)
 
@@ -202,7 +202,7 @@ class Dataset(object):
                 raise ValueError("unkown sensitive feature %s" % self.sensitive_ix)
 
             if self.sensitive_ix == self.target_ix:
-                print "WARNING: target and sensitive attributes are the same (%s), I'm unsure whether this tool handles this case correctly" % target
+                print ("WARNING: target and sensitive attributes are the same (%s), I'm unsure whether this tool handles this case correctly" % target)
             
             nominal_cols = set(self.original_data.select_dtypes(include=['object']).columns)
             
@@ -218,14 +218,14 @@ class Dataset(object):
             if self.target_ix in nominal_cols:
                 targets = len(set(self.original_data[target]))
                 if targets > 2:
-                    print "WARNING: target feature %s has more than 2 values (it has %d), I'm unsure whether this tool handles that correctly" % (target, targets)
+                    print ("WARNING: target feature %s has more than 2 values (it has %d), I'm unsure whether this tool handles that correctly" % (target, targets))
             del self.sup_ind[self.target_ix]
                 #    self.target_ix = "%s_%s" % (self.target_ix,self.original_data[self.target_ix][0])
 
             if self.sensitive_ix in nominal_cols:
                 targets = len(set(self.original_data[sensitive]))
                 if targets > 2:
-                    print "WARNING: sensitive feature %s has more than 2 values (it has %d), I'm unsure whether this tool handles that correctly" % (sensitive, targets)
+                    print ("WARNING: sensitive feature %s has more than 2 values (it has %d), I'm unsure whether this tool handles that correctly" % (sensitive, targets))
                 self.sup_ind[self.sensitive_ix] = [self.sensitive_ix]
                 #    self.sensitive_ix = "%s_%s" % (self.sensitive_ix,self.original_data[self.sensitive_ix][0])
 
@@ -234,8 +234,8 @@ class Dataset(object):
             
             self.get_sensitive = lambda X: X[self.sensitive_ix]
 
-            print "target feature    = %s" % self.target_ix
-            print "sensitive feature = %s" % self.sensitive_ix
+            print ("target feature    = %s" % self.target_ix)
+            print ("sensitive feature = %s" % self.sensitive_ix)
 
         else:
             raise ValueError("Unknown dataset %s" % dataset)

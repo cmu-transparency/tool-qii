@@ -31,7 +31,7 @@ def __main__():
 
     dat = split_and_train_classifier(args, dataset)
 
-    print 'End Training Classifier'
+    print ('End Training Classifier')
     ######### End Training Classifier ##########
 
     measure_analytics(dataset, dat.cls, dat.x_test, dat.y_test, dat.sens_test)
@@ -51,7 +51,7 @@ def __main__():
 
     t_end = time.time()
 
-    print t_end - t_start
+    print (t_end - t_start)
 
 def eval_discrim(dataset, args, dat):
     """ Discrimination metric """

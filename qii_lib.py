@@ -3,7 +3,7 @@
 import pandas as pd
 import numpy
 
-RECORD_COUNTERFACTUALS = True
+RECORD_COUNTERFACTUALS = False
 
 def intervene(X, features, x0):
     """ Constant intervention """
@@ -123,9 +123,9 @@ def unary_individual_influence(dataset, cls, x_ind, X):
         #print('Influence %s: %.3f' % (sf, average_local_inf[sf]))
     return (average_local_inf, counterfactuals)
 
-def shapley_influence(dataset, cls, x_individual, X_test):
+def shapley_mask(dataset,  X_test):
     p_samples = 600
-    s_samples = 600
+    s_samples = 1
 
     def v(S, x, X_inter):
         x_rep = numpy.tile(x, (p_samples, 1))
@@ -135,25 +135,23 @@ def shapley_influence(dataset, cls, x_individual, X_test):
         return (p, x_rep)
 
     #min_i = numpy.argmin(sum_local_influence)
-    y0 = cls.predict(x_individual)
-    print y0
-    b = numpy.random.randint(0, X_test.shape[0], p_samples)
-    X_sample = numpy.array(X_test.ix[b])
+    #y0 = cls.predict(x_individual)
+    #print y0
+    #b = numpy.random.randint(0, X_test.shape[0], p_samples)
+    #X_sample = numpy.array(X_test.ix[b])
     f_columns = dataset.num_data.columns
     sup_ind = dataset.sup_ind
     super_indices = dataset.sup_ind.keys()
 
     shapley = dict.fromkeys(super_indices, 0)
-    if RECORD_COUNTERFACTUALS:
-        base = numpy.tile(x_individual, (2*p_samples*s_samples, 1))
-        #counterfactuals = dict([(sf, (base, numpy.zeros(p_samples*s_samples*2, X_test.shape[1])))
-        #    for sf in dataset.sup_ind.keys()])
+    #base = numpy.tile(x_individual, (2*p_samples*s_samples, 1))
+    #counterfactuals = dict([(sf, (base, numpy.zeros(p_samples*s_samples*2, X_test.shape[1])))
+    #    for sf in dataset.sup_ind.keys()])
 
-        counterfactuals = dict([(sf, (base,
-                                      numpy.zeros((p_samples*s_samples*2, X_test.shape[1]))))
+    counterfactuals_w = dict([(sf, numpy.zeros((p_samples*s_samples, X_test.shape[1])))
+        for sf in dataset.sup_ind.keys()])
+    counterfactuals_wo = dict([(sf, numpy.zeros((p_samples*s_samples, X_test.shape[1])))
                                 for sf in dataset.sup_ind.keys()])
-    else:
-        counterfactuals = {}
 
     for sample in xrange(0, s_samples):
         perm = numpy.random.permutation(len(super_indices))
@@ -164,21 +162,44 @@ def shapley_influence(dataset, cls, x_individual, X_test):
             S_m_si = sum([sup_ind[super_indices[perm[j]]] for j in xrange(0, i)], [])
             #translate into intiger indices
             ls_m_si = [f_columns.get_loc(f) for f in S_m_si]
+            for k in (ls_m_si):
+                counterfactuals_wo[si][range(sample*p_samples, (sample+1)*p_samples), k] = 1
             #repeat x_individual_rep
-            (p_S, X_S) = v(ls_m_si, x_individual, X_sample)
+            #(p_S, X_S) = v(ls_m_si, x_individual, X_sample)
             #also intervene on s_i
             ls_si = [f_columns.get_loc(f) for f in sup_ind[si]]
-            (p_S_si, X_S_si) = v(ls_m_si + ls_si, x_individual, X_sample)
-            shapley[si] = shapley[si] - (p_S_si - p_S)/s_samples
+            for k in (ls_m_si+ls_si):
+                counterfactuals_w[si][range(sample*p_samples, (sample+1)*p_samples), k] = 1
+            #(p_S_si, X_S_si) = v(ls_m_si + ls_si, x_individual, X_sample)
+            #shapley[si] = shapley[si] - (p_S_si - p_S)/s_samples
 
-            if RECORD_COUNTERFACTUALS:
-                start_ind = 2*sample*p_samples
-                mid_ind = (2*sample+1)*p_samples
-                end_ind = 2*(sample+1)*p_samples
-                counterfactuals[si][1][start_ind:mid_ind] = X_S
-                counterfactuals[si][1][mid_ind:end_ind] = X_S_si
+    return (counterfactuals_w, counterfactuals_wo)
 
-    return (shapley, counterfactuals)
+def shapley_influence_cached(dataset, cls, x_individual, X_test):
+    p_samples = 600
+    s_samples = 1
+    num_iterations = 600
+    features = dataset.sup_ind.keys()
+
+    b = numpy.random.randint(0, X_test.shape[0], p_samples*s_samples)
+    X_sample = numpy.array(X_test.ix[b])
+    (counterfactuals_w, counterfactuals_wo) = shapley_mask(dataset, X_test)
+    feature0 = features[0]
+    shapley = {}
+    for feature in features:
+        shapley[feature] = 0
+    for i in range(0, num_iterations):
+        for feature in features:
+            mask_w = counterfactuals_w[feature0]
+            X_w = numpy.multiply(mask_w, x_individual) + numpy.multiply((1-mask_w), X_sample)
+            mask_wo = counterfactuals_wo[feature0]
+            X_wo = numpy.multiply(mask_wo, x_individual) + numpy.multiply((1-mask_wo), X_sample)
+            p_w = cls.predict(X_w).mean()
+            p_wo = cls.predict(X_wo).mean()
+
+            shapley[feature] += (p_w - p_wo ) / num_iterations
+    return shapley
+
 
 def banzhaf_influence(dataset, cls, x_individual, X_test):
     p_samples = 600
@@ -217,6 +238,66 @@ def banzhaf_influence(dataset, cls, x_individual, X_test):
             p_S_si = v(ls_m_si + ls_si, x_individual, X_sample)
             banzhaf[si] = banzhaf[si] - (p_S - p_S_si)/s_samples
     return banzhaf
+
+
+def shapley_influence(dataset, cls, x_individual, X_test):
+    p_samples = 600
+    s_samples = 600
+
+    def v(S, x, X_inter):
+        #x_rep = numpy.tile(x, (p_samples, 1))
+        for f in S:
+            x_rep[:, f] = X_inter[:, f]
+        p = ((cls.predict(x_rep) == y0)*1.).mean()
+        return (p, x_rep)
+
+    #min_i = numpy.argmin(sum_local_influence)
+    y0 = cls.predict(x_individual)
+    print y0
+    b = numpy.random.randint(0, X_test.shape[0], p_samples)
+    X_sample = numpy.array(X_test.ix[b])
+    f_columns = dataset.num_data.columns
+    sup_ind = dataset.sup_ind
+    super_indices = dataset.sup_ind.keys()
+
+    shapley = dict.fromkeys(super_indices, 0)
+    if RECORD_COUNTERFACTUALS:
+        base = numpy.tile(x_individual, (2*p_samples*s_samples, 1))
+        #counterfactuals = dict([(sf, (base, numpy.zeros(p_samples*s_samples*2, X_test.shape[1])))
+        #    for sf in dataset.sup_ind.keys()])
+
+        counterfactuals = dict([(sf, (base,
+                                      numpy.zeros((2*p_samples*s_samples, X_test.shape[1]))))
+                                for sf in dataset.sup_ind.keys()])
+    else:
+        counterfactuals = {}
+
+    for sample in xrange(0, s_samples):
+        perm = numpy.random.permutation(len(super_indices))
+        for i in xrange(0, len(super_indices)):
+            # Choose a random subset and get string indices by flattening
+            #  excluding si
+            si = super_indices[perm[i]]
+            S_m_si = sum([sup_ind[super_indices[perm[j]]] for j in xrange(0, i)], [])
+            #translate into intiger indices
+            ls_m_si = [f_columns.get_loc(f) for f in S_m_si]
+            #repeat x_individual_rep
+            (p_S, X_S) = v(ls_m_si, x_individual, X_sample)
+            #also intervene on s_i
+            ls_si = [f_columns.get_loc(f) for f in sup_ind[si]]
+            (p_S_si, X_S_si) = v(ls_m_si + ls_si, x_individual, X_sample)
+            shapley[si] = shapley[si] - (p_S_si - p_S)/s_samples
+
+            if RECORD_COUNTERFACTUALS:
+                start_ind = 2*sample*p_samples
+                mid_ind = (2*sample+1)*p_samples
+                end_ind = 2*(sample+1)*p_samples
+                counterfactuals[si][1][start_ind:mid_ind] = X_S
+                counterfactuals[si][1][mid_ind:end_ind] = X_S_si
+
+    return (shapley, counterfactuals)
+
+
 
 def analyze_outliers(counterfactuals, out_cls, cls):
     outlier_fracs = {}

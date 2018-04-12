@@ -185,7 +185,7 @@ class Dataset(object):
                 na_values="?")
 
         elif exists(dataset):
-            print "loading new dataset %s" % dataset
+            print("loading new dataset %s" % dataset)
             
             self.original_data = pd.read_csv(dataset)
 
@@ -202,7 +202,7 @@ class Dataset(object):
                 raise ValueError("unkown sensitive feature %s" % self.sensitive_ix)
 
             if self.sensitive_ix == self.target_ix:
-                print "WARNING: target and sensitive attributes are the same (%s), I'm unsure whether this tool handles this case correctly" % target
+                print("WARNING: target and sensitive attributes are the same (%s), I'm unsure whether this tool handles this case correctly" % target)
             
             nominal_cols = set(self.original_data.select_dtypes(include=['object']).columns)
             
@@ -218,14 +218,14 @@ class Dataset(object):
             if self.target_ix in nominal_cols:
                 targets = len(set(self.original_data[target]))
                 if targets > 2:
-                    print "WARNING: target feature %s has more than 2 values (it has %d), I'm unsure whether this tool handles that correctly" % (target, targets)
+                    print("WARNING: target feature %s has more than 2 values (it has %d), I'm unsure whether this tool handles that correctly" % (target, targets))
             del self.sup_ind[self.target_ix]
                 #    self.target_ix = "%s_%s" % (self.target_ix,self.original_data[self.target_ix][0])
 
             if self.sensitive_ix in nominal_cols:
                 targets = len(set(self.original_data[sensitive]))
                 if targets > 2:
-                    print "WARNING: sensitive feature %s has more than 2 values (it has %d), I'm unsure whether this tool handles that correctly" % (sensitive, targets)
+                    print("WARNING: sensitive feature %s has more than 2 values (it has %d), I'm unsure whether this tool handles that correctly" % (sensitive, targets))
                 self.sup_ind[self.sensitive_ix] = [self.sensitive_ix]
                 #    self.sensitive_ix = "%s_%s" % (self.sensitive_ix,self.original_data[self.sensitive_ix][0])
 
@@ -234,8 +234,8 @@ class Dataset(object):
             
             self.get_sensitive = lambda X: X[self.sensitive_ix]
 
-            print "target feature    = %s" % self.target_ix
-            print "sensitive feature = %s" % self.sensitive_ix
+            print("target feature    = %s" % self.target_ix)
+            print("sensitive feature = %s" % self.sensitive_ix)
 
         else:
             raise ValueError("Unknown dataset %s" % dataset)
@@ -253,7 +253,7 @@ def make_super_indices( dataset ):
         if dataset[i].dtype != 'O':
             sup_ind[i] = [i]
         else:
-            unique = filter(lambda v: v==v, dataset[i].unique())
+            unique = [v for v in dataset[i].unique() if v==v]
             sup_ind[i] = [i + '_' + s for s in unique]
     return sup_ind
 
@@ -371,7 +371,7 @@ def plot_series(series, args, xlabel, ylabel):
     plt.tight_layout()
     if (args.output_pdf == True):
         pp = PdfPages('figure-' + measure + '-' + args.dataset + '-' + args.classifier +'.pdf')
-        print ('Writing to figure-' + measure + '-' + args.dataset + '-' + args.classifier + '.pdf')
+        print(('Writing to figure-' + measure + '-' + args.dataset + '-' + args.classifier + '.pdf'))
         pp.savefig(bbox_inches='tight')
         pp.close()
     plt.show()
@@ -385,7 +385,7 @@ def plot_series_with_baseline(series, args, xlabel, ylabel, baseline):
     (series - baseline).plot(kind="bar")
     #plt.xticks(range(series.size), series.keys(), size='small')
     x1,x2,y1,y2 = plt.axis()
-    X = range(series.size)
+    X = list(range(series.size))
     for x,y in zip(X,series.as_matrix() - baseline):
         x_wd = 1. / series.size
         if(y < 0):
@@ -402,7 +402,7 @@ def plot_series_with_baseline(series, args, xlabel, ylabel, baseline):
     plt.tight_layout()
     if (args.output_pdf == True):
         pp = PdfPages('figure-' + measure + '-' + dataset.name + '-' + dataset.sensitive_ix + '-' + args.classifier + '.pdf')
-        print ('Writing to figure-' + measure + '-' + dataset.name + '-' + dataset.sensitive_ix + '-' + args.classifier + '.pdf')
+        print(('Writing to figure-' + measure + '-' + dataset.name + '-' + dataset.sensitive_ix + '-' + args.classifier + '.pdf'))
         pp.savefig()
         pp.close()
     plt.show()
@@ -412,18 +412,18 @@ def measure_analytics(dataset, cls, X, y, sens=None):
     y_pred = cls.predict(X)
 
     error_rate = numpy.mean((y_pred != y)*1.)
-    print('test error rate: %.3f' % error_rate)
+    print(('test error rate: %.3f' % error_rate))
 
     discrim0 = discrim(numpy.array(X), cls, numpy.array(sens))
-    print('Initial Discrimination: %.3f' % discrim0)
+    print(('Initial Discrimination: %.3f' % discrim0))
 
     from scipy.stats.stats import pearsonr
     corr0 = pearsonr(sens, y)[0]
-    print('Correlation: %.3f' % corr0)
+    print(('Correlation: %.3f' % corr0))
 
     ji =  metrics.jaccard_similarity_score(y, sens)
-    print('JI: %.3f' % ji)
+    print(('JI: %.3f' % ji))
 
     mi = metrics.normalized_mutual_info_score(y, sens)
-    print('MI: %.3f' % mi)
+    print(('MI: %.3f' % mi))
 

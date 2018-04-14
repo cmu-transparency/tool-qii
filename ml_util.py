@@ -186,9 +186,9 @@ class Dataset(object):
 
         elif exists(dataset):
             print ("loading new dataset %s" % dataset)
-            
-            self.original_data = pd.read_csv(dataset)
 
+            self.original_data = pd.read_csv(dataset)
+            
             if target is None:
                 target = self.original_data.columns[-1]
             self.target_ix = target

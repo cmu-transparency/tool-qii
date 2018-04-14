@@ -142,7 +142,7 @@ def shapley_influence(dataset, cls, x_individual, X_test):
     X_sample = numpy.array(X_test.ix[b])
     f_columns = dataset.num_data.columns
     sup_ind = dataset.sup_ind
-    super_indices = dataset.sup_ind.keys()
+    super_indices = list(dataset.sup_ind.keys())
 
     shapley = dict.fromkeys(super_indices, 0)
     if RECORD_COUNTERFACTUALS:
@@ -162,7 +162,7 @@ def shapley_influence(dataset, cls, x_individual, X_test):
             # Choose a random subset and get string indices by flattening
             #  excluding si
             si = super_indices[perm[i]]
-            S_m_si = sum([sup_ind[super_indices[perm[j]]] for j in xrange(0, i)], [])
+            S_m_si = sum([sup_ind[super_indices[perm[j]]] for j in range(0, i)], [])
             #translate into intiger indices
             ls_m_si = [f_columns.get_loc(f) for f in S_m_si]
             #repeat x_individual_rep

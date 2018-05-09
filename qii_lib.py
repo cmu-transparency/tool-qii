@@ -142,7 +142,11 @@ def shapley_influence(dataset, cls, x_individual, X_test):
     X_sample = numpy.array(X_test.ix[b])
     f_columns = dataset.num_data.columns
     sup_ind = dataset.sup_ind
-    super_indices = list(dataset.sup_ind.keys())
+    super_indices = list(sup_ind.keys())
+    # translate into intiger indices
+    ls = {}
+    for si in super_indices:
+        ls[si] = [f_columns.get_loc(f) for f in sup_ind[si]]
 
     shapley = dict.fromkeys(super_indices, 0)
     if RECORD_COUNTERFACTUALS:
@@ -158,18 +162,19 @@ def shapley_influence(dataset, cls, x_individual, X_test):
 
     for sample in range(0, s_samples):
         perm = numpy.random.permutation(len(super_indices))
+        # invariant: S_m_si contains all the features before si (current feature)
+        S_m_si = []
+        ls_m_si = []
         for i in range(0, len(super_indices)):
             # Choose a random subset and get string indices by flattening
             #  excluding si
             si = super_indices[perm[i]]
-            S_m_si = sum([sup_ind[super_indices[perm[j]]] for j in range(0, i)], [])
-            #translate into intiger indices
-            ls_m_si = [f_columns.get_loc(f) for f in S_m_si]
+
+            new_ls = ls_m_si + ls[si]
             #repeat x_individual_rep
             (p_S, X_S) = v(ls_m_si, x_individual, X_sample)
             #also intervene on s_i
-            ls_si = [f_columns.get_loc(f) for f in sup_ind[si]]
-            (p_S_si, X_S_si) = v(ls_m_si + ls_si, x_individual, X_sample)
+            (p_S_si, X_S_si) = v(new_ls, x_individual, X_sample)
             shapley[si] = shapley[si] - (p_S_si - p_S)/s_samples
 
             if RECORD_COUNTERFACTUALS:
@@ -178,6 +183,8 @@ def shapley_influence(dataset, cls, x_individual, X_test):
                 end_ind = 2*(sample+1)*p_samples
                 counterfactuals[si][1][start_ind:mid_ind] = X_S
                 counterfactuals[si][1][mid_ind:end_ind] = X_S_si
+            ls_m_si = new_ls
+            S_m_si = S_m_si + sup_ind[si]
 
     return (shapley, counterfactuals)
 

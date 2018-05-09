@@ -106,8 +106,10 @@ def eval_shapley(dataset, args, dat):
     x_individual = dat.scaler.transform(row_individual)
 
     shapley, _ = qii_lib.shapley_influence(dataset, dat.cls, x_individual, dat.x_test)
+    print (shapley)
     shapley_series = pd.Series(shapley, index=shapley.keys())
     if args.show_plot or args.output_pdf:
         plot_series(shapley_series, args, 'Feature', 'QII on Outcomes (Shapley)')
+
 
 __main__()

@@ -128,12 +128,17 @@ def shapley_influence(dataset, cls, x_individual, X_test):
     p_samples = 600
     s_samples = 600
 
-    def v(S, x, X_inter):
-        x_rep = numpy.tile(x, (p_samples, 1))
-        for f in S:
-            x_rep[:, f] = X_inter[:, f]
-        p = ((cls.predict(x_rep) == y0)*1.).mean()
-        return (p, x_rep)
+    def v(S_main, S_feature, x, X_inter):
+        x_rep1 = numpy.tile(x, (p_samples, 1))
+        for f in S_main:
+            x_rep1[:, f] = X_inter[:, f]
+        x_rep2 = numpy.copy(x_rep1)
+        for f in S_feature:
+            x_rep2[:, f] = X_inter[:, f]
+
+        p1 = ((cls.predict(x_rep1) == y0)*1.).mean()
+        p2 = ((cls.predict(x_rep2) == y0) * 1.).mean()
+        return (p1, x_rep1, p2, x_rep2)
 
     #min_i = numpy.argmin(sum_local_influence)
     y0 = cls.predict(x_individual)
@@ -172,9 +177,7 @@ def shapley_influence(dataset, cls, x_individual, X_test):
 
             new_ls = ls_m_si + ls[si]
             #repeat x_individual_rep
-            (p_S, X_S) = v(ls_m_si, x_individual, X_sample)
-            #also intervene on s_i
-            (p_S_si, X_S_si) = v(new_ls, x_individual, X_sample)
+            (p_S, X_S, p_S_si, X_S_si) = v(ls_m_si, ls[si], x_individual, X_sample)
             shapley[si] = shapley[si] - (p_S_si - p_S)/s_samples
 
             if RECORD_COUNTERFACTUALS:

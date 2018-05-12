@@ -132,17 +132,16 @@ def shapley_influence(dataset, cls, x_individual, X_test):
         x_rep1 = numpy.tile(x, (p_samples, 1))
         for f in S_main:
             x_rep1[:, f] = X_inter[:, f]
-        x_rep2 = numpy.copy(x_rep1)
+        p1 = ((cls.predict(x_rep1) == y0)*1.).mean()
+        x_rep2 = numpy.copy(x_rep1) if RECORD_COUNTERFACTUALS else x_rep1
         for f in S_feature:
             x_rep2[:, f] = X_inter[:, f]
 
-        p1 = ((cls.predict(x_rep1) == y0)*1.).mean()
         p2 = ((cls.predict(x_rep2) == y0) * 1.).mean()
         return (p1, x_rep1, p2, x_rep2)
 
     #min_i = numpy.argmin(sum_local_influence)
     y0 = cls.predict(x_individual)
-    print (y0)
     b = numpy.random.randint(0, X_test.shape[0], p_samples)
     X_sample = numpy.array(X_test.ix[b])
     f_columns = dataset.num_data.columns

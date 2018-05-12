@@ -280,10 +280,15 @@ def get_arguments():
     parser.add_argument('--max_depth', type=int, default=2, help='Max depth for decision trees and forests')
     parser.add_argument('--n_estimators', type=int, default=20, help='Number of trees for decision forests')
     parser.add_argument('--seed', default=None, help='Random seed, auto seeded if not specified', type=int)
-    
-    parser.add_argument('-i', '--individual', default=0, type=int, help='Index for Individualized Transparency Report')
-    parser.add_argument('-r', '--record-counterfactuals', action='store_true', help='Store counterfactual pairs for causal analysis')
     parser.add_argument('-a', '--active-iterations', type=int, default=10, help='Active Learning Iterations')
+
+    parser.add_argument('-r', '--record-counterfactuals', action='store_true', help='Store counterfactual pairs for causal analysis')
+
+    parser.add_argument('-i', '--individual', default=0, type=int, help='Index for Individualized Transparency Report')
+    parser.add_argument('--batch_mode', default=False, type=bool, help='Run in batch mode')
+    parser.add_argument('--batch_mode_samples', type=int, default=1000, help='Number of samples to compute.')
+    parser.add_argument('--output_suffix', type=str, default=None, help='Output suffix for output in batch mode')
+
 
     args = parser.parse_args()
     if args.seed is not None:

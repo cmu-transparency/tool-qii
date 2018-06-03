@@ -128,26 +128,20 @@ def shapley_influence(dataset, cls, x_individual, X_test):
     p_samples = 600
     s_samples = 600
 
-    def v(S_main, S_feature, x, X_inter):
-        x_rep1 = numpy.tile(x, (p_samples, 1))
-        for f in S_main:
-            x_rep1[:, f] = X_inter[:, f]
-        p1 = ((cls.predict(x_rep1) == y0)*1.).mean()
-        x_rep2 = numpy.copy(x_rep1) if RECORD_COUNTERFACTUALS else x_rep1
+    def intervene(S_feature, X_values, X_inter):
         for f in S_feature:
-            x_rep2[:, f] = X_inter[:, f]
+            X_values[:, f] = X_inter[:, f]
 
-        p2 = ((cls.predict(x_rep2) == y0) * 1.).mean()
-        return (p1, x_rep1, p2, x_rep2)
+    def P(X_values):
+        return ((cls.predict(X_values) == y0) * 1.).mean()
 
-    #min_i = numpy.argmin(sum_local_influence)
     y0 = cls.predict(x_individual)
     b = numpy.random.randint(0, X_test.shape[0], p_samples)
     X_sample = numpy.array(X_test.ix[b])
     f_columns = dataset.num_data.columns
     sup_ind = dataset.sup_ind
     super_indices = list(sup_ind.keys())
-    # translate into intiger indices
+    # translate into integer indices
     ls = {}
     for si in super_indices:
         ls[si] = [f_columns.get_loc(f) for f in sup_ind[si]]
@@ -166,25 +160,33 @@ def shapley_influence(dataset, cls, x_individual, X_test):
 
     for sample in range(0, s_samples):
         perm = numpy.random.permutation(len(super_indices))
-        # invariant: S_m_si contains all the features before si (current feature)
-        S_m_si = []
-        ls_m_si = []
+        # X_data is x_individual intervened with some features from X_sample
+        # Invariant: X_data will be x_individual intervened with Union of si[perm[ 0 ... i-1]]
+        X_data = numpy.tile(x_individual, (p_samples, 1))
+        # p for X_data, == 1.0 trivially at start.
+        p_S_si = 1.
+
         for i in range(0, len(super_indices)):
             # Choose a random subset and get string indices by flattening
             #  excluding si
             si = super_indices[perm[i]]
 
-            new_ls = ls_m_si + ls[si]
-            #repeat x_individual_rep
-            (p_S, X_S, p_S_si, X_S_si) = v(ls_m_si, ls[si], x_individual, X_sample)
-            shapley[si] = shapley[si] - (p_S_si - p_S)/s_samples
-
             if RECORD_COUNTERFACTUALS:
                 start_ind = 2*sample*p_samples
                 mid_ind = (2*sample+1)*p_samples
+                counterfactuals[si][1][start_ind:mid_ind] = X_data
+
+            #repeat x_individual_rep
+            intervene(ls[si], X_data, X_sample)
+            if RECORD_COUNTERFACTUALS:
+                mid_ind = (2*sample+1)*p_samples
                 end_ind = 2*(sample+1)*p_samples
-                counterfactuals[si][1][start_ind:mid_ind] = X_S
-                counterfactuals[si][1][mid_ind:end_ind] = X_S_si
+                counterfactuals[si][1][mid_ind:end_ind] = X_data
+ 
+            p_S = P(X_data)
+            shapley[si] = shapley[si] - (p_S - p_S_si)/s_samples
+            p_S_si = p_S
+
             ls_m_si = new_ls
             S_m_si = S_m_si + sup_ind[si]
 

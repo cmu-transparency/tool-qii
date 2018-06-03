@@ -187,9 +187,6 @@ def shapley_influence(dataset, cls, x_individual, X_test):
             shapley[si] = shapley[si] - (p_S - p_S_si)/s_samples
             p_S_si = p_S
 
-            ls_m_si = new_ls
-            S_m_si = S_m_si + sup_ind[si]
-
     return (shapley, counterfactuals)
 
 def banzhaf_influence(dataset, cls, x_individual, X_test):

@@ -1,0 +1,1142 @@
+,loan_amnt,amt_difference,term,installment,grade,emp_length,home_ownership,annual_inc,verification_status,purpose,dti,delinq_2yrs_cat,inq_last_6mths_cat,open_acc,pub_rec,pub_rec_cat,acc_ratio,initial_list_status,loan_status,target
+207122,5000.0,eq,36,158.77,A,4.0,RENT,65000.0,Not Verified,credit_card,9.27,no,yes,9.0,0.0,no,0.5,f,Fully Paid,0
+207123,17050.0,eq,60,417.26,C,9.0,OWN,42800.0,Verified,debt_consolidation,11.44,no,yes,8.0,0.0,no,0.421052631579,f,Fully Paid,0
+207124,5300.0,eq,36,182.0,C,10.0,MORTGAGE,35000.0,Verified,debt_consolidation,24.72,no,yes,13.0,0.0,no,0.351351351351,f,Fully Paid,0
+207125,2425.0,eq,36,85.02,C,5.0,RENT,35000.0,Source Verified,credit_card,7.99,no,yes,12.0,0.0,no,0.705882352941,f,Charged Off,1
+207126,3450.0,eq,36,114.79,B,10.0,RENT,74000.0,Verified,credit_card,4.12,no,yes,3.0,0.0,no,0.75,f,Fully Paid,0
+207127,5600.0,eq,36,192.3,C,1.0,RENT,72000.0,Not Verified,major_purchase,17.23,no,no,13.0,0.0,no,0.52,f,Fully Paid,0
+207128,16000.0,less,60,415.49,D,6.0,MORTGAGE,53000.0,Verified,debt_consolidation,13.09,no,no,9.0,0.0,no,0.529411764706,f,Fully Paid,0
+207129,2000.0,eq,36,68.45,B,8.0,MORTGAGE,34445.0,Not Verified,other,7.94,no,no,4.0,1.0,yes,0.4,f,Charged Off,1
+207130,27300.0,eq,60,798.58,G,10.0,RENT,124650.0,Verified,debt_consolidation,11.29,no,no,11.0,0.0,no,1.0,f,Charged Off,1
+207131,14000.0,eq,36,465.81,B,5.0,RENT,42000.0,Not Verified,debt_consolidation,10.62,no,no,11.0,0.0,no,0.611111111111,f,Fully Paid,0
+207132,4000.0,eq,36,124.65,A,10.0,MORTGAGE,55000.0,Not Verified,debt_consolidation,7.68,no,yes,13.0,0.0,no,0.393939393939,f,Fully Paid,0
+207133,3325.0,eq,36,103.62,A,1.0,RENT,25000.0,Source Verified,renewable_energy,28.66,no,yes,8.0,0.0,no,0.727272727273,f,Fully Paid,0
+207134,30000.0,eq,60,718.59,C,5.0,MORTGAGE,104000.0,Verified,credit_card,24.79,no,yes,11.0,0.0,no,0.275,f,Fully Paid,0
+207135,2500.0,eq,36,87.65,C,2.0,RENT,165000.0,Not Verified,debt_consolidation,14.0,no,yes,11.0,0.0,no,0.478260869565,f,Fully Paid,0
+207136,7750.0,eq,36,266.13,C,10.0,MORTGAGE,104000.0,Source Verified,major_purchase,6.99,no,yes,15.0,0.0,no,0.714285714286,f,Fully Paid,0
+207138,14100.0,eq,36,490.93,C,3.0,MORTGAGE,60000.0,Not Verified,debt_consolidation,14.17,no,no,15.0,1.0,yes,0.51724137931,f,Fully Paid,0
+207139,22000.0,eq,36,806.99,D,1.0,RENT,100000.0,Verified,credit_card,14.47,yes,no,9.0,0.0,no,0.428571428571,f,Fully Paid,0
+207140,20950.0,less,60,551.79,D,4.0,MORTGAGE,53400.0,Verified,debt_consolidation,22.94,no,yes,13.0,0.0,no,0.41935483871,f,Fully Paid,0
+207141,4000.0,eq,36,136.89,B,3.0,RENT,20000.0,Not Verified,debt_consolidation,6.78,no,no,5.0,0.0,no,0.714285714286,f,Fully Paid,0
+207142,2800.0,eq,36,97.49,C,10.0,RENT,65000.0,Not Verified,debt_consolidation,14.93,no,yes,11.0,0.0,no,0.578947368421,f,Fully Paid,0
+207143,4375.0,eq,36,145.57,B,1.0,RENT,16000.0,Verified,wedding,26.4,no,yes,9.0,0.0,no,1.0,f,Fully Paid,0
+207144,10000.0,eq,36,348.18,C,5.0,RENT,55000.0,Not Verified,credit_card,8.14,no,yes,9.0,0.0,no,0.428571428571,f,Charged Off,1
+207145,9000.0,eq,36,324.34,D,3.0,RENT,53000.0,Not Verified,other,7.14,no,no,9.0,0.0,no,0.642857142857,f,Charged Off,1
+207146,5000.0,eq,36,166.36,B,10.0,RENT,82298.0,Not Verified,debt_consolidation,14.53,no,yes,14.0,0.0,no,0.666666666667,f,Fully Paid,0
+207147,6800.0,eq,36,256.2,E,10.0,RENT,60000.0,Source Verified,credit_card,9.02,no,no,5.0,0.0,no,0.454545454545,f,Fully Paid,0
+207148,5375.0,eq,36,178.84,B,10.0,RENT,24000.0,Not Verified,debt_consolidation,15.35,no,no,3.0,0.0,no,0.6,f,Fully Paid,0
+207149,10000.0,less,36,360.38,D,1.0,RENT,70000.0,Verified,debt_consolidation,31.34,no,no,13.0,0.0,no,0.5,f,Fully Paid,0
+207150,6250.0,eq,36,219.12,C,5.0,MORTGAGE,22000.0,Not Verified,debt_consolidation,20.24,no,yes,11.0,0.0,no,0.52380952381,f,Fully Paid,0
+207152,5000.0,eq,36,161.72,B,1.0,MORTGAGE,25000.0,Source Verified,debt_consolidation,19.34,no,no,7.0,0.0,no,0.388888888889,f,Fully Paid,0
+207153,9600.0,eq,36,329.65,C,4.0,MORTGAGE,62000.0,Not Verified,debt_consolidation,4.63,no,no,6.0,0.0,no,0.461538461538,f,Fully Paid,0
+207154,10000.0,eq,36,343.39,C,2.0,RENT,70000.0,Not Verified,debt_consolidation,7.92,yes,no,5.0,0.0,no,0.294117647059,f,Fully Paid,0
+207155,9750.0,eq,36,334.8,C,2.0,MORTGAGE,70000.0,Not Verified,debt_consolidation,2.26,yes,yes,10.0,0.0,no,0.4,f,Fully Paid,0
+207156,14000.0,eq,36,480.74,C,3.0,RENT,45000.0,Source Verified,debt_consolidation,14.94,yes,yes,13.0,0.0,no,0.342105263158,f,Fully Paid,0
+207157,5000.0,eq,36,155.81,A,10.0,OWN,56000.0,Not Verified,home_improvement,1.69,no,yes,10.0,0.0,no,0.3125,f,Fully Paid,0
+207158,10500.0,less,36,333.41,A,10.0,MORTGAGE,48000.0,Verified,debt_consolidation,18.18,no,no,9.0,0.0,no,0.391304347826,f,Fully Paid,0
+207159,1000.0,eq,36,31.76,A,1.0,OWN,60000.0,Not Verified,vacation,15.02,no,yes,6.0,0.0,no,0.461538461538,f,Fully Paid,0
+207160,4000.0,less,36,133.09,B,7.0,RENT,44000.0,Not Verified,debt_consolidation,20.78,no,no,4.0,0.0,no,0.222222222222,f,Fully Paid,0
+207162,7750.0,less,36,269.84,C,9.0,RENT,35000.0,Verified,debt_consolidation,12.53,no,yes,6.0,0.0,no,0.545454545455,f,Fully Paid,0
+207163,3000.0,eq,36,95.26,A,10.0,OWN,31000.0,Not Verified,debt_consolidation,25.66,no,yes,13.0,0.0,no,0.351351351351,f,Fully Paid,0
+207164,18250.0,eq,36,644.24,C,1.0,OWN,47000.0,Not Verified,debt_consolidation,29.16,yes,yes,15.0,0.0,no,0.555555555556,f,Fully Paid,0
+207165,2750.0,eq,36,97.08,C,1.0,OWN,30000.0,Verified,vacation,12.96,no,yes,9.0,0.0,no,0.9,f,Fully Paid,0
+207166,5600.0,eq,36,192.3,C,2.0,MORTGAGE,72000.0,Not Verified,credit_card,21.98,yes,no,16.0,0.0,no,0.290909090909,f,Fully Paid,0
+207167,3000.0,eq,36,93.49,A,10.0,RENT,120000.0,Verified,small_business,4.78,no,yes,11.0,0.0,no,0.785714285714,f,Fully Paid,0
+207168,15000.0,less,36,525.88,C,1.0,RENT,60000.0,Verified,debt_consolidation,14.62,no,yes,11.0,0.0,no,0.379310344828,f,Charged Off,1
+207169,6750.0,less,36,214.34,A,10.0,MORTGAGE,31000.0,Verified,debt_consolidation,31.2,no,yes,10.0,0.0,no,0.416666666667,f,Fully Paid,0
+207170,31825.0,eq,60,795.57,C,5.0,MORTGAGE,80000.0,Verified,debt_consolidation,26.51,no,yes,9.0,0.0,no,0.428571428571,f,Charged Off,1
+207171,14825.0,eq,36,530.55,C,4.0,MORTGAGE,95000.0,Verified,credit_card,20.24,no,yes,25.0,0.0,no,0.78125,f,Fully Paid,0
+207172,19000.0,eq,60,508.58,E,9.0,MORTGAGE,72000.0,Verified,credit_card,13.73,no,yes,8.0,0.0,no,0.470588235294,f,Fully Paid,0
+207173,35000.0,eq,60,838.36,C,10.0,MORTGAGE,168270.0,Verified,debt_consolidation,30.41,no,yes,19.0,0.0,no,0.655172413793,f,Fully Paid,0
+207176,19000.0,eq,36,661.53,C,10.0,RENT,48000.0,Not Verified,debt_consolidation,16.35,no,no,4.0,0.0,no,0.181818181818,f,Fully Paid,0
+207177,14400.0,eq,36,479.12,B,5.0,MORTGAGE,65000.0,Verified,debt_consolidation,14.07,no,yes,11.0,0.0,no,0.6875,f,Fully Paid,0
+207178,5375.0,eq,36,187.15,C,6.0,MORTGAGE,26000.0,Verified,debt_consolidation,23.14,no,no,8.0,0.0,no,0.126984126984,f,Charged Off,1
+207179,23850.0,eq,60,628.17,D,2.0,RENT,60000.0,Verified,debt_consolidation,28.96,no,no,9.0,0.0,no,0.321428571429,f,Fully Paid,0
+207180,23850.0,eq,60,615.41,D,4.0,RENT,60000.0,Verified,debt_consolidation,33.54,no,no,10.0,0.0,no,0.4,f,Charged Off,1
+207181,2400.0,eq,36,82.14,B,2.0,RENT,45000.0,Not Verified,credit_card,16.77,yes,no,10.0,0.0,no,0.434782608696,f,Fully Paid,0
+207182,9000.0,eq,36,309.05,C,10.0,MORTGAGE,130000.0,Verified,debt_consolidation,31.97,yes,yes,17.0,0.0,no,0.320754716981,f,Fully Paid,0
+207183,16500.0,eq,60,386.76,C,6.0,RENT,60000.0,Verified,debt_consolidation,23.28,no,yes,19.0,0.0,no,0.513513513514,f,Fully Paid,0
+207184,8000.0,eq,36,274.71,C,10.0,RENT,65200.0,Source Verified,wedding,14.78,no,yes,12.0,0.0,no,0.342857142857,f,Fully Paid,0
+207185,2125.0,eq,36,73.99,C,1.0,RENT,31000.0,Not Verified,debt_consolidation,12.97,no,yes,7.0,0.0,no,0.538461538462,f,Fully Paid,0
+207186,16425.0,less,36,579.81,C,6.0,RENT,42000.0,Verified,debt_consolidation,29.03,yes,yes,9.0,0.0,no,0.5,f,Charged Off,1
+207187,22750.0,eq,36,803.09,C,8.0,RENT,58000.0,Verified,renewable_energy,6.29,no,yes,8.0,0.0,no,0.380952380952,f,Fully Paid,0
+207188,1800.0,eq,36,63.55,C,10.0,RENT,76000.0,Not Verified,debt_consolidation,14.09,no,yes,12.0,0.0,no,0.631578947368,f,Fully Paid,0
+207189,20675.0,eq,60,544.55,D,10.0,MORTGAGE,52000.0,Verified,small_business,15.12,no,yes,7.0,0.0,no,0.333333333333,f,Charged Off,1
+207190,9950.0,eq,36,362.17,D,5.0,RENT,38000.0,Source Verified,debt_consolidation,22.17,no,no,12.0,0.0,no,0.75,f,Fully Paid,0
+207191,22000.0,eq,36,755.44,C,1.0,MORTGAGE,78000.0,Verified,debt_consolidation,14.38,no,no,9.0,0.0,no,0.36,f,Fully Paid,0
+207192,8000.0,eq,36,278.54,C,10.0,RENT,50000.0,Source Verified,credit_card,19.13,no,yes,14.0,0.0,no,0.5,f,Charged Off,1
+207193,4000.0,eq,36,133.09,B,4.0,RENT,65000.0,Not Verified,debt_consolidation,17.94,no,yes,9.0,0.0,no,0.272727272727,f,Fully Paid,0
+207194,1525.0,eq,36,47.53,A,4.0,MORTGAGE,93000.0,Not Verified,vacation,10.18,yes,no,14.0,0.0,no,0.518518518519,f,Fully Paid,0
+207195,4000.0,eq,36,136.89,B,6.0,RENT,40000.0,Verified,moving,12.45,no,yes,4.0,0.0,no,0.444444444444,f,Charged Off,1
+207196,8000.0,eq,36,288.3,D,4.0,OWN,70000.0,Source Verified,debt_consolidation,15.1,no,no,19.0,0.0,no,0.527777777778,f,Fully Paid,0
+207197,6000.0,less,36,199.63,B,6.0,RENT,50000.0,Verified,credit_card,32.28,no,no,18.0,0.0,no,0.6,f,Fully Paid,0
+207198,2000.0,eq,36,68.45,B,10.0,OWN,45000.0,Source Verified,small_business,13.79,yes,no,6.0,2.0,yes,0.545454545455,f,Fully Paid,0
+207199,6000.0,eq,36,196.84,B,10.0,RENT,45000.0,Not Verified,debt_consolidation,16.13,no,no,10.0,0.0,no,0.322580645161,f,Fully Paid,0
+207200,10000.0,eq,36,363.99,D,2.0,RENT,41000.0,Not Verified,debt_consolidation,26.02,no,yes,12.0,0.0,no,0.461538461538,f,Fully Paid,0
+207201,24450.0,eq,36,875.0,C,10.0,OWN,62000.0,Verified,debt_consolidation,25.68,yes,yes,14.0,0.0,no,0.636363636364,f,Fully Paid,0
+207202,25000.0,eq,60,641.52,D,5.0,MORTGAGE,75500.0,Verified,credit_card,19.85,no,yes,15.0,0.0,no,0.441176470588,f,Charged Off,1
+207203,10000.0,eq,36,357.88,C,10.0,MORTGAGE,95000.0,Verified,debt_consolidation,12.32,no,yes,8.0,0.0,no,0.666666666667,f,Fully Paid,0
+207204,27150.0,less,60,529.89,C,3.0,MORTGAGE,85000.0,Verified,debt_consolidation,20.95,no,yes,17.0,0.0,no,0.435897435897,f,Fully Paid,0
+207205,12000.0,eq,36,432.45,D,10.0,MORTGAGE,92000.0,Not Verified,home_improvement,14.56,yes,yes,11.0,0.0,no,0.255813953488,f,Fully Paid,0
+207208,3500.0,eq,36,119.78,B,1.0,MORTGAGE,52000.0,Verified,major_purchase,31.2,no,yes,11.0,0.0,no,0.314285714286,f,Fully Paid,0
+207209,6000.0,eq,36,205.33,B,10.0,MORTGAGE,90000.0,Not Verified,debt_consolidation,14.97,no,yes,17.0,0.0,no,0.293103448276,f,Fully Paid,0
+207210,21725.0,eq,60,572.21,D,1.0,RENT,55000.0,Verified,wedding,24.81,no,yes,22.0,0.0,no,0.709677419355,f,Charged Off,1
+207211,5000.0,eq,36,166.36,B,5.0,RENT,90000.0,Not Verified,credit_card,6.75,no,yes,8.0,0.0,no,1.0,f,Charged Off,1
+207213,8000.0,eq,36,249.3,A,4.0,MORTGAGE,73000.0,Verified,debt_consolidation,26.6,no,yes,10.0,0.0,no,0.15873015873,f,Fully Paid,0
+207214,9000.0,eq,36,313.36,C,6.0,MORTGAGE,73428.0,Verified,wedding,5.56,yes,no,9.0,0.0,no,0.692307692308,f,Charged Off,1
+207215,7000.0,eq,36,254.8,D,1.0,MORTGAGE,24000.0,Not Verified,debt_consolidation,18.9,yes,yes,10.0,0.0,no,0.172413793103,f,Fully Paid,0
+207216,13750.0,eq,60,354.8,D,5.0,RENT,55000.0,Verified,debt_consolidation,31.2,no,yes,16.0,0.0,no,0.888888888889,f,Charged Off,1
+207217,13750.0,eq,36,478.74,C,1.0,MORTGAGE,58000.0,Verified,debt_consolidation,17.54,no,no,11.0,0.0,no,0.379310344828,f,Charged Off,1
+207218,10000.0,eq,36,343.39,C,6.0,RENT,50000.0,Not Verified,debt_consolidation,28.83,no,yes,9.0,0.0,no,0.473684210526,f,Charged Off,1
+207219,12000.0,eq,36,423.61,C,10.0,MORTGAGE,150000.0,Source Verified,credit_card,3.21,no,yes,8.0,0.0,no,0.666666666667,f,Fully Paid,0
+207220,1200.0,eq,36,42.95,C,8.0,MORTGAGE,42000.0,Not Verified,home_improvement,20.3,no,yes,13.0,0.0,no,0.481481481481,f,Charged Off,1
+207221,23675.0,eq,60,633.72,E,6.0,RENT,61000.0,Verified,debt_consolidation,13.5,no,yes,11.0,0.0,no,0.611111111111,f,Fully Paid,0
+207222,16000.0,eq,60,373.04,B,4.0,MORTGAGE,62000.0,Verified,debt_consolidation,17.57,no,yes,15.0,0.0,no,0.625,f,Fully Paid,0
+207223,9600.0,eq,36,343.56,C,1.0,RENT,40000.0,Source Verified,credit_card,8.67,no,yes,6.0,0.0,no,0.6,f,Fully Paid,0
+207224,20000.0,less,60,479.06,C,4.0,RENT,70824.0,Verified,credit_card,24.96,no,no,8.0,0.0,no,0.421052631579,f,Fully Paid,0
+207225,3000.0,eq,36,92.12,A,6.0,MORTGAGE,50000.0,Source Verified,other,14.11,no,yes,9.0,0.0,no,0.428571428571,f,Fully Paid,0
+207226,19075.0,eq,36,673.36,C,6.0,RENT,85000.0,Source Verified,debt_consolidation,17.8,no,yes,15.0,0.0,no,0.75,f,Fully Paid,0
+207227,5000.0,eq,36,174.09,C,5.0,MORTGAGE,45000.0,Not Verified,credit_card,16.19,yes,yes,13.0,0.0,no,0.722222222222,f,Fully Paid,0
+207228,1400.0,eq,36,43.63,A,1.0,RENT,48000.0,Source Verified,debt_consolidation,3.55,no,yes,5.0,0.0,no,0.833333333333,f,Fully Paid,0
+207229,5000.0,eq,36,174.09,C,5.0,RENT,50000.0,Source Verified,debt_consolidation,10.63,no,no,11.0,0.0,no,0.578947368421,f,Fully Paid,0
+207230,8800.0,eq,36,321.47,D,6.0,RENT,38000.0,Not Verified,debt_consolidation,8.46,no,yes,6.0,0.0,no,0.75,f,Charged Off,1
+207231,4250.0,eq,36,152.1,C,4.0,MORTGAGE,50000.0,Not Verified,debt_consolidation,10.54,yes,yes,11.0,0.0,no,0.392857142857,f,Fully Paid,0
+207232,5000.0,eq,36,174.09,C,3.0,MORTGAGE,65000.0,Not Verified,home_improvement,2.51,yes,no,5.0,0.0,no,0.833333333333,f,Charged Off,1
+207233,3500.0,eq,36,106.53,A,6.0,MORTGAGE,40000.0,Verified,debt_consolidation,30.09,no,no,16.0,0.0,no,0.301886792453,f,Charged Off,1
+207234,4800.0,eq,36,171.78,C,2.0,MORTGAGE,58500.0,Not Verified,home_improvement,21.56,yes,yes,7.0,0.0,no,0.411764705882,f,Fully Paid,0
+207235,8500.0,less,36,306.32,D,5.0,OWN,32000.0,Verified,credit_card,33.38,no,yes,18.0,0.0,no,0.428571428571,f,Charged Off,1
+207236,2500.0,less,36,84.37,B,4.0,RENT,43000.0,Not Verified,debt_consolidation,12.5,no,no,4.0,0.0,no,0.2,f,Fully Paid,0
+207237,4000.0,eq,36,124.65,A,1.0,MORTGAGE,103000.0,Not Verified,debt_consolidation,3.71,no,yes,8.0,0.0,no,0.533333333333,f,Fully Paid,0
+207238,12000.0,eq,36,423.61,C,10.0,RENT,100000.0,Source Verified,debt_consolidation,9.9,yes,yes,12.0,0.0,no,0.4,f,Fully Paid,0
+207239,14400.0,eq,36,501.37,C,1.0,OWN,145000.0,Not Verified,debt_consolidation,7.59,no,yes,8.0,0.0,no,0.571428571429,f,Fully Paid,0
+207241,4000.0,eq,36,127.02,A,10.0,MORTGAGE,150000.0,Not Verified,other,20.95,no,no,13.0,0.0,no,0.448275862069,f,Fully Paid,0
+207242,8000.0,eq,36,274.71,C,2.0,MORTGAGE,90000.0,Not Verified,other,13.33,yes,yes,10.0,0.0,no,0.384615384615,f,Fully Paid,0
+207243,3500.0,eq,36,107.47,A,9.0,MORTGAGE,38000.0,Not Verified,debt_consolidation,5.4,no,yes,10.0,0.0,no,0.357142857143,f,Fully Paid,0
+207244,15000.0,less,36,545.99,D,7.0,MORTGAGE,130000.0,Verified,debt_consolidation,4.85,no,yes,4.0,0.0,no,0.285714285714,f,Fully Paid,0
+207245,14000.0,eq,36,487.45,C,10.0,MORTGAGE,90000.0,Not Verified,debt_consolidation,27.86,no,no,10.0,0.0,no,0.454545454545,f,Fully Paid,0
+207246,25000.0,less,36,870.44,C,1.0,MORTGAGE,120000.0,Verified,debt_consolidation,6.23,no,no,10.0,0.0,no,0.37037037037,f,Fully Paid,0
+207247,15850.0,eq,36,555.68,C,10.0,RENT,63400.0,Not Verified,debt_consolidation,28.18,no,yes,13.0,0.0,no,0.41935483871,f,Fully Paid,0
+207248,21000.0,eq,60,602.06,F,10.0,MORTGAGE,64000.0,Verified,debt_consolidation,14.46,no,no,3.0,0.0,no,0.3,f,Fully Paid,0
+207249,10000.0,less,36,332.72,B,1.0,MORTGAGE,88000.0,Verified,debt_consolidation,26.29,no,no,15.0,0.0,no,0.428571428571,f,Charged Off,1
+207250,17000.0,eq,36,600.11,C,8.0,MORTGAGE,80000.0,Source Verified,debt_consolidation,16.5,no,yes,11.0,0.0,no,0.392857142857,f,Fully Paid,0
+207251,26000.0,eq,60,684.8,D,5.0,MORTGAGE,188000.0,Source Verified,debt_consolidation,9.79,no,yes,14.0,0.0,no,0.378378378378,f,Fully Paid,0
+207252,1000.0,eq,36,30.44,A,10.0,RENT,39000.0,Not Verified,debt_consolidation,11.6,no,no,8.0,0.0,no,0.571428571429,f,Fully Paid,0
+207253,3675.0,less,36,115.0,A,9.0,MORTGAGE,38000.0,Not Verified,credit_card,22.45,no,no,7.0,0.0,no,0.7,f,Fully Paid,0
+207254,25000.0,eq,36,894.69,C,5.0,RENT,109000.0,Verified,debt_consolidation,11.04,no,yes,19.0,0.0,no,0.431818181818,f,Fully Paid,0
+207255,8000.0,eq,36,280.47,C,3.0,RENT,56000.0,Source Verified,credit_card,7.16,yes,yes,12.0,0.0,no,0.324324324324,f,Fully Paid,0
+207256,14750.0,eq,60,329.01,B,1.0,MORTGAGE,60000.0,Source Verified,debt_consolidation,8.88,no,yes,8.0,0.0,no,0.285714285714,f,Fully Paid,0
+207257,3300.0,eq,36,104.79,A,6.0,RENT,24000.0,Not Verified,debt_consolidation,27.5,no,no,9.0,0.0,no,0.818181818182,f,Fully Paid,0
+207258,10000.0,eq,36,348.18,C,7.0,MORTGAGE,250000.0,Verified,debt_consolidation,13.79,yes,yes,9.0,0.0,no,0.333333333333,f,Fully Paid,0
+207259,25000.0,less,36,900.93,D,3.0,MORTGAGE,90000.0,Verified,debt_consolidation,14.93,no,no,15.0,0.0,no,0.681818181818,f,Fully Paid,0
+207260,11500.0,eq,36,400.4,C,1.0,OWN,35000.0,Not Verified,other,10.42,no,yes,6.0,1.0,yes,0.352941176471,f,Fully Paid,0
+207261,4000.0,eq,36,125.17,A,10.0,RENT,71544.0,Not Verified,debt_consolidation,6.84,no,yes,9.0,0.0,no,0.75,f,Fully Paid,0
+207262,2100.0,eq,36,71.87,B,10.0,MORTGAGE,95000.0,Verified,moving,0.32,yes,no,4.0,0.0,no,0.266666666667,f,Fully Paid,0
+207263,20000.0,less,60,484.24,C,10.0,OWN,60000.0,Verified,debt_consolidation,24.69,no,yes,21.0,0.0,no,0.84,f,Charged Off,1
+207264,20000.0,eq,36,701.17,C,4.0,MORTGAGE,74500.0,Verified,debt_consolidation,30.02,no,yes,16.0,0.0,no,0.432432432432,f,Fully Paid,0
+207265,25450.0,eq,60,636.2,C,4.0,MORTGAGE,300000.0,Source Verified,home_improvement,5.25,no,yes,9.0,0.0,no,0.409090909091,f,Fully Paid,0
+207266,1750.0,eq,36,57.41,B,4.0,MORTGAGE,53000.0,Not Verified,credit_card,15.65,yes,yes,14.0,0.0,no,0.388888888889,f,Fully Paid,0
+207267,10000.0,eq,36,342.22,B,2.0,MORTGAGE,41800.0,Not Verified,credit_card,10.82,no,yes,7.0,0.0,no,0.259259259259,f,Fully Paid,0
+207268,28000.0,less,60,737.48,D,10.0,MORTGAGE,130000.0,Verified,debt_consolidation,22.61,no,no,17.0,0.0,no,0.566666666667,f,Fully Paid,0
+207269,1800.0,eq,36,59.89,B,6.0,RENT,15000.0,Source Verified,debt_consolidation,23.55,no,no,11.0,0.0,no,0.5,f,Fully Paid,0
+207270,4900.0,eq,36,160.75,B,6.0,RENT,35400.0,Verified,credit_card,18.92,no,no,15.0,0.0,no,0.555555555556,f,Fully Paid,0
+207271,10225.0,eq,36,365.93,C,1.0,RENT,60000.0,Source Verified,credit_card,5.1,no,yes,5.0,0.0,no,0.714285714286,f,Fully Paid,0
+207272,9450.0,eq,36,324.5,C,5.0,RENT,28000.0,Not Verified,debt_consolidation,20.44,no,yes,18.0,0.0,no,0.45,f,Fully Paid,0
+207273,9000.0,eq,36,303.73,B,2.0,RENT,42000.0,Not Verified,credit_card,10.54,no,no,6.0,0.0,no,0.666666666667,f,Fully Paid,0
+207274,31825.0,less,60,860.98,E,1.0,RENT,80000.0,Verified,debt_consolidation,11.79,no,yes,8.0,0.0,no,0.363636363636,f,Charged Off,1
+207275,29000.0,eq,36,1073.62,D,2.0,RENT,87500.0,Verified,major_purchase,10.79,no,yes,13.0,0.0,no,0.565217391304,f,Fully Paid,0
+207276,10500.0,eq,36,360.56,C,1.0,RENT,30000.0,Source Verified,debt_consolidation,27.8,no,no,6.0,0.0,no,0.3,f,Fully Paid,0
+207277,9200.0,less,60,246.26,E,4.0,MORTGAGE,50000.0,Verified,major_purchase,25.42,no,no,23.0,0.0,no,0.71875,f,Late (31-120 days),0
+207278,22000.0,eq,60,571.3,D,10.0,MORTGAGE,62500.0,Verified,small_business,20.87,no,yes,6.0,0.0,no,0.206896551724,f,Fully Paid,0
+207280,6000.0,eq,36,202.49,B,10.0,MORTGAGE,51000.0,Not Verified,credit_card,17.29,no,yes,9.0,0.0,no,0.36,f,Fully Paid,0
+207281,5375.0,eq,36,188.44,C,4.0,RENT,20000.0,Not Verified,credit_card,12.96,no,yes,4.0,0.0,no,0.666666666667,f,Fully Paid,0
+207282,4000.0,eq,36,133.09,B,10.0,RENT,68000.0,Not Verified,credit_card,18.95,no,no,5.0,0.0,no,0.357142857143,f,Fully Paid,0
+207283,10000.0,eq,36,374.14,E,3.0,RENT,63000.0,Not Verified,debt_consolidation,18.75,no,yes,25.0,0.0,no,0.555555555556,f,Fully Paid,0
+207284,35000.0,eq,60,1025.05,G,10.0,MORTGAGE,152000.0,Source Verified,debt_consolidation,10.85,yes,no,14.0,0.0,no,0.333333333333,f,Fully Paid,0
+207285,1200.0,eq,36,40.5,B,9.0,OWN,26000.0,Source Verified,small_business,12.06,no,no,5.0,0.0,no,0.555555555556,f,Fully Paid,0
+207286,4125.0,eq,36,139.21,B,5.0,MORTGAGE,26000.0,Verified,home_improvement,26.63,no,yes,12.0,0.0,no,0.8,f,Fully Paid,0
+207287,15000.0,eq,36,515.08,C,2.0,RENT,57886.0,Verified,other,6.59,no,yes,6.0,0.0,no,0.857142857143,f,Fully Paid,0
+207288,10800.0,eq,36,389.21,D,10.0,RENT,60000.0,Source Verified,medical,24.11,yes,yes,13.0,0.0,no,0.282608695652,f,Fully Paid,0
+207289,5000.0,eq,36,168.74,B,10.0,RENT,27000.0,Not Verified,debt_consolidation,14.13,no,yes,13.0,0.0,no,0.565217391304,f,Charged Off,1
+207290,17050.0,eq,36,597.75,C,4.0,RENT,43000.0,Not Verified,debt_consolidation,18.47,no,yes,16.0,0.0,no,0.761904761905,f,Fully Paid,0
+207291,25000.0,eq,60,658.46,D,10.0,MORTGAGE,65000.0,Verified,debt_consolidation,20.58,no,no,9.0,0.0,no,0.2,f,Fully Paid,0
+207292,15200.0,eq,36,536.57,C,10.0,MORTGAGE,65000.0,Not Verified,debt_consolidation,22.82,yes,yes,18.0,0.0,no,0.5,f,Fully Paid,0
+207293,18500.0,eq,36,635.26,C,10.0,OWN,92000.0,Not Verified,debt_consolidation,13.67,no,no,14.0,0.0,no,0.48275862069,f,Fully Paid,0
+207295,10000.0,eq,36,353.01,C,9.0,RENT,30000.0,Not Verified,debt_consolidation,29.88,no,yes,13.0,0.0,no,0.722222222222,f,Fully Paid,0
+207296,8900.0,eq,36,323.95,D,10.0,OWN,38000.0,Source Verified,debt_consolidation,20.8,no,yes,11.0,0.0,no,0.423076923077,f,Charged Off,1
+207297,9200.0,eq,36,331.55,D,8.0,MORTGAGE,100000.0,Not Verified,debt_consolidation,4.27,no,yes,8.0,0.0,no,0.666666666667,f,Fully Paid,0
+207298,5375.0,eq,36,188.44,C,6.0,OWN,25676.0,Not Verified,credit_card,15.14,no,yes,4.0,0.0,no,0.333333333333,f,Fully Paid,0
+207299,6000.0,eq,36,210.36,C,5.0,RENT,62000.0,Not Verified,moving,25.24,no,yes,8.0,0.0,no,0.615384615385,f,Charged Off,1
+207300,16000.0,eq,36,557.08,C,3.0,MORTGAGE,125000.0,Not Verified,debt_consolidation,14.45,no,no,17.0,0.0,no,0.68,f,Fully Paid,0
+207302,20000.0,eq,60,557.74,E,2.0,MORTGAGE,140000.0,Verified,debt_consolidation,9.78,no,no,9.0,0.0,no,0.6,f,Charged Off,1
+207303,4000.0,eq,36,125.17,A,4.0,RENT,46000.0,Not Verified,debt_consolidation,14.43,no,no,5.0,0.0,no,0.625,f,Fully Paid,0
+207304,16425.0,eq,60,401.96,C,10.0,MORTGAGE,45000.0,Verified,debt_consolidation,20.48,no,yes,11.0,0.0,no,0.55,f,Charged Off,1
+207305,10000.0,less,36,323.43,B,1.0,RENT,119000.0,Verified,debt_consolidation,1.64,no,no,4.0,0.0,no,0.571428571429,f,Fully Paid,0
+207306,2800.0,eq,36,90.56,B,3.0,RENT,29000.0,Not Verified,credit_card,14.69,no,yes,8.0,0.0,no,0.296296296296,f,Fully Paid,0
+207307,4575.0,eq,36,152.22,B,1.0,RENT,30000.0,Source Verified,credit_card,8.44,no,no,15.0,0.0,no,0.681818181818,f,Fully Paid,0
+207308,2400.0,eq,36,82.14,B,8.0,RENT,37500.0,Not Verified,credit_card,28.13,no,no,12.0,0.0,no,0.444444444444,f,Fully Paid,0
+207309,2100.0,eq,36,69.88,B,10.0,MORTGAGE,60000.0,Source Verified,other,25.7,no,no,12.0,1.0,yes,0.333333333333,f,Fully Paid,0
+207310,24000.0,eq,60,623.24,D,10.0,MORTGAGE,62000.0,Verified,debt_consolidation,10.12,no,yes,6.0,0.0,no,0.3,f,Charged Off,1
+207311,3000.0,eq,36,104.46,C,1.0,RENT,32000.0,Source Verified,car,22.05,no,yes,13.0,0.0,no,0.448275862069,f,Fully Paid,0
+207312,4800.0,eq,36,172.98,D,10.0,RENT,43000.0,Not Verified,debt_consolidation,8.07,no,yes,2.0,0.0,no,0.333333333333,f,Charged Off,1
+207313,3200.0,eq,36,100.13,A,10.0,MORTGAGE,107000.0,Not Verified,major_purchase,19.34,no,yes,14.0,0.0,no,0.518518518519,f,Fully Paid,0
+207314,3500.0,eq,36,113.2,B,10.0,MORTGAGE,53000.0,Verified,debt_consolidation,28.28,yes,yes,12.0,0.0,no,0.4,f,Fully Paid,0
+207315,3500.0,eq,36,119.78,B,1.0,MORTGAGE,60000.0,Source Verified,other,34.76,no,yes,16.0,0.0,no,0.410256410256,f,Fully Paid,0
+207316,16000.0,eq,60,375.04,C,3.0,RENT,60000.0,Verified,debt_consolidation,28.72,no,yes,15.0,0.0,no,0.833333333333,f,Fully Paid,0
+207317,7000.0,eq,36,273.75,F,5.0,MORTGAGE,38000.0,Verified,debt_consolidation,16.66,no,yes,27.0,0.0,no,0.692307692308,f,Fully Paid,0
+207318,16000.0,eq,36,557.08,C,1.0,RENT,80000.0,Not Verified,debt_consolidation,20.64,no,no,16.0,0.0,no,0.888888888889,f,Fully Paid,0
+207319,24000.0,eq,36,928.41,F,7.0,MORTGAGE,145000.0,Verified,credit_card,21.07,no,yes,23.0,0.0,no,0.547619047619,f,Fully Paid,0
+207320,2000.0,eq,36,70.12,C,5.0,RENT,38000.0,Not Verified,debt_consolidation,14.49,no,yes,6.0,0.0,no,0.6,f,Fully Paid,0
+207321,6000.0,eq,36,218.4,D,1.0,OWN,55000.0,Not Verified,debt_consolidation,25.07,no,yes,26.0,0.0,no,0.65,f,Fully Paid,0
+207322,6400.0,eq,36,232.96,D,5.0,RENT,25000.0,Not Verified,debt_consolidation,22.58,no,yes,6.0,0.0,no,0.24,f,Charged Off,1
+207323,2200.0,eq,36,76.6,C,1.0,MORTGAGE,75000.0,Verified,other,11.54,no,no,17.0,0.0,no,0.809523809524,f,Fully Paid,0
+207324,3600.0,eq,36,118.1,B,6.0,MORTGAGE,48000.0,Verified,other,25.39,yes,no,12.0,0.0,no,0.521739130435,f,Fully Paid,0
+207325,30000.0,less,60,718.59,C,10.0,MORTGAGE,80000.0,Verified,debt_consolidation,20.82,no,no,14.0,0.0,no,0.4375,f,Fully Paid,0
+207326,15000.0,less,36,515.08,C,4.0,RENT,65000.0,Not Verified,debt_consolidation,15.58,no,no,11.0,0.0,no,0.297297297297,f,Fully Paid,0
+207327,2000.0,eq,36,77.72,F,5.0,MORTGAGE,88000.0,Source Verified,debt_consolidation,30.4,no,yes,45.0,0.0,no,0.818181818182,f,Fully Paid,0
+207328,10000.0,less,36,357.88,C,10.0,MORTGAGE,29000.0,Verified,debt_consolidation,20.07,no,yes,11.0,1.0,yes,0.785714285714,f,Fully Paid,0
+207329,20000.0,less,36,686.77,C,6.0,RENT,74226.36,Verified,debt_consolidation,15.42,no,no,14.0,0.0,no,0.636363636364,f,Fully Paid,0
+207330,15000.0,eq,36,529.51,C,6.0,MORTGAGE,84000.0,Not Verified,credit_card,12.88,no,yes,13.0,0.0,no,0.722222222222,f,Fully Paid,0
+207331,7000.0,eq,36,243.73,C,5.0,RENT,32000.0,Verified,credit_card,15.64,no,no,11.0,0.0,no,0.275,f,Charged Off,1
+207332,9150.0,less,36,318.58,C,4.0,MORTGAGE,34500.0,Verified,credit_card,22.99,no,yes,8.0,1.0,yes,0.470588235294,f,Fully Paid,0
+207333,14400.0,eq,36,528.22,D,2.0,RENT,75000.0,Source Verified,credit_card,10.35,no,no,8.0,0.0,no,0.347826086957,f,Fully Paid,0
+207334,4000.0,eq,36,121.75,A,2.0,RENT,30000.0,Not Verified,major_purchase,15.28,no,no,6.0,0.0,no,0.75,f,Fully Paid,0
+207335,7750.0,eq,36,277.36,C,10.0,RENT,60000.0,Not Verified,debt_consolidation,4.16,no,yes,5.0,0.0,no,0.416666666667,f,Fully Paid,0
+207336,6000.0,eq,36,196.84,B,1.0,MORTGAGE,70000.0,Not Verified,credit_card,24.21,no,yes,18.0,0.0,no,0.5,f,Fully Paid,0
+207337,16000.0,eq,36,576.6,D,6.0,RENT,42000.0,Not Verified,debt_consolidation,15.14,no,no,10.0,0.0,no,0.333333333333,f,Fully Paid,0
+207338,5600.0,eq,36,175.23,A,5.0,OWN,42000.0,Not Verified,home_improvement,4.88,no,no,5.0,0.0,no,0.833333333333,f,Fully Paid,0
+207339,4800.0,eq,36,150.2,A,7.0,OWN,53000.0,Not Verified,debt_consolidation,18.22,no,no,4.0,0.0,no,0.333333333333,f,Fully Paid,0
+207340,12000.0,eq,36,432.45,D,10.0,RENT,110000.0,Not Verified,debt_consolidation,8.73,no,yes,11.0,0.0,no,0.785714285714,f,Fully Paid,0
+207341,25000.0,eq,36,870.44,C,6.0,MORTGAGE,180000.0,Verified,credit_card,20.68,no,no,16.0,0.0,no,0.695652173913,f,Fully Paid,0
+207342,12000.0,less,36,438.36,D,10.0,RENT,59100.0,Verified,debt_consolidation,33.12,no,yes,23.0,0.0,no,0.389830508475,f,Charged Off,1
+207343,7450.0,less,36,236.57,A,7.0,MORTGAGE,45000.0,Not Verified,credit_card,19.49,no,yes,10.0,0.0,no,0.454545454545,f,Fully Paid,0
+207344,7000.0,eq,36,213.05,A,8.0,RENT,35000.0,Not Verified,debt_consolidation,21.84,no,no,15.0,0.0,no,0.5,f,Fully Paid,0
+207345,10000.0,less,36,342.22,B,3.0,MORTGAGE,72000.0,Verified,home_improvement,19.31,no,no,21.0,0.0,no,0.777777777778,f,Fully Paid,0
+207347,4750.0,eq,36,158.05,B,6.0,RENT,16872.0,Verified,debt_consolidation,18.98,no,no,20.0,0.0,no,0.714285714286,f,Charged Off,1
+207348,8000.0,eq,36,266.18,B,10.0,MORTGAGE,88000.0,Verified,debt_consolidation,18.1,no,yes,8.0,0.0,no,0.296296296296,f,Fully Paid,0
+207349,3600.0,eq,36,125.35,C,6.0,RENT,26280.0,Verified,other,21.1,no,no,8.0,0.0,no,0.333333333333,f,Fully Paid,0
+207350,10000.0,eq,36,350.59,C,9.0,RENT,38000.0,Not Verified,debt_consolidation,9.03,no,yes,11.0,0.0,no,0.6875,f,Fully Paid,0
+207351,20000.0,eq,36,793.4,G,4.0,OWN,96000.0,Verified,credit_card,31.98,no,no,31.0,0.0,no,0.543859649123,f,Fully Paid,0
+207352,10000.0,eq,36,343.39,C,10.0,MORTGAGE,32000.0,Not Verified,debt_consolidation,12.6,no,no,11.0,0.0,no,0.647058823529,f,Fully Paid,0
+207353,10000.0,eq,36,343.39,C,10.0,MORTGAGE,85000.0,Not Verified,debt_consolidation,8.36,no,yes,11.0,0.0,no,0.578947368421,f,Fully Paid,0
+207354,8400.0,eq,36,288.45,C,1.0,RENT,40000.0,Source Verified,debt_consolidation,11.61,no,no,11.0,0.0,no,0.578947368421,f,Fully Paid,0
+207355,7350.0,less,60,179.88,C,2.0,RENT,53000.0,Verified,debt_consolidation,31.54,yes,yes,11.0,0.0,no,0.34375,f,Charged Off,1
+207356,10000.0,eq,36,363.99,D,6.0,RENT,33280.0,Not Verified,debt_consolidation,20.91,no,yes,14.0,0.0,no,0.411764705882,f,Fully Paid,0
+207357,6000.0,eq,36,205.33,B,10.0,MORTGAGE,62000.0,Not Verified,debt_consolidation,13.92,no,yes,20.0,0.0,no,0.454545454545,f,Charged Off,1
+207358,7200.0,eq,60,174.33,C,10.0,OWN,84000.0,Source Verified,car,15.0,no,yes,10.0,1.0,yes,0.526315789474,f,Fully Paid,0
+207359,24000.0,less,36,864.9,D,10.0,MORTGAGE,140000.0,Verified,credit_card,24.22,yes,yes,17.0,0.0,no,0.326923076923,f,Fully Paid,0
+207360,22000.0,less,36,765.99,C,2.0,MORTGAGE,115000.0,Verified,debt_consolidation,25.78,no,yes,10.0,0.0,no,0.5,f,Charged Off,1
+207361,10000.0,eq,36,374.14,E,9.0,RENT,38000.0,Not Verified,credit_card,15.63,no,no,11.0,0.0,no,0.846153846154,f,Fully Paid,0
+207362,8800.0,eq,36,296.98,B,1.0,MORTGAGE,147586.0,Verified,small_business,8.68,no,yes,4.0,0.0,no,0.444444444444,f,Fully Paid,0
+207363,5000.0,eq,36,178.94,C,3.0,MORTGAGE,51000.0,Not Verified,debt_consolidation,18.4,no,yes,11.0,0.0,no,0.647058823529,f,Fully Paid,0
+207364,12000.0,less,36,432.45,D,1.0,MORTGAGE,47000.0,Verified,debt_consolidation,18.77,no,no,7.0,0.0,no,0.411764705882,f,Fully Paid,0
+207365,35000.0,eq,36,1273.96,D,10.0,MORTGAGE,125000.0,Verified,debt_consolidation,17.59,no,yes,10.0,0.0,no,0.37037037037,f,Fully Paid,0
+207366,5000.0,eq,36,166.36,B,8.0,RENT,51900.0,Not Verified,debt_consolidation,10.24,no,no,7.0,1.0,yes,0.538461538462,f,Fully Paid,0
+207367,11050.0,eq,36,395.45,C,6.0,MORTGAGE,40000.0,Not Verified,debt_consolidation,16.83,no,yes,6.0,0.0,no,0.272727272727,f,Fully Paid,0
+207368,2500.0,eq,36,77.91,A,6.0,MORTGAGE,63000.0,Not Verified,medical,25.64,no,no,8.0,0.0,no,0.285714285714,f,Fully Paid,0
+207369,6000.0,eq,36,186.97,A,9.0,MORTGAGE,50000.0,Not Verified,debt_consolidation,4.15,no,yes,8.0,0.0,no,0.333333333333,f,Fully Paid,0
+207370,6625.0,eq,36,226.72,B,6.0,MORTGAGE,23000.0,Verified,debt_consolidation,31.21,no,no,10.0,0.0,no,0.769230769231,f,Fully Paid,0
+207371,18000.0,eq,36,644.18,C,1.0,RENT,52000.0,Source Verified,debt_consolidation,16.5,yes,yes,18.0,0.0,no,0.290322580645,f,Fully Paid,0
+207372,8000.0,eq,36,274.71,C,5.0,RENT,44000.0,Not Verified,home_improvement,18.11,no,yes,12.0,0.0,no,0.428571428571,f,Fully Paid,0
+207373,8000.0,eq,36,286.3,C,10.0,MORTGAGE,42000.0,Not Verified,credit_card,11.31,no,yes,11.0,0.0,no,0.305555555556,f,Charged Off,1
+207375,10000.0,eq,36,312.91,A,9.0,RENT,36400.0,Not Verified,debt_consolidation,29.74,no,no,14.0,0.0,no,0.736842105263,f,Fully Paid,0
+207376,4300.0,eq,36,134.55,A,6.0,OWN,15000.0,Source Verified,debt_consolidation,24.1,yes,yes,11.0,0.0,no,0.392857142857,f,Fully Paid,0
+207377,27000.0,less,60,760.37,F,5.0,MORTGAGE,72000.0,Verified,credit_card,25.56,yes,yes,22.0,0.0,no,0.379310344828,f,Fully Paid,0
+207378,16125.0,eq,60,377.97,C,1.0,RENT,42000.0,Verified,debt_consolidation,29.01,yes,no,8.0,0.0,no,0.444444444444,f,Fully Paid,0
+207379,5500.0,eq,36,172.1,A,5.0,MORTGAGE,64000.0,Not Verified,debt_consolidation,14.21,no,yes,10.0,0.0,no,0.5,f,Fully Paid,0
+207380,15000.0,eq,36,469.36,A,5.0,MORTGAGE,80000.0,Not Verified,home_improvement,15.52,no,yes,15.0,0.0,no,0.3,f,Fully Paid,0
+207381,25000.0,eq,36,843.68,B,8.0,RENT,115000.0,Not Verified,credit_card,17.49,no,no,15.0,0.0,no,0.576923076923,f,Fully Paid,0
+207382,6400.0,eq,36,212.94,B,10.0,MORTGAGE,44000.0,Not Verified,debt_consolidation,16.55,yes,no,8.0,0.0,no,0.444444444444,f,Fully Paid,0
+207383,11500.0,eq,36,411.56,C,2.0,RENT,35000.0,Not Verified,debt_consolidation,20.85,no,yes,8.0,0.0,no,0.266666666667,f,Fully Paid,0
+207385,4800.0,eq,36,161.99,B,9.0,RENT,84000.0,Not Verified,debt_consolidation,19.09,no,yes,11.0,0.0,no,0.611111111111,f,Charged Off,1
+207386,20000.0,eq,36,665.44,B,1.0,RENT,90000.0,Not Verified,debt_consolidation,13.44,no,no,10.0,0.0,no,0.588235294118,f,Fully Paid,0
+207387,13000.0,eq,36,432.54,B,5.0,RENT,96000.0,Not Verified,credit_card,11.76,no,yes,8.0,0.0,no,0.363636363636,f,Fully Paid,0
+207388,18250.0,less,60,488.51,E,10.0,MORTGAGE,69000.0,Verified,debt_consolidation,31.04,no,yes,19.0,0.0,no,0.678571428571,f,Fully Paid,0
+207389,10000.0,less,36,328.06,B,1.0,RENT,40000.0,Not Verified,debt_consolidation,14.28,no,no,13.0,0.0,no,0.764705882353,f,Fully Paid,0
+207390,23850.0,eq,60,612.01,D,6.0,RENT,60000.0,Verified,small_business,16.3,no,yes,16.0,0.0,no,0.5,f,Fully Paid,0
+207391,8000.0,less,36,274.71,C,2.0,RENT,53000.0,Not Verified,debt_consolidation,16.91,no,yes,7.0,0.0,no,0.411764705882,f,Fully Paid,0
+207392,4000.0,eq,36,122.82,A,1.0,RENT,55000.0,Not Verified,major_purchase,20.03,no,no,17.0,0.0,no,0.772727272727,f,Fully Paid,0
+207393,10000.0,eq,36,348.18,C,1.0,MORTGAGE,30000.0,Not Verified,credit_card,15.03,no,yes,12.0,0.0,no,0.8,f,Fully Paid,0
+207394,27000.0,eq,36,829.0,A,5.0,MORTGAGE,111000.0,Not Verified,debt_consolidation,12.21,no,no,12.0,0.0,no,0.307692307692,f,Fully Paid,0
+207395,9000.0,eq,36,308.0,B,10.0,MORTGAGE,80000.0,Source Verified,credit_card,17.47,no,yes,10.0,0.0,no,0.416666666667,f,Fully Paid,0
+207396,12000.0,eq,36,393.67,B,7.0,RENT,41000.0,Not Verified,debt_consolidation,20.6,no,yes,13.0,0.0,no,0.722222222222,f,Fully Paid,0
+207397,21000.0,eq,36,666.82,A,10.0,MORTGAGE,100836.0,Verified,small_business,7.05,no,no,4.0,0.0,no,0.181818181818,f,Fully Paid,0
+207398,14675.0,eq,36,514.49,C,7.0,RENT,38000.0,Not Verified,debt_consolidation,18.92,no,yes,12.0,1.0,yes,0.521739130435,f,Charged Off,1
+207399,2700.0,eq,36,84.49,A,10.0,MORTGAGE,43300.0,Not Verified,credit_card,19.18,no,no,12.0,0.0,no,0.4,f,Fully Paid,0
+207400,35000.0,eq,36,1327.45,E,10.0,MORTGAGE,210000.0,Verified,debt_consolidation,14.98,yes,no,12.0,0.0,no,0.342857142857,f,Fully Paid,0
+207401,5150.0,eq,36,173.8,B,10.0,MORTGAGE,48550.0,Not Verified,other,11.07,no,yes,8.0,0.0,no,0.888888888889,f,Charged Off,1
+207402,10000.0,eq,36,307.04,A,3.0,RENT,44000.0,Not Verified,debt_consolidation,3.32,no,no,6.0,0.0,no,0.75,f,Fully Paid,0
+207403,20000.0,less,60,436.25,B,9.0,MORTGAGE,67000.0,Verified,debt_consolidation,15.55,no,no,10.0,0.0,no,0.434782608696,f,Fully Paid,0
+207404,28000.0,eq,36,1022.84,D,1.0,RENT,70000.0,Verified,debt_consolidation,18.5,no,no,13.0,0.0,no,0.619047619048,f,Fully Paid,0
+207405,10000.0,eq,36,304.36,A,10.0,MORTGAGE,105000.0,Verified,small_business,2.46,no,no,6.0,0.0,no,0.375,f,Fully Paid,0
+207406,10750.0,eq,36,376.88,C,2.0,RENT,31200.0,Not Verified,debt_consolidation,27.31,no,yes,9.0,0.0,no,0.321428571429,f,Fully Paid,0
+207407,3000.0,eq,36,105.91,C,3.0,MORTGAGE,29000.0,Verified,vacation,29.01,no,yes,6.0,0.0,no,0.3,f,Fully Paid,0
+207408,12000.0,eq,36,412.06,C,10.0,OWN,55000.0,Not Verified,debt_consolidation,16.1,yes,no,7.0,0.0,no,0.388888888889,f,Fully Paid,0
+207409,6000.0,eq,36,206.03,C,1.0,RENT,46000.0,Source Verified,credit_card,1.43,no,yes,3.0,0.0,no,0.6,f,Charged Off,1
+207411,2300.0,eq,36,70.01,A,2.0,MORTGAGE,77000.0,Not Verified,car,10.01,no,no,7.0,0.0,no,0.28,f,Fully Paid,0
+207412,13000.0,eq,36,452.63,C,2.0,RENT,70000.0,Not Verified,credit_card,6.75,no,no,13.0,0.0,no,0.448275862069,f,Fully Paid,0
+207413,8000.0,eq,36,273.78,B,10.0,MORTGAGE,38000.0,Not Verified,credit_card,26.47,no,yes,9.0,0.0,no,0.692307692308,f,Fully Paid,0
+207414,14000.0,eq,36,444.55,A,5.0,OWN,61000.0,Not Verified,debt_consolidation,5.53,no,no,6.0,0.0,no,0.4,f,Fully Paid,0
+207415,6000.0,eq,36,194.06,B,2.0,RENT,40000.0,Not Verified,debt_consolidation,12.81,no,no,9.0,0.0,no,0.818181818182,f,Fully Paid,0
+207416,8000.0,eq,36,274.71,C,10.0,MORTGAGE,77983.0,Not Verified,debt_consolidation,12.11,yes,no,13.0,0.0,no,0.65,f,Fully Paid,0
+207417,6400.0,eq,36,207.0,B,2.0,RENT,47500.0,Not Verified,credit_card,4.98,no,yes,6.0,0.0,no,0.6,f,Fully Paid,0
+207418,8400.0,eq,36,255.66,A,6.0,OWN,26400.0,Not Verified,credit_card,7.41,no,no,11.0,0.0,no,0.366666666667,f,Fully Paid,0
+207419,20000.0,eq,60,516.07,D,10.0,RENT,54000.0,Verified,debt_consolidation,22.67,no,yes,11.0,1.0,yes,0.52380952381,f,Fully Paid,0
+207420,20000.0,less,60,519.37,D,7.0,RENT,90000.0,Verified,other,11.87,no,yes,11.0,0.0,no,0.647058823529,f,Charged Off,1
+207421,21125.0,eq,60,556.4,D,9.0,RENT,53000.0,Verified,debt_consolidation,22.17,no,no,9.0,0.0,no,0.473684210526,f,Charged Off,1
+207422,1000.0,eq,36,34.23,B,5.0,RENT,33600.0,Not Verified,wedding,17.11,no,no,10.0,0.0,no,0.526315789474,f,Fully Paid,0
+207423,8000.0,eq,36,288.3,D,3.0,RENT,86000.0,Not Verified,debt_consolidation,10.23,no,yes,5.0,0.0,no,0.227272727273,f,Fully Paid,0
+207424,10000.0,eq,36,350.59,C,10.0,OWN,35000.0,Verified,credit_card,16.46,yes,yes,5.0,0.0,no,0.172413793103,f,Fully Paid,0
+207425,17000.0,eq,36,621.01,D,1.0,RENT,70000.0,Not Verified,credit_card,11.31,no,no,11.0,0.0,no,0.297297297297,f,Fully Paid,0
+207426,14000.0,eq,36,426.1,A,2.0,MORTGAGE,100000.0,Not Verified,debt_consolidation,11.24,no,no,10.0,0.0,no,0.555555555556,f,Fully Paid,0
+207427,11000.0,less,36,344.2,A,6.0,RENT,63000.0,Not Verified,debt_consolidation,9.7,no,no,16.0,0.0,no,0.888888888889,f,Fully Paid,0
+207428,9750.0,eq,36,356.17,D,10.0,RENT,35000.0,Not Verified,debt_consolidation,19.41,no,yes,23.0,0.0,no,0.605263157895,f,Fully Paid,0
+207429,3975.0,eq,36,124.38,A,3.0,RENT,25000.0,Not Verified,debt_consolidation,13.2,no,no,12.0,0.0,no,0.631578947368,f,Fully Paid,0
+207430,1950.0,eq,36,61.92,A,10.0,MORTGAGE,30000.0,Not Verified,debt_consolidation,15.68,no,no,10.0,0.0,no,0.666666666667,f,Fully Paid,0
+207431,8000.0,eq,36,273.78,B,8.0,RENT,60000.0,Not Verified,debt_consolidation,29.32,no,yes,11.0,0.0,no,0.785714285714,f,Fully Paid,0
+207432,12200.0,eq,36,418.93,C,3.0,RENT,80000.0,Source Verified,debt_consolidation,15.75,no,yes,11.0,0.0,no,0.611111111111,f,Charged Off,1
+207433,5675.0,eq,36,188.82,B,6.0,OWN,28000.0,Not Verified,debt_consolidation,21.56,no,no,13.0,0.0,no,0.619047619048,f,Fully Paid,0
+207435,6250.0,eq,36,205.04,B,1.0,RENT,22000.0,Source Verified,major_purchase,12.22,no,no,4.0,0.0,no,0.571428571429,f,Fully Paid,0
+207436,20000.0,eq,60,552.16,E,10.0,RENT,103000.0,Verified,debt_consolidation,21.62,no,yes,13.0,0.0,no,0.382352941176,f,Charged Off,1
+207437,8000.0,eq,36,262.45,B,6.0,MORTGAGE,65000.0,Verified,debt_consolidation,23.68,no,yes,9.0,0.0,no,0.6,f,Fully Paid,0
+207438,14000.0,eq,36,472.46,B,10.0,MORTGAGE,40000.0,Verified,debt_consolidation,17.16,no,yes,9.0,0.0,no,0.409090909091,f,Charged Off,1
+207439,12000.0,eq,36,375.49,A,3.0,MORTGAGE,139000.0,Not Verified,debt_consolidation,16.86,yes,no,12.0,0.0,no,0.75,f,Fully Paid,0
+207440,3500.0,eq,36,119.78,B,9.0,MORTGAGE,71000.0,Not Verified,major_purchase,9.5,no,yes,8.0,1.0,yes,0.380952380952,f,Fully Paid,0
+207441,14400.0,eq,36,442.14,A,10.0,RENT,80000.0,Source Verified,debt_consolidation,19.32,no,yes,10.0,0.0,no,0.434782608696,f,Fully Paid,0
+207442,24000.0,less,60,535.33,B,6.0,RENT,110000.0,Source Verified,debt_consolidation,16.02,no,no,7.0,0.0,no,0.333333333333,f,Fully Paid,0
+207443,16000.0,eq,36,557.08,C,4.0,MORTGAGE,56000.0,Source Verified,debt_consolidation,8.19,no,yes,14.0,0.0,no,0.538461538462,f,Fully Paid,0
+207444,11475.0,eq,36,357.58,A,10.0,OWN,50000.0,Not Verified,credit_card,25.9,no,yes,12.0,0.0,no,0.428571428571,f,Fully Paid,0
+207445,18000.0,eq,36,631.06,C,6.0,RENT,75000.0,Not Verified,debt_consolidation,7.06,no,yes,6.0,0.0,no,0.352941176471,f,Fully Paid,0
+207446,35000.0,less,36,1111.37,A,6.0,MORTGAGE,155600.0,Verified,debt_consolidation,24.28,no,no,7.0,0.0,no,0.538461538462,f,Fully Paid,0
+207447,5600.0,eq,36,192.3,C,10.0,RENT,62000.0,Not Verified,debt_consolidation,25.76,no,no,9.0,0.0,no,0.25,f,Fully Paid,0
+207448,16500.0,less,36,556.83,B,10.0,RENT,82000.0,Not Verified,debt_consolidation,12.19,no,no,10.0,0.0,no,0.322580645161,f,Fully Paid,0
+207449,19000.0,eq,60,500.43,D,3.0,RENT,54000.0,Source Verified,credit_card,19.85,yes,yes,13.0,0.0,no,0.382352941176,f,Fully Paid,0
+207450,20000.0,eq,36,665.44,B,3.0,RENT,52000.0,Not Verified,debt_consolidation,25.54,no,no,10.0,0.0,no,0.416666666667,f,Charged Off,1
+207451,12250.0,eq,36,419.22,B,2.0,MORTGAGE,35000.0,Not Verified,debt_consolidation,23.31,no,no,16.0,0.0,no,0.64,f,Fully Paid,0
+207452,25000.0,eq,36,855.54,B,10.0,RENT,100400.0,Not Verified,credit_card,25.88,no,no,12.0,0.0,no,0.428571428571,f,Fully Paid,0
+207453,20000.0,eq,60,516.07,D,10.0,MORTGAGE,72000.0,Verified,debt_consolidation,22.67,no,yes,10.0,0.0,no,0.434782608696,f,Charged Off,1
+207454,7000.0,eq,36,222.28,A,1.0,MORTGAGE,59190.0,Not Verified,debt_consolidation,9.08,no,no,6.0,0.0,no,0.315789473684,f,Fully Paid,0
+207455,20125.0,less,60,570.58,F,10.0,MORTGAGE,58000.0,Verified,debt_consolidation,26.42,no,yes,8.0,0.0,no,0.307692307692,f,Fully Paid,0
+207456,18000.0,eq,60,410.57,B,1.0,MORTGAGE,118500.0,Source Verified,debt_consolidation,17.39,no,yes,13.0,0.0,no,0.371428571429,f,Fully Paid,0
+207457,6000.0,eq,36,219.18,D,10.0,MORTGAGE,88000.0,Not Verified,other,19.35,no,yes,9.0,0.0,no,0.428571428571,f,Charged Off,1
+207458,12000.0,eq,36,368.45,A,1.0,RENT,96000.0,Not Verified,credit_card,14.21,no,no,12.0,0.0,no,0.6,f,Fully Paid,0
+207459,15000.0,eq,36,513.33,B,5.0,RENT,45000.0,Source Verified,debt_consolidation,21.97,no,yes,12.0,0.0,no,0.705882352941,f,Fully Paid,0
+207460,10500.0,eq,36,359.33,B,5.0,MORTGAGE,30000.0,Not Verified,debt_consolidation,21.64,no,no,7.0,0.0,no,0.538461538462,f,Fully Paid,0
+207461,7200.0,eq,36,236.2,B,5.0,RENT,50000.0,Source Verified,debt_consolidation,7.22,no,yes,8.0,0.0,no,0.533333333333,f,Fully Paid,0
+207462,35000.0,eq,60,936.86,E,3.0,RENT,130000.0,Verified,debt_consolidation,16.71,no,yes,13.0,0.0,no,0.448275862069,f,Charged Off,1
+207463,18250.0,eq,60,534.49,G,10.0,OWN,58000.0,Verified,debt_consolidation,22.42,no,yes,26.0,0.0,no,0.553191489362,f,Charged Off,1
+207464,12000.0,eq,36,436.79,D,8.0,MORTGAGE,64000.0,Source Verified,debt_consolidation,20.22,yes,yes,19.0,0.0,no,0.612903225806,f,Charged Off,1
+207465,15000.0,less,36,492.08,B,10.0,MORTGAGE,70000.0,Not Verified,debt_consolidation,19.23,no,no,11.0,0.0,no,0.478260869565,f,Fully Paid,0
+207466,19450.0,eq,36,700.93,D,10.0,MORTGAGE,62000.0,Verified,debt_consolidation,23.37,yes,yes,12.0,0.0,no,0.521739130435,f,Fully Paid,0
+207467,15000.0,eq,36,515.08,C,4.0,RENT,56000.0,Not Verified,debt_consolidation,14.42,no,yes,7.0,0.0,no,0.35,f,Fully Paid,0
+207468,12000.0,eq,36,393.67,B,10.0,MORTGAGE,125000.0,Not Verified,credit_card,5.08,no,yes,11.0,0.0,no,0.297297297297,f,Fully Paid,0
+207469,18000.0,eq,60,467.43,D,1.0,MORTGAGE,45000.0,Source Verified,debt_consolidation,23.55,no,yes,21.0,0.0,no,0.488372093023,f,Charged Off,1
+207471,22750.0,eq,60,507.45,B,10.0,MORTGAGE,59000.0,Verified,debt_consolidation,26.68,no,no,10.0,0.0,no,0.4,f,Fully Paid,0
+207472,9600.0,less,36,319.41,B,9.0,MORTGAGE,41000.0,Not Verified,debt_consolidation,24.85,no,no,9.0,0.0,no,0.75,f,Fully Paid,0
+207473,8000.0,eq,36,250.33,A,2.0,RENT,40000.0,Source Verified,debt_consolidation,30.2,no,yes,14.0,0.0,no,0.636363636364,f,Charged Off,1
+207474,13000.0,eq,36,426.47,B,9.0,MORTGAGE,90742.0,Not Verified,debt_consolidation,20.38,no,yes,11.0,0.0,no,0.275,f,Fully Paid,0
+207475,30750.0,eq,60,900.58,G,10.0,MORTGAGE,130000.0,Verified,house,24.11,no,yes,14.0,0.0,no,0.608695652174,f,Charged Off,1
+207476,16000.0,eq,60,468.03,G,4.0,RENT,40000.0,Verified,credit_card,30.21,no,yes,29.0,0.0,no,0.644444444444,f,Fully Paid,0
+207477,2950.0,eq,36,98.16,B,8.0,MORTGAGE,46000.0,Not Verified,credit_card,10.8,no,no,10.0,0.0,no,0.714285714286,f,Fully Paid,0
+207478,15075.0,eq,36,458.82,A,7.0,MORTGAGE,39000.0,Not Verified,debt_consolidation,3.86,no,no,11.0,0.0,no,0.275,f,Fully Paid,0
+207479,3000.0,eq,36,97.03,B,9.0,MORTGAGE,61674.82,Not Verified,major_purchase,8.27,yes,no,7.0,0.0,no,0.411764705882,f,Fully Paid,0
+207480,30000.0,less,36,952.6,A,10.0,MORTGAGE,140000.0,Verified,credit_card,18.31,no,no,17.0,0.0,no,0.515151515152,f,Fully Paid,0
+207482,5250.0,eq,36,172.23,B,2.0,MORTGAGE,92000.0,Verified,debt_consolidation,19.65,no,yes,18.0,0.0,no,0.418604651163,f,Fully Paid,0
+207483,6000.0,eq,36,199.63,B,1.0,RENT,140000.0,Source Verified,debt_consolidation,9.76,no,yes,13.0,0.0,no,0.351351351351,f,Fully Paid,0
+207484,10000.0,eq,60,234.4,C,8.0,MORTGAGE,43160.0,Verified,debt_consolidation,21.13,no,yes,12.0,0.0,no,0.444444444444,f,Fully Paid,0
+207485,16800.0,less,36,601.23,C,10.0,MORTGAGE,42000.0,Verified,home_improvement,2.74,yes,yes,8.0,0.0,no,0.571428571429,f,Fully Paid,0
+207486,8125.0,eq,36,249.47,A,9.0,MORTGAGE,60000.0,Not Verified,debt_consolidation,7.78,no,yes,8.0,0.0,no,0.177777777778,f,Fully Paid,0
+207487,9525.0,eq,36,343.26,D,4.0,RENT,41000.0,Not Verified,debt_consolidation,13.93,yes,no,10.0,0.0,no,0.384615384615,f,Fully Paid,0
+207488,16000.0,less,36,532.35,B,8.0,MORTGAGE,90000.0,Source Verified,debt_consolidation,14.47,no,no,8.0,0.0,no,0.380952380952,f,Charged Off,1
+207489,19000.0,eq,36,670.71,C,10.0,MORTGAGE,66000.0,Verified,debt_consolidation,17.6,no,yes,17.0,0.0,no,0.485714285714,f,Fully Paid,0
+207490,7000.0,less,36,222.28,A,1.0,RENT,27561.0,Verified,debt_consolidation,28.65,no,no,10.0,0.0,no,0.37037037037,f,Fully Paid,0
+207491,3400.0,less,36,113.13,B,6.0,RENT,11496.0,Verified,debt_consolidation,18.68,no,no,4.0,0.0,no,0.444444444444,f,Charged Off,1
+207492,16000.0,eq,36,517.48,B,1.0,MORTGAGE,125250.0,Not Verified,debt_consolidation,19.38,no,yes,13.0,0.0,no,0.325,f,Fully Paid,0
+207493,34000.0,eq,36,1115.38,B,10.0,MORTGAGE,125000.0,Verified,debt_consolidation,16.8,no,yes,15.0,0.0,no,0.326086956522,f,Fully Paid,0
+207494,3400.0,eq,60,75.84,B,5.0,RENT,25000.0,Verified,car,29.33,no,yes,10.0,0.0,no,0.384615384615,f,Fully Paid,0
+207496,8325.0,less,36,303.02,D,8.0,MORTGAGE,65000.0,Verified,home_improvement,33.71,no,yes,23.0,0.0,no,0.365079365079,f,Fully Paid,0
+207497,11725.0,eq,36,413.9,C,6.0,RENT,50000.0,Source Verified,credit_card,13.76,no,yes,6.0,0.0,no,0.5,f,Fully Paid,0
+207498,20000.0,eq,60,513.22,D,6.0,OWN,60000.0,Source Verified,credit_card,31.16,no,yes,15.0,0.0,no,0.652173913043,f,Fully Paid,0
+207499,2400.0,eq,36,86.49,D,6.0,RENT,14000.0,Verified,debt_consolidation,9.07,no,yes,6.0,0.0,no,0.75,f,Fully Paid,0
+207500,23850.0,eq,36,743.2,A,5.0,MORTGAGE,60000.0,Not Verified,debt_consolidation,10.82,no,no,15.0,0.0,no,0.681818181818,f,Fully Paid,0
+207501,10000.0,eq,36,360.38,D,5.0,RENT,40000.0,Not Verified,debt_consolidation,20.19,no,yes,17.0,0.0,no,0.53125,f,Charged Off,1
+207502,15000.0,less,36,536.81,C,7.0,RENT,97000.0,Verified,debt_consolidation,10.72,yes,yes,12.0,0.0,no,0.342857142857,f,Fully Paid,0
+207503,18000.0,less,36,563.23,A,1.0,RENT,105000.0,Verified,small_business,17.89,no,yes,9.0,0.0,no,0.642857142857,f,Fully Paid,0
+207504,3000.0,eq,36,95.26,A,6.0,RENT,12000.0,Source Verified,credit_card,34.12,no,no,10.0,0.0,no,1.0,f,Fully Paid,0
+207505,20950.0,less,36,687.27,B,7.0,MORTGAGE,54000.0,Verified,debt_consolidation,21.4,no,no,12.0,0.0,no,0.342857142857,f,Fully Paid,0
+207506,7375.0,eq,36,229.82,A,1.0,RENT,35500.0,Not Verified,wedding,23.05,no,yes,8.0,0.0,no,0.571428571429,f,Fully Paid,0
+207507,5000.0,eq,36,158.77,A,8.0,MORTGAGE,50000.0,Not Verified,credit_card,19.73,no,no,8.0,0.0,no,0.347826086957,f,Fully Paid,0
+207508,12000.0,eq,36,375.49,A,3.0,RENT,66000.0,Verified,debt_consolidation,30.36,no,no,22.0,0.0,no,0.468085106383,f,Charged Off,1
+207509,15000.0,eq,36,529.51,C,3.0,MORTGAGE,65000.0,Not Verified,credit_card,19.72,no,yes,10.0,0.0,no,0.5,f,Fully Paid,0
+207510,3500.0,eq,36,107.47,A,9.0,MORTGAGE,34900.0,Not Verified,home_improvement,6.4,no,yes,8.0,0.0,no,0.444444444444,f,Fully Paid,0
+207511,12000.0,eq,36,420.71,C,2.0,MORTGAGE,65000.0,Not Verified,debt_consolidation,15.94,no,yes,11.0,0.0,no,0.305555555556,f,Fully Paid,0
+207512,17625.0,eq,36,603.16,B,6.0,RENT,45000.0,Not Verified,debt_consolidation,26.13,no,no,12.0,0.0,no,0.75,f,Fully Paid,0
+207513,5750.0,eq,36,175.01,A,3.0,MORTGAGE,140000.0,Source Verified,debt_consolidation,3.32,no,yes,7.0,0.0,no,0.35,f,Fully Paid,0
+207514,2775.0,eq,36,86.84,A,10.0,MORTGAGE,130000.0,Source Verified,other,9.98,no,no,4.0,0.0,no,0.25,f,Fully Paid,0
+207515,9025.0,eq,36,282.4,A,3.0,MORTGAGE,78500.0,Source Verified,credit_card,16.83,no,yes,9.0,0.0,no,0.45,f,Fully Paid,0
+207516,19575.0,eq,36,732.38,E,3.0,RENT,50000.0,Source Verified,debt_consolidation,8.4,no,no,7.0,0.0,no,0.875,f,Fully Paid,0
+207517,10700.0,eq,36,356.01,B,1.0,RENT,38000.0,Not Verified,credit_card,16.09,no,no,7.0,0.0,no,0.583333333333,f,Fully Paid,0
+207518,9000.0,eq,36,328.77,D,3.0,RENT,89000.0,Verified,debt_consolidation,34.21,no,no,23.0,0.0,no,0.560975609756,f,Fully Paid,0
+207519,22000.0,eq,36,731.98,B,10.0,MORTGAGE,137000.0,Not Verified,other,14.15,no,no,15.0,0.0,no,0.714285714286,f,Fully Paid,0
+207520,12000.0,eq,36,438.36,D,10.0,RENT,80000.0,Not Verified,debt_consolidation,4.22,no,no,5.0,0.0,no,0.625,f,Fully Paid,0
+207521,26000.0,less,60,606.19,B,9.0,RENT,76000.0,Verified,debt_consolidation,32.9,no,no,17.0,0.0,no,0.53125,f,Charged Off,1
+207522,25000.0,less,36,971.4,F,10.0,MORTGAGE,74500.0,Verified,other,9.23,no,yes,5.0,1.0,yes,0.416666666667,f,Fully Paid,0
+207523,3000.0,eq,36,99.82,B,8.0,MORTGAGE,33000.0,Not Verified,home_improvement,7.2,no,no,11.0,0.0,no,0.611111111111,f,Fully Paid,0
+207524,14500.0,eq,36,468.97,B,5.0,MORTGAGE,60434.0,Not Verified,credit_card,26.41,no,no,17.0,0.0,no,0.447368421053,f,Fully Paid,0
+207525,1200.0,eq,36,43.84,D,10.0,RENT,33000.0,Not Verified,other,5.96,no,no,3.0,1.0,yes,0.375,f,Fully Paid,0
+207526,3000.0,eq,36,103.02,C,1.0,OWN,27500.0,Not Verified,home_improvement,10.95,no,yes,12.0,0.0,no,1.0,f,Fully Paid,0
+207527,12700.0,eq,36,442.19,C,6.0,MORTGAGE,55000.0,Verified,wedding,31.96,no,yes,13.0,0.0,no,0.41935483871,f,Fully Paid,0
+207528,3800.0,eq,36,115.66,A,5.0,RENT,82500.0,Not Verified,debt_consolidation,2.47,yes,no,17.0,0.0,no,0.62962962963,f,Fully Paid,0
+207529,14000.0,eq,36,452.8,B,8.0,MORTGAGE,125000.0,Not Verified,debt_consolidation,13.86,no,no,9.0,0.0,no,0.375,f,Fully Paid,0
+207530,32000.0,eq,36,1164.76,D,10.0,MORTGAGE,115000.0,Verified,debt_consolidation,14.6,no,yes,14.0,0.0,no,0.304347826087,f,Fully Paid,0
+207531,3000.0,eq,36,93.88,A,1.0,RENT,30000.0,Not Verified,moving,10.23,no,yes,20.0,0.0,no,0.487804878049,f,Fully Paid,0
+207532,5000.0,eq,36,152.18,A,7.0,RENT,41000.0,Not Verified,credit_card,5.36,no,no,16.0,0.0,no,0.666666666667,f,Fully Paid,0
+207533,12000.0,eq,36,388.11,B,2.0,OWN,60000.0,Not Verified,debt_consolidation,23.78,no,no,14.0,0.0,no,0.48275862069,f,Fully Paid,0
+207534,5000.0,eq,36,153.52,A,6.0,MORTGAGE,45000.0,Not Verified,home_improvement,19.92,no,yes,14.0,0.0,no,0.4,f,Fully Paid,0
+207535,21600.0,eq,36,708.59,B,5.0,RENT,74000.0,Verified,debt_consolidation,31.78,no,no,21.0,0.0,no,0.403846153846,f,Fully Paid,0
+207536,10000.0,eq,36,343.39,C,6.0,RENT,75000.0,Not Verified,other,2.83,no,yes,5.0,0.0,no,0.625,f,Charged Off,1
+207537,25900.0,less,36,889.36,C,10.0,MORTGAGE,101300.0,Verified,debt_consolidation,18.08,no,no,9.0,0.0,no,0.183673469388,f,Fully Paid,0
+207538,9600.0,eq,36,319.41,B,6.0,MORTGAGE,53000.0,Not Verified,major_purchase,14.81,no,yes,6.0,1.0,yes,0.3,f,Fully Paid,0
+207539,1000.0,eq,36,32.81,B,7.0,RENT,40000.0,Verified,vacation,33.36,no,no,11.0,0.0,no,0.6875,f,Fully Paid,0
+207540,6000.0,eq,36,206.03,C,1.0,RENT,33000.0,Source Verified,debt_consolidation,9.75,no,no,8.0,0.0,no,0.444444444444,f,Fully Paid,0
+207541,10000.0,eq,36,323.43,B,10.0,MORTGAGE,35000.0,Not Verified,home_improvement,21.14,no,no,12.0,0.0,no,0.255319148936,f,Fully Paid,0
+207543,7000.0,eq,36,232.91,B,1.0,RENT,45000.0,Not Verified,debt_consolidation,5.97,no,yes,15.0,0.0,no,0.652173913043,f,Fully Paid,0
+207544,9000.0,eq,36,313.36,C,7.0,MORTGAGE,80000.0,Not Verified,credit_card,7.86,no,yes,18.0,0.0,no,0.486486486486,f,Fully Paid,0
+207545,6000.0,eq,36,182.62,A,4.0,MORTGAGE,85000.0,Not Verified,credit_card,5.65,no,no,15.0,0.0,no,0.333333333333,f,Charged Off,1
+207546,18800.0,eq,36,585.84,A,1.0,RENT,60000.0,Not Verified,debt_consolidation,8.44,no,no,7.0,0.0,no,0.636363636364,f,Fully Paid,0
+207547,7000.0,eq,36,254.8,D,9.0,MORTGAGE,50000.0,Not Verified,home_improvement,23.4,no,yes,8.0,0.0,no,0.444444444444,f,Fully Paid,0
+207548,20000.0,less,36,665.44,B,10.0,RENT,63806.0,Not Verified,debt_consolidation,18.51,no,no,19.0,0.0,no,0.59375,f,Fully Paid,0
+207549,18000.0,eq,60,467.43,D,10.0,MORTGAGE,95000.0,Source Verified,other,9.55,no,no,12.0,1.0,yes,0.545454545455,f,Charged Off,1
+207550,15000.0,eq,36,522.26,C,2.0,RENT,49920.0,Source Verified,debt_consolidation,14.21,no,yes,22.0,0.0,no,0.647058823529,f,Fully Paid,0
+207551,6000.0,eq,36,214.73,C,6.0,MORTGAGE,55000.0,Not Verified,debt_consolidation,13.22,no,yes,8.0,0.0,no,0.5,f,Charged Off,1
+207552,6400.0,eq,36,200.26,A,4.0,MORTGAGE,58000.0,Not Verified,home_improvement,4.12,no,no,9.0,0.0,no,0.5625,f,Fully Paid,0
+207553,16000.0,eq,36,564.81,C,10.0,MORTGAGE,108707.0,Verified,debt_consolidation,27.61,no,yes,20.0,0.0,no,0.350877192982,f,Fully Paid,0
+207554,2575.0,eq,36,83.29,B,2.0,RENT,50000.0,Not Verified,debt_consolidation,27.54,no,no,12.0,0.0,no,0.352941176471,f,Charged Off,1
+207555,5375.0,less,36,167.5,A,6.0,MORTGAGE,41000.0,Verified,debt_consolidation,32.03,no,no,14.0,0.0,no,0.538461538462,f,Fully Paid,0
+207556,10400.0,eq,36,379.91,D,7.0,RENT,40915.0,Verified,debt_consolidation,32.97,no,yes,18.0,0.0,no,0.666666666667,f,Fully Paid,0
+207557,14000.0,eq,36,459.28,B,6.0,MORTGAGE,40000.0,Verified,debt_consolidation,11.76,no,no,6.0,0.0,no,0.3,f,Fully Paid,0
+207558,23675.0,less,60,640.49,E,10.0,MORTGAGE,60000.0,Verified,major_purchase,22.8,no,no,13.0,0.0,no,0.448275862069,f,Charged Off,1
+207559,6000.0,eq,36,211.81,C,1.0,RENT,65000.0,Source Verified,debt_consolidation,6.42,yes,yes,5.0,0.0,no,0.333333333333,f,Fully Paid,0
+207560,5600.0,eq,36,183.71,B,10.0,RENT,66400.0,Not Verified,vacation,17.42,no,yes,8.0,0.0,no,0.228571428571,f,Fully Paid,0
+207561,18200.0,eq,36,588.64,B,3.0,RENT,57000.0,Not Verified,credit_card,7.95,no,yes,13.0,0.0,no,0.282608695652,f,Fully Paid,0
+207562,19075.0,eq,60,510.59,E,5.0,MORTGAGE,55473.0,Verified,debt_consolidation,17.09,no,yes,8.0,0.0,no,0.727272727273,f,Fully Paid,0
+207563,9600.0,eq,36,310.49,B,3.0,RENT,86500.0,Not Verified,credit_card,4.96,no,no,9.0,0.0,no,0.642857142857,f,Fully Paid,0
+207564,14000.0,eq,36,452.8,B,1.0,MORTGAGE,80500.0,Not Verified,debt_consolidation,18.8,yes,no,15.0,0.0,no,0.441176470588,f,Fully Paid,0
+207565,7200.0,less,36,239.56,B,1.0,MORTGAGE,92000.0,Source Verified,debt_consolidation,16.63,yes,no,10.0,0.0,no,0.416666666667,f,Fully Paid,0
+207566,19000.0,eq,60,529.85,E,2.0,MORTGAGE,96000.0,Verified,debt_consolidation,6.68,yes,no,7.0,0.0,no,0.2,f,Fully Paid,0
+207567,6000.0,eq,36,202.49,B,1.0,OWN,100000.0,Not Verified,debt_consolidation,9.73,no,yes,19.0,0.0,no,0.826086956522,f,Fully Paid,0
+207568,20000.0,eq,60,484.24,C,6.0,MORTGAGE,86000.0,Verified,credit_card,21.99,no,yes,16.0,0.0,no,0.615384615385,f,Charged Off,1
+207569,11000.0,eq,36,349.29,A,1.0,RENT,45000.0,Not Verified,major_purchase,8.37,no,no,5.0,0.0,no,0.384615384615,f,Fully Paid,0
+207570,15000.0,eq,36,555.32,D,6.0,RENT,44900.0,Verified,debt_consolidation,32.02,yes,no,15.0,0.0,no,0.714285714286,f,Charged Off,1
+207571,35000.0,less,60,976.04,E,10.0,MORTGAGE,125000.0,Verified,debt_consolidation,9.66,no,no,9.0,0.0,no,0.257142857143,f,Fully Paid,0
+207572,10375.0,eq,36,373.89,D,3.0,OWN,30000.0,Verified,debt_consolidation,32.64,no,yes,12.0,0.0,no,0.75,f,Fully Paid,0
+207574,21350.0,eq,36,764.06,C,2.0,MORTGAGE,54971.0,Verified,debt_consolidation,32.55,no,yes,13.0,0.0,no,0.41935483871,f,Charged Off,1
+207575,3000.0,less,36,91.31,A,3.0,OWN,32000.0,Not Verified,debt_consolidation,16.76,no,no,6.0,0.0,no,0.206896551724,f,Fully Paid,0
+207576,10000.0,eq,36,317.54,A,5.0,MORTGAGE,55000.0,Not Verified,debt_consolidation,15.12,no,no,11.0,0.0,no,0.423076923077,f,Fully Paid,0
+207577,8500.0,eq,36,265.97,A,9.0,MORTGAGE,60000.0,Verified,credit_card,12.46,no,yes,10.0,0.0,no,0.47619047619,f,Fully Paid,0
+207578,7000.0,eq,36,254.8,D,5.0,RENT,60000.0,Not Verified,wedding,15.92,no,yes,11.0,0.0,no,0.6875,f,Fully Paid,0
+207579,12000.0,eq,36,368.45,A,10.0,MORTGAGE,53850.0,Not Verified,major_purchase,9.05,no,yes,9.0,0.0,no,0.333333333333,f,Fully Paid,0
+207580,5175.0,eq,36,177.7,C,6.0,OWN,17986.0,Verified,major_purchase,23.69,no,yes,13.0,0.0,no,0.8125,f,Fully Paid,0
+207581,5875.0,eq,36,201.06,B,10.0,RENT,35000.0,Not Verified,debt_consolidation,7.1,no,yes,6.0,0.0,no,0.857142857143,f,Fully Paid,0
+207582,19000.0,eq,60,487.56,D,1.0,RENT,48000.0,Verified,debt_consolidation,27.57,no,yes,12.0,0.0,no,0.375,f,Fully Paid,0
+207583,25975.0,eq,36,936.07,D,10.0,MORTGAGE,65000.0,Verified,debt_consolidation,22.43,no,yes,13.0,1.0,yes,0.40625,f,Fully Paid,0
+207584,15500.0,less,60,423.62,E,10.0,MORTGAGE,40000.0,Verified,other,16.17,no,yes,7.0,0.0,no,0.388888888889,f,Fully Paid,0
+207585,3000.0,eq,36,98.42,B,10.0,OWN,130000.0,Verified,debt_consolidation,27.05,no,yes,14.0,0.0,no,0.28,f,Fully Paid,0
+207587,33950.0,less,36,1161.82,B,6.0,RENT,85722.0,Verified,debt_consolidation,27.19,no,yes,15.0,0.0,no,0.245901639344,f,Fully Paid,0
+207588,15000.0,eq,36,522.26,C,10.0,RENT,44500.0,Verified,debt_consolidation,30.53,no,yes,16.0,0.0,no,0.727272727273,f,Fully Paid,0
+207589,19000.0,less,60,445.36,C,10.0,MORTGAGE,60000.0,Verified,credit_card,16.06,no,no,8.0,0.0,no,0.615384615385,f,Fully Paid,0
+207590,8000.0,eq,36,288.3,D,3.0,RENT,40000.0,Source Verified,credit_card,12.4,no,yes,18.0,0.0,no,0.818181818182,f,Fully Paid,0
+207591,15000.0,eq,36,506.21,B,9.0,MORTGAGE,73450.0,Not Verified,debt_consolidation,22.82,no,yes,15.0,1.0,yes,0.576923076923,f,Fully Paid,0
+207592,10000.0,eq,36,317.54,A,3.0,OWN,55000.0,Verified,small_business,16.93,yes,no,14.0,0.0,no,0.35,f,Fully Paid,0
+207593,19750.0,eq,36,617.99,A,10.0,MORTGAGE,50000.0,Verified,credit_card,31.55,no,no,16.0,0.0,no,0.592592592593,f,Fully Paid,0
+207596,9600.0,eq,36,338.89,C,2.0,RENT,40000.0,Not Verified,credit_card,20.82,no,yes,7.0,0.0,no,0.777777777778,f,Charged Off,1
+207597,5000.0,eq,36,155.81,A,1.0,RENT,51000.0,Not Verified,debt_consolidation,24.38,no,no,18.0,0.0,no,0.58064516129,f,Fully Paid,0
+207598,12000.0,eq,36,412.06,C,1.0,MORTGAGE,55000.0,Not Verified,debt_consolidation,19.05,no,yes,16.0,0.0,no,0.516129032258,f,Fully Paid,0
+207599,2775.0,eq,36,99.31,C,6.0,MORTGAGE,50000.0,Source Verified,home_improvement,13.94,no,yes,5.0,1.0,yes,0.3125,f,Fully Paid,0
+207600,15000.0,eq,36,456.54,A,10.0,MORTGAGE,92000.0,Source Verified,debt_consolidation,5.44,no,no,14.0,0.0,no,0.538461538462,f,Fully Paid,0
+207601,10400.0,eq,36,325.42,A,1.0,RENT,38000.0,Verified,debt_consolidation,18.51,no,no,7.0,0.0,no,0.7,f,Fully Paid,0
+207602,4000.0,eq,36,136.89,B,10.0,RENT,61000.0,Not Verified,debt_consolidation,26.68,no,no,14.0,1.0,yes,0.378378378378,f,Fully Paid,0
+207603,4000.0,eq,36,133.09,B,10.0,MORTGAGE,53000.0,Not Verified,debt_consolidation,19.77,no,yes,9.0,0.0,no,0.45,f,Fully Paid,0
+207604,27150.0,less,36,932.29,C,10.0,MORTGAGE,85000.0,Verified,debt_consolidation,13.19,no,no,10.0,0.0,no,0.238095238095,f,Charged Off,1
+207605,28000.0,eq,36,931.61,B,1.0,RENT,90000.0,Verified,debt_consolidation,23.33,no,yes,14.0,0.0,no,0.583333333333,f,Fully Paid,0
+207606,11900.0,eq,36,395.94,B,1.0,RENT,42000.0,Source Verified,debt_consolidation,11.6,no,no,9.0,0.0,no,0.642857142857,f,Fully Paid,0
+207607,25000.0,less,60,557.63,B,10.0,MORTGAGE,200000.0,Verified,debt_consolidation,11.65,no,yes,17.0,0.0,no,0.447368421053,f,Fully Paid,0
+207608,35000.0,less,36,1164.51,B,10.0,MORTGAGE,95000.0,Verified,home_improvement,8.65,no,yes,5.0,0.0,no,0.294117647059,f,Fully Paid,0
+207609,21200.0,eq,36,715.44,B,4.0,RENT,53500.0,Verified,small_business,29.66,no,yes,14.0,0.0,no,0.608695652174,f,Fully Paid,0
+207610,15000.0,eq,36,545.99,D,9.0,RENT,50000.0,Not Verified,debt_consolidation,20.28,yes,no,12.0,0.0,no,0.521739130435,f,Charged Off,1
+207611,16000.0,eq,60,432.86,E,10.0,RENT,59000.0,Verified,debt_consolidation,24.39,no,yes,22.0,0.0,no,0.733333333333,f,Charged Off,1
+207612,16800.0,eq,36,558.97,B,3.0,OWN,50000.0,Verified,debt_consolidation,28.15,yes,no,14.0,0.0,no,0.388888888889,f,Fully Paid,0
+207613,25000.0,eq,36,900.93,D,10.0,RENT,65000.0,Source Verified,debt_consolidation,20.16,no,yes,21.0,0.0,no,0.636363636364,f,Fully Paid,0
+207614,15350.0,eq,36,563.06,D,1.0,MORTGAGE,39000.0,Verified,small_business,28.92,no,yes,13.0,0.0,no,0.722222222222,f,Fully Paid,0
+207615,30000.0,eq,36,1095.9,D,6.0,MORTGAGE,100000.0,Verified,debt_consolidation,22.7,no,yes,12.0,0.0,no,0.324324324324,f,Fully Paid,0
+207617,4000.0,eq,36,124.65,A,8.0,RENT,50000.0,Not Verified,wedding,25.27,no,no,7.0,0.0,no,0.7,f,Fully Paid,0
+207618,5675.0,eq,36,180.2,A,10.0,OWN,28000.0,Not Verified,debt_consolidation,23.57,no,yes,7.0,0.0,no,0.636363636364,f,Fully Paid,0
+207619,21725.0,eq,36,829.47,E,2.0,RENT,101794.0,Source Verified,debt_consolidation,18.67,no,no,21.0,0.0,no,0.7,f,Fully Paid,0
+207620,12000.0,eq,36,412.06,C,10.0,RENT,58000.0,Verified,debt_consolidation,21.68,no,no,17.0,0.0,no,0.68,f,Fully Paid,0
+207621,10375.0,eq,36,356.26,C,5.0,RENT,29750.0,Verified,debt_consolidation,26.42,no,no,6.0,0.0,no,0.6,f,Fully Paid,0
+207622,4000.0,eq,36,143.15,C,7.0,MORTGAGE,75000.0,Source Verified,home_improvement,8.51,no,yes,12.0,0.0,no,1.0,f,Fully Paid,0
+207623,12000.0,eq,36,368.45,A,1.0,RENT,80000.0,Not Verified,debt_consolidation,15.0,no,yes,9.0,0.0,no,0.36,f,Fully Paid,0
+207624,4500.0,eq,36,142.89,A,5.0,RENT,45000.0,Not Verified,debt_consolidation,24.29,yes,yes,14.0,0.0,no,0.48275862069,f,Fully Paid,0
+207625,20000.0,less,36,686.77,C,3.0,MORTGAGE,65000.0,Verified,debt_consolidation,6.42,no,no,10.0,0.0,no,1.0,f,Charged Off,1
+207626,3125.0,eq,36,97.38,A,10.0,RENT,56603.0,Source Verified,debt_consolidation,17.49,no,no,7.0,0.0,no,0.21875,f,Charged Off,1
+207627,8000.0,less,36,266.18,B,10.0,RENT,63880.0,Not Verified,debt_consolidation,28.07,no,no,21.0,0.0,no,0.636363636364,f,Fully Paid,0
+207628,11700.0,eq,36,383.82,B,3.0,MORTGAGE,177000.0,Source Verified,debt_consolidation,24.32,no,no,18.0,0.0,no,0.418604651163,f,Fully Paid,0
+207629,12000.0,eq,36,368.45,A,2.0,RENT,50000.0,Not Verified,debt_consolidation,12.08,no,no,6.0,0.0,no,0.4,f,Fully Paid,0
+207631,7800.0,less,36,239.49,A,10.0,MORTGAGE,63000.0,Not Verified,credit_card,16.25,no,no,10.0,0.0,no,0.625,f,Fully Paid,0
+207632,8300.0,eq,36,254.85,A,10.0,RENT,94837.0,Not Verified,debt_consolidation,11.88,no,no,5.0,0.0,no,0.25,f,Fully Paid,0
+207633,15625.0,eq,60,348.52,B,10.0,MORTGAGE,51000.0,Verified,debt_consolidation,32.04,no,no,15.0,0.0,no,0.428571428571,f,Fully Paid,0
+207634,6000.0,eq,36,199.63,B,3.0,RENT,30000.0,Verified,debt_consolidation,33.76,no,no,15.0,0.0,no,0.789473684211,f,Fully Paid,0
+207635,15000.0,less,60,401.51,E,3.0,RENT,88000.0,Verified,other,14.59,no,no,6.0,0.0,no,0.5,f,Fully Paid,0
+207636,11500.0,eq,36,359.84,A,4.0,RENT,41000.0,Not Verified,debt_consolidation,14.02,no,no,7.0,0.0,no,0.5,f,Fully Paid,0
+207637,8000.0,eq,36,274.71,C,2.0,MORTGAGE,48000.0,Not Verified,debt_consolidation,7.75,no,yes,9.0,0.0,no,0.692307692308,f,Fully Paid,0
+207638,6500.0,eq,60,155.7,C,10.0,MORTGAGE,52000.0,Source Verified,car,19.98,no,yes,20.0,0.0,no,0.5,f,Fully Paid,0
+207639,8125.0,eq,36,282.9,C,7.0,RENT,24000.0,Verified,home_improvement,31.4,yes,yes,10.0,0.0,no,0.277777777778,f,Fully Paid,0
+207640,14825.0,eq,36,451.21,A,1.0,MORTGAGE,80000.0,Verified,debt_consolidation,29.65,no,no,9.0,0.0,no,0.264705882353,f,Fully Paid,0
+207641,9000.0,eq,36,303.73,B,8.0,MORTGAGE,60000.0,Not Verified,debt_consolidation,21.76,no,yes,16.0,0.0,no,0.666666666667,f,Fully Paid,0
+207642,10200.0,eq,36,339.38,B,4.0,RENT,90000.0,Not Verified,debt_consolidation,16.79,no,no,5.0,0.0,no,0.357142857143,f,Fully Paid,0
+207643,20000.0,eq,36,686.77,C,6.0,MORTGAGE,80000.0,Verified,debt_consolidation,15.42,no,yes,6.0,0.0,no,0.3,f,Charged Off,1
+207644,2275.0,eq,36,77.86,B,9.0,MORTGAGE,126200.0,Not Verified,debt_consolidation,11.43,no,yes,9.0,0.0,no,0.333333333333,f,Fully Paid,0
+207645,5000.0,eq,36,178.94,C,1.0,OWN,40000.0,Source Verified,debt_consolidation,19.41,no,yes,7.0,0.0,no,0.5,f,Fully Paid,0
+207646,18000.0,eq,60,486.97,E,9.0,RENT,45000.0,Verified,debt_consolidation,21.15,no,no,12.0,0.0,no,0.4,f,Charged Off,1
+207647,28000.0,eq,60,722.49,D,5.0,MORTGAGE,106000.0,Verified,debt_consolidation,14.75,no,yes,19.0,0.0,no,0.422222222222,f,Fully Paid,0
+207648,2000.0,eq,36,70.61,C,2.0,MORTGAGE,50000.0,Source Verified,home_improvement,30.58,no,yes,9.0,0.0,no,0.36,f,Fully Paid,0
+207649,21000.0,eq,60,479.0,B,7.0,OWN,64000.0,Source Verified,debt_consolidation,15.32,no,yes,10.0,0.0,no,0.47619047619,f,Fully Paid,0
+207650,14000.0,less,36,452.8,B,3.0,RENT,80000.0,Verified,debt_consolidation,22.05,no,no,8.0,0.0,no,0.533333333333,f,Fully Paid,0
+207651,8000.0,eq,36,243.49,A,4.0,RENT,52500.0,Not Verified,debt_consolidation,10.88,no,yes,11.0,0.0,no,0.354838709677,f,Fully Paid,0
+207652,8000.0,eq,36,278.54,C,10.0,MORTGAGE,158000.0,Not Verified,debt_consolidation,9.9,no,yes,13.0,0.0,no,0.433333333333,f,Fully Paid,0
+207653,4000.0,eq,36,131.23,B,8.0,MORTGAGE,53000.0,Not Verified,debt_consolidation,19.11,no,no,7.0,0.0,no,0.368421052632,f,Fully Paid,0
+207654,12000.0,eq,36,429.45,C,10.0,MORTGAGE,63000.0,Not Verified,debt_consolidation,19.2,yes,yes,23.0,0.0,no,0.821428571429,f,Fully Paid,0
+207655,4200.0,eq,36,139.75,B,6.0,MORTGAGE,56000.0,Not Verified,home_improvement,24.71,yes,no,13.0,0.0,no,0.5,f,Fully Paid,0
+207657,14500.0,less,36,496.21,B,4.0,MORTGAGE,49800.0,Source Verified,debt_consolidation,12.31,no,yes,7.0,0.0,no,0.636363636364,f,Fully Paid,0
+207658,12000.0,less,36,373.94,A,9.0,MORTGAGE,70000.0,Verified,debt_consolidation,2.35,no,no,5.0,0.0,no,0.625,f,Fully Paid,0
+207659,18000.0,eq,36,615.99,B,10.0,MORTGAGE,52151.0,Not Verified,credit_card,25.93,no,yes,9.0,0.0,no,0.36,f,Fully Paid,0
+207661,10000.0,less,36,332.72,B,10.0,RENT,65000.0,Not Verified,credit_card,18.37,no,no,11.0,0.0,no,0.733333333333,f,Charged Off,1
+207662,6000.0,eq,36,214.73,C,10.0,MORTGAGE,63000.0,Not Verified,debt_consolidation,4.13,no,yes,4.0,0.0,no,0.117647058824,f,Fully Paid,0
+207663,10450.0,eq,36,363.85,C,3.0,RENT,31512.0,Not Verified,debt_consolidation,20.6,no,yes,8.0,0.0,no,0.5,f,Charged Off,1
+207666,11500.0,eq,36,394.89,C,1.0,MORTGAGE,66800.0,Verified,debt_consolidation,31.91,no,yes,18.0,0.0,no,0.692307692308,f,Fully Paid,0
+207667,4800.0,less,36,150.2,A,1.0,RENT,76000.0,Verified,debt_consolidation,13.74,no,no,6.0,0.0,no,0.206896551724,f,Fully Paid,0
+207668,6400.0,eq,36,212.94,B,1.0,RENT,57500.0,Source Verified,wedding,18.99,yes,yes,5.0,0.0,no,0.166666666667,f,Fully Paid,0
+207669,16475.0,eq,36,515.51,A,7.0,RENT,42000.0,Verified,other,30.02,no,no,4.0,0.0,no,0.307692307692,f,Fully Paid,0
+207670,35000.0,eq,60,946.87,E,6.0,MORTGAGE,94000.0,Verified,debt_consolidation,13.52,yes,yes,13.0,0.0,no,0.541666666667,f,Charged Off,1
+207671,12000.0,less,36,381.04,A,10.0,MORTGAGE,75000.0,Verified,credit_card,16.8,no,no,11.0,0.0,no,0.5,f,Fully Paid,0
+207672,25000.0,eq,36,843.68,B,2.0,RENT,76500.0,Not Verified,debt_consolidation,22.91,no,no,9.0,0.0,no,0.409090909091,f,Fully Paid,0
+207673,6625.0,eq,36,214.27,B,5.0,RENT,35000.0,Not Verified,credit_card,20.84,no,no,7.0,0.0,no,0.583333333333,f,Fully Paid,0
+207674,26500.0,less,36,881.7,B,4.0,MORTGAGE,67494.0,Verified,debt_consolidation,8.7,no,yes,7.0,0.0,no,0.35,f,Fully Paid,0
+207675,35000.0,eq,36,1278.55,D,7.0,MORTGAGE,125000.0,Verified,debt_consolidation,12.9,no,yes,10.0,0.0,no,0.384615384615,f,Fully Paid,0
+207676,19000.0,eq,36,632.17,B,2.0,RENT,48000.0,Source Verified,debt_consolidation,22.3,no,no,8.0,0.0,no,0.421052631579,f,Fully Paid,0
+207677,10000.0,eq,60,233.15,B,3.0,MORTGAGE,50000.0,Verified,debt_consolidation,19.56,no,no,15.0,0.0,no,0.576923076923,f,Fully Paid,0
+207678,24000.0,less,60,655.92,E,9.0,MORTGAGE,115000.0,Verified,debt_consolidation,24.95,yes,no,12.0,0.0,no,0.48,f,Charged Off,1
+207679,18000.0,less,36,607.45,B,1.0,MORTGAGE,45000.0,Verified,wedding,11.67,no,yes,8.0,0.0,no,0.5,f,Fully Paid,0
+207680,18450.0,eq,60,432.47,C,4.0,RENT,60000.0,Source Verified,credit_card,5.42,no,no,7.0,0.0,no,0.538461538462,f,Fully Paid,0
+207681,18750.0,eq,36,643.84,C,3.0,MORTGAGE,71400.0,Source Verified,debt_consolidation,15.9,yes,no,6.0,0.0,no,0.352941176471,f,Fully Paid,0
+207682,9600.0,eq,36,294.76,A,3.0,RENT,52000.0,Not Verified,debt_consolidation,3.82,no,yes,7.0,0.0,no,0.538461538462,f,Fully Paid,0
+207683,5500.0,eq,36,194.16,C,1.0,MORTGAGE,39002.0,Source Verified,debt_consolidation,7.26,yes,yes,6.0,0.0,no,0.153846153846,f,Charged Off,1
+207684,7000.0,less,36,239.55,B,6.0,RENT,25000.0,Verified,debt_consolidation,28.61,no,no,10.0,0.0,no,0.909090909091,f,Fully Paid,0
+207685,10625.0,eq,36,369.94,C,1.0,RENT,42000.0,Not Verified,debt_consolidation,28.6,no,yes,9.0,0.0,no,0.6,f,Fully Paid,0
+207686,10000.0,eq,36,365.3,D,10.0,OWN,45000.0,Not Verified,debt_consolidation,13.47,no,yes,7.0,0.0,no,0.4375,f,Fully Paid,0
+207687,11500.0,eq,36,393.55,B,10.0,RENT,35277.0,Not Verified,other,9.22,no,yes,5.0,0.0,no,0.384615384615,f,Charged Off,1
+207689,8000.0,eq,36,258.74,B,8.0,MORTGAGE,93000.0,Verified,other,16.65,no,no,8.0,0.0,no,0.347826086957,f,Fully Paid,0
+207690,22000.0,eq,36,765.99,C,10.0,RENT,55000.0,Verified,debt_consolidation,23.4,no,yes,15.0,0.0,no,0.416666666667,f,Charged Off,1
+207691,20000.0,eq,60,557.74,E,10.0,MORTGAGE,68000.0,Verified,home_improvement,15.11,yes,no,8.0,0.0,no,0.4,f,Fully Paid,0
+207692,1200.0,eq,36,42.08,C,10.0,RENT,46000.0,Not Verified,debt_consolidation,9.99,no,yes,10.0,0.0,no,0.833333333333,f,Fully Paid,0
+207693,12000.0,less,36,399.26,B,5.0,MORTGAGE,62000.0,Verified,debt_consolidation,24.23,no,no,14.0,0.0,no,0.358974358974,f,Charged Off,1
+207694,5700.0,less,36,184.36,B,5.0,RENT,26000.0,Not Verified,debt_consolidation,25.48,no,no,6.0,0.0,no,0.75,f,Fully Paid,0
+207695,9750.0,eq,36,319.85,B,1.0,RENT,30000.0,Source Verified,debt_consolidation,4.76,no,yes,11.0,0.0,no,0.5,f,Fully Paid,0
+207696,9200.0,eq,36,297.55,B,10.0,MORTGAGE,59000.0,Not Verified,debt_consolidation,28.7,no,no,15.0,0.0,no,0.5,f,Fully Paid,0
+207697,1400.0,eq,36,42.61,A,6.0,MORTGAGE,60000.0,Not Verified,credit_card,9.16,no,no,12.0,0.0,no,0.571428571429,f,Fully Paid,0
+207698,12000.0,less,36,399.26,B,3.0,OWN,50000.0,Verified,major_purchase,31.34,no,yes,21.0,0.0,no,0.636363636364,f,Fully Paid,0
+207699,10100.0,eq,36,345.64,B,1.0,RENT,30000.0,Not Verified,car,26.56,no,yes,7.0,0.0,no,0.583333333333,f,Fully Paid,0
+207700,7200.0,eq,36,246.4,B,5.0,RENT,95000.0,Not Verified,credit_card,19.77,no,yes,9.0,0.0,no,0.473684210526,f,Fully Paid,0
+207701,24000.0,eq,36,835.62,C,5.0,RENT,89400.0,Not Verified,other,0.81,no,yes,8.0,1.0,yes,0.444444444444,f,Fully Paid,0
+207702,8400.0,less,36,255.66,A,10.0,RENT,75000.0,Not Verified,debt_consolidation,27.06,no,no,10.0,0.0,no,0.5,f,Fully Paid,0
+207703,5500.0,eq,36,167.4,A,10.0,OWN,26000.0,Not Verified,credit_card,19.94,no,no,8.0,0.0,no,0.571428571429,f,Fully Paid,0
+207704,7200.0,less,36,232.87,B,5.0,OWN,75000.0,Not Verified,home_improvement,26.78,no,no,10.0,0.0,no,0.526315789474,f,Fully Paid,0
+207706,9925.0,eq,36,321.0,B,1.0,MORTGAGE,40000.0,Not Verified,debt_consolidation,17.28,yes,yes,4.0,0.0,no,0.148148148148,f,Fully Paid,0
+207707,18825.0,eq,36,635.29,B,6.0,RENT,48000.0,Not Verified,debt_consolidation,27.5,no,yes,13.0,0.0,no,0.619047619048,f,Fully Paid,0
+207708,21000.0,eq,36,721.11,C,4.0,MORTGAGE,200000.0,Verified,house,2.42,yes,no,9.0,0.0,no,0.5625,f,Fully Paid,0
+207709,5000.0,eq,36,156.46,A,1.0,MORTGAGE,60000.0,Source Verified,small_business,3.26,no,no,7.0,0.0,no,0.7,f,Fully Paid,0
+207710,2125.0,eq,36,77.35,D,3.0,OWN,25000.0,Not Verified,debt_consolidation,27.36,no,no,6.0,0.0,no,1.0,f,Charged Off,1
+207711,16425.0,eq,60,444.36,E,9.0,MORTGAGE,50000.0,Verified,debt_consolidation,32.53,no,no,27.0,0.0,no,0.586956521739,f,Fully Paid,0
+207712,15000.0,eq,36,540.56,D,10.0,MORTGAGE,57000.0,Source Verified,debt_consolidation,11.55,no,no,16.0,0.0,no,0.695652173913,f,Fully Paid,0
+207714,7200.0,less,36,232.87,B,10.0,MORTGAGE,70056.0,Not Verified,credit_card,2.96,no,no,10.0,0.0,no,0.357142857143,f,Fully Paid,0
+207715,12000.0,eq,36,368.45,A,7.0,RENT,56000.0,Not Verified,debt_consolidation,2.08,no,yes,10.0,0.0,no,0.434782608696,f,Fully Paid,0
+207716,1200.0,eq,36,39.93,B,6.0,RENT,60000.0,Verified,vacation,12.62,no,no,5.0,0.0,no,0.833333333333,f,Fully Paid,0
+207717,18000.0,less,60,501.97,E,9.0,RENT,62507.0,Verified,other,10.33,no,no,5.0,1.0,yes,0.192307692308,f,Fully Paid,0
+207718,10000.0,eq,36,343.39,C,3.0,RENT,135000.0,Source Verified,credit_card,23.2,no,yes,17.0,0.0,no,0.62962962963,f,Fully Paid,0
+207719,5000.0,eq,60,117.2,C,4.0,MORTGAGE,67000.0,Verified,car,16.12,no,yes,13.0,0.0,no,0.393939393939,f,Fully Paid,0
+207720,13200.0,eq,36,445.46,B,6.0,MORTGAGE,67392.0,Not Verified,debt_consolidation,11.84,yes,no,7.0,0.0,no,0.411764705882,f,Fully Paid,0
+207722,6000.0,eq,36,216.23,D,8.0,MORTGAGE,41600.0,Not Verified,debt_consolidation,15.92,no,yes,5.0,0.0,no,0.416666666667,f,Fully Paid,0
+207723,11400.0,eq,36,396.92,C,6.0,MORTGAGE,38184.0,Verified,debt_consolidation,21.53,no,no,11.0,0.0,no,0.458333333333,f,Fully Paid,0
+207724,24000.0,less,60,649.29,E,10.0,MORTGAGE,138000.0,Verified,debt_consolidation,22.58,yes,yes,20.0,0.0,no,0.487804878049,f,Charged Off,1
+207725,16825.0,less,60,464.5,E,4.0,MORTGAGE,45240.0,Verified,debt_consolidation,34.8,no,no,12.0,0.0,no,0.428571428571,f,Default,0
+207726,35000.0,less,36,1309.49,E,10.0,RENT,120000.0,Verified,debt_consolidation,21.08,no,no,11.0,0.0,no,0.611111111111,f,Fully Paid,0
+207727,7800.0,eq,36,267.84,C,1.0,RENT,75000.0,Not Verified,debt_consolidation,10.35,no,no,5.0,0.0,no,0.277777777778,f,Fully Paid,0
+207728,25000.0,eq,36,831.8,B,6.0,MORTGAGE,80000.0,Verified,debt_consolidation,10.93,no,yes,9.0,0.0,no,0.290322580645,f,Fully Paid,0
+207729,15000.0,less,36,525.88,C,5.0,RENT,48744.0,Not Verified,credit_card,25.32,no,yes,18.0,0.0,no,0.782608695652,f,Fully Paid,0
+207730,9000.0,eq,36,281.62,A,10.0,MORTGAGE,55000.0,Not Verified,debt_consolidation,16.32,no,yes,15.0,0.0,no,0.6,f,Fully Paid,0
+207731,11900.0,eq,36,401.59,B,10.0,OWN,82000.0,Not Verified,debt_consolidation,7.32,no,yes,8.0,0.0,no,0.444444444444,f,Fully Paid,0
+207732,20000.0,eq,36,674.94,B,3.0,RENT,77000.0,Not Verified,debt_consolidation,21.54,no,yes,20.0,0.0,no,0.4,f,Fully Paid,0
+207733,7925.0,eq,36,272.13,C,7.0,MORTGAGE,45000.0,Not Verified,debt_consolidation,4.24,no,no,3.0,0.0,no,0.6,f,Charged Off,1
+207734,7100.0,eq,36,222.17,A,7.0,MORTGAGE,45000.0,Source Verified,debt_consolidation,23.68,yes,no,10.0,1.0,yes,0.454545454545,f,Fully Paid,0
+207735,11000.0,less,36,365.99,B,1.0,RENT,34000.0,Verified,credit_card,11.86,no,no,8.0,0.0,no,0.727272727273,f,Fully Paid,0
+207736,8125.0,eq,36,266.55,B,10.0,MORTGAGE,32000.0,Not Verified,credit_card,20.93,no,no,5.0,0.0,no,0.357142857143,f,Fully Paid,0
+207737,6000.0,eq,36,206.03,C,1.0,MORTGAGE,100000.0,Verified,credit_card,6.71,yes,no,10.0,0.0,no,0.294117647059,f,Fully Paid,0
+207738,25000.0,less,60,582.88,B,10.0,MORTGAGE,75000.0,Verified,debt_consolidation,26.59,no,no,6.0,0.0,no,0.166666666667,f,Charged Off,1
+207739,18000.0,less,36,571.56,A,10.0,MORTGAGE,210000.0,Verified,debt_consolidation,8.89,no,yes,8.0,0.0,no,0.380952380952,f,Fully Paid,0
+207741,8500.0,eq,36,258.71,A,1.0,RENT,75000.0,Source Verified,credit_card,15.28,no,no,8.0,0.0,no,0.4,f,Fully Paid,0
+207742,6000.0,eq,36,216.23,D,3.0,RENT,60000.0,Source Verified,credit_card,20.66,no,no,8.0,0.0,no,0.4,f,Fully Paid,0
+207743,7200.0,eq,36,236.2,B,5.0,MORTGAGE,100000.0,Not Verified,debt_consolidation,17.4,no,no,9.0,0.0,no,0.3,f,Fully Paid,0
+207744,2000.0,eq,36,67.5,B,3.0,MORTGAGE,65000.0,Not Verified,medical,32.64,no,yes,6.0,0.0,no,0.4,f,Fully Paid,0
+207745,12125.0,eq,36,422.17,C,10.0,RENT,38000.0,Not Verified,debt_consolidation,28.42,no,yes,14.0,0.0,no,0.368421052632,f,Charged Off,1
+207746,12600.0,eq,36,425.22,B,10.0,MORTGAGE,67000.0,Source Verified,credit_card,26.39,no,yes,18.0,0.0,no,0.382978723404,f,Charged Off,1
+207747,22950.0,eq,36,799.06,C,10.0,MORTGAGE,80000.0,Verified,credit_card,20.15,no,yes,11.0,0.0,no,0.261904761905,f,Fully Paid,0
+207748,12000.0,eq,36,399.26,B,5.0,RENT,72000.0,Not Verified,debt_consolidation,17.45,no,no,19.0,0.0,no,0.542857142857,f,Fully Paid,0
+207749,33950.0,eq,60,908.75,E,1.0,RENT,85000.0,Verified,small_business,19.44,no,yes,12.0,0.0,no,0.705882352941,f,Fully Paid,0
+207750,12000.0,less,36,410.66,B,5.0,RENT,62390.0,Source Verified,debt_consolidation,9.4,no,no,9.0,0.0,no,0.692307692308,f,Fully Paid,0
+207751,20050.0,eq,60,564.65,F,2.0,MORTGAGE,83600.0,Verified,debt_consolidation,25.85,no,no,11.0,0.0,no,0.186440677966,f,Fully Paid,0
+207752,4000.0,eq,36,136.89,B,4.0,RENT,15000.0,Verified,credit_card,25.44,no,no,16.0,0.0,no,0.842105263158,f,Fully Paid,0
+207753,6000.0,eq,36,205.33,B,1.0,MORTGAGE,37000.0,Source Verified,debt_consolidation,0.81,yes,no,5.0,0.0,no,0.333333333333,f,Charged Off,1
+207754,15850.0,less,36,567.23,C,7.0,RENT,40000.0,Verified,debt_consolidation,26.91,no,yes,8.0,0.0,no,0.380952380952,f,Fully Paid,0
+207755,19200.0,eq,60,469.88,C,4.0,MORTGAGE,66400.0,Verified,debt_consolidation,18.51,no,yes,9.0,0.0,no,0.473684210526,f,Charged Off,1
+207756,4000.0,eq,36,129.37,B,10.0,MORTGAGE,55000.0,Verified,credit_card,11.53,no,yes,14.0,0.0,no,0.777777777778,f,Fully Paid,0
+207757,2000.0,eq,36,60.88,A,10.0,MORTGAGE,57000.0,Not Verified,car,2.88,no,no,15.0,0.0,no,0.6,f,Fully Paid,0
+207759,22750.0,less,60,496.23,B,5.0,MORTGAGE,60000.0,Verified,debt_consolidation,29.19,no,no,10.0,0.0,no,0.2,f,Fully Paid,0
+207760,28000.0,eq,60,597.13,B,1.0,MORTGAGE,150000.0,Source Verified,home_improvement,12.6,no,no,14.0,0.0,no,0.378378378378,f,Fully Paid,0
+207761,3500.0,eq,36,118.12,B,1.0,RENT,38000.0,Source Verified,debt_consolidation,15.79,yes,yes,8.0,0.0,no,1.0,f,Charged Off,1
+207763,20000.0,eq,60,567.04,F,6.0,OWN,50000.0,Source Verified,debt_consolidation,23.64,no,yes,11.0,0.0,no,0.785714285714,f,Fully Paid,0
+207764,6000.0,eq,36,182.62,A,7.0,OWN,52000.0,Not Verified,debt_consolidation,18.0,no,yes,13.0,0.0,no,0.619047619048,f,Fully Paid,0
+207765,7200.0,eq,36,239.56,B,2.0,RENT,45000.0,Source Verified,debt_consolidation,16.58,no,yes,9.0,0.0,no,0.272727272727,f,Fully Paid,0
+207766,15000.0,less,36,515.08,C,9.0,MORTGAGE,100000.0,Not Verified,debt_consolidation,28.31,no,no,11.0,0.0,no,0.44,f,Charged Off,1
+207767,16000.0,eq,36,539.96,B,4.0,RENT,69000.0,Source Verified,debt_consolidation,21.4,no,yes,7.0,0.0,no,0.7,f,Fully Paid,0
+207768,6000.0,eq,36,208.91,C,2.0,MORTGAGE,23000.0,Not Verified,debt_consolidation,10.85,yes,no,8.0,0.0,no,0.615384615385,f,Fully Paid,0
+207769,3000.0,eq,36,104.46,C,6.0,MORTGAGE,45000.0,Not Verified,home_improvement,15.47,no,yes,13.0,0.0,no,0.764705882353,f,Fully Paid,0
+207770,14400.0,eq,36,472.4,B,6.0,RENT,48000.0,Not Verified,debt_consolidation,19.61,no,no,12.0,0.0,no,0.6,f,Fully Paid,0
+207771,8000.0,eq,36,273.78,B,10.0,RENT,40820.0,Not Verified,debt_consolidation,17.87,no,yes,13.0,0.0,no,0.928571428571,f,Charged Off,1
+207772,17500.0,less,36,545.33,A,4.0,RENT,52000.0,Verified,wedding,7.31,no,no,11.0,0.0,no,0.647058823529,f,Fully Paid,0
+207773,16000.0,eq,36,560.94,C,6.0,MORTGAGE,88000.0,Not Verified,debt_consolidation,16.46,no,yes,20.0,0.0,no,0.526315789474,f,Fully Paid,0
+207774,9350.0,eq,36,291.36,A,4.0,MORTGAGE,60000.0,Not Verified,debt_consolidation,19.02,no,yes,9.0,0.0,no,0.36,f,Fully Paid,0
+207775,8000.0,less,36,278.54,C,10.0,RENT,39686.3,Verified,debt_consolidation,31.99,yes,yes,14.0,0.0,no,0.7,f,Fully Paid,0
+207776,4025.0,eq,36,125.95,A,10.0,MORTGAGE,42000.0,Verified,debt_consolidation,30.74,no,no,10.0,0.0,no,0.47619047619,f,Charged Off,1
+207777,11100.0,eq,36,369.32,B,10.0,MORTGAGE,75000.0,Source Verified,debt_consolidation,25.93,no,no,15.0,0.0,no,0.454545454545,f,Fully Paid,0
+207778,30000.0,eq,36,938.71,A,7.0,RENT,108000.0,Verified,debt_consolidation,15.08,no,no,10.0,0.0,no,0.47619047619,f,Fully Paid,0
+207779,9900.0,eq,36,308.5,A,10.0,MORTGAGE,183000.0,Not Verified,credit_card,7.84,no,yes,9.0,0.0,no,0.310344827586,f,Fully Paid,0
+207781,8400.0,eq,36,288.45,C,1.0,RENT,80000.0,Not Verified,wedding,18.65,yes,yes,12.0,0.0,no,0.413793103448,f,Fully Paid,0
+207782,10500.0,eq,36,378.39,D,5.0,MORTGAGE,55000.0,Source Verified,credit_card,12.33,no,yes,9.0,0.0,no,0.75,f,Fully Paid,0
+207783,4500.0,eq,36,142.89,A,4.0,OWN,35000.0,Not Verified,debt_consolidation,8.8,no,yes,10.0,0.0,no,0.416666666667,f,Fully Paid,0
+207784,4500.0,eq,36,156.68,C,1.0,MORTGAGE,40000.0,Source Verified,wedding,3.48,no,no,6.0,0.0,no,0.6,f,Fully Paid,0
+207785,16000.0,eq,60,437.28,E,10.0,RENT,87600.0,Verified,debt_consolidation,19.43,no,yes,8.0,0.0,no,0.275862068966,f,Fully Paid,0
+207786,3000.0,eq,36,93.88,A,6.0,RENT,25000.0,Verified,medical,26.98,no,yes,14.0,0.0,no,0.777777777778,f,Charged Off,1
+207787,10000.0,less,36,337.47,B,3.0,RENT,115413.36,Not Verified,debt_consolidation,14.57,no,no,8.0,0.0,no,0.615384615385,f,Fully Paid,0
+207788,21000.0,eq,36,708.69,B,7.0,MORTGAGE,95000.0,Verified,debt_consolidation,18.44,no,no,10.0,1.0,yes,0.555555555556,f,Fully Paid,0
+207789,11200.0,eq,36,367.42,B,4.0,OWN,60000.0,Not Verified,debt_consolidation,23.44,no,yes,15.0,0.0,no,0.714285714286,f,Fully Paid,0
+207790,11500.0,less,36,394.89,C,7.0,MORTGAGE,47000.0,Verified,debt_consolidation,23.98,no,no,15.0,0.0,no,0.9375,f,Fully Paid,0
+207792,6075.0,eq,36,184.9,A,6.0,OWN,22000.0,Not Verified,debt_consolidation,9.55,no,no,11.0,0.0,no,0.611111111111,f,Fully Paid,0
+207793,2325.0,eq,36,73.83,A,3.0,RENT,20849.82,Not Verified,debt_consolidation,12.55,no,no,6.0,0.0,no,0.545454545455,f,Fully Paid,0
+207794,17000.0,eq,36,565.62,B,10.0,RENT,66000.0,Not Verified,debt_consolidation,26.35,no,no,17.0,0.0,no,0.607142857143,f,Charged Off,1
+207795,8250.0,eq,36,287.25,C,10.0,MORTGAGE,50000.0,Source Verified,debt_consolidation,20.13,no,no,7.0,1.0,yes,0.466666666667,f,Charged Off,1
+207796,10000.0,eq,36,360.38,D,1.0,RENT,55000.0,Not Verified,debt_consolidation,27.34,no,no,13.0,0.0,no,0.684210526316,f,Fully Paid,0
+207797,8000.0,eq,36,262.45,B,2.0,OWN,24000.0,Not Verified,debt_consolidation,17.85,no,no,6.0,0.0,no,0.4,f,Fully Paid,0
+207798,3700.0,eq,36,134.68,D,10.0,MORTGAGE,46650.0,Verified,debt_consolidation,21.27,no,yes,12.0,0.0,no,0.923076923077,f,Fully Paid,0
+207799,10000.0,less,36,337.47,B,10.0,RENT,63000.0,Not Verified,debt_consolidation,18.42,no,yes,10.0,0.0,no,0.344827586207,f,Fully Paid,0
+207800,10000.0,less,36,332.72,B,4.0,RENT,80000.0,Not Verified,credit_card,19.14,no,no,17.0,0.0,no,0.944444444444,f,Fully Paid,0
+207801,12000.0,eq,36,432.45,D,10.0,OWN,40000.0,Not Verified,debt_consolidation,24.48,no,no,12.0,0.0,no,0.75,f,Charged Off,1
+207802,6000.0,eq,36,210.36,C,1.0,RENT,50000.0,Verified,debt_consolidation,34.71,no,yes,14.0,0.0,no,0.451612903226,f,Charged Off,1
+207803,13000.0,eq,36,420.46,B,5.0,MORTGAGE,70224.0,Verified,debt_consolidation,30.9,no,yes,19.0,0.0,no,0.791666666667,f,Fully Paid,0
+207804,18000.0,less,36,626.72,C,10.0,RENT,80000.0,Verified,debt_consolidation,31.04,no,no,21.0,0.0,no,0.617647058824,f,Fully Paid,0
+207805,26000.0,eq,36,892.8,C,2.0,MORTGAGE,98000.0,Verified,debt_consolidation,9.13,no,no,14.0,0.0,no,0.666666666667,f,Fully Paid,0
+207806,9750.0,eq,36,351.37,D,1.0,RENT,30000.0,Source Verified,credit_card,24.2,no,yes,10.0,0.0,no,0.714285714286,f,Charged Off,1
+207807,3000.0,eq,36,98.42,B,10.0,RENT,55000.0,Not Verified,credit_card,25.46,no,no,20.0,0.0,no,0.47619047619,f,Fully Paid,0
+207808,14675.0,eq,36,488.27,B,4.0,MORTGAGE,80000.0,Not Verified,home_improvement,15.69,yes,no,9.0,0.0,no,0.529411764706,f,Fully Paid,0
+207809,12500.0,eq,36,404.28,B,5.0,RENT,48250.0,Not Verified,debt_consolidation,13.27,no,no,17.0,0.0,no,0.68,f,Fully Paid,0
+207810,26000.0,eq,60,695.95,E,5.0,RENT,65000.0,Verified,debt_consolidation,21.18,no,yes,10.0,0.0,no,0.454545454545,f,Fully Paid,0
+207811,30000.0,less,36,1081.12,D,2.0,RENT,84000.0,Verified,debt_consolidation,29.08,no,no,18.0,0.0,no,0.5625,f,Fully Paid,0
+207812,18800.0,eq,36,645.56,C,10.0,RENT,60000.0,Verified,credit_card,29.38,no,no,9.0,0.0,no,0.6,f,Fully Paid,0
+207814,27575.0,less,60,628.97,B,9.0,MORTGAGE,70000.0,Verified,debt_consolidation,28.63,no,yes,11.0,0.0,no,0.458333333333,f,Fully Paid,0
+207815,13000.0,eq,36,486.38,E,1.0,RENT,50000.0,Not Verified,debt_consolidation,17.09,no,no,13.0,0.0,no,0.764705882353,f,Fully Paid,0
+207816,10000.0,eq,36,332.72,B,9.0,MORTGAGE,150000.0,Not Verified,debt_consolidation,13.67,no,yes,12.0,0.0,no,0.666666666667,f,Fully Paid,0
+207817,3000.0,eq,36,93.88,A,2.0,MORTGAGE,41000.0,Not Verified,other,20.84,no,yes,7.0,0.0,no,0.875,f,Fully Paid,0
+207818,25000.0,eq,36,808.56,B,3.0,MORTGAGE,87000.0,Source Verified,debt_consolidation,11.59,no,no,9.0,0.0,no,0.5,f,Fully Paid,0
+207819,9600.0,eq,36,323.98,B,1.0,RENT,45000.0,Source Verified,credit_card,7.69,no,no,4.0,0.0,no,0.307692307692,f,Fully Paid,0
+207820,5000.0,eq,36,182.0,D,4.0,RENT,72500.0,Not Verified,medical,15.74,no,yes,14.0,0.0,no,0.636363636364,f,Charged Off,1
+207821,7200.0,eq,36,263.02,D,6.0,RENT,38013.0,Not Verified,debt_consolidation,6.06,no,no,9.0,0.0,no,0.473684210526,f,Fully Paid,0
+207822,12000.0,eq,36,420.71,C,10.0,MORTGAGE,80000.0,Not Verified,debt_consolidation,20.68,no,yes,6.0,0.0,no,0.2,f,Fully Paid,0
+207823,22100.0,less,36,826.85,E,6.0,RENT,55800.0,Verified,debt_consolidation,19.94,no,no,11.0,0.0,no,0.34375,f,Fully Paid,0
+207824,13150.0,eq,36,417.56,A,5.0,MORTGAGE,52713.0,Verified,credit_card,22.7,no,yes,12.0,0.0,no,0.3,f,Fully Paid,0
+207825,11525.0,eq,60,279.05,C,4.0,RENT,33000.0,Verified,debt_consolidation,15.75,no,yes,15.0,0.0,no,0.714285714286,f,Fully Paid,0
+207826,26400.0,less,36,838.29,A,10.0,MORTGAGE,174000.0,Verified,other,5.98,no,yes,9.0,0.0,no,0.473684210526,f,Fully Paid,0
+207827,14125.0,less,36,505.5,C,4.0,MORTGAGE,39000.0,Verified,debt_consolidation,29.29,no,yes,23.0,0.0,no,0.589743589744,f,Fully Paid,0
+207828,7125.0,eq,36,233.74,B,8.0,MORTGAGE,42000.0,Not Verified,home_improvement,14.34,no,yes,3.0,0.0,no,0.6,f,Fully Paid,0
+207829,12000.0,eq,36,404.97,B,5.0,RENT,70000.0,Not Verified,debt_consolidation,26.91,no,yes,9.0,0.0,no,0.321428571429,f,Fully Paid,0
+207830,11000.0,eq,36,365.99,B,5.0,RENT,36000.0,Not Verified,credit_card,12.98,no,no,9.0,0.0,no,0.75,f,Fully Paid,0
+207831,25975.0,eq,60,709.89,E,5.0,OWN,80000.0,Verified,home_improvement,19.76,no,no,5.0,0.0,no,0.454545454545,f,Charged Off,1
+207832,10000.0,eq,36,307.04,A,1.0,RENT,68000.0,Not Verified,debt_consolidation,24.98,no,no,21.0,0.0,no,0.617647058824,f,Fully Paid,0
+207833,9050.0,eq,36,301.11,B,10.0,RENT,82000.0,Not Verified,credit_card,14.22,no,yes,13.0,0.0,no,0.448275862069,f,Fully Paid,0
+207834,7000.0,eq,36,219.04,A,10.0,MORTGAGE,102000.0,Verified,home_improvement,11.32,no,no,8.0,1.0,yes,0.470588235294,f,Fully Paid,0
+207835,16000.0,eq,36,500.65,A,6.0,RENT,40000.0,Not Verified,debt_consolidation,24.81,no,no,10.0,0.0,no,0.333333333333,f,Fully Paid,0
+207836,4800.0,eq,36,164.83,C,6.0,RENT,45000.0,Not Verified,credit_card,13.1,yes,no,14.0,0.0,no,0.424242424242,f,Fully Paid,0
+207837,15600.0,eq,36,535.68,C,10.0,RENT,65000.0,Not Verified,credit_card,16.52,yes,no,11.0,0.0,no,0.34375,f,Fully Paid,0
+207838,10000.0,eq,36,348.18,C,9.0,RENT,52000.0,Verified,debt_consolidation,14.03,no,yes,7.0,0.0,no,0.411764705882,f,Charged Off,1
+207839,27000.0,eq,36,940.07,C,10.0,MORTGAGE,68000.0,Source Verified,credit_card,14.35,no,no,12.0,0.0,no,0.428571428571,f,Fully Paid,0
+207840,8975.0,eq,36,307.14,B,3.0,OWN,42000.0,Not Verified,home_improvement,21.49,no,yes,12.0,0.0,no,0.75,f,Charged Off,1
+207841,14125.0,eq,36,528.47,E,5.0,MORTGAGE,36000.0,Verified,credit_card,18.43,no,no,24.0,0.0,no,0.8,f,Fully Paid,0
+207842,18225.0,eq,60,513.25,F,9.0,RENT,60000.0,Verified,debt_consolidation,17.22,no,no,6.0,0.0,no,0.333333333333,f,Fully Paid,0
+207843,12000.0,eq,36,436.79,D,10.0,RENT,40000.0,Not Verified,credit_card,7.92,no,no,9.0,0.0,no,0.642857142857,f,Fully Paid,0
+207844,9000.0,eq,36,291.09,B,10.0,MORTGAGE,60000.0,Not Verified,credit_card,6.42,yes,no,7.0,0.0,no,0.466666666667,f,Fully Paid,0
+207845,1000.0,eq,36,33.75,B,1.0,RENT,64000.0,Verified,moving,21.38,no,no,18.0,0.0,no,0.72,f,Fully Paid,0
+207846,3250.0,eq,60,92.15,F,9.0,RENT,55000.0,Verified,other,11.52,no,yes,29.0,0.0,no,0.547169811321,f,Charged Off,1
+207848,19200.0,eq,60,418.8,B,4.0,MORTGAGE,109200.0,Source Verified,credit_card,16.07,no,no,15.0,0.0,no,0.394736842105,f,Fully Paid,0
+207849,28625.0,eq,60,743.34,D,10.0,MORTGAGE,72000.0,Verified,debt_consolidation,24.8,no,yes,12.0,0.0,no,0.363636363636,f,Charged Off,1
+207850,7000.0,eq,36,239.55,B,9.0,RENT,45000.0,Not Verified,credit_card,22.99,no,no,9.0,0.0,no,0.642857142857,f,Fully Paid,0
+207851,12000.0,eq,36,432.45,D,1.0,MORTGAGE,70720.0,Source Verified,debt_consolidation,3.26,yes,yes,9.0,0.0,no,0.45,f,Fully Paid,0
+207852,7000.0,eq,36,240.37,C,1.0,RENT,25000.0,Verified,credit_card,29.28,no,no,16.0,0.0,no,0.842105263158,f,Fully Paid,0
+207854,9750.0,eq,36,324.4,B,9.0,RENT,34000.0,Not Verified,debt_consolidation,23.08,no,yes,11.0,0.0,no,0.52380952381,f,Fully Paid,0
+207855,5675.0,eq,36,177.58,A,3.0,OWN,28000.0,Not Verified,medical,2.52,no,no,9.0,0.0,no,0.409090909091,f,Fully Paid,0
+207856,5500.0,eq,36,194.16,C,3.0,RENT,40000.0,Not Verified,debt_consolidation,4.92,no,yes,4.0,0.0,no,1.0,f,Fully Paid,0
+207857,12000.0,less,36,393.67,B,5.0,MORTGAGE,110000.0,Not Verified,debt_consolidation,6.98,no,yes,13.0,0.0,no,0.282608695652,f,Fully Paid,0
+207858,10400.0,eq,36,379.91,D,8.0,MORTGAGE,52000.0,Not Verified,other,26.19,no,no,10.0,1.0,yes,0.294117647059,f,Charged Off,1
+207859,2100.0,eq,36,67.92,B,2.0,MORTGAGE,60000.0,Not Verified,other,33.3,no,no,17.0,0.0,no,0.566666666667,f,Fully Paid,0
+207860,22050.0,less,36,689.96,A,1.0,RENT,160000.0,Source Verified,debt_consolidation,19.63,no,yes,13.0,0.0,no,0.276595744681,f,Fully Paid,0
+207861,9600.0,eq,36,299.15,A,10.0,MORTGAGE,44894.0,Not Verified,debt_consolidation,9.05,no,yes,13.0,0.0,no,0.433333333333,f,Fully Paid,0
+207862,7925.0,eq,36,272.13,C,6.0,RENT,28300.0,Not Verified,car,22.22,no,yes,11.0,0.0,no,0.647058823529,f,Fully Paid,0
+207863,4000.0,eq,36,139.27,C,3.0,RENT,35000.0,Not Verified,debt_consolidation,19.99,no,no,14.0,0.0,no,1.0,f,Fully Paid,0
+207864,3825.0,eq,36,125.48,B,2.0,MORTGAGE,32000.0,Not Verified,debt_consolidation,18.71,no,no,11.0,0.0,no,0.55,f,Fully Paid,0
+207865,6000.0,eq,36,184.23,A,10.0,RENT,40000.0,Not Verified,debt_consolidation,16.23,no,no,7.0,0.0,no,0.388888888889,f,Fully Paid,0
+207866,16000.0,eq,36,606.84,E,4.0,RENT,121000.0,Verified,debt_consolidation,26.75,no,yes,19.0,0.0,no,0.358490566038,f,Charged Off,1
+207867,1850.0,eq,36,65.31,C,1.0,RENT,20329.0,Verified,other,22.19,no,yes,6.0,0.0,no,1.0,f,Fully Paid,0
+207868,15000.0,less,36,506.21,B,6.0,MORTGAGE,200000.0,Verified,debt_consolidation,8.36,no,yes,15.0,0.0,no,0.51724137931,f,Charged Off,1
+207869,14050.0,eq,60,362.54,D,8.0,MORTGAGE,38000.0,Verified,debt_consolidation,25.91,no,yes,11.0,0.0,no,0.478260869565,f,Charged Off,1
+207870,16000.0,less,36,547.55,B,7.0,MORTGAGE,76000.0,Not Verified,debt_consolidation,12.98,no,no,10.0,0.0,no,0.714285714286,f,Fully Paid,0
+207871,4000.0,eq,36,134.99,B,10.0,RENT,85000.0,Not Verified,other,12.84,no,no,15.0,0.0,no,0.428571428571,f,Fully Paid,0
+207872,12000.0,eq,36,432.45,D,5.0,MORTGAGE,52000.0,Not Verified,debt_consolidation,9.99,yes,no,12.0,0.0,no,0.705882352941,f,Charged Off,1
+207874,12675.0,eq,36,480.73,E,8.0,RENT,40300.0,Not Verified,debt_consolidation,29.66,no,no,24.0,0.0,no,0.6,f,Charged Off,1
+207875,6500.0,eq,36,216.27,B,2.0,MORTGAGE,54000.0,Source Verified,credit_card,16.22,no,no,8.0,0.0,no,0.380952380952,f,Fully Paid,0
+207876,10000.0,eq,36,348.18,C,10.0,OWN,80000.0,Source Verified,debt_consolidation,22.17,yes,yes,20.0,0.0,no,0.425531914894,f,Fully Paid,0
+207878,13150.0,eq,36,480.37,D,10.0,RENT,42500.0,Verified,other,30.24,no,no,10.0,0.0,no,0.3125,f,Fully Paid,0
+207879,8800.0,eq,36,284.62,B,8.0,MORTGAGE,101000.0,Not Verified,debt_consolidation,14.03,no,no,13.0,0.0,no,0.361111111111,f,Fully Paid,0
+207880,2000.0,eq,36,67.5,B,6.0,RENT,46000.0,Not Verified,debt_consolidation,18.7,no,no,13.0,0.0,no,0.361111111111,f,Fully Paid,0
+207881,4800.0,eq,36,167.13,C,5.0,RENT,40000.0,Source Verified,wedding,5.91,no,no,7.0,0.0,no,0.538461538462,f,Fully Paid,0
+207882,4200.0,eq,36,144.23,C,5.0,RENT,40000.0,Not Verified,debt_consolidation,28.92,yes,no,12.0,0.0,no,0.375,f,Fully Paid,0
+207883,12000.0,eq,36,432.45,D,3.0,OWN,53000.0,Not Verified,major_purchase,16.56,no,yes,11.0,0.0,no,0.578947368421,f,Fully Paid,0
+207884,15250.0,less,36,507.4,B,10.0,RENT,72000.0,Source Verified,credit_card,16.08,no,no,6.0,0.0,no,0.3,f,Fully Paid,0
+207885,8000.0,eq,36,245.63,A,10.0,MORTGAGE,60000.0,Not Verified,credit_card,16.99,no,no,17.0,0.0,no,0.566666666667,f,Fully Paid,0
+207886,10000.0,less,36,343.39,C,5.0,RENT,35000.0,Not Verified,debt_consolidation,21.57,no,no,11.0,0.0,no,0.785714285714,f,Charged Off,1
+207887,5000.0,eq,36,174.09,C,2.0,RENT,77000.0,Verified,debt_consolidation,14.73,no,no,7.0,0.0,no,0.205882352941,f,Fully Paid,0
+207888,15000.0,eq,36,547.95,D,10.0,RENT,83000.0,Verified,debt_consolidation,10.03,no,no,9.0,0.0,no,0.409090909091,f,Fully Paid,0
+207889,7875.0,eq,36,269.5,B,6.0,RENT,65714.19,Not Verified,debt_consolidation,10.83,no,no,6.0,0.0,no,0.75,f,Fully Paid,0
+207890,23675.0,eq,60,551.99,B,10.0,RENT,61000.0,Source Verified,debt_consolidation,11.53,no,yes,5.0,0.0,no,0.25,f,Fully Paid,0
+207891,6000.0,eq,36,205.33,B,10.0,RENT,80000.0,Not Verified,debt_consolidation,24.29,no,yes,18.0,0.0,no,0.782608695652,f,Fully Paid,0
+207893,6625.0,eq,36,214.27,B,10.0,MORTGAGE,23500.0,Not Verified,major_purchase,6.13,no,no,5.0,0.0,no,0.277777777778,f,Fully Paid,0
+207894,17000.0,less,36,621.01,D,5.0,MORTGAGE,44000.0,Verified,debt_consolidation,16.8,no,no,17.0,0.0,no,0.772727272727,f,Charged Off,1
+207895,3200.0,eq,36,109.89,C,2.0,OWN,30000.0,Source Verified,debt_consolidation,16.01,no,yes,17.0,0.0,no,0.586206896552,f,Fully Paid,0
+207896,15000.0,eq,36,525.88,C,10.0,MORTGAGE,54257.0,Not Verified,debt_consolidation,25.06,no,yes,19.0,0.0,no,0.678571428571,f,Fully Paid,0
+207897,10000.0,eq,36,328.06,B,6.0,MORTGAGE,64128.0,Verified,debt_consolidation,12.71,no,yes,6.0,0.0,no,0.352941176471,f,Fully Paid,0
+207898,17875.0,eq,36,603.23,B,6.0,RENT,46225.0,Source Verified,credit_card,18.9,no,yes,8.0,0.0,no,0.666666666667,f,Fully Paid,0
+207899,12000.0,eq,36,393.67,B,10.0,MORTGAGE,120000.0,Not Verified,credit_card,26.15,no,yes,18.0,0.0,no,0.45,f,Fully Paid,0
+207900,8700.0,eq,36,313.53,D,10.0,MORTGAGE,70000.0,Verified,credit_card,23.11,no,yes,10.0,0.0,no,0.333333333333,f,Charged Off,1
+207901,18000.0,eq,36,648.67,D,1.0,RENT,75000.0,Verified,debt_consolidation,15.82,yes,no,8.0,0.0,no,0.363636363636,f,Fully Paid,0
+207902,5800.0,eq,36,190.27,B,10.0,RENT,20400.0,Source Verified,other,11.35,no,yes,5.0,1.0,yes,0.454545454545,f,Fully Paid,0
+207903,10000.0,less,36,312.91,A,8.0,RENT,55000.0,Source Verified,major_purchase,6.3,no,no,12.0,0.0,no,0.666666666667,f,Fully Paid,0
+207904,19100.0,eq,36,653.63,B,10.0,MORTGAGE,80000.0,Not Verified,debt_consolidation,8.06,no,no,14.0,0.0,no,0.451612903226,f,Charged Off,1
+207905,9750.0,eq,36,329.04,B,4.0,MORTGAGE,30000.0,Not Verified,other,12.02,no,yes,8.0,0.0,no,0.571428571429,f,Fully Paid,0
+207906,33425.0,less,60,745.55,B,1.0,MORTGAGE,180148.0,Source Verified,home_improvement,14.16,no,no,9.0,0.0,no,0.321428571429,f,Fully Paid,0
+207907,33950.0,less,36,1078.03,A,10.0,MORTGAGE,85000.0,Verified,debt_consolidation,5.4,no,no,6.0,0.0,no,0.428571428571,f,Fully Paid,0
+207908,7000.0,eq,36,252.26,D,7.0,RENT,40000.0,Verified,other,32.25,no,yes,12.0,0.0,no,0.923076923077,f,Fully Paid,0
+207909,18200.0,eq,36,655.88,D,8.0,MORTGAGE,54000.0,Source Verified,debt_consolidation,19.62,no,yes,8.0,0.0,no,0.421052631579,f,Fully Paid,0
+207911,8225.0,eq,36,296.41,D,3.0,RENT,41000.0,Verified,debt_consolidation,31.38,no,no,9.0,0.0,no,0.9,f,Fully Paid,0
+207912,3500.0,eq,36,121.87,C,10.0,RENT,90000.0,Not Verified,other,10.41,no,yes,5.0,0.0,no,0.277777777778,f,Fully Paid,0
+207913,5000.0,eq,36,153.52,A,3.0,RENT,17000.0,Verified,small_business,13.27,no,yes,10.0,0.0,no,1.0,f,Fully Paid,0
+207914,34475.0,eq,60,634.37,F,10.0,MORTGAGE,86958.0,Verified,debt_consolidation,25.46,no,no,14.0,0.0,no,0.636363636364,f,Charged Off,1
+207915,8000.0,eq,36,291.19,D,6.0,MORTGAGE,212000.0,Source Verified,medical,13.97,no,yes,21.0,0.0,no,0.636363636364,f,Fully Paid,0
+207917,10350.0,eq,36,344.37,B,5.0,RENT,68250.0,Verified,credit_card,19.32,no,no,15.0,0.0,no,0.441176470588,f,Fully Paid,0
+207918,4000.0,eq,36,121.75,A,1.0,RENT,40000.0,Verified,debt_consolidation,31.01,no,no,14.0,0.0,no,0.48275862069,f,Fully Paid,0
+207919,12000.0,eq,36,399.26,B,10.0,RENT,60000.0,Not Verified,credit_card,11.38,no,no,8.0,0.0,no,0.666666666667,f,Fully Paid,0
+207920,18550.0,eq,36,634.81,B,5.0,MORTGAGE,47000.0,Verified,debt_consolidation,34.54,no,no,17.0,0.0,no,0.68,f,Charged Off,1
+207921,14125.0,less,36,469.97,B,3.0,RENT,37000.0,Verified,debt_consolidation,32.04,no,no,13.0,0.0,no,0.590909090909,f,Fully Paid,0
+207922,3000.0,eq,36,97.03,B,10.0,MORTGAGE,158000.0,Verified,other,5.2,no,yes,7.0,0.0,no,0.333333333333,f,Fully Paid,0
+207923,4000.0,eq,36,149.66,E,1.0,MORTGAGE,84500.0,Verified,debt_consolidation,25.72,no,no,27.0,0.0,no,0.482142857143,f,Fully Paid,0
+207924,12000.0,eq,36,393.67,B,10.0,MORTGAGE,135000.0,Source Verified,small_business,7.32,no,yes,11.0,0.0,no,0.323529411765,f,Fully Paid,0
+207925,18000.0,eq,36,563.23,A,5.0,OWN,95000.0,Not Verified,debt_consolidation,6.87,no,yes,6.0,0.0,no,0.428571428571,f,Fully Paid,0
+207926,22000.0,eq,36,755.44,C,10.0,MORTGAGE,70000.0,Verified,debt_consolidation,25.06,no,yes,17.0,0.0,no,0.435897435897,f,Fully Paid,0
+207927,11575.0,eq,36,405.81,C,3.0,RENT,40000.0,Not Verified,credit_card,22.95,no,yes,13.0,0.0,no,0.619047619048,f,Fully Paid,0
+207928,24000.0,eq,36,809.93,B,10.0,RENT,100000.0,Source Verified,debt_consolidation,19.72,no,no,8.0,0.0,no,0.444444444444,f,Fully Paid,0
+207929,35000.0,eq,60,672.37,F,4.0,RENT,91200.0,Verified,debt_consolidation,14.21,no,yes,17.0,0.0,no,0.68,f,Fully Paid,0
+207930,13600.0,eq,36,476.8,C,5.0,MORTGAGE,73000.0,Verified,debt_consolidation,28.42,no,yes,16.0,0.0,no,0.432432432432,f,Fully Paid,0
+207931,8800.0,eq,36,301.15,B,10.0,MORTGAGE,49234.36,Not Verified,debt_consolidation,17.26,no,yes,13.0,0.0,no,0.619047619048,f,Fully Paid,0
+207932,7875.0,eq,36,262.02,B,6.0,RENT,24000.0,Verified,debt_consolidation,8.35,no,no,11.0,0.0,no,0.916666666667,f,Charged Off,1
+207933,10000.0,eq,36,360.38,D,2.0,RENT,60000.0,Not Verified,other,10.68,no,yes,7.0,0.0,no,0.7,f,Fully Paid,0
+207934,18000.0,eq,60,481.82,E,5.0,MORTGAGE,93000.0,Verified,debt_consolidation,14.14,no,no,9.0,0.0,no,0.391304347826,f,Fully Paid,0
+207935,8000.0,eq,36,266.18,B,4.0,MORTGAGE,185000.0,Not Verified,credit_card,22.22,no,no,20.0,0.0,no,0.571428571429,f,Fully Paid,0
+207936,15500.0,eq,36,599.6,F,2.0,RENT,40500.0,Not Verified,debt_consolidation,29.21,no,no,25.0,0.0,no,0.510204081633,f,Charged Off,1
+207937,8400.0,eq,36,266.73,A,2.0,OWN,45000.0,Source Verified,credit_card,29.31,no,no,10.0,0.0,no,0.294117647059,f,Fully Paid,0
+207938,25000.0,less,36,779.04,A,4.0,MORTGAGE,102000.0,Verified,debt_consolidation,12.81,no,yes,7.0,0.0,no,0.777777777778,f,Fully Paid,0
+207939,8400.0,eq,36,262.84,A,6.0,RENT,55000.0,Not Verified,debt_consolidation,30.27,no,yes,17.0,0.0,no,0.586206896552,f,Charged Off,1
+207940,6100.0,eq,36,222.04,D,10.0,RENT,55000.0,Source Verified,debt_consolidation,21.97,no,yes,8.0,0.0,no,0.470588235294,f,Fully Paid,0
+207941,2500.0,eq,36,83.18,B,2.0,RENT,11000.0,Verified,debt_consolidation,15.6,no,no,5.0,0.0,no,0.555555555556,f,Fully Paid,0
+207942,11625.0,eq,36,453.83,F,5.0,RENT,35000.0,Not Verified,debt_consolidation,7.34,no,yes,26.0,0.0,no,0.509803921569,f,Fully Paid,0
+207943,8225.0,eq,36,252.54,A,6.0,OWN,51000.0,Source Verified,debt_consolidation,5.36,no,no,5.0,0.0,no,0.277777777778,f,Fully Paid,0
+207944,9000.0,eq,36,295.25,B,4.0,MORTGAGE,81000.0,Not Verified,vacation,15.53,yes,yes,16.0,0.0,no,0.571428571429,f,Fully Paid,0
+207945,5000.0,eq,36,171.11,B,1.0,MORTGAGE,48000.0,Source Verified,home_improvement,25.35,no,yes,12.0,0.0,no,0.6,f,Fully Paid,0
+207946,7000.0,less,36,252.26,D,9.0,RENT,28000.0,Not Verified,debt_consolidation,26.27,no,no,8.0,0.0,no,0.888888888889,f,Fully Paid,0
+207947,9600.0,eq,36,345.96,D,1.0,MORTGAGE,74000.0,Source Verified,home_improvement,7.64,no,yes,10.0,1.0,yes,0.833333333333,f,Charged Off,1
+207948,17375.0,eq,36,569.99,B,10.0,MORTGAGE,60000.0,Not Verified,debt_consolidation,15.54,no,no,12.0,0.0,no,0.923076923077,f,Fully Paid,0
+207949,4200.0,eq,36,148.27,C,6.0,MORTGAGE,52000.0,Not Verified,debt_consolidation,24.35,no,yes,9.0,0.0,no,0.391304347826,f,Fully Paid,0
+207951,19075.0,eq,36,655.0,C,10.0,MORTGAGE,48000.0,Not Verified,debt_consolidation,28.38,no,yes,18.0,0.0,no,0.409090909091,f,Fully Paid,0
+207952,7500.0,eq,36,253.11,B,10.0,MORTGAGE,138000.0,Verified,house,15.07,no,yes,11.0,0.0,no,0.333333333333,f,Fully Paid,0
+207953,6025.0,less,36,191.32,A,8.0,RENT,144000.0,Verified,debt_consolidation,6.69,no,no,12.0,0.0,no,0.571428571429,f,Fully Paid,0
+207954,19750.0,less,60,512.87,D,3.0,RENT,50000.0,Verified,other,20.57,no,no,10.0,0.0,no,0.4,f,Charged Off,1
+207956,12000.0,eq,36,412.06,C,6.0,RENT,69348.0,Verified,debt_consolidation,17.98,yes,no,12.0,0.0,no,0.5,f,Fully Paid,0
+207957,21050.0,less,60,581.14,E,4.0,MORTGAGE,80000.0,Verified,debt_consolidation,18.3,yes,no,12.0,0.0,no,0.428571428571,f,Fully Paid,0
+207958,4500.0,eq,36,136.96,A,6.0,MORTGAGE,39600.0,Not Verified,car,10.39,no,no,8.0,0.0,no,0.347826086957,f,Fully Paid,0
+207959,15000.0,eq,36,555.32,D,10.0,RENT,85000.0,Source Verified,debt_consolidation,22.31,yes,yes,12.0,0.0,no,0.285714285714,f,Fully Paid,0
+207960,10000.0,less,36,337.47,B,10.0,OWN,50000.0,Verified,debt_consolidation,25.9,no,no,10.0,0.0,no,0.555555555556,f,Fully Paid,0
+207961,20000.0,eq,36,614.08,A,10.0,MORTGAGE,94991.0,Verified,debt_consolidation,13.41,no,no,14.0,0.0,no,0.518518518519,f,Fully Paid,0
+207962,18825.0,eq,36,626.34,B,10.0,OWN,51000.0,Not Verified,debt_consolidation,26.85,no,no,16.0,0.0,no,0.615384615385,f,Fully Paid,0
+207964,4375.0,eq,36,153.39,C,6.0,OWN,15000.0,Not Verified,other,20.16,no,yes,6.0,0.0,no,0.333333333333,f,Charged Off,1
+207965,3550.0,eq,36,118.12,B,3.0,RENT,38000.0,Not Verified,car,22.67,no,yes,8.0,0.0,no,0.8,f,Fully Paid,0
+207966,2500.0,eq,36,85.56,B,5.0,RENT,24000.0,Not Verified,other,24.7,no,yes,4.0,0.0,no,0.5,f,Fully Paid,0
+207967,16500.0,eq,36,564.66,B,1.0,RENT,46800.0,Verified,debt_consolidation,32.31,no,no,11.0,0.0,no,0.407407407407,f,Fully Paid,0
+207968,14125.0,eq,36,491.8,C,3.0,RENT,36000.0,Not Verified,debt_consolidation,20.9,no,no,12.0,0.0,no,0.521739130435,f,Fully Paid,0
+207969,11000.0,less,36,371.22,B,4.0,RENT,63000.0,Not Verified,debt_consolidation,21.94,no,no,17.0,0.0,no,0.607142857143,f,Fully Paid,0
+207970,9975.0,eq,36,331.89,B,8.0,MORTGAGE,38000.0,Not Verified,debt_consolidation,18.22,no,yes,14.0,0.0,no,0.608695652174,f,Charged Off,1
+207971,11500.0,eq,36,421.84,D,10.0,RENT,34000.0,Verified,debt_consolidation,22.06,no,yes,6.0,0.0,no,0.666666666667,f,Fully Paid,0
+207972,25000.0,eq,36,882.51,C,7.0,RENT,120000.0,Verified,debt_consolidation,10.35,no,yes,13.0,0.0,no,0.565217391304,f,Fully Paid,0
+207973,5000.0,eq,36,166.36,B,1.0,RENT,37440.0,Source Verified,wedding,5.9,no,no,8.0,0.0,no,0.8,f,Fully Paid,0
+207974,12000.0,eq,36,448.97,E,2.0,RENT,90000.0,Not Verified,debt_consolidation,16.43,no,yes,27.0,0.0,no,0.613636363636,f,Fully Paid,0
+207975,17500.0,eq,60,473.44,E,1.0,RENT,56000.0,Source Verified,debt_consolidation,17.31,no,yes,22.0,0.0,no,0.733333333333,f,Fully Paid,0
+207976,5600.0,eq,36,192.3,C,1.0,RENT,100000.0,Not Verified,credit_card,8.56,yes,yes,11.0,0.0,no,0.423076923077,f,Fully Paid,0
+207977,5375.0,eq,36,183.94,B,6.0,MORTGAGE,18000.0,Not Verified,home_improvement,13.4,no,no,3.0,0.0,no,0.272727272727,f,Fully Paid,0
+207978,3800.0,eq,36,136.95,D,1.0,RENT,17500.0,Verified,debt_consolidation,27.5,yes,no,22.0,0.0,no,0.488888888889,f,Fully Paid,0
+207979,4950.0,eq,36,164.7,B,2.0,RENT,22500.0,Not Verified,debt_consolidation,32.32,no,no,6.0,0.0,no,0.6,f,Charged Off,1
+207980,16000.0,eq,36,582.38,D,3.0,RENT,67000.0,Verified,home_improvement,19.95,yes,no,18.0,0.0,no,0.666666666667,f,Fully Paid,0
+207981,24250.0,less,60,692.43,F,10.0,RENT,61000.0,Verified,debt_consolidation,29.17,no,no,12.0,0.0,no,0.413793103448,f,Fully Paid,0
+207982,9450.0,less,36,323.4,B,9.0,MORTGAGE,40000.0,Verified,vacation,23.93,yes,yes,13.0,0.0,no,0.764705882353,f,Fully Paid,0
+207983,9600.0,eq,36,338.89,C,4.0,RENT,65000.0,Not Verified,debt_consolidation,18.92,no,yes,15.0,0.0,no,0.555555555556,f,Fully Paid,0
+207984,15000.0,eq,36,469.36,A,4.0,RENT,50000.0,Not Verified,credit_card,13.03,no,no,20.0,0.0,no,0.625,f,Fully Paid,0
+207985,16450.0,eq,36,547.32,B,1.0,MORTGAGE,42000.0,Verified,debt_consolidation,33.09,no,no,10.0,0.0,no,0.333333333333,f,Charged Off,1
+207986,11000.0,less,36,365.99,B,4.0,RENT,60000.0,Not Verified,credit_card,24.0,no,no,11.0,0.0,no,0.55,f,Fully Paid,0
+207987,4800.0,eq,36,146.1,A,5.0,OWN,27500.0,Not Verified,car,21.12,no,no,10.0,0.0,no,0.454545454545,f,Fully Paid,0
+207988,9000.0,eq,60,196.32,B,9.0,MORTGAGE,74400.0,Verified,car,13.61,no,yes,7.0,0.0,no,0.777777777778,f,Fully Paid,0
+207989,16000.0,eq,36,549.42,C,1.0,RENT,82600.0,Source Verified,debt_consolidation,14.63,no,no,22.0,0.0,no,0.95652173913,f,Fully Paid,0
+207990,9600.0,eq,36,294.76,A,9.0,RENT,45760.0,Not Verified,debt_consolidation,15.29,no,yes,7.0,0.0,no,0.318181818182,f,Fully Paid,0
+207991,9000.0,eq,36,317.71,C,7.0,RENT,28000.0,Verified,credit_card,20.19,no,yes,7.0,0.0,no,0.538461538462,f,Charged Off,1
+207992,4000.0,eq,36,144.15,D,5.0,MORTGAGE,75000.0,Not Verified,credit_card,18.59,no,no,11.0,0.0,no,0.6875,f,Fully Paid,0
+207993,17000.0,eq,36,591.9,C,6.0,MORTGAGE,48000.0,Verified,debt_consolidation,21.28,no,no,8.0,0.0,no,0.533333333333,f,Fully Paid,0
+207994,4200.0,eq,36,130.88,A,7.0,MORTGAGE,39548.0,Not Verified,debt_consolidation,3.49,yes,yes,14.0,0.0,no,0.636363636364,f,Fully Paid,0
+207995,12000.0,less,36,393.67,B,4.0,MORTGAGE,66000.0,Not Verified,debt_consolidation,19.93,no,no,18.0,0.0,no,0.75,f,Fully Paid,0
+207996,3600.0,eq,36,125.35,C,10.0,RENT,67000.0,Not Verified,credit_card,16.17,no,yes,16.0,0.0,no,0.470588235294,f,Fully Paid,0
+207997,6000.0,less,36,196.84,B,1.0,RENT,66000.0,Source Verified,debt_consolidation,14.45,no,no,8.0,0.0,no,0.380952380952,f,Fully Paid,0
+207998,7500.0,eq,36,268.41,C,10.0,RENT,34000.0,Not Verified,major_purchase,17.4,no,yes,5.0,0.0,no,1.0,f,Fully Paid,0
+207999,7125.0,eq,36,244.66,C,6.0,RENT,82500.0,Verified,small_business,18.24,no,no,9.0,3.0,yes,0.5625,f,Fully Paid,0
+208000,18000.0,eq,60,431.16,C,10.0,RENT,63102.0,Source Verified,debt_consolidation,4.93,no,no,6.0,0.0,no,0.5,f,Charged Off,1
+208001,8500.0,eq,36,306.32,D,10.0,OWN,25000.0,Verified,house,15.69,yes,no,9.0,0.0,no,0.264705882353,f,Fully Paid,0
+208002,24000.0,eq,36,864.9,D,10.0,OWN,65500.0,Not Verified,home_improvement,21.67,yes,no,26.0,0.0,no,0.553191489362,f,Fully Paid,0
+208004,14575.0,eq,36,443.6,A,10.0,MORTGAGE,47000.0,Not Verified,credit_card,19.56,no,no,11.0,0.0,no,0.55,f,Fully Paid,0
+208005,8000.0,eq,36,245.63,A,10.0,OWN,59000.0,Not Verified,car,4.01,no,no,5.0,0.0,no,0.357142857143,f,Fully Paid,0
+208006,10200.0,eq,36,355.14,C,4.0,RENT,63000.0,Verified,debt_consolidation,31.45,no,no,6.0,0.0,no,0.461538461538,f,Fully Paid,0
+208007,1575.0,eq,36,54.09,C,10.0,MORTGAGE,24000.0,Verified,debt_consolidation,33.85,yes,no,7.0,0.0,no,0.291666666667,f,Fully Paid,0
+208008,4500.0,eq,36,154.53,C,5.0,RENT,17000.0,Source Verified,debt_consolidation,28.38,no,no,12.0,0.0,no,0.75,f,Charged Off,1
+208009,12000.0,eq,36,432.45,D,9.0,MORTGAGE,87000.0,Not Verified,debt_consolidation,2.76,yes,no,7.0,0.0,no,0.241379310345,f,Fully Paid,0
+208010,23500.0,eq,60,661.81,F,1.0,RENT,59700.0,Verified,credit_card,22.89,no,no,15.0,0.0,no,0.51724137931,f,Charged Off,1
+208011,11750.0,eq,36,402.11,B,8.0,MORTGAGE,140000.0,Not Verified,credit_card,22.16,yes,yes,6.0,0.0,no,0.130434782609,f,Charged Off,1
+208012,15000.0,eq,36,513.33,B,5.0,MORTGAGE,45000.0,Source Verified,debt_consolidation,24.43,yes,no,14.0,0.0,no,0.518518518519,f,Fully Paid,0
+208013,11900.0,eq,36,401.59,B,1.0,RENT,37000.0,Not Verified,debt_consolidation,21.99,yes,no,10.0,0.0,no,0.357142857143,f,Fully Paid,0
+208015,4200.0,eq,36,141.74,B,5.0,MORTGAGE,61769.0,Not Verified,major_purchase,32.42,yes,yes,21.0,0.0,no,0.807692307692,f,Fully Paid,0
+208016,10000.0,eq,36,348.18,C,7.0,RENT,50000.0,Not Verified,debt_consolidation,15.79,no,no,9.0,0.0,no,0.75,f,Charged Off,1
+208017,3000.0,eq,36,108.12,D,6.0,MORTGAGE,25584.0,Not Verified,credit_card,13.18,no,no,7.0,0.0,no,0.388888888889,f,Fully Paid,0
+208018,4800.0,eq,36,147.38,A,9.0,RENT,29500.0,Not Verified,car,0.0,no,no,11.0,0.0,no,0.6875,f,Charged Off,1
+208019,6075.0,eq,36,211.52,C,7.0,RENT,22000.0,Verified,debt_consolidation,26.78,no,yes,12.0,0.0,no,0.521739130435,f,Charged Off,1
+208020,18000.0,eq,36,660.27,D,5.0,RENT,84855.0,Verified,small_business,27.6,no,no,16.0,0.0,no,0.727272727273,f,Charged Off,1
+208021,16000.0,eq,36,572.6,C,3.0,RENT,45000.0,Not Verified,other,7.95,yes,yes,10.0,0.0,no,0.588235294118,f,Fully Paid,0
+208022,17500.0,eq,36,537.32,A,8.0,MORTGAGE,45000.0,Not Verified,home_improvement,14.4,no,no,9.0,0.0,no,0.692307692308,f,Charged Off,1
+208023,2500.0,eq,36,88.26,C,5.0,RENT,83800.0,Source Verified,other,20.54,no,yes,12.0,0.0,no,0.352941176471,f,Fully Paid,0
+208024,4200.0,eq,36,151.36,D,7.0,RENT,40000.0,Not Verified,other,13.11,no,no,5.0,0.0,no,0.625,f,Fully Paid,0
+208025,2400.0,eq,36,84.73,C,7.0,RENT,37400.0,Source Verified,other,25.93,no,yes,5.0,0.0,no,0.454545454545,f,Fully Paid,0
+208026,4125.0,eq,36,133.42,B,3.0,RENT,38000.0,Not Verified,debt_consolidation,24.66,no,no,11.0,0.0,no,0.733333333333,f,Fully Paid,0
+208027,7000.0,eq,36,219.04,A,4.0,MORTGAGE,75000.0,Source Verified,credit_card,12.51,no,no,14.0,0.0,no,0.5,f,Fully Paid,0
+208028,11200.0,eq,36,367.42,B,4.0,MORTGAGE,42000.0,Verified,credit_card,18.53,no,no,7.0,0.0,no,0.583333333333,f,Fully Paid,0
+208029,16075.0,eq,60,414.79,D,4.0,MORTGAGE,70000.0,Verified,debt_consolidation,16.35,no,yes,11.0,0.0,no,0.44,f,Fully Paid,0
+208030,5000.0,eq,36,161.72,B,7.0,MORTGAGE,39000.0,Not Verified,debt_consolidation,27.85,no,yes,13.0,0.0,no,0.764705882353,f,Fully Paid,0
+208031,23675.0,less,60,677.79,F,1.0,MORTGAGE,62750.0,Verified,debt_consolidation,15.47,no,yes,12.0,0.0,no,0.923076923077,f,Fully Paid,0
+208033,8500.0,eq,36,298.0,C,4.0,RENT,60000.0,Not Verified,other,13.82,no,yes,9.0,0.0,no,0.529411764706,f,Fully Paid,0
+208034,14000.0,eq,36,487.45,C,10.0,RENT,47000.0,Not Verified,debt_consolidation,20.35,no,yes,18.0,0.0,no,0.418604651163,f,Charged Off,1
+208035,4800.0,eq,36,155.25,B,5.0,RENT,68000.0,Not Verified,debt_consolidation,30.65,no,no,10.0,0.0,no,0.25641025641,f,Fully Paid,0
+208036,35000.0,less,36,1295.74,D,10.0,MORTGAGE,140000.0,Verified,small_business,30.35,no,yes,16.0,0.0,no,0.340425531915,f,Fully Paid,0
+208037,3000.0,eq,36,104.46,C,5.0,RENT,50000.0,Not Verified,debt_consolidation,22.98,no,no,9.0,0.0,no,0.692307692308,f,Charged Off,1
+208038,16000.0,eq,36,547.55,B,4.0,MORTGAGE,84000.0,Not Verified,medical,17.16,no,yes,17.0,0.0,no,0.68,f,Fully Paid,0
+208039,20000.0,eq,36,674.94,B,10.0,RENT,88800.0,Not Verified,debt_consolidation,16.86,no,yes,12.0,0.0,no,0.666666666667,f,Fully Paid,0
+208041,4000.0,eq,36,127.02,A,8.0,MORTGAGE,41891.0,Verified,debt_consolidation,29.91,no,yes,17.0,0.0,no,0.586206896552,f,Fully Paid,0
+208042,6000.0,eq,36,208.91,C,3.0,OWN,58700.0,Source Verified,other,20.05,no,yes,17.0,0.0,no,0.5,f,Fully Paid,0
+208043,18950.0,eq,60,528.46,E,3.0,MORTGAGE,79000.0,Source Verified,medical,16.27,no,no,16.0,0.0,no,0.592592592593,f,Fully Paid,0
+208044,13500.0,eq,36,436.63,B,10.0,MORTGAGE,163000.0,Not Verified,other,1.11,yes,yes,10.0,0.0,no,0.322580645161,f,Fully Paid,0
+208045,12000.0,eq,36,432.45,D,8.0,RENT,72000.0,Not Verified,debt_consolidation,14.95,no,yes,13.0,0.0,no,0.722222222222,f,Charged Off,1
+208046,12000.0,eq,36,368.45,A,7.0,RENT,42000.0,Not Verified,credit_card,18.4,no,no,8.0,0.0,no,0.666666666667,f,Fully Paid,0
+208047,11100.0,eq,36,374.6,B,4.0,RENT,65000.0,Not Verified,debt_consolidation,9.51,no,no,7.0,0.0,no,0.7,f,Charged Off,1
+208048,14000.0,eq,36,518.3,D,10.0,MORTGAGE,55000.0,Not Verified,debt_consolidation,6.76,no,no,5.0,0.0,no,0.151515151515,f,Charged Off,1
+208049,12375.0,eq,36,400.24,B,9.0,RENT,75000.0,Source Verified,debt_consolidation,18.14,no,no,12.0,0.0,no,0.545454545455,f,Fully Paid,0
+208050,5000.0,eq,36,158.77,A,2.0,RENT,57888.0,Not Verified,other,23.42,yes,yes,17.0,0.0,no,0.548387096774,f,Fully Paid,0
+208051,12000.0,eq,36,393.67,B,4.0,MORTGAGE,60000.0,Verified,debt_consolidation,19.4,no,no,6.0,0.0,no,0.3,f,Fully Paid,0
+208052,12000.0,eq,36,365.23,A,2.0,MORTGAGE,50000.0,Not Verified,debt_consolidation,11.18,no,no,14.0,0.0,no,0.518518518519,f,Charged Off,1
+208053,14500.0,eq,36,460.43,A,10.0,OWN,81000.0,Source Verified,home_improvement,3.6,no,no,8.0,0.0,no,0.8,f,Charged Off,1
+208054,10000.0,eq,36,363.99,D,1.0,RENT,125000.0,Verified,debt_consolidation,9.93,no,no,17.0,0.0,no,0.459459459459,f,Charged Off,1
+208055,11500.0,eq,36,388.1,B,1.0,RENT,36000.0,Not Verified,debt_consolidation,21.87,no,no,9.0,0.0,no,0.9,f,Fully Paid,0
+208057,5000.0,eq,36,171.11,B,10.0,RENT,46550.0,Source Verified,credit_card,21.32,no,yes,9.0,0.0,no,0.692307692308,f,Fully Paid,0
+208059,15000.0,eq,36,485.14,B,10.0,MORTGAGE,60000.0,Verified,debt_consolidation,10.6,no,yes,8.0,0.0,no,0.571428571429,f,Fully Paid,0
+208061,9950.0,eq,36,346.44,C,1.0,RENT,30000.0,Source Verified,credit_card,25.88,yes,yes,10.0,0.0,no,0.434782608696,f,Charged Off,1
+208062,16225.0,eq,60,447.94,E,2.0,OWN,70000.0,Source Verified,debt_consolidation,18.72,no,yes,13.0,0.0,no,0.5,f,Charged Off,1
+208063,11000.0,eq,36,344.2,A,9.0,MORTGAGE,110000.0,Not Verified,credit_card,13.23,no,yes,15.0,2.0,yes,0.576923076923,f,Fully Paid,0
+208065,10000.0,less,36,360.38,D,3.0,RENT,54640.0,Verified,debt_consolidation,23.78,yes,yes,11.0,0.0,no,0.44,f,Charged Off,1
+208066,15000.0,less,36,522.26,C,10.0,RENT,70000.0,Source Verified,debt_consolidation,21.03,no,no,8.0,0.0,no,0.615384615385,f,Fully Paid,0
+208067,18950.0,eq,36,639.51,B,10.0,RENT,60500.0,Source Verified,credit_card,19.4,no,no,10.0,0.0,no,0.3125,f,Fully Paid,0
+208068,12000.0,eq,36,393.67,B,6.0,RENT,35000.0,Not Verified,debt_consolidation,14.9,no,no,7.0,0.0,no,0.875,f,Fully Paid,0
+208069,29700.0,eq,36,929.33,A,3.0,OWN,75000.0,Verified,small_business,11.27,yes,yes,20.0,0.0,no,0.540540540541,f,Fully Paid,0
+208070,6000.0,eq,36,199.63,B,10.0,RENT,75000.0,Source Verified,debt_consolidation,17.95,no,no,13.0,0.0,no,0.541666666667,f,Fully Paid,0
+208071,5975.0,eq,36,186.96,A,7.0,MORTGAGE,147000.0,Not Verified,credit_card,7.75,no,no,16.0,0.0,no,0.457142857143,f,Fully Paid,0
+208072,7200.0,eq,36,252.43,C,10.0,MORTGAGE,43000.0,Not Verified,debt_consolidation,26.29,no,yes,11.0,0.0,no,0.323529411765,f,Fully Paid,0
+208073,13000.0,eq,36,444.88,B,10.0,MORTGAGE,59000.0,Verified,credit_card,33.0,no,yes,17.0,0.0,no,0.425,f,Fully Paid,0
+208074,6000.0,eq,36,199.63,B,7.0,RENT,60000.0,Verified,debt_consolidation,27.43,no,yes,13.0,0.0,no,0.288888888889,f,Fully Paid,0
+208075,5500.0,eq,36,171.39,A,8.0,MORTGAGE,47000.0,Not Verified,debt_consolidation,22.65,no,no,11.0,0.0,no,0.52380952381,f,Fully Paid,0
+208076,9500.0,eq,36,339.98,C,2.0,MORTGAGE,60000.0,Verified,medical,24.7,no,yes,23.0,0.0,no,0.547619047619,f,Fully Paid,0
+208077,33725.0,less,36,1035.49,A,7.0,MORTGAGE,150000.0,Verified,renewable_energy,1.48,no,no,7.0,0.0,no,0.333333333333,f,Fully Paid,0
+208079,20000.0,less,36,686.77,C,8.0,RENT,110000.0,Not Verified,debt_consolidation,18.03,no,no,23.0,0.0,no,0.766666666667,f,Fully Paid,0
+208080,1500.0,eq,36,46.94,A,7.0,MORTGAGE,52000.0,Not Verified,other,9.97,yes,no,12.0,0.0,no,0.521739130435,f,Fully Paid,0
+208081,15000.0,eq,60,334.58,B,10.0,MORTGAGE,190000.0,Verified,debt_consolidation,23.17,yes,no,13.0,0.0,no,0.206349206349,f,Fully Paid,0
+208082,9000.0,eq,36,309.05,C,10.0,MORTGAGE,64139.0,Not Verified,home_improvement,14.62,no,yes,7.0,0.0,no,0.636363636364,f,Fully Paid,0
+208083,12000.0,less,36,393.67,B,5.0,RENT,89000.0,Not Verified,credit_card,18.62,no,no,10.0,0.0,no,0.526315789474,f,Fully Paid,0
+208084,16375.0,eq,60,420.2,D,3.0,MORTGAGE,85000.0,Verified,home_improvement,17.7,no,yes,9.0,0.0,no,0.642857142857,f,Fully Paid,0
+208085,5325.0,eq,36,166.63,A,3.0,OWN,30000.0,Not Verified,debt_consolidation,25.28,no,no,8.0,0.0,no,0.888888888889,f,Fully Paid,0
+208086,11750.0,eq,36,409.11,C,5.0,RENT,38000.0,Not Verified,debt_consolidation,22.77,no,yes,6.0,0.0,no,0.4,f,Fully Paid,0
+208087,11750.0,less,36,367.67,A,4.0,RENT,65000.0,Not Verified,debt_consolidation,21.16,no,no,12.0,0.0,no,0.545454545455,f,Fully Paid,0
+208088,15000.0,eq,60,395.08,D,2.0,MORTGAGE,49000.0,Verified,debt_consolidation,8.25,no,yes,10.0,0.0,no,0.5,f,Fully Paid,0
+208089,18000.0,less,36,571.56,A,6.0,RENT,89033.0,Not Verified,credit_card,16.01,no,yes,17.0,0.0,no,0.772727272727,f,Fully Paid,0
+208090,7500.0,less,36,253.11,B,1.0,MORTGAGE,68000.0,Not Verified,debt_consolidation,14.21,no,no,10.0,0.0,no,0.37037037037,f,Fully Paid,0
+208091,16750.0,eq,60,409.92,C,10.0,MORTGAGE,42500.0,Verified,other,29.48,no,yes,9.0,0.0,no,0.45,f,Charged Off,1
+208092,9000.0,less,36,285.78,A,5.0,RENT,150000.0,Not Verified,debt_consolidation,7.33,no,no,4.0,0.0,no,0.5,f,Fully Paid,0
+208093,7000.0,less,36,252.26,D,10.0,RENT,89000.0,Source Verified,debt_consolidation,4.18,no,yes,5.0,0.0,no,0.5,f,Fully Paid,0
+208094,8325.0,eq,36,284.9,B,1.0,RENT,24000.0,Not Verified,credit_card,15.5,no,no,10.0,0.0,no,0.526315789474,f,Fully Paid,0
+208095,7600.0,eq,36,260.97,C,2.0,RENT,100400.0,Not Verified,credit_card,10.59,no,no,11.0,0.0,no,0.407407407407,f,Fully Paid,0
+208096,5000.0,less,36,176.51,C,4.0,MORTGAGE,60000.0,Not Verified,debt_consolidation,7.0,no,yes,6.0,0.0,no,0.428571428571,f,Fully Paid,0
+208097,15000.0,eq,36,545.99,D,5.0,MORTGAGE,65000.0,Not Verified,wedding,25.29,yes,yes,10.0,0.0,no,0.625,f,Fully Paid,0
+208098,20000.0,less,36,674.94,B,10.0,RENT,80000.0,Verified,debt_consolidation,14.94,no,no,7.0,0.0,no,0.304347826087,f,Fully Paid,0
+208099,12875.0,eq,36,408.83,A,6.0,OWN,75000.0,Not Verified,home_improvement,7.02,no,yes,14.0,0.0,no,0.875,f,Fully Paid,0
+208100,14000.0,eq,36,444.55,A,1.0,MORTGAGE,55000.0,Verified,debt_consolidation,17.59,no,no,7.0,0.0,no,0.304347826087,f,Fully Paid,0
+208101,10000.0,eq,36,317.54,A,1.0,RENT,75500.0,Not Verified,debt_consolidation,21.32,no,no,16.0,0.0,no,0.695652173913,f,Fully Paid,0
+208103,12000.0,eq,36,368.45,A,3.0,MORTGAGE,35000.0,Not Verified,debt_consolidation,18.87,no,no,12.0,0.0,no,0.413793103448,f,Charged Off,1
+208105,4000.0,eq,36,121.75,A,6.0,MORTGAGE,91000.0,Not Verified,major_purchase,11.18,no,no,14.0,0.0,no,0.451612903226,f,Fully Paid,0
+208106,27575.0,eq,60,789.44,F,4.0,RENT,70000.0,Verified,debt_consolidation,26.43,no,no,13.0,0.0,no,0.764705882353,f,Fully Paid,0
+208107,7350.0,eq,36,237.72,B,6.0,MORTGAGE,38000.0,Verified,small_business,25.61,no,no,7.0,0.0,no,0.368421052632,f,Fully Paid,0
+208108,10500.0,eq,36,382.19,D,10.0,OWN,31000.0,Not Verified,debt_consolidation,17.85,no,no,7.0,0.0,no,0.318181818182,f,Fully Paid,0
+208109,10000.0,eq,36,328.06,B,5.0,RENT,78000.0,Verified,small_business,1.97,no,no,5.0,0.0,no,0.217391304348,f,Fully Paid,0
+208111,16000.0,eq,36,564.81,C,3.0,RENT,41000.0,Source Verified,debt_consolidation,9.97,no,yes,9.0,0.0,no,0.409090909091,f,Fully Paid,0
+208112,12000.0,eq,36,388.11,B,10.0,OWN,72000.0,Not Verified,credit_card,13.93,no,no,13.0,0.0,no,0.722222222222,f,Fully Paid,0
+208113,10200.0,less,36,339.38,B,10.0,MORTGAGE,47000.0,Verified,credit_card,13.2,no,no,16.0,0.0,no,0.666666666667,f,Fully Paid,0
+208114,6000.0,eq,36,187.75,A,10.0,MORTGAGE,90000.0,Not Verified,car,2.77,yes,no,8.0,0.0,no,0.275862068966,f,Fully Paid,0
+208115,20675.0,less,60,495.23,C,10.0,MORTGAGE,52500.0,Verified,debt_consolidation,25.58,no,no,19.0,0.0,no,0.513513513514,f,Fully Paid,0
+208116,22400.0,eq,60,525.05,C,10.0,MORTGAGE,135000.0,Verified,debt_consolidation,8.21,no,no,11.0,0.0,no,0.34375,f,Fully Paid,0
+208117,20000.0,eq,60,552.16,E,7.0,MORTGAGE,94000.0,Source Verified,debt_consolidation,23.87,no,yes,18.0,0.0,no,0.545454545455,f,Fully Paid,0
+208119,27000.0,less,36,1044.46,F,9.0,MORTGAGE,120000.0,Verified,debt_consolidation,19.51,no,no,15.0,1.0,yes,0.326086956522,f,Fully Paid,0
+208120,10000.0,less,36,328.06,B,2.0,RENT,40000.0,Not Verified,debt_consolidation,27.33,no,yes,8.0,0.0,no,0.533333333333,f,Charged Off,1
+208121,14075.0,eq,36,446.93,A,10.0,OWN,36000.0,Verified,debt_consolidation,15.37,yes,no,8.0,0.0,no,0.19512195122,f,Fully Paid,0
+208122,18950.0,eq,36,659.79,C,10.0,RENT,145000.0,Verified,debt_consolidation,9.5,no,yes,10.0,0.0,no,0.416666666667,f,Fully Paid,0
+208123,15000.0,eq,36,540.56,D,10.0,RENT,55000.0,Source Verified,debt_consolidation,10.36,no,yes,24.0,0.0,no,0.705882352941,f,Fully Paid,0
+208124,8400.0,eq,36,296.53,C,2.0,MORTGAGE,230000.0,Source Verified,home_improvement,8.4,no,yes,15.0,0.0,no,0.681818181818,f,Charged Off,1
+208126,9600.0,eq,36,338.89,C,2.0,RENT,46000.0,Verified,credit_card,32.77,no,yes,12.0,0.0,no,0.631578947368,f,Fully Paid,0
+208127,3600.0,less,36,109.57,A,10.0,MORTGAGE,90000.0,Verified,small_business,7.76,no,no,10.0,0.0,no,0.4,f,Fully Paid,0
+208128,10000.0,eq,36,365.3,D,7.0,MORTGAGE,74000.0,Source Verified,debt_consolidation,10.02,no,yes,11.0,0.0,no,0.733333333333,f,Charged Off,1
+208129,13000.0,eq,36,446.4,C,10.0,MORTGAGE,60000.0,Not Verified,debt_consolidation,15.28,yes,yes,16.0,0.0,no,0.64,f,Fully Paid,0
+208130,25000.0,eq,36,782.26,A,10.0,MORTGAGE,105000.0,Not Verified,debt_consolidation,18.67,no,yes,18.0,0.0,no,0.305084745763,f,Fully Paid,0
+208131,7500.0,less,36,273.0,D,4.0,RENT,55000.0,Source Verified,debt_consolidation,11.02,no,yes,9.0,1.0,yes,0.5,f,Fully Paid,0
+208132,20000.0,less,36,625.81,A,9.0,MORTGAGE,140000.0,Not Verified,credit_card,15.12,no,no,12.0,0.0,no,0.375,f,Fully Paid,0
+208133,13200.0,eq,36,480.47,D,1.0,MORTGAGE,100000.0,Source Verified,credit_card,9.2,yes,yes,11.0,0.0,no,0.305555555556,f,Fully Paid,0
+208134,3000.0,eq,36,105.91,C,2.0,MORTGAGE,80000.0,Verified,home_improvement,21.9,no,yes,17.0,0.0,no,0.404761904762,f,Fully Paid,0
+208135,11750.0,eq,36,357.62,A,4.0,MORTGAGE,51000.0,Not Verified,house,13.77,no,no,8.0,0.0,no,0.533333333333,f,Fully Paid,0
+208136,11500.0,less,36,371.94,B,10.0,MORTGAGE,55000.0,Verified,car,32.79,no,no,10.0,0.0,no,0.4,f,Charged Off,1
+208137,8000.0,eq,36,245.63,A,1.0,RENT,45000.0,Verified,credit_card,28.27,no,no,15.0,0.0,no,0.625,f,Fully Paid,0
+208138,2400.0,eq,36,85.89,C,6.0,RENT,55000.0,Not Verified,other,1.51,no,yes,3.0,0.0,no,0.3,f,Fully Paid,0
+208139,21000.0,eq,60,541.87,D,7.0,MORTGAGE,100000.0,Source Verified,debt_consolidation,12.91,no,yes,13.0,0.0,no,0.541666666667,f,Charged Off,1
+208140,30750.0,less,60,865.98,F,10.0,MORTGAGE,77862.0,Verified,debt_consolidation,24.68,no,no,17.0,0.0,no,0.485714285714,f,Charged Off,1
+208141,9800.0,eq,36,326.07,B,10.0,RENT,50000.0,Verified,credit_card,14.11,no,no,10.0,0.0,no,0.526315789474,f,Fully Paid,0
+208142,12000.0,eq,36,423.61,C,10.0,OWN,55000.0,Not Verified,credit_card,21.77,no,yes,18.0,0.0,no,0.391304347826,f,Fully Paid,0
+208143,20000.0,less,36,665.44,B,10.0,RENT,61000.0,Verified,debt_consolidation,29.41,yes,no,14.0,0.0,no,0.636363636364,f,Fully Paid,0
+208144,10000.0,less,36,328.06,B,10.0,MORTGAGE,54000.0,Not Verified,debt_consolidation,19.22,no,no,14.0,0.0,no,0.358974358974,f,Fully Paid,0
+208146,10000.0,eq,36,332.72,B,1.0,RENT,43000.0,Not Verified,debt_consolidation,2.68,no,no,5.0,1.0,yes,0.625,f,Fully Paid,0
+208147,8325.0,eq,36,285.87,C,4.0,RENT,25000.0,Not Verified,debt_consolidation,12.24,no,yes,14.0,0.0,no,0.5,f,Fully Paid,0
+208148,19200.0,eq,36,698.86,D,10.0,RENT,115000.0,Source Verified,home_improvement,1.44,yes,yes,4.0,0.0,no,0.666666666667,f,Fully Paid,0
+208149,8000.0,eq,36,286.3,C,4.0,MORTGAGE,45000.0,Not Verified,debt_consolidation,9.64,no,yes,20.0,0.0,no,0.645161290323,f,Fully Paid,0
+208150,4025.0,eq,36,132.05,B,6.0,MORTGAGE,17604.0,Not Verified,credit_card,21.75,no,no,9.0,0.0,no,0.428571428571,f,Charged Off,1
+208151,8000.0,less,36,243.49,A,4.0,OWN,72000.0,Not Verified,car,12.45,no,no,12.0,0.0,no,0.272727272727,f,Fully Paid,0
+208152,16800.0,eq,60,476.31,F,10.0,RENT,56000.0,Verified,debt_consolidation,7.52,no,yes,5.0,0.0,no,0.178571428571,f,Charged Off,1
+208153,31825.0,eq,60,928.52,G,7.0,MORTGAGE,80000.0,Verified,small_business,28.38,no,yes,25.0,0.0,no,0.531914893617,f,Charged Off,1
+208154,28100.0,eq,60,612.93,B,2.0,MORTGAGE,80000.0,Verified,debt_consolidation,21.93,no,no,13.0,0.0,no,0.52,f,Fully Paid,0
+208155,13000.0,eq,36,432.54,B,2.0,RENT,71600.0,Source Verified,wedding,26.21,no,yes,16.0,0.0,no,0.421052631579,f,Fully Paid,0
+208156,21000.0,less,36,721.11,C,10.0,RENT,89000.0,Verified,debt_consolidation,20.01,no,no,9.0,0.0,no,0.290322580645,f,Fully Paid,0
+208157,7500.0,eq,36,246.04,B,1.0,MORTGAGE,39000.0,Not Verified,credit_card,20.65,no,no,12.0,0.0,no,0.413793103448,f,Fully Paid,0
+208158,8500.0,eq,36,264.88,A,7.0,RENT,43000.0,Not Verified,other,33.04,no,no,13.0,0.0,no,0.590909090909,f,Fully Paid,0
+208159,20000.0,less,36,665.44,B,7.0,MORTGAGE,65000.0,Verified,debt_consolidation,9.58,no,no,7.0,0.0,no,0.5,f,Fully Paid,0
+208160,20000.0,eq,60,516.07,D,10.0,MORTGAGE,80000.0,Verified,home_improvement,7.46,no,no,5.0,0.0,no,0.833333333333,f,Fully Paid,0
+208162,30000.0,eq,60,856.61,F,2.0,MORTGAGE,76500.0,Verified,debt_consolidation,14.57,yes,yes,12.0,0.0,no,0.292682926829,f,Fully Paid,0
+208163,32400.0,less,60,867.26,E,10.0,MORTGAGE,125000.0,Verified,debt_consolidation,10.97,no,no,10.0,0.0,no,0.37037037037,f,Fully Paid,0
+208164,10800.0,eq,36,370.86,C,3.0,MORTGAGE,75000.0,Not Verified,debt_consolidation,17.3,yes,yes,9.0,0.0,no,0.5625,f,Fully Paid,0
+208165,10775.0,eq,36,363.63,B,1.0,MORTGAGE,55000.0,Not Verified,debt_consolidation,15.84,no,no,14.0,0.0,no,0.608695652174,f,Fully Paid,0
+208166,14400.0,less,36,479.12,B,6.0,RENT,58000.0,Not Verified,credit_card,22.26,no,no,6.0,0.0,no,0.75,f,Fully Paid,0
+208167,14500.0,eq,36,482.44,B,8.0,MORTGAGE,109000.0,Not Verified,credit_card,6.01,no,yes,10.0,0.0,no,0.5,f,Fully Paid,0
+208168,5525.0,less,36,183.83,B,10.0,MORTGAGE,69350.0,Verified,debt_consolidation,16.61,yes,no,13.0,0.0,no,0.325,f,Fully Paid,0
+208169,14000.0,less,36,438.07,A,10.0,MORTGAGE,110000.0,Source Verified,debt_consolidation,23.02,no,no,14.0,0.0,no,0.325581395349,f,Fully Paid,0
+208170,20000.0,eq,60,499.96,C,1.0,MORTGAGE,75938.0,Verified,credit_card,17.27,no,yes,8.0,0.0,no,0.347826086957,f,Fully Paid,0
+208171,12000.0,less,36,412.06,C,10.0,OWN,65327.0,Verified,other,17.05,no,no,7.0,0.0,no,0.466666666667,f,Fully Paid,0
+208172,2000.0,eq,36,64.69,B,10.0,MORTGAGE,107000.0,Source Verified,home_improvement,12.28,no,no,10.0,0.0,no,0.454545454545,f,Fully Paid,0
+208173,10000.0,eq,36,311.62,A,1.0,RENT,40000.0,Not Verified,debt_consolidation,5.34,no,yes,6.0,0.0,no,0.4,f,Fully Paid,0
+208174,11500.0,eq,36,403.18,C,5.0,RENT,47840.0,Verified,debt_consolidation,13.24,no,yes,16.0,0.0,no,0.64,f,Charged Off,1
+208175,10000.0,eq,36,337.47,B,2.0,MORTGAGE,59500.0,Not Verified,credit_card,19.38,no,yes,9.0,0.0,no,0.391304347826,f,Fully Paid,0
+208176,9600.0,eq,36,329.65,C,2.0,RENT,46000.0,Verified,credit_card,30.78,no,no,10.0,0.0,no,0.47619047619,f,Fully Paid,0
+208177,11775.0,less,36,358.38,A,6.0,MORTGAGE,48000.0,Verified,debt_consolidation,27.33,no,no,6.0,0.0,no,0.260869565217,f,Charged Off,1
+208178,30000.0,less,36,952.6,A,10.0,MORTGAGE,138000.0,Verified,debt_consolidation,12.54,no,no,9.0,0.0,no,0.409090909091,f,Fully Paid,0
+208179,5000.0,eq,36,161.72,B,10.0,RENT,56508.0,Verified,credit_card,12.25,no,yes,11.0,0.0,no,0.733333333333,f,Fully Paid,0
+208180,15000.0,eq,36,540.56,D,9.0,MORTGAGE,75000.0,Source Verified,credit_card,17.12,yes,no,11.0,0.0,no,0.611111111111,f,Fully Paid,0
+208181,13500.0,less,36,455.59,B,10.0,MORTGAGE,85500.0,Not Verified,debt_consolidation,27.66,no,no,14.0,0.0,no,0.291666666667,f,Fully Paid,0
+208182,4000.0,eq,60,91.24,B,6.0,OWN,24088.0,Not Verified,other,26.2,no,yes,6.0,0.0,no,0.3,f,Charged Off,1
+208183,15350.0,eq,36,549.34,C,10.0,MORTGAGE,53102.0,Verified,home_improvement,16.68,no,yes,8.0,0.0,no,0.615384615385,f,Fully Paid,0
+208184,5000.0,less,36,158.77,A,6.0,MORTGAGE,90000.0,Source Verified,credit_card,25.17,no,no,14.0,0.0,no,0.291666666667,f,Fully Paid,0
+208185,12000.0,eq,36,417.81,C,5.0,MORTGAGE,60000.0,Not Verified,debt_consolidation,20.21,no,yes,16.0,0.0,no,0.761904761905,f,Charged Off,1
+208186,6000.0,eq,36,190.52,A,10.0,MORTGAGE,68134.0,Source Verified,debt_consolidation,13.05,no,no,8.0,0.0,no,0.666666666667,f,Fully Paid,0
+208187,3000.0,eq,36,98.42,B,5.0,MORTGAGE,42000.0,Source Verified,debt_consolidation,24.34,no,yes,10.0,0.0,no,0.47619047619,f,Fully Paid,0
+208188,15000.0,less,36,469.36,A,10.0,OWN,53000.0,Not Verified,home_improvement,21.78,no,no,12.0,0.0,no,0.387096774194,f,Fully Paid,0
+208189,12175.0,eq,36,373.82,A,7.0,MORTGAGE,35000.0,Source Verified,credit_card,3.12,no,no,8.0,0.0,no,0.8,f,Fully Paid,0
+208190,24000.0,less,60,649.29,E,8.0,MORTGAGE,110000.0,Verified,debt_consolidation,17.73,no,no,14.0,0.0,no,0.269230769231,f,Fully Paid,0
+208191,1200.0,less,36,38.11,A,10.0,MORTGAGE,67000.0,Not Verified,vacation,18.05,no,yes,15.0,0.0,no,0.483870967742,f,Fully Paid,0
+208192,14500.0,eq,36,511.86,C,1.0,RENT,57200.0,Not Verified,debt_consolidation,7.78,no,yes,4.0,0.0,no,0.25,f,Fully Paid,0
+208193,1600.0,eq,36,54.76,B,10.0,RENT,58000.0,Not Verified,home_improvement,19.06,no,no,12.0,0.0,no,0.6,f,Fully Paid,0
+208194,10350.0,eq,36,370.4,C,3.0,RENT,40000.0,Not Verified,credit_card,24.99,no,yes,15.0,1.0,yes,0.555555555556,f,Charged Off,1
+208195,30000.0,eq,36,934.85,A,4.0,MORTGAGE,320000.0,Verified,credit_card,3.64,no,yes,10.0,0.0,no,0.232558139535,f,Fully Paid,0
+208196,10000.0,eq,36,342.22,B,3.0,RENT,30000.0,Not Verified,debt_consolidation,12.0,no,no,7.0,0.0,no,0.7,f,Fully Paid,0
+208197,6400.0,eq,36,207.0,B,7.0,MORTGAGE,45045.0,Not Verified,car,2.88,no,yes,7.0,0.0,no,0.875,f,Fully Paid,0
+208199,12000.0,less,36,381.04,A,10.0,MORTGAGE,53000.0,Source Verified,debt_consolidation,14.33,no,no,6.0,0.0,no,0.285714285714,f,Fully Paid,0
+208200,10000.0,eq,36,363.99,D,1.0,OWN,30000.0,Source Verified,debt_consolidation,5.36,no,yes,7.0,0.0,no,1.0,f,Charged Off,1
+208201,7000.0,eq,36,245.41,C,10.0,MORTGAGE,150000.0,Not Verified,major_purchase,19.1,yes,yes,17.0,0.0,no,0.404761904762,f,Fully Paid,0
+208202,7000.0,eq,36,214.93,A,3.0,MORTGAGE,33600.0,Not Verified,debt_consolidation,15.07,no,no,6.0,0.0,no,0.5,f,Fully Paid,0
+208203,35000.0,eq,60,903.12,D,10.0,RENT,96000.0,Verified,debt_consolidation,24.64,no,yes,17.0,0.0,no,0.354166666667,f,Charged Off,1
+208204,9450.0,less,36,338.19,C,1.0,RENT,76800.0,Not Verified,debt_consolidation,10.06,no,yes,22.0,0.0,no,0.709677419355,f,Charged Off,1
+208205,16000.0,eq,36,539.96,B,8.0,RENT,110000.0,Not Verified,debt_consolidation,5.35,no,no,7.0,0.0,no,0.583333333333,f,Fully Paid,0
+208206,5000.0,less,36,156.46,A,6.0,OWN,65000.0,Verified,credit_card,8.36,yes,yes,11.0,0.0,no,0.478260869565,f,Fully Paid,0
+208207,10000.0,less,36,348.18,C,5.0,RENT,48000.0,Not Verified,credit_card,9.15,no,no,9.0,0.0,no,0.9,f,Fully Paid,0
+208208,5500.0,eq,36,183.0,B,1.0,RENT,27000.0,Not Verified,car,21.11,no,yes,10.0,0.0,no,0.769230769231,f,Fully Paid,0
+208209,13250.0,eq,36,440.85,B,6.0,OWN,47000.0,Source Verified,debt_consolidation,9.5,yes,no,8.0,0.0,no,0.666666666667,f,Fully Paid,0
+208210,12000.0,eq,36,404.97,B,5.0,RENT,35000.0,Not Verified,credit_card,22.35,no,no,9.0,0.0,no,0.75,f,Fully Paid,0
+208211,14975.0,eq,36,484.33,B,4.0,MORTGAGE,134000.0,Not Verified,debt_consolidation,21.13,yes,no,12.0,0.0,no,0.428571428571,f,Fully Paid,0
+208212,17000.0,eq,36,618.78,D,1.0,RENT,85000.0,Not Verified,debt_consolidation,16.47,no,yes,16.0,0.0,no,0.372093023256,f,Fully Paid,0
+208213,17000.0,eq,36,549.83,B,5.0,RENT,70000.0,Not Verified,credit_card,10.98,no,yes,10.0,0.0,no,0.30303030303,f,Charged Off,1
+208214,24000.0,less,60,680.44,F,5.0,RENT,93000.0,Verified,debt_consolidation,14.46,yes,yes,13.0,0.0,no,0.40625,f,Fully Paid,0
+208215,4500.0,eq,36,164.39,D,2.0,RENT,26000.0,Not Verified,other,28.15,no,no,6.0,0.0,no,0.75,f,Fully Paid,0
+208216,17250.0,eq,36,604.76,C,8.0,RENT,44000.0,Source Verified,debt_consolidation,22.47,no,yes,12.0,0.0,no,0.571428571429,f,Charged Off,1
+208217,12000.0,eq,36,412.06,C,10.0,MORTGAGE,66400.0,Not Verified,debt_consolidation,26.89,no,yes,11.0,0.0,no,0.323529411765,f,Fully Paid,0
+208218,15925.0,eq,36,558.31,C,7.0,MORTGAGE,94000.0,Not Verified,credit_card,12.01,no,yes,11.0,0.0,no,0.6875,f,Charged Off,1
+208219,16000.0,less,36,564.81,C,10.0,MORTGAGE,54000.0,Verified,debt_consolidation,14.18,no,yes,8.0,0.0,no,0.421052631579,f,Fully Paid,0
+208220,11025.0,eq,36,378.58,C,5.0,MORTGAGE,95000.0,Not Verified,debt_consolidation,11.57,no,no,12.0,0.0,no,0.521739130435,f,Fully Paid,0
+208221,4300.0,eq,36,149.72,C,10.0,MORTGAGE,53000.0,Not Verified,debt_consolidation,10.64,yes,yes,12.0,0.0,no,0.5,f,Fully Paid,0
+208222,5500.0,eq,36,191.5,C,4.0,RENT,36000.0,Source Verified,debt_consolidation,21.93,yes,no,10.0,0.0,no,0.526315789474,f,Fully Paid,0
+208223,5200.0,eq,36,173.02,B,1.0,RENT,20000.0,Verified,debt_consolidation,30.3,no,no,7.0,0.0,no,0.368421052632,f,Charged Off,1
+208224,15250.0,eq,36,555.08,D,6.0,RENT,38844.0,Verified,debt_consolidation,33.27,no,no,11.0,0.0,no,0.379310344828,f,Fully Paid,0
+208225,14400.0,less,36,472.4,B,1.0,RENT,55000.0,Verified,major_purchase,11.11,yes,yes,14.0,0.0,no,0.636363636364,f,Fully Paid,0
+208227,10000.0,less,36,332.72,B,2.0,RENT,62000.0,Not Verified,debt_consolidation,4.63,no,no,5.0,0.0,no,0.454545454545,f,Fully Paid,0
+208229,3250.0,eq,60,79.54,C,2.0,RENT,38000.0,Verified,debt_consolidation,21.03,no,yes,7.0,1.0,yes,0.7,f,Charged Off,1
+208230,11500.0,eq,36,350.01,A,1.0,RENT,34500.0,Source Verified,other,0.71,no,no,5.0,0.0,no,0.555555555556,f,Fully Paid,0
+208231,18000.0,less,60,401.5,B,8.0,MORTGAGE,92000.0,Verified,major_purchase,16.22,no,no,16.0,0.0,no,0.484848484848,f,Fully Paid,0
+208232,5000.0,eq,36,182.65,D,5.0,MORTGAGE,72000.0,Not Verified,debt_consolidation,29.02,no,yes,18.0,0.0,no,0.461538461538,f,Fully Paid,0
+208233,14075.0,eq,36,490.06,C,5.0,RENT,51100.0,Not Verified,debt_consolidation,26.95,no,yes,11.0,0.0,no,0.407407407407,f,Fully Paid,0
+208234,16000.0,eq,60,441.73,E,9.0,RENT,56000.0,Verified,debt_consolidation,27.02,no,no,17.0,0.0,no,0.566666666667,f,Fully Paid,0
+208235,12000.0,eq,36,375.49,A,10.0,MORTGAGE,97000.0,Not Verified,debt_consolidation,15.65,no,no,9.0,0.0,no,0.692307692308,f,Fully Paid,0
+208236,35000.0,less,36,1336.31,E,10.0,MORTGAGE,120000.0,Verified,debt_consolidation,25.58,no,no,15.0,0.0,no,0.384615384615,f,Fully Paid,0
+208237,7500.0,eq,36,233.72,A,10.0,MORTGAGE,65000.0,Not Verified,major_purchase,4.45,no,no,4.0,0.0,no,0.222222222222,f,Fully Paid,0
+208238,11500.0,eq,36,353.1,A,3.0,RENT,33000.0,Not Verified,credit_card,15.2,no,no,8.0,0.0,no,1.0,f,Fully Paid,0
+208239,4000.0,eq,36,139.27,C,4.0,MORTGAGE,68000.0,Not Verified,home_improvement,24.94,no,yes,14.0,0.0,no,0.424242424242,f,Fully Paid,0
+208240,10000.0,eq,36,342.22,B,10.0,OWN,55000.0,Not Verified,major_purchase,20.9,no,yes,11.0,0.0,no,0.5,f,Fully Paid,0
+208241,9000.0,eq,36,299.45,B,6.0,RENT,68000.0,Source Verified,other,21.62,no,no,7.0,0.0,no,0.333333333333,f,Charged Off,1
+208242,12000.0,eq,36,432.45,D,7.0,MORTGAGE,90000.0,Not Verified,debt_consolidation,9.84,yes,no,11.0,0.0,no,0.647058823529,f,Charged Off,1
+208243,16000.0,less,36,486.97,A,4.0,MORTGAGE,75000.0,Verified,small_business,4.83,no,no,6.0,0.0,no,0.75,f,Fully Paid,0
+208244,7200.0,eq,36,236.2,B,7.0,RENT,75000.0,Not Verified,major_purchase,18.75,no,yes,8.0,0.0,no,0.242424242424,f,Fully Paid,0
+208245,15000.0,eq,36,513.33,B,10.0,RENT,49000.0,Verified,debt_consolidation,7.84,no,yes,7.0,0.0,no,0.388888888889,f,Fully Paid,0
+208246,30000.0,less,36,970.28,B,7.0,MORTGAGE,125000.0,Verified,debt_consolidation,11.02,no,yes,12.0,0.0,no,0.342857142857,f,Fully Paid,0
+208247,5825.0,eq,36,200.02,C,7.0,RENT,30000.0,Source Verified,debt_consolidation,29.32,no,yes,8.0,0.0,no,0.727272727273,f,Fully Paid,0
+208248,9800.0,less,36,300.9,A,9.0,OWN,55000.0,Verified,credit_card,34.69,no,no,8.0,0.0,no,0.363636363636,f,Fully Paid,0
+208249,4200.0,eq,36,133.37,A,4.0,MORTGAGE,39000.0,Not Verified,home_improvement,16.49,no,no,17.0,0.0,no,0.739130434783,f,Fully Paid,0
+208250,23850.0,eq,60,671.66,F,2.0,RENT,60000.0,Verified,debt_consolidation,34.28,yes,no,13.0,0.0,no,0.481481481481,f,Fully Paid,0
+208252,10000.0,eq,36,323.43,B,3.0,RENT,48000.0,Not Verified,debt_consolidation,22.13,no,no,8.0,0.0,no,0.615384615385,f,Fully Paid,0
+208253,7800.0,eq,36,266.93,B,1.0,RENT,65000.0,Not Verified,debt_consolidation,11.3,no,no,13.0,0.0,no,0.722222222222,f,Fully Paid,0
+208254,12650.0,less,36,426.9,B,8.0,MORTGAGE,57000.0,Verified,credit_card,28.69,no,yes,12.0,0.0,no,0.6,f,Fully Paid,0
+208255,10400.0,eq,36,357.12,C,10.0,MORTGAGE,105000.0,Not Verified,debt_consolidation,11.53,no,no,13.0,0.0,no,0.565217391304,f,Fully Paid,0
+208256,32000.0,less,36,1252.6,F,10.0,MORTGAGE,80200.0,Verified,debt_consolidation,16.43,yes,yes,29.0,0.0,no,0.58,f,Charged Off,1
+208257,1600.0,eq,36,54.95,C,10.0,MORTGAGE,35000.0,Not Verified,major_purchase,18.38,no,yes,9.0,0.0,no,0.2,f,Fully Paid,0
+208258,18000.0,eq,36,560.91,A,5.0,RENT,50000.0,Not Verified,debt_consolidation,22.7,no,yes,15.0,0.0,no,0.483870967742,f,Fully Paid,0
+208259,26500.0,less,36,948.37,C,10.0,MORTGAGE,86000.0,Verified,debt_consolidation,21.2,yes,yes,16.0,0.0,no,0.347826086957,f,Default,0
+208260,17825.0,eq,60,459.95,D,1.0,RENT,75000.0,Verified,credit_card,11.7,no,yes,9.0,0.0,no,0.75,f,Fully Paid,0
+208261,5675.0,eq,36,191.52,B,10.0,RENT,40000.0,Not Verified,debt_consolidation,6.51,no,no,3.0,0.0,no,0.3,f,Fully Paid,0
+208262,12000.0,eq,36,373.94,A,10.0,MORTGAGE,48500.0,Not Verified,credit_card,14.91,no,yes,14.0,0.0,no,0.466666666667,f,Fully Paid,0
+208263,12700.0,eq,36,389.94,A,1.0,MORTGAGE,45000.0,Not Verified,major_purchase,7.25,no,yes,11.0,0.0,no,0.846153846154,f,Charged Off,1
+208264,12000.0,less,36,399.26,B,10.0,MORTGAGE,61387.0,Verified,debt_consolidation,24.86,no,no,17.0,0.0,no,0.708333333333,f,Fully Paid,0
+208265,35000.0,eq,36,1295.74,D,10.0,RENT,110000.0,Verified,credit_card,15.48,no,yes,23.0,0.0,no,0.511111111111,f,Fully Paid,0
+208266,6000.0,eq,36,187.75,A,3.0,OWN,150000.0,Not Verified,debt_consolidation,1.04,no,no,5.0,0.0,no,0.384615384615,f,Fully Paid,0
+208267,8000.0,eq,36,245.63,A,10.0,MORTGAGE,32000.0,Not Verified,debt_consolidation,28.28,no,no,13.0,1.0,yes,0.684210526316,f,Fully Paid,0
+208268,8000.0,eq,36,291.19,D,4.0,RENT,50000.0,Not Verified,debt_consolidation,14.45,yes,yes,10.0,0.0,no,0.384615384615,f,Charged Off,1
+208269,11500.0,eq,36,393.55,B,6.0,RENT,43680.0,Not Verified,debt_consolidation,18.43,no,yes,14.0,0.0,no,1.0,f,Fully Paid,0
+208270,14000.0,eq,36,465.81,B,6.0,RENT,39200.0,Not Verified,debt_consolidation,13.44,no,no,7.0,0.0,no,0.269230769231,f,Fully Paid,0
+208271,3800.0,eq,36,118.91,A,4.0,OWN,25000.0,Not Verified,credit_card,25.82,no,no,9.0,0.0,no,0.428571428571,f,Fully Paid,0
+208272,9000.0,eq,36,291.09,B,10.0,MORTGAGE,60000.0,Not Verified,credit_card,4.76,no,no,12.0,0.0,no,0.75,f,Fully Paid,0
+208273,12000.0,eq,36,410.66,B,6.0,MORTGAGE,62000.0,Not Verified,debt_consolidation,14.65,no,no,6.0,0.0,no,0.4,f,Fully Paid,0
+208274,7200.0,eq,36,242.98,B,5.0,RENT,83000.0,Verified,credit_card,33.93,no,yes,13.0,0.0,no,1.0,f,Fully Paid,0
+208275,4325.0,eq,36,151.63,C,1.0,OWN,24000.0,Source Verified,debt_consolidation,11.9,no,yes,19.0,0.0,no,0.633333333333,f,Fully Paid,0
+208276,12000.0,eq,36,373.94,A,1.0,RENT,60000.0,Source Verified,debt_consolidation,7.16,no,yes,7.0,0.0,no,0.368421052632,f,Fully Paid,0
+208277,20275.0,eq,60,523.16,D,10.0,MORTGAGE,122000.0,Source Verified,debt_consolidation,14.83,no,yes,11.0,0.0,no,0.44,f,Fully Paid,0
+208278,6000.0,eq,36,202.49,B,2.0,MORTGAGE,44408.0,Not Verified,credit_card,17.46,no,yes,7.0,0.0,no,0.368421052632,f,Fully Paid,0
+208279,30000.0,eq,36,1100.44,D,1.0,MORTGAGE,110000.0,Verified,debt_consolidation,14.77,no,yes,20.0,0.0,no,0.47619047619,f,Fully Paid,0
+208280,3000.0,eq,36,101.25,B,1.0,RENT,26000.0,Not Verified,wedding,11.54,no,yes,10.0,0.0,no,0.5,f,Charged Off,1
+208281,15000.0,eq,36,522.26,C,1.0,RENT,70000.0,Source Verified,moving,21.55,no,no,10.0,0.0,no,0.526315789474,f,Fully Paid,0
+208282,9600.0,eq,36,343.56,C,1.0,MORTGAGE,40000.0,Not Verified,debt_consolidation,7.19,no,yes,6.0,0.0,no,0.545454545455,f,Fully Paid,0
+208283,10000.0,less,36,323.43,B,10.0,MORTGAGE,62000.0,Not Verified,major_purchase,6.75,no,yes,12.0,0.0,no,0.461538461538,f,Fully Paid,0
+208284,14000.0,eq,36,465.81,B,1.0,OWN,38000.0,Not Verified,wedding,4.01,no,no,7.0,0.0,no,0.411764705882,f,Fully Paid,0
+208285,3000.0,eq,36,107.37,C,4.0,RENT,33000.0,Not Verified,credit_card,22.87,no,yes,9.0,0.0,no,0.75,f,Fully Paid,0
+208286,10000.0,eq,36,363.99,D,10.0,RENT,55000.0,Not Verified,debt_consolidation,11.28,no,no,5.0,0.0,no,0.625,f,Fully Paid,0
+208287,6400.0,eq,36,215.99,B,5.0,MORTGAGE,65000.0,Not Verified,debt_consolidation,17.08,no,yes,14.0,0.0,no,0.608695652174,f,Fully Paid,0
+208288,3600.0,eq,36,118.1,B,2.0,RENT,48000.0,Not Verified,debt_consolidation,10.48,no,yes,5.0,0.0,no,0.5,f,Fully Paid,0
+208289,24000.0,eq,36,880.36,D,1.0,MORTGAGE,150000.0,Source Verified,debt_consolidation,18.96,no,no,18.0,0.0,no,0.473684210526,f,Charged Off,1
+208290,2000.0,eq,36,62.33,A,10.0,MORTGAGE,32000.0,Not Verified,other,24.52,no,no,9.0,0.0,no,0.45,f,Fully Paid,0
+208291,7000.0,eq,36,229.64,B,9.0,RENT,41000.0,Not Verified,debt_consolidation,7.14,no,yes,6.0,0.0,no,0.6,f,Fully Paid,0
+208292,4100.0,eq,36,128.3,A,6.0,RENT,50000.0,Verified,debt_consolidation,18.62,no,yes,4.0,0.0,no,0.235294117647,f,Fully Paid,0
+208294,19000.0,less,36,594.52,A,1.0,RENT,73600.0,Verified,debt_consolidation,30.68,no,no,13.0,0.0,no,0.52,f,Fully Paid,0
+208295,24000.0,less,60,623.24,D,2.0,MORTGAGE,95000.0,Verified,credit_card,16.76,no,no,12.0,0.0,no,0.255319148936,f,Fully Paid,0
+208296,12000.0,eq,36,365.23,A,10.0,MORTGAGE,132280.0,Not Verified,other,9.67,no,no,14.0,0.0,no,0.28,f,Fully Paid,0
+208297,18000.0,eq,60,464.46,D,1.0,MORTGAGE,60000.0,Verified,credit_card,13.46,no,yes,6.0,0.0,no,0.75,f,Fully Paid,0
+208298,5000.0,less,36,168.74,B,4.0,RENT,46260.0,Verified,small_business,10.35,yes,no,4.0,0.0,no,0.2,f,Fully Paid,0
+208299,11500.0,eq,36,382.63,B,5.0,OWN,35000.0,Not Verified,credit_card,23.45,no,no,7.0,0.0,no,0.4375,f,Fully Paid,0
+208300,3950.0,eq,36,125.43,A,5.0,RENT,17000.0,Verified,debt_consolidation,18.85,no,yes,9.0,0.0,no,0.642857142857,f,Fully Paid,0
+208301,18000.0,eq,36,618.09,C,9.0,MORTGAGE,180000.0,Verified,home_improvement,11.3,yes,no,14.0,0.0,no,0.56,f,Fully Paid,0
+208303,9000.0,eq,36,308.0,B,4.0,RENT,45000.0,Not Verified,credit_card,15.01,no,no,12.0,0.0,no,0.8,f,Fully Paid,0
+208304,35000.0,eq,36,1111.37,A,10.0,MORTGAGE,540000.0,Verified,other,8.92,no,no,12.0,0.0,no,0.260869565217,f,Fully Paid,0
+208305,4500.0,eq,36,151.87,B,10.0,RENT,50000.0,Source Verified,credit_card,19.9,no,yes,10.0,0.0,no,0.909090909091,f,Fully Paid,0
+208306,16450.0,eq,36,576.72,C,5.0,MORTGAGE,60000.0,Verified,debt_consolidation,23.74,no,yes,16.0,0.0,no,0.470588235294,f,Fully Paid,0
+208307,9750.0,eq,36,324.4,B,3.0,RENT,30000.0,Not Verified,credit_card,21.68,no,no,10.0,0.0,no,0.454545454545,f,Fully Paid,0
+208308,6000.0,eq,36,202.49,B,3.0,RENT,43000.0,Not Verified,debt_consolidation,27.86,no,yes,14.0,0.0,no,0.777777777778,f,Charged Off,1
+208309,19125.0,less,60,493.49,D,10.0,RENT,100000.0,Verified,other,11.26,yes,yes,22.0,0.0,no,0.666666666667,f,Fully Paid,0
+208310,13275.0,eq,60,362.81,E,1.0,MORTGAGE,50000.0,Verified,debt_consolidation,12.62,no,no,10.0,0.0,no,0.666666666667,f,Late (31-120 days),0
+208311,9300.0,less,36,344.3,D,3.0,RENT,28000.0,Verified,medical,24.9,no,no,7.0,0.0,no,0.388888888889,f,Charged Off,1
+208312,1200.0,eq,36,43.84,D,4.0,RENT,21000.0,Not Verified,other,2.86,no,no,2.0,0.0,no,0.5,f,Fully Paid,0
+208313,1500.0,eq,36,49.21,B,10.0,RENT,86800.0,Not Verified,other,9.12,no,no,9.0,0.0,no,0.257142857143,f,Fully Paid,0
+208314,14000.0,eq,36,452.8,B,1.0,OWN,120000.0,Verified,debt_consolidation,24.18,yes,yes,11.0,0.0,no,0.333333333333,f,Charged Off,1
+208315,20000.0,eq,36,696.35,C,10.0,MORTGAGE,75000.0,Verified,credit_card,21.52,yes,no,8.0,0.0,no,0.4,f,Fully Paid,0
+208316,20000.0,eq,36,730.6,D,2.0,MORTGAGE,120000.0,Source Verified,debt_consolidation,25.35,no,no,15.0,0.0,no,0.288461538462,f,Fully Paid,0
+208317,18000.0,eq,36,582.17,B,5.0,MORTGAGE,50000.0,Source Verified,debt_consolidation,16.46,no,yes,11.0,0.0,no,0.55,f,Fully Paid,0
+208318,10000.0,eq,36,332.72,B,7.0,RENT,108000.0,Not Verified,debt_consolidation,17.72,no,no,18.0,0.0,no,0.620689655172,f,Fully Paid,0
+208319,10500.0,eq,36,349.36,B,6.0,RENT,38000.0,Not Verified,debt_consolidation,10.32,no,no,10.0,0.0,no,1.0,f,Fully Paid,0
+208320,15850.0,eq,36,542.41,B,9.0,RENT,40000.0,Verified,debt_consolidation,17.79,no,no,13.0,0.0,no,0.5,f,Fully Paid,0
+208321,35000.0,eq,36,1309.49,E,6.0,MORTGAGE,110000.0,Source Verified,debt_consolidation,11.81,no,yes,12.0,0.0,no,0.255319148936,f,Fully Paid,0
+208322,7000.0,eq,36,252.26,D,5.0,RENT,60000.0,Not Verified,moving,8.01,no,yes,8.0,0.0,no,0.8,f,Fully Paid,0
+208323,5000.0,eq,36,178.94,C,2.0,RENT,30000.0,Not Verified,credit_card,17.2,no,yes,11.0,0.0,no,0.611111111111,f,Charged Off,1
+208324,23800.0,less,60,554.9,B,4.0,RENT,60000.0,Verified,debt_consolidation,17.91,no,yes,17.0,0.0,no,0.425,f,Fully Paid,0
+208325,16000.0,eq,36,576.6,D,10.0,RENT,50000.0,Not Verified,debt_consolidation,14.93,no,no,7.0,0.0,no,0.7,f,Fully Paid,0
+208326,9000.0,less,36,291.09,B,10.0,OWN,46000.0,Not Verified,credit_card,21.46,no,no,17.0,0.0,no,0.62962962963,f,Charged Off,1
+208327,10625.0,eq,36,386.74,D,4.0,RENT,32000.0,Source Verified,debt_consolidation,29.89,no,no,7.0,0.0,no,0.777777777778,f,Fully Paid,0
+208328,5000.0,eq,36,175.3,C,4.0,RENT,37500.0,Source Verified,debt_consolidation,17.31,no,yes,9.0,0.0,no,0.333333333333,f,Fully Paid,0
+208329,8000.0,eq,36,291.19,D,9.0,RENT,89609.0,Not Verified,debt_consolidation,3.47,yes,no,4.0,0.0,no,0.571428571429,f,Fully Paid,0
+208330,6500.0,eq,36,219.36,B,5.0,RENT,43000.0,Not Verified,debt_consolidation,20.9,no,yes,9.0,0.0,no,0.642857142857,f,Fully Paid,0
+208331,12000.0,eq,36,381.04,A,2.0,MORTGAGE,48000.0,Not Verified,debt_consolidation,16.0,no,no,12.0,0.0,no,0.857142857143,f,Fully Paid,0
+208332,18225.0,eq,60,480.02,D,1.0,RENT,46000.0,Verified,debt_consolidation,11.35,no,yes,7.0,0.0,no,0.333333333333,f,Charged Off,1
+208333,6000.0,eq,36,205.33,B,9.0,RENT,63000.0,Not Verified,debt_consolidation,13.45,no,no,11.0,0.0,no,0.6875,f,Fully Paid,0
+208334,20000.0,eq,36,623.23,A,1.0,MORTGAGE,145000.0,Source Verified,home_improvement,12.74,no,yes,14.0,0.0,no,0.666666666667,f,Fully Paid,0
+208335,15850.0,less,36,581.4,D,7.0,RENT,41000.0,Verified,debt_consolidation,24.41,yes,yes,17.0,0.0,no,0.62962962963,f,Fully Paid,0

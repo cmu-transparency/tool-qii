@@ -10,8 +10,9 @@ import pandas  as pd
 import numpy
 import pickle
 import numpy.linalg
+import copy
 
-from ml_util import split_and_train_classifier, get_arguments, \
+from ml_util import split_and_train_classifier, split_data, get_arguments, \
      Dataset, measure_analytics, \
      plot_series_with_baseline, plot_series
 
@@ -29,29 +30,40 @@ def __main__():
 
     ######### Begin Training Classifier ##########
 
-    dat = split_and_train_classifier(args, dataset)
+    split_dataset = split_data(args, dataset)
+    classifiers = args.classifier
+    for classifier in classifiers:
+        dat = split_and_train_classifier(classifier, args, split_dataset)
 
-    print ('End Training Classifier')
-    ######### End Training Classifier ##########
+        print ('End Training Classifier: %s' % classifier)
+        ######### End Training Classifier ##########
 
-    measure_analytics(dataset, dat.cls, dat.x_test, dat.y_test, dat.sens_test)
+        measure_analytics(dataset, dat.cls, dat.x_test, dat.y_test, dat.sens_test)
 
-    t_start = time.time()
+        t_start = time.time()
 
-    measures = {'discrim': eval_discrim,
-                'average-unary-individual': eval_average_unary_individual,
-                'unary-individual': eval_unary_individual,
-                'banzhaf': eval_banzhaf,
-                'shapley': eval_shapley}
+        measures = {'discrim': eval_discrim,
+                    'average-unary-individual': eval_average_unary_individual,
+                    'unary-individual': eval_unary_individual,
+                    'banzhaf': eval_banzhaf,
+                    'shapley': eval_shapley}
 
-    if args.measure in measures:
-        measures[args.measure](dataset, args, dat)
-    else:
-        raise ValueError("Unknown measure %s" % args.measure)
+        tmp_args = copy.deepcopy(args)
+        tmp_args.output_suffix = args.output_suffix + '_' + classifier
 
-    t_end = time.time()
+        if args.measure in measures:
+            measures[args.measure](dataset, tmp_args, dat)
+        else:
+            raise ValueError("Unknown measure %s" % args.measure)
 
-    print (t_end - t_start)
+        t_end = time.time()
+
+        print (t_end - t_start)
+    if args.batch_mode:
+        args_filename = 'processed_data/args_%s' % args.output_suffix
+        with open(args_filename, 'wb') as pickle_file:
+            pickle.dump(args, pickle_file, 0)
+
 
 def eval_discrim(dataset, args, dat):
     """ Discrimination metric """
@@ -143,12 +155,9 @@ def eval_shapley_batch(dataset, args, dat):
     suffix = args.output_suffix
     x_filename = getfilename("processed_data/", "x_samples", suffix)
     qii_filename = getfilename("processed_data/", "qii_samples", suffix)
-    args_filename = getfilename("processed_data/", "args", suffix)
 
     numpy.save(x_filename, x_samples)
     numpy.save(qii_filename, shapley_saved)
-    with open(args_filename, 'wb') as pickle_file:
-        pickle.dump(args, pickle_file, 0)
 
 def getfilename(prefix, name, suffix):
     return prefix + name + suffix

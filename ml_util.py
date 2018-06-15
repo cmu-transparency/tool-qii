@@ -274,16 +274,21 @@ def get_arguments():
     parser.add_argument('-e', '--erase-sensitive', action='store_false', help='Erase sensitive field from dataset')
     parser.add_argument('-p', '--show-plot', action='store_true', help='Output plot as pdf')
     parser.add_argument('-o', '--output-pdf', action='store_true', help='Output plot as pdf')
-    parser.add_argument('-c', '--classifier', default='logistic', help='Classifier to use',
+    parser.add_argument('-c', '--classifier', default=['logistic'], nargs='+', help='Classifier(s) to use',
             choices=['logistic', 'svm', 'decision-tree', 'decision-forest'])
 
     parser.add_argument('--max_depth', type=int, default=2, help='Max depth for decision trees and forests')
     parser.add_argument('--n_estimators', type=int, default=20, help='Number of trees for decision forests')
     parser.add_argument('--seed', default=None, help='Random seed, auto seeded if not specified', type=int)
-    
-    parser.add_argument('-i', '--individual', default=0, type=int, help='Index for Individualized Transparency Report')
-    parser.add_argument('-r', '--record-counterfactuals', action='store_true', help='Store counterfactual pairs for causal analysis')
     parser.add_argument('-a', '--active-iterations', type=int, default=10, help='Active Learning Iterations')
+
+    parser.add_argument('-r', '--record-counterfactuals', action='store_true', help='Store counterfactual pairs for causal analysis')
+
+    parser.add_argument('-i', '--individual', default=0, type=int, help='Index for Individualized Transparency Report')
+    parser.add_argument('--batch_mode', default=False, type=bool, help='Run in batch mode')
+    parser.add_argument('--batch_mode_samples', type=int, default=1000, help='Number of samples to compute.')
+    parser.add_argument('--output_suffix', type=str, default=None, help='Output suffix for output in batch mode')
+
 
     args = parser.parse_args()
     if args.seed is not None:
@@ -301,9 +306,20 @@ class Setup(argparse.Namespace):
         #    self.__setattr__(k, kw[k])
         argparse.Namespace.__init__(self, **kw)
 
-def split_and_train_classifier(args, dataset, scaler=None):
-    classifier = args.classifier
-    ## Split data into training and test data
+def split_and_train_classifier(classifier, args, split_dataset):
+
+    cls = train_classifier(classifier, args, split_dataset.x_train, split_dataset.y_train)
+
+    return Setup(cls = cls,
+                 scaler = split_dataset.scaler,
+                 x_train = split_dataset.x_train,
+                 x_test = split_dataset.x_test,
+                 y_train = split_dataset.y_train,
+                 y_test = split_dataset.y_test,
+                 sens_train = split_dataset.sens_train,
+                 sens_test = split_dataset.sens_test)
+
+def split_data(args, dataset, scaler=None):
     x_train, x_test, y_train, y_test = cross_validation.train_test_split(
         dataset.num_data, dataset.target,
         train_size=0.40,
@@ -320,10 +336,7 @@ def split_and_train_classifier(args, dataset, scaler=None):
     #Normalize all training and test data
     x_train = pd.DataFrame(scaler.transform(x_train), columns=(dataset.num_data.columns))
     x_test  = pd.DataFrame(scaler.transform(x_test),  columns=(dataset.num_data.columns))
-
-    cls = train_classifier(args, x_train, y_train)
-
-    return Setup(cls = cls,
+    return Setup(cls = None,
                  scaler = scaler,
                  x_train = x_train,
                  x_test = x_test,
@@ -333,8 +346,8 @@ def split_and_train_classifier(args, dataset, scaler=None):
                  sens_test = sens_test)
 
 
-def train_classifier(args, X_train, y_train):
-    classifier = args.classifier
+
+def train_classifier(classifier, args, X_train, y_train):
     #Initialize sklearn classifier model
     if (classifier == 'logistic'):
         import sklearn.linear_model as linear_model

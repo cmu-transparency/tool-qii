@@ -1,25 +1,12 @@
-OS   := $(shell uname)
-ifeq ($(OS), Darwin)
-  TIME := /usr/bin/time -l
-else
-  TIME := /usr/bin/time -v
-endif
+PYTHON = python2
+PIP = pip2
+LINT = pylint
 
 requirements:
-	pip install pandas
+	$(PIP) install pandas numpy sklearn matplotlib arff argparse statsmodels
 
 pylint: *.py
-	pylint -f parseable -j 4 *.py
-
-test-shapley:
-	$(TIME) python qii.py -m shapley final.csv --show
-
-test:
-	$(TIME) python qii.py -m average-unary-individual final.csv
-	$(TIME) python qii.py -m unary-individual final.csv
-	$(TIME) python qii.py -m discrim final.csv
-	$(TIME) python qii.py -m banzhaf final.csv
-	$(TIME) python qii.py -m shapley final.csv
+	$(LINT) -f parseable -j 4 *.py
 
 clean:
 	rm -Rf *.pyc

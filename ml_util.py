@@ -34,7 +34,7 @@ def get_column_index(data, cname):
         idx = data.columns.get_loc(cname)
     except Exception as e:
         raise ValueError("Unknown column %s" % cname)
-    
+
     return idx
 
 def encode_nominal(col):
@@ -45,31 +45,35 @@ def encode_nominal(col):
 
 import argparse
 class Dataset(object):
-    """
-    Class that holds a dataset.
-    Each dataset has its own quirks and needs some special processing
-    to get to the point where we need it to.
-    An important part of this is the treatment of categorical variables.
-    Translating from categorical variables to regular variables leads
-    to one feature getting mapped to k-1 features via one-hot encoding.
-    However, while generating transparency reports we need to treat
-    all of these low level numerical features as one feature. Therefore,
-    we have a super index (sup_ind) that is a dict that maps from
-    high level features to low level features.
-    To add a new dataset create a choose a new name and create a case for it.
+    """Class that holds a dataset. Each dataset has its own quirks and needs some special processing
+    to get to the point where we need it to. An important part of this is the treatment of
+    categorical variables. Translating from categorical variables to regular variables leads to one
+    feature getting mapped to k-1 features via one-hot encoding. However, while generating
+    transparency reports we need to treat all of these low level numerical features as one feature.
+    Therefore, we have a super index (sup_ind) that is a dict that maps from high level features to
+    low level features. To add a new dataset create a choose a new name and create a case for it.
+
     Attributes:
         name: A string representing the name of the dataset
+
         original_data: Dataset with categorical variables.
+
         num_data: Dataset with cleaned numeric values
-        sup_ind: Super Index containing a dict which maps from original
-            feature to list of dummy features
+
+        sup_ind: Super Index containing a dict which maps from original feature to list of dummy
+            features
+
         target_ix: Name of target index
+
         sensitive_ix: Name of sensitive index
+
         target: Values of classification target
+
     Methods:
-        get_sensitive: extract the sensitive value from a row
-            or the sensitive column from a dataset
-        
+
+        get_sensitive: extract the sensitive value from a row or the sensitive column from a
+            dataset
+
     """
     def __init__( self, dataset, sensitive=None, target=None):
         self.name = dataset
@@ -188,7 +192,7 @@ class Dataset(object):
             print ("loading new dataset %s" % dataset)
 
             self.original_data = pd.read_csv(dataset)
-            
+
             if target is None:
                 target = self.original_data.columns[-1]
             self.target_ix = target
@@ -203,16 +207,16 @@ class Dataset(object):
 
             if self.sensitive_ix == self.target_ix:
                 print ("WARNING: target and sensitive attributes are the same (%s), I'm unsure whether this tool handles this case correctly" % target)
-            
+
             nominal_cols = set(self.original_data.select_dtypes(include=['object']).columns)
-            
+
             self.num_data = pd.get_dummies(
                 self.original_data,
                 prefix_sep='_',
                 columns=nominal_cols-set([target,sensitive]))
 
             self.num_data = self.num_data.apply(encode_nominal)
-            
+
             self.sup_ind = make_super_indices(self.original_data)
 
             if self.target_ix in nominal_cols:
@@ -231,7 +235,7 @@ class Dataset(object):
 
             self.target   = self.num_data[self.target_ix]
             self.num_data = self.num_data.drop([self.target_ix], axis = 1)
-            
+
             self.get_sensitive = lambda X: X[self.sensitive_ix]
 
             print ("target feature    = %s" % self.target_ix)
@@ -258,7 +262,6 @@ def make_super_indices( dataset ):
     return sup_ind
 
 
-
 ## Parse arguments
 def get_arguments():
     parser = argparse.ArgumentParser()
@@ -270,7 +273,7 @@ def get_arguments():
                                  'discrim', 'banzhaf', 'shapley'])
     parser.add_argument('-s', '--sensitive', default=None,     help='Sensitive field')
     parser.add_argument('-t', '--target',    default=None,     help='Target field', type=str)
-    
+
     parser.add_argument('-e', '--erase-sensitive', action='store_false', help='Erase sensitive field from dataset')
     parser.add_argument('-p', '--show-plot', action='store_true', help='Output plot as pdf')
     parser.add_argument('-o', '--output-pdf', action='store_true', help='Output plot as pdf')
@@ -287,14 +290,14 @@ def get_arguments():
     parser.add_argument('-i', '--individual', default=0, type=int, help='Index for Individualized Transparency Report')
     parser.add_argument('--batch_mode', default=False, type=bool, help='Run in batch mode')
     parser.add_argument('--batch_mode_samples', type=int, default=1000, help='Number of samples to compute.')
-    parser.add_argument('--output_suffix', type=str, default=None, help='Output suffix for output in batch mode')
-
+    parser.add_argument('--output_suffix', type=str, default="", help='Output suffix for output in batch mode')
 
     args = parser.parse_args()
     if args.seed is not None:
         numpy.random.seed([args.seed])
-     
+
     return args
+
 
 class Setup(argparse.Namespace):
     def __init__(self, cls, x_test, y_test, sens_test, **kw):
@@ -306,8 +309,8 @@ class Setup(argparse.Namespace):
         #    self.__setattr__(k, kw[k])
         argparse.Namespace.__init__(self, **kw)
 
-def split_and_train_classifier(classifier, args, split_dataset):
 
+def split_and_train_classifier(classifier, args, split_dataset):
     cls = train_classifier(classifier, args, split_dataset.x_train, split_dataset.y_train)
 
     return Setup(cls = cls,
@@ -318,6 +321,7 @@ def split_and_train_classifier(classifier, args, split_dataset):
                  y_test = split_dataset.y_test,
                  sens_train = split_dataset.sens_train,
                  sens_test = split_dataset.sens_test)
+
 
 def split_data(args, dataset, scaler=None):
     x_train, x_test, y_train, y_test = cross_validation.train_test_split(
@@ -346,7 +350,6 @@ def split_data(args, dataset, scaler=None):
                  sens_test = sens_test)
 
 
-
 def train_classifier(classifier, args, X_train, y_train):
     #Initialize sklearn classifier model
     if (classifier == 'logistic'):
@@ -370,7 +373,6 @@ def train_classifier(classifier, args, X_train, y_train):
     #Train sklearn model
     cls.fit(X_train, y_train)
     return cls
-
 
 
 def plot_series(series, args, xlabel, ylabel):
@@ -440,4 +442,3 @@ def measure_analytics(dataset, cls, X, y, sens=None):
 
     mi = metrics.normalized_mutual_info_score(y, sens)
     print('MI: %.3f' % mi)
-

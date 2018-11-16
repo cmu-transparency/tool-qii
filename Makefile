@@ -5,6 +5,9 @@ else
   TIME := /usr/bin/time -v
 endif
 
+requirements:
+	pip install pandas
+
 pylint: *.py
 	pylint -f parseable -j 4 *.py
 

@@ -4,6 +4,8 @@ author: mostly Shayak
 
 """
 
+from __future__ import print_function
+
 import time
 
 import pandas  as pd
